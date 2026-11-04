@@ -69,7 +69,110 @@ async function init() {
     const b = e.target.closest("[data-phone]");
     if (b) showPhone(b.dataset.phone);
   });
+  $("#picker")?.addEventListener("click", onPicker);
   syncPhoneLabel();
+}
+
+const PICK_VIEWS = [
+  ["hero", "Sketch"],
+  ["side", "Side"],
+  ["front", "Front"],
+  ["rear", "Rear"],
+  ["engine", "Bay"],
+  ["diagram", "Diagram"],
+  ["guide", "Book"],
+  ["catalog", "Catalog"],
+];
+
+function renderPicker() {
+  const box = $("#picker");
+  if (!box) return;
+  const sketch = ["hero", "side", "front", "rear", "engine"].includes(state.view);
+  const diagram = state.view === "diagram" && state.system;
+  const sys = ZO.systems.find((s) => s.id === state.system);
+  const views = PICK_VIEWS.map(
+    ([id, label]) =>
+      `<button type="button" data-view="${id}" class="${state.view === id ? "on" : ""}">${label}</button>`
+  ).join("");
+  let body = "";
+  if (sketch) {
+    body = `
+      <div class="picker-head">
+        <button type="button" data-step="-1" aria-label="Previous system">‹</button>
+        <div><span>Navigator</span><b>${esc(sys ? sys.name : "Systems")}</b></div>
+        <button type="button" data-step="1" aria-label="Next system">›</button>
+      </div>
+      <div class="picker-list">
+        ${ZO.systems
+          .map(
+            (s) =>
+              `<button type="button" class="picker-item ${s.id === state.system ? "on" : ""}" data-sys="${s.id}"><b>${esc(s.name)}</b><small>${esc(s.short || s.statusLabel || "")}</small></button>`
+          )
+          .join("")}
+      </div>`;
+  } else if (diagram) {
+    const parts = ZO.parts.filter((p) => p.system === state.system);
+    body = `
+      <div class="picker-head">
+        <button type="button" data-step="-1" aria-label="Previous system">‹</button>
+        <div><span>Navigator</span><b>${esc(sys ? sys.name : "Parts")}</b></div>
+        <button type="button" data-step="1" aria-label="Next system">›</button>
+      </div>
+      <div class="picker-list">
+        ${parts
+          .map(
+            (p) =>
+              `<button type="button" class="picker-item ${p.id === state.part ? "on" : ""}" data-part="${p.id}"><b>${esc(p.name)}</b><small>${esc(p.pn || "")}</small></button>`
+          )
+          .join("")}
+      </div>`;
+  }
+  box.innerHTML = `<div class="picker-views">${views}</div>${body}`;
+  const on = box.querySelector(".picker-item.on");
+  if (on && getComputedStyle(box).display !== "none") on.scrollIntoView({ block: "nearest" });
+}
+
+function stepSystem(dir) {
+  const ids = ZO.systems.map((s) => s.id);
+  let i = ids.indexOf(state.system);
+  if (i < 0) i = 0;
+  const next = ids[(i + dir + ids.length) % ids.length];
+  if (state.view === "diagram") select(next, { view: "diagram" });
+  else {
+    state.system = next;
+    state.part = null;
+    renderRail();
+    renderPanel(next);
+    renderStage();
+    if (studio) studio.setHighlight(next);
+  }
+}
+
+function onPicker(e) {
+  const view = e.target.closest("[data-view]");
+  if (view) {
+    const v = view.dataset.view;
+    if (v === "guide") openGuide();
+    else if (v === "catalog") openCatalog();
+    else setView(v);
+    return;
+  }
+  const step = e.target.closest("[data-step]");
+  if (step) {
+    stepSystem(Number(step.dataset.step));
+    return;
+  }
+  const sys = e.target.closest("[data-sys]");
+  if (sys) {
+    select(sys.dataset.sys, { view: "diagram" });
+    return;
+  }
+  const part = e.target.closest("[data-part]");
+  if (!part) return;
+  const p = ZO.parts.find((x) => x.id === part.dataset.part);
+  if (!p) return;
+  select(p.system, { part: p.id, view: "diagram" });
+  showPhone("dock");
 }
 
 function stagePhoneLabel() {
@@ -249,6 +352,7 @@ function renderStage() {
             ? "Click a branch for that part · Sketch takes you back to the model"
             : "Drag gently to turn · click a part to open its diagram";
   }
+  renderPicker();
   const host = $("#svghost");
   if (state.view === "project") {
     if (studio) {
