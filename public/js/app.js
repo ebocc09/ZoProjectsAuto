@@ -1,4 +1,4 @@
-import { mountStudio } from "./car3d.js?v=wire1";
+import { mountStudio } from "./car3d.js?v=wire2";
 import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model7";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -65,6 +65,33 @@ async function init() {
       sendAsk();
     }
   });
+  $(".phone-nav")?.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-phone]");
+    if (b) showPhone(b.dataset.phone);
+  });
+  syncPhoneLabel();
+}
+
+function stagePhoneLabel() {
+  if (state.view === "catalog") return "Catalog";
+  if (state.view === "project") return "Project";
+  if (state.view === "guide") return "Book";
+  if (state.view === "diagram") return "Diagram";
+  return "Car";
+}
+
+function syncPhoneLabel() {
+  const b = document.querySelector('.phone-nav button[data-phone="stage"]');
+  if (b) b.textContent = stagePhoneLabel();
+}
+
+function showPhone(which) {
+  const ws = document.querySelector(".workspace");
+  if (!ws) return;
+  ws.dataset.phone = which;
+  $$(".phone-nav button").forEach((b) => b.classList.toggle("on", b.dataset.phone === which));
+  syncPhoneLabel();
+  requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
 }
 
 function renderRail() {
@@ -139,6 +166,7 @@ function select(id, opts = {}) {
   renderRail();
   renderStage();
   renderPanel(id);
+  showPhone("stage");
   if (opts.evidence) setTimeout(() => openLight(opts.evidence), 400);
   if (studio) studio.setHighlight(id);
 }
@@ -208,6 +236,7 @@ function renderStage() {
         : ZO.vehicle.identity;
   renderJobStrip();
   $$(".views button").forEach((b) => b.classList.toggle("on", b.dataset.view === state.view));
+  syncPhoneLabel();
   document.querySelector(".dock")?.classList.toggle("diagram-open", state.view === "diagram");
   const hint = $(".hint");
   if (hint) {
@@ -297,6 +326,7 @@ window.setView = (v) => {
   state.view = v;
   renderRail();
   renderStage();
+  showPhone("stage");
 };
 
 window.openCatalog = () => {
@@ -309,6 +339,7 @@ window.openCatalog = () => {
   renderRail();
   renderStage();
   renderHomePanel();
+  showPhone("stage");
   if (!window.PART_PHOTOS) {
     ensurePartPhotos().then(() => {
       if (state.view !== "catalog") return;
@@ -325,6 +356,7 @@ window.openProject = (id, force) => {
     renderRail();
     renderStage();
     renderPanel(state.system);
+    showPhone("stage");
     return;
   }
   const job = (window.ZO_PROJECTS || []).find((p) => p.id === id);
@@ -337,6 +369,7 @@ window.openProject = (id, force) => {
   renderRail();
   renderStage();
   renderPanel(job.system);
+  showPhone("stage");
 };
 
 function renderProject(id) {
@@ -520,6 +553,7 @@ function bindCatalogCards(host) {
       host.querySelectorAll(".cat-card").forEach((c) => c.classList.toggle("on", c.dataset.id === id));
       renderRail();
       renderPanel(p.system);
+      showPhone("dock");
     });
   });
   host.querySelectorAll("[data-ev]").forEach((el) => {
@@ -552,6 +586,7 @@ window.openGuide = () => {
   state.view = "guide";
   renderRail();
   renderStage();
+  showPhone("stage");
   const first = ZO.guide.chapters[0];
   if (first) renderPanel(first.system);
 };

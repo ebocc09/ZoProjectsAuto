@@ -151,8 +151,8 @@ a { color: inherit; }
 .canvas-wrap.is-3d canvas {
   position: absolute;
   inset: 0;
-  width: auto !important;
-  height: auto !important;
+  width: 100% !important;
+  height: 100% !important;
   display: block;
   border-radius: 0;
   box-shadow: none;
@@ -636,6 +636,7 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   background: #151a15; border: 1px solid var(--line); border-radius: 12px; display: none; overflow: hidden;
 }
 .search-hits.on { display: block; }
+.phone-nav { display: none; }
 .hit { display: block; width: 100%; text-align: left; background: none; border: 0; color: var(--paper); padding: 10px 14px; border-bottom: 1px solid var(--line); }
 .hit:hover { background: #1d2a20; }
 .hit b { display: block; }
@@ -646,33 +647,121 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   .car-card p { display: none; }
 }
 
-@media (max-width: 980px) {
-  html, body, .app { height: auto; overflow: auto; }
-  .workspace {
-    grid-template-columns: 1fr;
-    grid-template-areas: "stage" "dock" "rail";
-    height: auto;
-    min-height: 0;
-    flex: none;
+@media (max-width: 900px) {
+  html, body, .app {
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
   }
-  .rail, .dock { border: 0; height: auto; }
-  .dock { min-height: 50vh; }
-  .shop { flex: 0 0 220px; max-height: 240px; min-height: 180px; }
-  .dock.diagram-open .shop { flex-basis: 280px; max-height: 360px; }
-  .stage { min-height: min(70vh, 640px); height: auto; }
-  .canvas-wrap { min-height: 420px; }
-  .diagram { grid-template-columns: 1fr; overflow: auto; }
-  .stage-head { flex-direction: column; }
-  .views { justify-content: flex-start; }
-  .topbar { grid-template-columns: 1fr auto; height: auto; padding: 10px 14px; }
-  .top-meta { display: none; }
-  .search-hits { left: 8px; right: 8px; }
-}
+  .topbar {
+    height: auto;
+    min-height: 52px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+    padding: max(8px, env(safe-area-inset-top)) 12px 8px;
+  }
+  .top-meta, .search kbd, .brand span { display: none; }
+  .brand { gap: 0; }
+  .brand b { font-size: 22px; letter-spacing: 0.08em; }
+  .search { min-width: 0; padding: 7px 12px; }
+  .search input { font-size: 16px; min-width: 0; }
+  .search-hits { left: 8px; right: 8px; top: 60px; }
+  .car-card p { display: block; }
 
-@media (max-width: 640px) {
-  .topbar { grid-template-columns: 1fr; }
-  .search { order: 3; }
-  .brand b { font-size: 24px; }
-  .panel h1 { font-size: 28px; }
-  .shop { max-height: 200px; }
+  .workspace {
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    grid-template-areas: none;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .rail, .stage, .dock {
+    grid-row: 1;
+    grid-column: 1;
+    display: none;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    border: 0;
+  }
+  .workspace[data-phone="rail"] > .rail { display: block; overflow: auto; }
+  .workspace[data-phone="stage"] > .stage { display: flex; overflow: hidden; }
+  .workspace[data-phone="dock"] > .dock { display: flex; overflow: hidden; }
+
+  .rail { padding: 14px 14px 20px; }
+  .sys, .proj-btn, .book-btn, .hit { min-height: 44px; }
+  .stage { max-height: none; }
+  .stage-head { flex-direction: column; gap: 8px; padding: 10px 12px 0; }
+  .stage-head h1 { font-size: 26px; }
+  .stage-head p { max-width: none; }
+  .views {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 22px), transparent);
+  }
+  .views::-webkit-scrollbar { display: none; }
+  .views button { flex: 0 0 auto; min-height: 40px; padding: 8px 14px; }
+  .canvas-wrap { min-height: 0; padding: 8px 12px; }
+  .canvas-wrap.is-diagram { overflow: auto; }
+  .diagram { height: auto; min-height: 280px; overflow: visible; }
+  .hint { padding: 0 12px 8px; }
+  .float-tag { white-space: normal; max-width: 72vw; }
+  .project, .catalog { padding-left: 12px; padding-right: 12px; }
+  .why-item p, .step-item p, .part p, .lede { overflow-wrap: anywhere; }
+  .step-item { grid-template-columns: 28px 1fr; }
+  .step-item input { width: 22px; height: 22px; }
+  .proj-part { min-width: 0; flex: 1 1 140px; }
+  .cat-chip, .pills button, .jobchip { min-height: 36px; }
+  .cat-tools input, .ask-row input, .edit-form input, .edit-form textarea, .proj-note { font-size: 16px; }
+  .modelview { inset: 0; border: 0; border-radius: 0; }
+  .modelview-bar button {
+    min-height: 40px;
+    padding: 8px 16px;
+    background: var(--brg);
+    color: var(--paper);
+    border: 0;
+    border-radius: 999px;
+  }
+
+  .dock { background: var(--panel); }
+  .shop, .dock.diagram-open .shop {
+    flex: 0 0 auto;
+    min-height: 0;
+    max-height: 34%;
+  }
+  .panel { padding: 12px 12px 24px; }
+  .panel h1, .tree summary b { font-size: 28px; }
+  .spec-tree li { grid-template-columns: 38% 1fr; }
+
+  .lightbox { padding: 12px; }
+  .lightbox.on { flex-direction: column; gap: 12px; }
+  .lightbox img { max-width: 100%; max-height: calc(100dvh - 110px); }
+  .lightbox .cap { position: static; }
+
+  .phone-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 6px 10px calc(6px + env(safe-area-inset-bottom));
+    background: #10140f;
+    border-top: 1px solid var(--line);
+  }
+  .phone-nav button {
+    min-height: 46px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--steel);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .phone-nav button.on {
+    color: var(--paper);
+    background: #1a2a1f;
+    border-color: var(--brg-2);
+  }
 }

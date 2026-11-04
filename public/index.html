@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10140f" />
   <title>Zo Projects | Auto — Lotus 7</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/app.css?v=proj1" />
+  <link rel="stylesheet" href="css/app.css?v=phone2" />
 </head>
 <body>
   <div class="app">
@@ -23,7 +24,7 @@
 
     <div id="hits" class="search-hits"></div>
 
-    <div class="workspace">
+    <div class="workspace" data-phone="stage">
       <aside class="rail">
         <h2>Garage</h2>
         <div class="car-card active">
@@ -100,6 +101,11 @@
         <div class="panel" id="panel"></div>
       </aside>
     </div>
+    <nav class="phone-nav" aria-label="Sections">
+      <button type="button" data-phone="rail">Garage</button>
+      <button type="button" data-phone="stage" class="on">Car</button>
+      <button type="button" data-phone="dock">Info</button>
+    </nav>
   </div>
 
   <div class="lightbox" id="lightbox">
@@ -119,6 +125,6 @@
     }
   }
   </script>
-  <script type="module" src="js/app.js?v=proj1"></script>
+  <script type="module" src="js/app.js?v=phone2"></script>
 </body>
 </html>

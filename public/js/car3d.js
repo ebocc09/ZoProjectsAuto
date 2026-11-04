@@ -731,7 +731,17 @@ export function mountStudio(container) {
     const w = container.clientWidth;
     const h = container.clientHeight;
     if (!w || !h) return;
-    camera.aspect = w / h;
+    const aspect = w / h;
+    camera.aspect = aspect;
+    const base = 36;
+    const wide = 1.55;
+    if (aspect < wide) {
+      const hFov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(base) / 2) * wide);
+      const vFov = THREE.MathUtils.radToDeg(2 * Math.atan(Math.tan(hFov / 2) / aspect));
+      camera.fov = Math.min(68, vFov);
+    } else {
+      camera.fov = base;
+    }
     camera.updateProjectionMatrix();
     renderer.setSize(w, h, false);
   });
