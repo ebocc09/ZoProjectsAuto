@@ -965,7 +965,7 @@ async function saveNote(form) {
     renderStage();
     renderPanel(state.system);
   } catch {
-    alert("Could not reach the workshop log. Restart the local server and try again.");
+    alert("This copy has no workshop log. Project checkboxes stay on this phone.");
   }
 }
 
