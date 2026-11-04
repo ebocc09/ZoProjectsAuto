@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zo Projects | Auto — Lotus 7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css?v=proj1" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><b>Zo Projects</b><span>Auto</span></div>
+      <label class="search">
+        <span>⌕</span>
+        <input id="q" type="search" placeholder="Jump by PN — 910-08015, UR4855P…" autocomplete="off" />
+        <kbd>/</kbd>
+      </label>
+      <div class="top-meta">Chassis 1442 · Locost Seven · paperwork 2007–2011</div>
+    </header>
+
+    <div id="hits" class="search-hits"></div>
+
+    <div class="workspace">
+      <aside class="rail">
+        <h2>Garage</h2>
+        <div class="car-card active">
+          <div class="kicker">Car 01</div>
+          <h3>Lotus 7</h3>
+          <p>Locost on chassis 1442. Kinetic body, GM 3.0 Vortec, QA1 Ultra Ride. Front inner poly is the job.</p>
+        </div>
+        <button class="book-btn" id="bookbtn" type="button" onclick="openGuide()">
+          Build book
+          <small>Champion plates on file + chassis 1442 CAD</small>
+        </button>
+        <button class="book-btn cat-btn" id="catbtn" type="button" onclick="openCatalog()">
+          Parts catalog
+          <small>Every known part, who sold it, what it cost</small>
+        </button>
+        <h2>Projects</h2>
+        <div id="projlist" class="proj-list"></div>
+        <h2>Click a system</h2>
+        <div id="syslist" class="sys-list"></div>
+      </aside>
+
+      <main class="stage">
+        <div class="stage-head">
+          <div>
+            <h1 id="stageTitle">Lotus 7</h1>
+            <p id="stageSub"></p>
+            <div id="jobstrip" class="jobstrip"></div>
+          </div>
+          <div class="views">
+            <button data-view="hero" class="on" onclick="setView('hero')">Sketch</button>
+            <button data-view="side" onclick="setView('side')">Side</button>
+            <button data-view="front" onclick="setView('front')">Front</button>
+            <button data-view="rear" onclick="setView('rear')">Rear</button>
+            <button data-view="engine" onclick="setView('engine')">Bay</button>
+            <button data-view="diagram" onclick="setView('diagram')">Diagram</button>
+            <button data-view="guide" onclick="openGuide()">Book</button>
+            <button data-view="catalog" onclick="openCatalog()">Catalog</button>
+          </div>
+        </div>
+        <div class="canvas-wrap" id="svghost"></div>
+        <div id="modelview" class="modelview" hidden>
+          <canvas id="modelcanvas"></canvas>
+          <div class="modelview-bar">
+            <span>Drag to turn the part</span>
+            <button type="button" id="modelclose" onclick="closeModel()">Close</button>
+          </div>
+        </div>
+        <div id="tag" class="float-tag"></div>
+        <div class="hint">Drag gently to turn · click a part to open its diagram</div>
+      </main>
+
+      <aside class="dock">
+        <section class="shop" aria-label="Shop agent">
+          <div class="shop-head">
+            <span>Shop</span>
+            <small>Ask in plain language — answers come from this car's paperwork</small>
+          </div>
+          <div id="chatlog" class="chatlog">
+            <div class="msg shop">
+              <p>What do you need on the Seven? Wishbone bushes, coilover eyes, radiator, clutch — ask it like you would over the bench.</p>
+              <div class="pills">
+                <button type="button" data-pill="I need the front bushes">I need the front bushes</button>
+                <button type="button" data-pill="I need the bushings for the coilovers">Coilover bushings</button>
+                <button type="button" data-pill="What engine is this">What engine is this</button>
+                <button type="button" data-pill="The brakes are locked up">Brakes are locked</button>
+              </div>
+            </div>
+          </div>
+          <form id="askForm" class="ask-row">
+            <input id="ask" type="text" placeholder="I need the bushings for the coilovers…" autocomplete="off" />
+            <button id="askBtn" type="submit">Ask</button>
+          </form>
+        </section>
+        <div class="panel" id="panel"></div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <img alt="Source document" />
+    <div class="cap"></div>
+  </div>
+
+  <script src="js/data.js?v=model1"></script>
+  <script src="js/projects.js?v=proj1"></script>
+  <script src="js/catalog.js?v=model1"></script>
+  <script src="js/diagrams.js?v=model1"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/app.js?v=proj1"></script>
+</body>
+</html>

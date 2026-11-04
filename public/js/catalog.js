@@ -1,0 +1,463 @@
+/** Parts catalog. Prices are what the paperwork says, not a current quote. */
+
+const CAT_G = 'fill="none" stroke="#d7e0d6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"';
+const CAT_F = 'fill="rgba(47,106,72,.4)" stroke="#8fd0a4" stroke-width="1.5"';
+const CAT_A = 'fill="rgba(217,138,43,.32)" stroke="#e0a85a" stroke-width="1.4"';
+const CAT_S = 'fill="rgba(160,170,180,.22)" stroke="#c5ced6" stroke-width="1.4"';
+const CAT_D = 'fill="rgba(20,25,20,.9)" stroke="#8a93a0" stroke-width="1.4"';
+
+function catFrame(body) {
+  return `<svg class="part-sketch" viewBox="0 0 200 120" role="img">${body}</svg>`;
+}
+
+const CAT_DRAW = {
+  bush: () => catFrame(`
+    <rect ${CAT_F} x="48" y="38" width="104" height="44" rx="22"/>
+    <rect ${CAT_D} x="78" y="48" width="44" height="24" rx="4"/>
+    <line ${CAT_G} x1="100" y1="28" x2="100" y2="92"/>
+    <line ${CAT_G} x1="36" y1="60" x2="164" y2="60"/>`),
+  heim: () => catFrame(`
+    <circle ${CAT_S} cx="62" cy="60" r="22"/>
+    <circle ${CAT_D} cx="62" cy="60" r="8"/>
+    <path ${CAT_G} d="M84 60 H150"/>
+    <path ${CAT_G} d="M118 52 H150 M118 68 H150"/>
+    <path ${CAT_A} d="M146 48 h22 v24 h-22 z"/>`),
+  arm: () => catFrame(`
+    <path ${CAT_F} d="M36 78 L70 78 L150 42 L168 52 L150 66 L78 96 L36 96 Z"/>
+    <circle ${CAT_A} cx="48" cy="87" r="7"/>
+    <circle ${CAT_A} cx="158" cy="54" r="8"/>`),
+  coil: () => catFrame(`
+    <rect ${CAT_S} x="88" y="18" width="24" height="84" rx="4"/>
+    <path ${CAT_G} d="M78 30 h44 M74 42 h52 M74 54 h52 M74 66 h52 M74 78 h52 M78 90 h44"/>
+    <circle ${CAT_A} cx="100" cy="16" r="7"/>
+    <circle ${CAT_A} cx="100" cy="106" r="7"/>`),
+  bar: () => catFrame(`
+    <line ${CAT_G} x1="36" y1="70" x2="164" y2="46" stroke-width="4"/>
+    <circle ${CAT_A} cx="34" cy="72" r="8"/>
+    <circle ${CAT_A} cx="166" cy="44" r="8"/>`),
+  master: () => catFrame(`
+    <rect ${CAT_F} x="70" y="48" width="90" height="28" rx="4"/>
+    <rect ${CAT_A} x="86" y="24" width="22" height="26" rx="3"/>
+    <rect ${CAT_A} x="122" y="24" width="22" height="26" rx="3"/>
+    <path ${CAT_G} d="M160 62 H184"/>
+    <circle ${CAT_S} cx="48" cy="70" r="16"/>`),
+  rad: () => catFrame(`
+    <rect ${CAT_F} x="36" y="22" width="36" height="78" rx="3"/>
+    ${Array.from({ length: 8 }, (_, i) => `<line ${CAT_G} x1="42" y1="${32 + i * 8}" x2="66" y2="${32 + i * 8}"/>`).join("")}
+    <circle ${CAT_S} cx="118" cy="60" r="28"/>
+    <path ${CAT_G} d="M118 60 L140 42 M118 60 L140 78 M118 60 L96 42"/>
+    <path ${CAT_A} d="M72 36 C100 28 110 40 118 48"/>`),
+  engine: () => catFrame(`
+    <rect ${CAT_F} x="40" y="48" width="100" height="52" rx="4"/>
+    <rect ${CAT_S} x="48" y="28" width="84" height="22" rx="3"/>
+    ${[0, 1, 2, 3].map((i) => `<circle ${CAT_A} cx="${62 + i * 20}" cy="39" r="5"/>`).join("")}
+    <circle ${CAT_S} cx="158" cy="74" r="22"/>
+    <circle ${CAT_D} cx="158" cy="74" r="8"/>`),
+  slave: () => catFrame(`
+    <rect ${CAT_F} x="48" y="46" width="70" height="28" rx="6"/>
+    <rect ${CAT_S} x="112" y="52" width="40" height="16" rx="3"/>
+    <path ${CAT_G} d="M152 60 H180"/>
+    <circle ${CAT_A} cx="40" cy="60" r="8"/>`),
+  box: () => catFrame(`
+    <rect ${CAT_F} x="36" y="40" width="78" height="44" rx="3"/>
+    <path ${CAT_S} d="M114 48 h28 v28 h-28 z"/>
+    <circle ${CAT_A} cx="160" cy="62" r="16"/>
+    <text class="sk-lab" x="58" y="66">TRANS</text>`),
+  shaft: () => catFrame(`
+    <rect ${CAT_S} x="40" y="52" width="120" height="14" rx="7"/>
+    <circle ${CAT_A} cx="36" cy="59" r="12"/>
+    <circle ${CAT_A} cx="166" cy="59" r="12"/>`),
+  jug: () => catFrame(`
+    <rect ${CAT_F} x="74" y="36" width="52" height="68" rx="6"/>
+    <rect ${CAT_A} x="88" y="22" width="24" height="16" rx="3"/>
+    <path ${CAT_G} d="M86 58 h28 M86 72 h28"/>`),
+  body: () => catFrame(`
+    <path ${CAT_F} d="M24 70 C32 48 58 40 90 42 L98 42 L98 86 L36 86 C26 84 20 78 24 70 Z"/>
+    <path ${CAT_F} d="M98 42 L140 34 L152 52 L140 62 L98 62 Z"/>
+    <path ${CAT_F} d="M98 62 H168 L176 54 L188 58 L188 86 H98 Z"/>
+    <path ${CAT_S} d="M138 34 L132 16 L176 14 L168 34"/>
+    <circle ${CAT_D} cx="70" cy="88" r="12"/>
+    <circle ${CAT_D} cx="160" cy="88" r="12"/>`),
+  fuse: () => catFrame(`
+    <rect ${CAT_F} x="36" y="28" width="128" height="64" rx="4"/>
+    ${[0, 1, 2, 3].map((i) => `<rect ${CAT_A} x="${50 + i * 28}" y="40" width="16" height="28" rx="2"/>`).join("")}
+    <line ${CAT_G} x1="50" y1="78" x2="150" y2="78"/>`),
+  strip: () => catFrame(`
+    <rect ${CAT_S} x="28" y="46" width="144" height="28" rx="3"/>
+    ${Array.from({ length: 8 }, (_, i) => `<circle ${CAT_A} cx="${42 + i * 17}" cy="60" r="4"/>`).join("")}`),
+  lamp: () => catFrame(`
+    <ellipse ${CAT_A} cx="100" cy="60" rx="36" ry="28"/>
+    <ellipse ${CAT_S} cx="100" cy="60" rx="16" ry="12"/>
+    <path ${CAT_G} d="M64 60 H36 M136 60 H164"/>`),
+  taillamp: () => catFrame(`
+    <rect ${CAT_A} x="48" y="36" width="104" height="48" rx="8"/>
+    <circle fill="rgba(196,90,42,.55)" stroke="#e07a4a" stroke-width="1.4" cx="78" cy="60" r="12"/>
+    <circle fill="rgba(196,90,42,.55)" stroke="#e07a4a" stroke-width="1.4" cx="122" cy="60" r="12"/>`),
+  horn: () => catFrame(`
+    <path ${CAT_A} d="M48 70 C48 40 90 36 110 52 L150 40 L158 52 L118 64 C100 78 48 86 48 70 Z"/>
+    <circle ${CAT_S} cx="58" cy="62" r="8"/>`),
+  fan: () => catFrame(`
+    <circle ${CAT_S} cx="100" cy="60" r="36"/>
+    <circle ${CAT_F} cx="100" cy="60" r="8"/>
+    ${[0, 1, 2, 3, 4].map((i) => {
+      const a = (i * Math.PI * 2) / 5;
+      const x = (100 + Math.cos(a) * 28).toFixed(1);
+      const y = (60 + Math.sin(a) * 28).toFixed(1);
+      return `<line ${CAT_G} x1="100" y1="60" x2="${x}" y2="${y}"/>`;
+    }).join("")}`),
+  tire: () => catFrame(`
+    <circle ${CAT_D} cx="100" cy="60" r="40" stroke-width="10"/>
+    <circle ${CAT_S} cx="100" cy="60" r="16"/>
+    ${[0, 1, 2, 3, 4].map((i) => {
+      const a = (i * Math.PI * 2) / 5;
+      return `<line ${CAT_G} x1="${(100 + Math.cos(a) * 18).toFixed(1)}" y1="${(60 + Math.sin(a) * 18).toFixed(1)}" x2="${(100 + Math.cos(a) * 30).toFixed(1)}" y2="${(60 + Math.sin(a) * 30).toFixed(1)}"/>`;
+    }).join("")}`),
+  plate: () => catFrame(`
+    <circle ${CAT_S} cx="70" cy="60" r="28"/>
+    <circle ${CAT_D} cx="70" cy="60" r="10"/>
+    <circle ${CAT_S} cx="132" cy="60" r="28"/>
+    <circle ${CAT_D} cx="132" cy="60" r="10"/>
+    <line ${CAT_G} x1="98" y1="60" x2="104" y2="60"/>`),
+  hose: () => catFrame(`
+    <path ${CAT_A} d="M30 78 C60 78 70 36 110 36 S160 70 176 48" stroke-width="6"/>
+    <rect ${CAT_S} x="22" y="68" width="16" height="18" rx="2"/>
+    <rect ${CAT_S} x="168" y="38" width="16" height="18" rx="2"/>`),
+  cyl: () => catFrame(`
+    <rect ${CAT_F} x="56" y="44" width="88" height="32" rx="16"/>
+    <circle ${CAT_A} cx="78" cy="60" r="8"/>
+    <path ${CAT_G} d="M110 60 H160"/>
+    <path ${CAT_G} d="M148 48 v24"/>`),
+  gauge: () => catFrame(`
+    <circle ${CAT_S} cx="100" cy="64" r="34"/>
+    <path ${CAT_G} d="M78 78 A28 28 0 0 1 122 78"/>
+    <line ${CAT_A} x1="100" y1="64" x2="118" y2="48" stroke-width="2"/>
+    <circle ${CAT_A} cx="100" cy="64" r="3"/>`),
+  fork: () => catFrame(`
+    <path ${CAT_G} d="M40 86 C70 86 80 40 120 36" stroke-width="4"/>
+    <path ${CAT_F} d="M112 24 h28 v24 h-10 l-8 10 h-10 z"/>
+    <circle ${CAT_A} cx="48" cy="86" r="8"/>`),
+  clutch: () => catFrame(`
+    <circle ${CAT_S} cx="100" cy="60" r="36"/>
+    <circle ${CAT_F} cx="100" cy="60" r="14"/>
+    ${[0, 1, 2, 3, 4, 5].map((i) => {
+      const a = (i * Math.PI) / 3;
+      return `<line ${CAT_G} x1="${(100 + Math.cos(a) * 16).toFixed(1)}" y1="${(60 + Math.sin(a) * 16).toFixed(1)}" x2="${(100 + Math.cos(a) * 32).toFixed(1)}" y2="${(60 + Math.sin(a) * 32).toFixed(1)}"/>`;
+    }).join("")}`),
+  belt: () => catFrame(`
+    <ellipse ${CAT_D} cx="70" cy="60" rx="22" ry="22"/>
+    <ellipse ${CAT_D} cx="136" cy="60" rx="16" ry="16"/>
+    <path ${CAT_A} d="M70 38 H136 A16 16 0 0 1 136 82 H70 A22 22 0 0 1 70 38" stroke-width="3"/>`),
+  seal: () => catFrame(`
+    <circle ${CAT_S} cx="100" cy="60" r="32"/>
+    <circle ${CAT_F} cx="100" cy="60" r="20"/>
+    <circle ${CAT_D} cx="100" cy="60" r="10"/>`),
+  fitting: () => catFrame(`
+    <path ${CAT_A} d="M40 52 h36 v16 H40 z"/>
+    <path ${CAT_S} d="M76 46 h20 v28 H76 z"/>
+    <path ${CAT_G} d="M96 60 H150"/>
+    <path ${CAT_F} d="M140 44 h24 v32 h-24 z"/>`),
+  tube: () => catFrame(`
+    <rect ${CAT_S} x="30" y="28" width="140" height="10" rx="5"/>
+    <rect ${CAT_S} x="40" y="48" width="120" height="10" rx="5"/>
+    <rect ${CAT_A} x="50" y="68" width="100" height="10" rx="5"/>
+    <rect ${CAT_F} x="36" y="88" width="128" height="8" rx="3"/>`),
+  bolts: () => catFrame(`
+    ${[0, 1, 2].map((i) => `<g transform="translate(${40 + i * 48} 28)"><rect ${CAT_S} x="8" y="0" width="20" height="12" rx="2"/><rect ${CAT_F} x="14" y="12" width="8" height="52"/></g>`).join("")}`),
+  steel: () => catFrame(`
+    <rect ${CAT_S} x="36" y="30" width="16" height="64"/>
+    <rect ${CAT_S} x="64" y="30" width="16" height="64"/>
+    <rect ${CAT_A} x="96" y="46" width="70" height="8"/>
+    <rect ${CAT_A} x="96" y="64" width="70" height="8"/>
+    <path ${CAT_G} d="M36 30 H80"/>`),
+  paint: () => catFrame(`
+    <path ${CAT_F} d="M70 36 h60 v58 a16 16 0 0 1 -16 16 H86 a16 16 0 0 1 -16 -16 Z"/>
+    <rect ${CAT_A} x="78" y="22" width="44" height="16" rx="2"/>
+    <text class="sk-lab" x="100" y="74" text-anchor="middle">POR</text>`),
+  spool: () => catFrame(`
+    <ellipse ${CAT_S} cx="100" cy="60" rx="34" ry="34"/>
+    <ellipse ${CAT_D} cx="100" cy="60" rx="12" ry="12"/>
+    <path ${CAT_A} d="M70 40 q30 20 60 0"/>`),
+  bend: () => catFrame(`
+    <path ${CAT_S} d="M40 86 H90 Q130 86 130 46 V28" stroke-width="8"/>
+    <circle ${CAT_D} cx="40" cy="86" r="6"/>
+    <circle ${CAT_D} cx="130" cy="28" r="6"/>`),
+  pipes: () => catFrame(`
+    <rect ${CAT_S} x="36" y="48" width="128" height="22" rx="11"/>
+    <rect ${CAT_A} x="28" y="44" width="18" height="30" rx="3"/>
+    <rect ${CAT_A} x="154" y="44" width="18" height="30" rx="3"/>
+    <path ${CAT_G} d="M70 48 v-16 M130 48 v-16"/>`),
+  strap: () => catFrame(`
+    <rect ${CAT_A} x="36" y="50" width="128" height="16" rx="2"/>
+    <rect ${CAT_S} x="78" y="42" width="28" height="32" rx="3"/>
+    <circle ${CAT_D} cx="92" cy="58" r="4"/>`),
+  glass: () => catFrame(`
+    <path ${CAT_S} d="M36 86 L52 28 H160 L148 86 Z" fill="rgba(180,210,200,.18)"/>
+    <path ${CAT_G} d="M36 86 L52 28 H160 L148 86 Z"/>
+    <line ${CAT_G} x1="70" y1="86" x2="82" y2="28"/>`),
+  sheet: () => catFrame(`
+    <rect ${CAT_F} x="40" y="18" width="120" height="84" rx="2"/>
+    <path ${CAT_A} d="M56 40 H144 M56 54 H130 M56 68 H144 M56 82 H110"/>`),
+  mystery: () => catFrame(`
+    <rect ${CAT_S} x="58" y="28" width="84" height="64" rx="4"/>
+    <text class="sk-lab" x="100" y="66" text-anchor="middle">?</text>`),
+};
+
+const CAT_KIND = {
+  "poly-135": "bush",
+  "sw-91008015": "bush",
+  "sw-91008051": "heim",
+  "napa-33813": "arm",
+  "napa-10269": "ball",
+  "napa-10390": "ball",
+  "lower-wishbone": "arm",
+  "upper-wishbone": "arm",
+  "qa1-ur4855p": "coil",
+  "qa1-b6031k": "bush",
+  "trailing-bush": "bush",
+  panhard: "bar",
+  "wilwood-mc": "master",
+  "jegs-rad": "rad",
+  "gm-30": "engine",
+  "napa-37728": "slave",
+  "gearbox-1442": "box",
+  "driveshaft-1442": "shaft",
+  "fluid-engine": "jug-oil",
+  "fluid-gearbox": "jug-atf",
+  "fluid-coolant": "jug-cool",
+  "fluid-brake": "jug-brake",
+  "fluid-clutch": "jug-clutch",
+  "kinetic-body": "body",
+  "loom-1442": "sheet",
+  "fuse-91064004": "fuse",
+  "strip-91064006": "strip",
+  "ss-510": "taillamp",
+  headlamps: "lamp",
+  "horn-s10": "horn",
+  "fan-motor": "fan",
+  tires: "tire",
+  "wheel-adp": "plate",
+  heims: "heim",
+  "tie-rods": "tierod",
+  "steer-shafts": "shaft",
+  "an-lines": "hose",
+  "wc-37625": "cyl",
+  "brk-4131206": "gauge",
+  "clutch-fork": "fork",
+  "bucks-15530202": "mystery",
+  "clutch-385": "clutch",
+  "vbelt-257417": "belt",
+  "seals-tim": "seal",
+  "fuel-hardware": "hose",
+  "heater-hose": "hose",
+  "an12-spruce": "fitting",
+  "tube-4130": "tube",
+  "an8-bolts": "bolts",
+  "huntsville-steel": "steel",
+  por15: "paint",
+  "weld-supply": "spool",
+  "exhaust-bends": "bend",
+  "patriot-pipes": "pipes",
+  "hood-straps": "strap",
+  "screen-glass": "glass",
+};
+
+/** where / when / order / item / price — invoice figures only */
+const CAT_PLACES = {
+  "poly-135": [
+    { where: "Not a bought part", when: "On the upper wishbone CAD", order: "IMG_5795", item: "Handwritten 135 POLY .175 or TOP", price: "No price" },
+  ],
+  "sw-91008015": [
+    { where: "Speedway Motors", when: "18 May 2008", order: "E299258 / 3593107", item: "4 BAR BUSH/SLEEVES FOR 1/2", price: "$24.99" },
+  ],
+  "sw-91008051": [
+    { where: "Speedway Motors", when: "18 May 2008", order: "E299258 / 3593107", item: "Stainless 4-bar end RH ×5", price: "$14.99 ea · $74.95" },
+    { where: "Speedway Motors", when: "18 May 2008", order: "same order", item: "Jam nuts 175-6046-RH, 6/pack", price: "$3.99" },
+  ],
+  "napa-33813": [
+    { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "NAPA cash ticket", item: "UP CM ASSY", price: "net $47.61" },
+  ],
+  "napa-10269": [
+    { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "same ticket as 33813", item: "FRT BALL JNT", price: "net $15.33" },
+  ],
+  "napa-10390": [
+    { where: "Burton Auto Supply, Trinity", when: "27 May 2008", order: "PO 55251", item: "MRC BALL JNT ×2", price: "net $24.09 ea · $48.18" },
+  ],
+  "lower-wishbone": [
+    { where: "Built on chassis 1442", when: "Owner CAD, FINAL MOD", order: "IMG_5801", item: "1/4 in plate, not a purchased arm", price: "No arm price" },
+  ],
+  "upper-wishbone": [
+    { where: "Built on chassis 1442", when: "Owner CAD", order: "IMG_5795", item: "1/4 in plate upper", price: "No arm price" },
+  ],
+  "qa1-ur4855p": [
+    { where: "Speedway Motors", when: "5 Sep 2008", order: "E328813", item: "721485-225 QA1 12 in kit, 225 lb", price: "$399.99" },
+    { where: "Speedway Motors", when: "5 Sep 2008", order: "E328813", item: "721485-300 QA1 12 in kit, 300 lb", price: "$399.99" },
+    { where: "Speedway Motors", when: "6 Sep 2008", order: "3532414", item: "Shocks 721-4855 ×4, Carrera 25510225 and 25510325", price: "order $821.76" },
+  ],
+  "qa1-b6031k": [
+    { where: "QA1 — named on the Ultra Ride sheet", when: "Not a separate invoice", order: "IMG_5761 / IMG_5847", item: "Eye rebuild kit, two-piece urethane", price: "No price in the folder" },
+  ],
+  "trailing-bush": [
+    { where: "Not a bought bush", when: "On the trailing-rod CAD", order: "IMG_5799", item: "Width 1.06 in only. No brand.", price: "No price" },
+  ],
+  panhard: [
+    { where: "Built on chassis 1442", when: "Dimensioned photo", order: "IMG_5802", item: "18.36 in ball to ball", price: "No bar price" },
+  ],
+  "wilwood-mc": [
+    { where: "Speedway Motors", when: "1 Mar 2010", order: "E472885 / 3308961", item: "835-2607563 Wilwood 1 in tandem", price: "$121.99" },
+  ],
+  "jegs-rad": [
+    { where: "JEGS", when: "Aug 2008", order: "098828080208", item: "055551962 aluminum radiator −12AN", price: "$299.99" },
+    { where: "JEGS", when: "Aug 2008", order: "same invoice, box 1", item: "Filler 055553040, fittings 055553082 ×2, drain 071063700", price: "box $119.20" },
+    { where: "JEGS", when: "5 Aug 2008", order: "098827080208", item: "04001110 / 400-110 12 in fan with thermostat", price: "$141.99 · box $144.24" },
+  ],
+  "gm-30": [
+    { where: "Buck's Engines, Lubbock", when: "23 Oct 2007 note", order: "IMG_5809", item: "VORTEC 3.0 LITER. Flywheel handwritten 270.00. No engine total.", price: "No engine total" },
+    { where: "Buck's Engines", when: "21 Mar 2008", order: "P015582B", item: "Pilot 3914000 and T/O 614018", price: "$3.00 and $15.50" },
+    { where: "AutoStar / Reliable, Huntsville", when: "26 Mar 2008", order: "REF 0000202137", item: "AWS 04-065 clutch kit", price: "cost $103.39" },
+    { where: "AutoStar / Reliable", when: "26 Mar 2008", order: "same ticket", item: "MTM 140052 flywheel bolts", price: "cost $5.69" },
+    { where: "eBasicPower", when: "9 Mar 2010", order: "82085", item: "OSCM04-GH $7.00 and DET59565AS $30.95", price: "order $50.95" },
+  ],
+  "napa-37728": [
+    { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "page 2 of the $213.99 ticket", item: "UP CLU SLAV", price: "net $32.57" },
+  ],
+  "gearbox-1442": [
+    { where: "No vendor in the folder", when: "CAD label only", order: "IMG_5797", item: "TRANSMISSION REAR FLANGE. S10 5-speed was a candidate, not a receipt.", price: "No price" },
+  ],
+  "driveshaft-1442": [
+    { where: "Northwest Drivetrain, Houston", when: "Shop note, no invoice", order: "713-937-8499", item: "11432 FM 529. Ride length ~27.25 in.", price: "No shaft price" },
+  ],
+  "fluid-engine": [{ where: "No oil purchase", when: "—", order: "—", item: "Grade and capacity are not on a ticket", price: "No price" }],
+  "fluid-gearbox": [{ where: "No gearbox-oil purchase", when: "—", order: "—", item: "No ATF or gear oil on a ticket", price: "No price" }],
+  "fluid-coolant": [{ where: "No coolant purchase", when: "—", order: "—", item: "Radiator was bought. Coolant was not.", price: "No price" }],
+  "fluid-brake": [{ where: "No brake-fluid purchase", when: "—", order: "—", item: "Wilwood master was bought. DOT grade was not.", price: "No price" }],
+  "fluid-clutch": [{ where: "No clutch-fluid purchase", when: "—", order: "—", item: "Slave 37728 was bought. Fluid was not.", price: "No price" }],
+  "kinetic-body": [
+    { where: "Kinetic Vehicles, Creswell OR", when: "5 Jun 2008", order: "Invoice 91", item: "bf01s TTL nose $189, bf04s superscuttle $189", price: "order $459.16" },
+    { where: "Kinetic Vehicles", when: "Sold 2 Feb 2011, shipped 13 May 2011", order: "Invoice 406", item: "bf05s ×2 $240, bf05f ×2 $60, bw01n $150 + $10", price: "order $535.09" },
+  ],
+  "loom-1442": [
+    { where: "Builder drawing", when: "In the L7 folder", order: "IMG_5759", item: "Not a purchased harness", price: "No price" },
+  ],
+  "fuse-91064004": [
+    { where: "Speedway Motors", when: "12 Apr 2010", order: "E490308 / 3001472", item: "7 FUSE BLOCK", price: "$9.99" },
+  ],
+  "strip-91064006": [
+    { where: "Speedway Motors", when: "12 Apr 2010", order: "E490308 / 3001472", item: "8 TERMINAL STRIP ×2", price: "$4.99 ea · $9.98" },
+  ],
+  "ss-510": [
+    { where: "Irving Levine Automotive", when: "16 Feb 2011", order: "04-647641", item: "SS 510 tail lamp ×2", price: "$46.99 ea · order $103.93" },
+  ],
+  headlamps: [
+    { where: "Drawn on the loom", when: "No lamp invoice", order: "IMG_5759", item: "Circles on the LIGHTS block. No SKU.", price: "No price" },
+  ],
+  "horn-s10": [
+    { where: "1988 S10 reference sheet", when: "Printed 13 Oct 2009", order: "IMG_5818", item: "Horn circuit diagram, not a horn purchase", price: "No price" },
+  ],
+  "fan-motor": [
+    { where: "Labeled on the loom", when: "No motor invoice", order: "IMG_5759", item: "The cooling fan that was bought is JEGS 400-110", price: "No separate motor price" },
+  ],
+  tires: [
+    { where: "Size on the geometry sheet", when: "No tire invoice", order: "IMG_5803", item: "P205/75R14. A later size lives in the workshop log if you wrote one.", price: "No price" },
+  ],
+  "wheel-adp": [
+    { where: "ezAccessory.com", when: "19 May 2008", order: "25124", item: "54755-54775 pair, 2 in, 12×1.5, S10 4.75", price: "$84.95 · order $99.63" },
+  ],
+  heims: [
+    { where: "Speedway Motors", when: "1 Mar 2010", order: "E472885 / 3308961", item: "117-0720 ×1 and 175-0200 ×4", price: "$7.99 and $15.96" },
+    { where: "Speedway Motors", when: "12 Apr 2010", order: "E490308 / 3001472", item: "175-0203 ×2, 175-0200 ×2, 175-0100 ×2", price: "$3.99 ea" },
+  ],
+  "tie-rods": [
+    { where: "Auto Extra / Reliable, Huntsville", when: "20 Apr 2009", order: "REF 0000251632", item: "MET AXE52033RLT ×2, printed 1989 Chevy C/K", price: "cost $9.75 ea · pay $21.11" },
+  ],
+  "steer-shafts": [
+    { where: "United Machine Works, New Waverly", when: "20 Apr 2009", order: "17299 / shipment 14401", item: "Two steering shafts modified", price: "$150.00 cash" },
+  ],
+  "an-lines": [
+    { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "Brake line, AN3/AN4 fittings, switch 91031305, cap 6175021, fuel line 91011429-10", price: "order $255.84" },
+    { where: "Speedway Motors", when: "14 May 2010", order: "E502605", item: "18 in AN3 line, clamps, 90° bulkhead", price: "order $50.98" },
+    { where: "Speedway Motors", when: "12 May 2010", order: "3436674 exchange", item: "617-2770 ×2 and 617-2911 banjo", price: "pay $21.41" },
+  ],
+  "wc-37625": [
+    { where: "Burton Auto Supply, Trinity", when: "27 May 2008", order: "PO 55251", item: "WC ASSY ×2", price: "net $5.90 ea · $11.80" },
+  ],
+  "brk-4131206": [
+    { where: "Burton Auto Supply, Trinity", when: "13 May 2010", order: "cash ticket", item: "413-1206 brake line ×2", price: "net $4.89 ea · $9.78" },
+    { where: "Burton Auto Supply, Trinity", when: "13 May 2010", order: "same ticket", item: "HR-1 gauge", price: "net $13.93 · ticket $25.73" },
+  ],
+  "clutch-fork": [
+    { where: "Buck's Engines, Lubbock", when: "21 Mar 2008", order: "P015582B", item: "15592270 clutch fork", price: "$10.00" },
+    { where: "Buck's Engines, Lubbock", when: "21 Mar 2008", order: "P015582B", item: "15592268 ball stud", price: "$7.00" },
+  ],
+  "bucks-15530202": [
+    { where: "Buck's Engines, Lubbock", when: "21 Mar 2008", order: "P015582B", item: "Printed description IRRIGATION", price: "$219.83" },
+  ],
+  "clutch-385": [
+    { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "page 2 with the slave", item: "CLU REP KIT ×2", price: "net $5.50 ea · $11.00" },
+  ],
+  "vbelt-257417": [
+    { where: "Burton Auto Supply, Trinity", when: "28 Mar 2008", order: "~902206", item: "25-7417 V-belt", price: "net $12.93 · ticket $21.25" },
+  ],
+  "seals-tim": [
+    { where: "AutoStar / Reliable", when: "27 Mar 2008", order: "REF 0000202239", item: "TIM 96138 and TIM 7412S", price: "pay $10.15" },
+    { where: "AutoStar / Reliable", when: "27 Mar 2008", order: "REF 0000202238", item: "TIM 21043 and TIM 6510", price: "pay $21.30" },
+  ],
+  "fuel-hardware": [
+    { where: "Burton Auto Supply, Trinity", when: "30 Dec 2010", order: "cash ticket", item: "H-176 ×5, hose end 05705B-C02, CL1 ×4, choke 732-1153", price: "ticket $34.12" },
+    { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "1/4 in aluminum fuel line 91011429-10 and cap 6175021", price: "$8.99 and $24.99" },
+  ],
+  "heater-hose": [
+    { where: "Auto Plus / Reliable", when: "23 Jun 2011", order: "REF 0000403749", item: "GAT 28432 ×2, TDL 5216 ×2, MTM terminals", price: "pay $10.11" },
+  ],
+  "an12-spruce": [
+    { where: "Aircraft Spruce", when: "11 May 2009", order: "701046 / 777986", item: "AN833-12D $15.75, AN821-12D $9.30, AN924-12D $3.35, washers $0.70", price: "shipped $31.46" },
+  ],
+  "tube-4130": [
+    { where: "Aircraft Spruce", when: "21 Jun 2008", order: "360663", item: "03-06000-4 4130 7/8×.188 ×4 ft ×5", price: "$150.00 · HW $169.90" },
+    { where: "Aircraft Spruce", when: "10 Feb 2011", order: "326472", item: "03-01500-4 4130 3/8×.065 ×4 ft ×5", price: "$60.00" },
+    { where: "Aircraft Spruce", when: "21 Jun 2008", order: "360784", item: "03-34510 aluminum sheet .050 ×2", price: "$279.90" },
+  ],
+  "an8-bolts": [
+    { where: "Aircraft Spruce", when: "23 May 2008", order: "819998", item: "20 nuts, 2 AN8-25A, 40 washers", price: "paid $48.39" },
+    { where: "Aircraft Spruce", when: "27 May 2008", order: "475025 backorder", item: "18 AN8-25A", price: "$34.92" },
+    { where: "Aircraft Spruce", when: "4 Mar 2010", order: "709785", item: "10 nuts and 10 AN8-25A", price: "paid $46.15" },
+  ],
+  "huntsville-steel": [
+    { where: "Huntsville Steel", when: "3 Dec 2007", order: "1322968", item: "1×1×16 ga ×336 ft and 1×1×14 ga ×144 ft", price: "$264.48" },
+    { where: "Huntsville Steel", when: "1 Nov 2007", order: "1322661", item: "Cold-roll, rec tubing, flat", price: "$73.30" },
+    { where: "Huntsville Steel", when: "4 Jan 2008", order: "1323276", item: "1-1/2 angle, flat, 3/4 black pipe", price: "$69.50" },
+    { where: "Huntsville Steel", when: "20 Jun 2008", order: "1325050", item: "1-3/4×14 ga tube and 1/2×3 flat", price: "$52.56" },
+    { where: "Huntsville Steel", when: "27 Jun 2008", order: "1325106", item: "Sheet metal ×2", price: "$124.06" },
+  ],
+  por15: [
+    { where: "POR-15", when: "17 Feb 2010", order: "3319347 / 230480A", item: "1GB black $143, MRQ $16.50, SVQ ×2 $23.50", price: "order $195.75" },
+  ],
+  "weld-supply": [
+    { where: "AOC Welding Supply, Huntsville", when: "18 May 2010", order: "345405", item: "4043 aluminum, ER70S-6, cutoff wheels, Weiler discs", price: "$69.61" },
+  ],
+  "exhaust-bends": [
+    { where: "Speedway Motors", when: "21 Jun 2008", order: "E3082433", item: "91013670 1-1/2 in ×4 @ $12.99", price: "$51.96" },
+    { where: "Speedway Motors", when: "21 Jun 2008", order: "E3082433", item: "91013874 2 in ×1. “NO.” is written on the 1-1/2 in line.", price: "$14.99 · order $81.78" },
+  ],
+  "patriot-pipes": [
+    { where: "Patriot Exhaust — instruction sheet only", when: "Sheet dated 07/04", order: "IMG_5826", item: "No kit number and no invoice in the folder", price: "No price" },
+  ],
+  "hood-straps": [
+    { where: "Hot Rod Leather, Novato", when: "14 Feb 2011", order: "16902", item: "DFHS-4 $249 and BP-4 pads $20", price: "order $287.35" },
+    { where: "Hot Rod Leather, Novato", when: "8 Mar 2011", order: "16921", item: "SSGL-4 guide loops", price: "$12 · order $17" },
+  ],
+  "screen-glass": [
+    { where: "Able Glass, Huntsville", when: "29 Jun 2011", order: "W/O 05157111", item: "15-1/2 × 37-1/2, 1/4 green lami", price: "$89.65 · $97.05 with tax" },
+  ],
+};
+
+window.catalogSketch = function catalogSketch(id) {
+  const kind = CAT_KIND[id] || "sheet";
+  const url = window.PART_PHOTOS && window.PART_PHOTOS[kind];
+  if (url) return `<img class="part-photo" alt="" data-model="${kind}" src="${url}" />`;
+  const key = CAT_DRAW[kind] ? kind : kind.startsWith("jug") ? "jug" : "sheet";
+  return (CAT_DRAW[key] || CAT_DRAW.sheet)();
+};
+
+window.catalogPlaces = function catalogPlaces(id) {
+  return CAT_PLACES[id] || [{ where: "Not on a receipt", when: "", order: "", item: "", price: "No price" }];
+};
