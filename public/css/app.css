@@ -479,11 +479,59 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   min-height: 0;
   overflow: hidden;
 }
-.diagram-viz {
-  background: #141914;
-  color: var(--paper);
+.diagram-sheet {
+  display: grid;
+  grid-template-columns: 228px minmax(0, 1fr);
+  height: 100%;
+  min-height: 0;
+  gap: 10px;
+}
+.diagram-key {
+  overflow: auto;
+  background: #10140f;
+  border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px;
+  padding: 8px 0 12px;
+  min-height: 0;
+}
+.key-btn {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 8px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: var(--paper);
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  min-height: 48px;
+  padding: 8px 12px;
+}
+.key-btn span {
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--steel);
+}
+.key-btn b { font-size: 13px; font-weight: 500; }
+.key-btn small {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--steel);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.key-btn.on { background: #241c12; }
+.key-btn.on span, .key-btn.on small { color: var(--amber); }
+.diagram-viz {
+  background: #10140f;
+  color: #2a261f;
+  border-radius: 12px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -505,76 +553,51 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   object-fit: contain;
 }
 .sketch-map { background: transparent; }
-.sketch-map .paper { fill: #141914; stroke: none; }
+.sketch-map .paper { fill: #efe6d2; stroke: #c9bea6; stroke-width: 1; }
+.sketch-map .sheetgrid { fill: url(#sheetgrid); stroke: none; pointer-events: none; }
 .sketch-map line, .sketch-map path, .sketch-map rect, .sketch-map circle, .sketch-map ellipse {
-  stroke: #d9cfb8; stroke-width: 1.6; fill: transparent;
+  stroke: #2a261f; stroke-width: 1.15; fill: none;
 }
 .sketch-map .ink { fill: none; }
-.sketch-map .arm { fill: rgba(47,106,72,0.42); stroke: #6fbf86; stroke-width: 1.8; }
-.sketch-map .rail, .sketch-map .upright, .sketch-map .axle, .sketch-map .block, .sketch-map .head,
-.sketch-map .cover, .sketch-map .bell, .sketch-map .box, .sketch-map .adapter, .sketch-map .shaft,
-.sketch-map .tube, .sketch-map .panel {
-  fill: rgba(47,106,72,0.22); stroke: #6fbf86;
+.sketch-map .arm, .sketch-map .rail, .sketch-map .upright, .sketch-map .axle, .sketch-map .block,
+.sketch-map .head, .sketch-map .cover, .sketch-map .bell, .sketch-map .box, .sketch-map .adapter,
+.sketch-map .shaft, .sketch-map .tube, .sketch-map .panel, .sketch-map .body, .sketch-map .rack,
+.sketch-map .rad, .sketch-map .mc, .sketch-map .fuse, .sketch-map .fuse-cell, .sketch-map .jug,
+.sketch-map .jug-cap, .sketch-map .strip, .sketch-map .relay, .sketch-map .coil-can, .sketch-map .ign-sw,
+.sketch-map .stalk, .sketch-map .horn, .sketch-map .nose, .sketch-map .scuttle, .sketch-map .tub,
+.sketch-map .screen, .sketch-map .lamp, .sketch-map .lamp.tail, .sketch-map .disc circle,
+.sketch-map .bush, .sketch-map .replace ellipse, .sketch-map .replace circle {
+  fill: none;
+  stroke: #2a261f;
 }
-.sketch-map .body, .sketch-map .rack { fill: rgba(138,147,160,0.28); stroke: #b8c0c8; }
-.sketch-map .rad, .sketch-map .mc { fill: rgba(106,50,40,0.4); stroke: #e07a4a; }
-.sketch-map .fuse, .sketch-map .fuse-cell { fill: rgba(217,138,43,0.28); stroke: #d98a2b; }
-.sketch-map .jug { fill: rgba(47,106,72,0.28); stroke: #6fbf86; }
-.sketch-map .jug-cap { fill: rgba(138,147,160,0.4); stroke: #b8c0c8; }
-.sketch-map .strip { fill: rgba(138,147,160,0.35); stroke: #8a93a0; }
-.sketch-map .relay, .sketch-map .coil-can, .sketch-map .ign-sw { fill: rgba(90,100,110,0.45); stroke: #c9d0d6; }
-.sketch-map .stalk { fill: rgba(138,147,160,0.4); stroke: #d9cfb8; }
-.sketch-map .horn { fill: rgba(217,138,43,0.35); stroke: #f0b45a; }
-.sketch-map .nose, .sketch-map .scuttle, .sketch-map .tub { fill: rgba(47,106,72,0.38); stroke: #6fbf86; stroke-width: 1.8; }
-.sketch-map .screen { fill: rgba(135,160,176,0.28); stroke: #a8c0d0; }
-.sketch-map .fender, .sketch-map .hoop, .sketch-map .hose, .sketch-map .loom, .sketch-map .core { stroke: #d9cfb8; fill: none; stroke-width: 2; }
-.sketch-map .ghost-wheel ellipse, .sketch-map .ghost { stroke: #6a7370; stroke-dasharray: 4 3; fill: transparent; }
-.sketch-map .bush, .sketch-map .replace ellipse, .sketch-map .replace circle { fill: rgba(196,90,42,0.55); stroke: #e07a4a; }
-.sketch-map .spring { fill: none; stroke: #b8c0c8; }
-.sketch-map .coil .spring, .sketch-map .coil circle { stroke: #b8c0c8; fill: rgba(138,147,160,0.2); }
-.sketch-map .tire { fill: rgba(18,18,18,0.65); stroke: #8a93a0; stroke-width: 8; }
-.sketch-map .tire-inner { fill: #141914; stroke: #8a93a0; }
-.sketch-map .disc circle { fill: rgba(90,64,52,0.35); }
-.sketch-map .lamp { fill: rgba(242,230,190,0.55); stroke: #f0e6c8; }
-.sketch-map .lamp.tail { fill: rgba(196,90,42,0.45); stroke: #e07a4a; }
-.sketch-map .block-ghost { fill: none; stroke: #6a7370; stroke-dasharray: 5 4; }
-.sketch-map .wire { fill: none; stroke-width: 2.2; }
-.sketch-map .wire-ign { stroke: #6fbf86; }
-.sketch-map .wire-bat { stroke: #d98a2b; }
-.sketch-map .wire-light { stroke: #efe7d6; }
-.sketch-map .wire-gnd { stroke: #8a93a0; }
+.sketch-map .fender, .sketch-map .hoop, .sketch-map .hose, .sketch-map .loom, .sketch-map .core { stroke: #2a261f; fill: none; stroke-width: 1.25; }
+.sketch-map .ghost-wheel ellipse, .sketch-map .ghost, .sketch-map .block-ghost { stroke: #8a8172; stroke-dasharray: 3 3; fill: none; }
+.sketch-map .spring, .sketch-map .coil .spring, .sketch-map .coil circle { fill: none; stroke: #2a261f; }
+.sketch-map .tire, .sketch-map .tire-inner { fill: none; stroke: #2a261f; stroke-width: 1.25; }
+.sketch-map .wire { fill: none; stroke: #2a261f; stroke-width: 1; }
+.sketch-map .wire-bat { stroke-dasharray: 5 3; }
+.sketch-map .wire-light { stroke-dasharray: 1.5 2.5; }
+.sketch-map .wire-gnd { stroke-dasharray: 8 3; }
 .sketch-map .hit { fill: transparent; stroke: none; pointer-events: all; }
 .sketch-map .hot { cursor: pointer; pointer-events: all; }
-.sketch-map .hot path, .sketch-map .hot ellipse, .sketch-map .hot circle, .sketch-map .hot rect {
-  pointer-events: all;
+.sketch-map .hot path, .sketch-map .hot ellipse, .sketch-map .hot circle, .sketch-map .hot rect { pointer-events: all; }
+.sketch-map .hot:hover path, .sketch-map .hot:hover ellipse, .sketch-map .hot:hover circle, .sketch-map .hot:hover rect,
+.sketch-map .hot.on path, .sketch-map .hot.on ellipse, .sketch-map .hot.on circle, .sketch-map .hot.on rect {
+  stroke: #8c4a16;
+  stroke-width: 1.8;
 }
-.sketch-map .hot:hover .arm, .sketch-map .hot:hover .body, .sketch-map .hot:hover .block,
-.sketch-map .hot:hover .nose, .sketch-map .hot:hover .scuttle, .sketch-map .hot:hover .tub,
-.sketch-map .hot:hover .rack, .sketch-map .hot:hover .rad, .sketch-map .hot:hover .tire,
-.sketch-map .hot:hover .panel, .sketch-map .hot:hover .fuse, .sketch-map .hot:hover .lamp,
-.sketch-map .hot:hover .strip, .sketch-map .hot:hover .fuse-cell, .sketch-map .hot:hover .jug {
-  fill: rgba(217,138,43,0.32);
+.sketch-map .leader { stroke: #6d6558; stroke-width: 0.7; fill: none; }
+.sketch-map .pin { fill: none; stroke: #8c4a16; stroke-width: 1; }
+.sketch-map .call, .sketch-map .stamp, .sketch-map .panel-title, .sketch-map .title-note {
+  fill: #2a261f; stroke: none; font-family: "IBM Plex Mono", monospace;
 }
-.sketch-map .hot.on .arm, .sketch-map .hot.on .body, .sketch-map .hot.on .block,
-.sketch-map .hot.on .nose, .sketch-map .hot.on .scuttle, .sketch-map .hot.on .tub,
-.sketch-map .hot.on .rack, .sketch-map .hot.on .rad, .sketch-map .hot.on .tire,
-.sketch-map .hot.on .panel, .sketch-map .hot.on .fuse, .sketch-map .hot.on .lamp,
-.sketch-map .hot.on .strip, .sketch-map .hot.on .fuse-cell, .sketch-map .hot.on .jug,
-.sketch-map .hot.on ellipse, .sketch-map .hot.on circle {
-  fill: rgba(217,138,43,0.42);
-  stroke: #d98a2b;
-  stroke-width: 2.2;
-}
-.sketch-map .leader { stroke: #8a93a0; stroke-width: 1; fill: none; }
-.sketch-map .pin { fill: #d98a2b; stroke: none; }
-.sketch-map .call { fill: #efe7d6; font-size: 11px; font-family: "IBM Plex Mono", monospace; stroke: none; }
-.sketch-map .hot.on .call { fill: #f0b45a; font-weight: 500; }
-.sketch-map .stamp, .sketch-map .panel-title { fill: #6fbf86; font-size: 11px; font-family: "IBM Plex Mono", monospace; stroke: none; }
-.sketch-map .panel-title { font-size: 13px; letter-spacing: 0.14em; }
-.sketch-map .title-note { fill: #8a93a0; font-size: 10px; font-family: "IBM Plex Mono", monospace; stroke: none; letter-spacing: 0.06em; }
+.sketch-map .call { font-size: 11px; }
+.sketch-map .hot.on .call { fill: #8c4a16; font-weight: 500; }
+.sketch-map .stamp, .sketch-map .panel-title { font-size: 11px; letter-spacing: 0.08em; }
+.sketch-map .title-note { font-size: 10px; fill: #5c564c; letter-spacing: 0.04em; }
 .sketch-map .thick { stroke-width: 3.2; }
 .sketch-map .faint { opacity: 0.35; }
-.back-sketch { margin-top: 10px; align-self: flex-start; background: #1a221c; color: var(--paper); }
+.back-sketch { margin: 10px 12px 0; background: transparent; color: var(--paper); border: 1px solid var(--line); }
 
 .tree {
   overflow: auto;
@@ -799,8 +822,14 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
     font-family: var(--mono);
     font-size: 11px;
   }
-  .canvas-wrap.is-diagram { overflow: auto; }
-  .diagram { height: auto; min-height: 280px; overflow: visible; }
+  .canvas-wrap.is-diagram { overflow: hidden; padding: 8px 8px 0; }
+  .diagram { height: 100%; min-height: 0; overflow: hidden; }
+  .diagram-sheet {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(132px, 36%) minmax(0, 1fr);
+    gap: 8px;
+  }
+  .diagram-key { border-radius: 10px; }
   .hint { padding: 0 12px 8px; }
   .float-tag { white-space: normal; max-width: 72vw; }
   .project, .catalog { padding-left: 12px; padding-right: 12px; }

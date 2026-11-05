@@ -380,7 +380,7 @@ function renderStage() {
           : state.view === "project"
           ? "Check a step when you have tried it · Sketch takes you back to the car"
           : state.view === "diagram"
-            ? "Click a branch for that part · Sketch takes you back to the model"
+            ? "Use the numbered list. The drawing is the sheet, not the menu."
             : "Drag gently to turn · click a part to open its diagram";
   }
   renderPicker();
@@ -839,12 +839,28 @@ function bindNoteForms(root) {
 
 function renderDiagram(systemId) {
   const sys = ZO.systems.find((s) => s.id === systemId);
+  const parts = ZO.parts.filter((p) => p.system === systemId);
+  const key = parts
+    .map(
+      (p, i) => `
+      <button type="button" class="key-btn ${p.id === state.part ? "on" : ""}" data-part="${p.id}">
+        <span>${String(i + 1).padStart(2, "0")}</span>
+        <b>${esc(p.name)}</b>
+        <small>${esc(p.pn || "")}</small>
+      </button>`
+    )
+    .join("");
   return `
     <div class="diagram">
-      <div class="diagram-viz">
-        <div class="diagram-kicker">Chassis 1442 · ${esc(sys.name)}</div>
-        ${window.sketchSVG(sys.id, state.part)}
-        <button type="button" class="ghost back-sketch" data-back>Back to sketch</button>
+      <div class="diagram-sheet">
+        <aside class="diagram-key" aria-label="Parts on this sheet">
+          <div class="diagram-kicker">${esc(sys.name)}</div>
+          ${key || `<p class="lede">No parts filed on this sheet.</p>`}
+          <button type="button" class="ghost back-sketch" data-back>Back to the car</button>
+        </aside>
+        <div class="diagram-viz">
+          ${window.sketchSVG(sys.id, state.part)}
+        </div>
       </div>
     </div>`;
 }
@@ -918,11 +934,12 @@ function partBranch(p) {
 
 function highlightBranch(host, id) {
   host.querySelectorAll(".hot").forEach((n) => n.classList.toggle("on", n.dataset.part === id));
+  host.querySelectorAll(".key-btn").forEach((n) => n.classList.toggle("on", n.dataset.part === id));
 }
 
 function bindDiagram(host) {
   host.querySelector("[data-back]")?.addEventListener("click", () => setView("hero"));
-  host.querySelectorAll(".hot[data-part]").forEach((el) => {
+  host.querySelectorAll(".hot[data-part], .key-btn[data-part]").forEach((el) => {
     el.addEventListener("click", (e) => {
       e.stopPropagation();
       const id = el.dataset.part;

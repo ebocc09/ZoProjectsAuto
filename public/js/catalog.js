@@ -206,6 +206,7 @@ const CAT_KIND = {
   "poly-135": "bush",
   "sw-91008015": "bush",
   "sw-91008051": "heim",
+  "mustang-rack": "bar",
   "napa-33813": "arm",
   "napa-10269": "ball",
   "napa-10390": "ball",
@@ -234,6 +235,15 @@ const CAT_KIND = {
   headlamps: "lamp",
   "horn-s10": "horn",
   "fan-motor": "fan",
+  "flex-fan-210": "fan",
+  "loom-colors": "sheet",
+  "gauges-drawn": "gauge",
+  "led-blinkers": "lamp",
+  "ss-carb-notes": "sheet",
+  "residual-valves": "fitting",
+  "prop-valve": "fitting",
+  "side-exhaust-60": "pipes",
+  "seats-upholstery": "sheet",
   tires: "tire",
   "wheel-adp": "plate",
   heims: "heim",
@@ -275,6 +285,14 @@ const CAT_PLACES = {
   "sw-91008051": [
     { where: "Speedway Motors", when: "18 May 2008", order: "E299258 / 3593107", item: "Stainless 4-bar end RH ×5", price: "$14.99 ea · $74.95" },
     { where: "Speedway Motors", when: "18 May 2008", order: "same order", item: "Jam nuts 175-6046-RH, 6/pack", price: "$3.99" },
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896 / 3773204", item: "91008051-STR ×8", price: "$14.99 ea · $119.92" },
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91001156 stainless jam nut 5/8 RH ×10", price: "$2.99 ea · $29.90" },
+  ],
+  "mustang-rack": [
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896 / 3773204", item: "91034340-MAN manual Mustang II rack", price: "$129.99" },
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91034342-2 bolt kit", price: "$6.99" },
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91034341 mounting bushing ×2", price: "$8.99 ea · $17.98" },
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91002126 moly heim 5/8-18 ×2", price: "$20.99 ea · $41.98" },
   ],
   "napa-33813": [
     { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "NAPA cash ticket", item: "UP CM ASSY", price: "net $47.61" },
@@ -307,6 +325,9 @@ const CAT_PLACES = {
   ],
   "wilwood-mc": [
     { where: "Speedway Motors", when: "1 Mar 2010", order: "E472885 / 3308961", item: "835-2607563 Wilwood 1 in tandem", price: "$121.99" },
+  ],
+  "flex-fan-210": [
+    { where: "Instruction sheet only", when: "rev 05-02-08", order: "Form 99876", item: "Model 210 underlined. Dual puller with thermostatic control. Optional switch 31148.", price: "No price" },
   ],
   "jegs-rad": [
     { where: "JEGS", when: "Aug 2008", order: "098828080208", item: "055551962 aluminum radiator −12AN", price: "$299.99" },
@@ -351,7 +372,19 @@ const CAT_PLACES = {
     { where: "Irving Levine Automotive", when: "16 Feb 2011", order: "04-647641", item: "SS 510 tail lamp ×2", price: "$46.99 ea · order $103.93" },
   ],
   headlamps: [
-    { where: "Drawn on the loom", when: "No lamp invoice", order: "IMG_5759", item: "Circles on the LIGHTS block. No SKU.", price: "No price" },
+    { where: "Demon's Cycle, Pompano Beach", when: "10 Feb 2011", order: "12082739", item: "Bobber chrome headlight with visor ×2, listed Harley-Davidson", price: "$38.99 ea · $77.98" },
+  ],
+  "led-blinkers": [
+    { where: "Demon's Cycle, Pompano Beach", when: "10 Feb 2011", order: "12082739", item: "Mini motorcycle LED blinkers, amber diamond, qty 1 line", price: "$23.99 · invoice $101.97" },
+  ],
+  "loom-colors": [
+    { where: "Builder sheets", when: "In the L7-1 set", order: "IMG_5943 / IMG_5951", item: "Handwritten colors and a typed TS-1 / TS-2 list. They do not match letter for letter.", price: "No price" },
+  ],
+  "gauges-drawn": [
+    { where: "Builder drawing", when: "IMG_5952", order: "No brand", item: "Voltage, water temp, oil pressure, gas, tach", price: "No price" },
+  ],
+  "ss-carb-notes": [
+    { where: "Printout, not a receipt", when: "11 Nov 2009", order: "S&S parts page", item: "Circled needle 11-2195 and seat 11-2465 only", price: "No price" },
   ],
   "horn-s10": [
     { where: "1988 S10 reference sheet", when: "Printed 13 Oct 2009", order: "IMG_5818", item: "Horn circuit diagram, not a horn purchase", price: "No price" },
@@ -385,6 +418,13 @@ const CAT_PLACES = {
   ],
   "wc-37625": [
     { where: "Burton Auto Supply, Trinity", when: "27 May 2008", order: "PO 55251", item: "WC ASSY ×2", price: "net $5.90 ea · $11.80" },
+  ],
+  "residual-valves": [
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91031347 residual valve, 10 psi", price: "$14.99" },
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91031345 residual valve, 2 psi", price: "$14.99" },
+  ],
+  "prop-valve": [
+    { where: "Speedway Motors", when: "8 Jun 2008", order: "E304896", item: "91031355 knob proportioning valve", price: "$32.99" },
   ],
   "brk-4131206": [
     { where: "Burton Auto Supply, Trinity", when: "13 May 2010", order: "cash ticket", item: "413-1206 brake line ×2", price: "net $4.89 ea · $9.78" },
@@ -452,6 +492,12 @@ const CAT_PLACES = {
   ],
   "patriot-pipes": [
     { where: "Patriot Exhaust — instruction sheet only", when: "Sheet dated 07/04", order: "IMG_5826", item: "No kit number and no invoice in the folder", price: "No price" },
+  ],
+  "side-exhaust-60": [
+    { where: "Speedway Motors", when: "2 Aug 2008", order: "E318856 / 3259516", item: "91013460 chrome side exhaust, 60 in", price: "$172.99 · ship $31 · total $203.99" },
+  ],
+  "seats-upholstery": [
+    { where: "The Upholstery Room, Huntsville", when: "23 Feb 2011", order: "Handwritten invoice", item: "2 seats, labor and padding. Wave / Solar Fleece, black.", price: "$525 · tax $43.31 · $568.31. Deposit $200, balance $368.31" },
   ],
   "hood-straps": [
     { where: "Hot Rod Leather, Novato", when: "14 Feb 2011", order: "16902", item: "DFHS-4 $249 and BP-4 pads $20", price: "order $287.35" },

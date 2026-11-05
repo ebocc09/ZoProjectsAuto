@@ -516,7 +516,13 @@ window.sketchSVG = function sketchSVG(systemId, activePart) {
   const h = BOX.h;
   return `
     <svg class="branch-map sketch-map" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img">
+      <defs>
+        <pattern id="sheetgrid" width="16" height="16" patternUnits="userSpaceOnUse">
+          <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#d9d0ba" stroke-width="0.35" />
+        </pattern>
+      </defs>
       <rect class="paper" x="0" y="0" width="${w}" height="${h}" />
+      <rect class="sheetgrid" x="0" y="0" width="${w}" height="${h}" />
       ${inner}
     </svg>`;
 };

@@ -56,11 +56,11 @@ window.ZO = {
     {
       id: "steering",
       name: "Steering",
-      short: "Track rod, spindle, shafts",
+      short: "Mustang II rack, spindles, shafts",
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "Custom spindle/knuckle. Castings read on the parts: right 459756, left 459755, G-body / 2WD S10 family, not on an invoice. 14.820 in track rod, steering arm 6.479 in. United Machine Works modified two steering shafts 20 Apr 2009 for $150 cash."
+        "Speedway manual Mustang II rack 91034340-MAN, 8 Jun 2008, with its bolt kit and mounting bushes. Custom spindle/knuckle. Castings read on the parts: right 459756, left 459755, G-body / 2WD S10 family, not on an invoice. 14.820 in track rod, steering arm 6.479 in. United Machine Works modified two steering shafts 20 Apr 2009 for $150 cash."
     },
     {
       id: "rear-suspension",
@@ -78,7 +78,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "Wilwood 1 in tandem 260-7563. Speedway AN3/AN4 plumbing on E499097 ($255.84) includes pressure switch 91031305. NAPA wheel cylinders 37625, brake line 413-1206, gauge HR-1. Front calipers were read on the car, not on a receipt: passenger GM 19141004 and driver GM 19141005, single-piston S10 1983–1997. 19141914 is a rear number. Right spindle casting 459756, left 459755."
+        "Wilwood 1 in tandem 260-7563. Speedway AN3/AN4 plumbing on E499097 ($255.84) includes pressure switch 91031305. Same June 2008 Speedway order as the Mustang II rack also bought a 10 psi residual valve, a 2 psi residual valve, and a knob proportioning valve. NAPA wheel cylinders 37625, brake line 413-1206, gauge HR-1. Front calipers were read on the car, not on a receipt: passenger GM 19141004 and driver GM 19141005, single-piston S10 1983–1997. 19141914 is a rear number. Right spindle casting 459756, left 459755."
     },
     {
       id: "engine",
@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700, 12 in fan 400-110. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700, 12 in fan 400-110. A separate Flex-a-lite puller-fan instruction sheet is in the folder with model 210 underlined — no Flex-a-lite invoice. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011."
     },
     {
       id: "driveline",
@@ -128,20 +128,20 @@ window.ZO = {
     {
       id: "body",
       name: "Body",
-      short: "Kinetic TTL nose, steamrollers",
+      short: "Kinetic body, two black seats",
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "Kinetic nose, scuttle, steamroller fenders, windshield kit. Able Glass 15-1/2×37-1/2 green lami. Hot Rod Leather DFHS-4 plus SSGL-4 loops. Patriot side-pipe instructions (no invoice). Speedway exhaust bends 91013670 / 91013874, with “NO.” written on the 1-1/2 in line."
+        "Kinetic nose, scuttle, steamroller fenders, windshield kit. Able Glass 15-1/2×37-1/2 green lami. Hot Rod Leather DFHS-4 plus SSGL-4 loops. Two seats from The Upholstery Room, Huntsville, 23 Feb 2011: Wave / Solar Fleece, black, labor and padding $525. Patriot side-pipe instructions still have no invoice. Speedway chrome side exhaust 91013460, 60 in, was bought 2 Aug 2008. Exhaust bends 91013670 / 91013874, with “NO.” written on the 1-1/2 in line."
     },
     {
       id: "electrical",
       name: "Electrical",
-      short: "7-fuse 910-64004, 8-term strips, SS 510",
+      short: "7-fuse, color code, Flex fan sheet",
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "Hand-drawn loom with engine, lights, steering column, and firewall blocks. Speedway 7-fuse block 910-64004 and two 8-terminal strips 910-64006 bought 12 Apr 2010. 1988 S10 horn circuit used as a reference. Tail lamps Irving Levine SS 510."
+        "Hand-drawn loom with engine, lights, steering column, and firewall blocks. Speedway 7-fuse block 910-64004 and two 8-terminal strips 910-64006 bought 12 Apr 2010. A later firewall drawing writes 30A on the fuse positions. The builder’s color code and TS-1 / TS-2 terminal list are on IMG_5943 and IMG_5951, and those two sheets do not use the same letters for the same jobs. Tail lamps Irving Levine SS 510. Headlamps and amber LED blinkers were bought from Demon’s Cycle, 10 Feb 2011, with no numeric SKU."
     },
     {
       id: "wheels",
@@ -207,11 +207,16 @@ window.ZO = {
       system: "front-suspension",
       role: "Threaded 4-bar / radius-rod end",
       status: "ok",
-      confidence: "Purchased 18 May 2008 — qty 5 @ $14.99",
-      qty: "5",
-      spec: [{ k: "Thread family", v: "Speedway 5/8 4-bar end, RH" }, { k: "Bush", v: "Takes 910-08015 1/2 in kit" }],
-      notes: "Five ends on one order. A Seven has four front inner pivots plus spares, or these were split between front and rear bars.",
-      evidence: ["IMG_5882", "IMG_5883"]
+      confidence: "Purchased 18 May 2008 — qty 5 @ $14.99. Another 8 on 8 Jun 2008.",
+      qty: "5 + 8",
+      spec: [
+        { k: "Thread family", v: "Speedway 5/8 4-bar end, RH" },
+        { k: "Bush", v: "Takes 910-08015 1/2 in kit" },
+        { k: "8 Jun 2008", v: "91008051-STR ×8 @ $14.99 on E304896, with the Mustang II rack" },
+        { k: "Jam nuts, same order", v: "91001156 stainless 5/8 RH ×10 @ $2.99" }
+      ],
+      notes: "Five ends on the May order, eight more on the June rack order. A Seven has four front inner pivots plus spares, or these were split between front and rear bars.",
+      evidence: ["IMG_5882", "IMG_5883", "IMG_5930", "IMG_5931"]
     },
     {
       id: "napa-33813",
@@ -381,9 +386,15 @@ window.ZO = {
       status: "ok",
       confidence: "Purchased 1 Mar 2010 — $121.99",
       qty: "1",
-      spec: [],
-      notes: "Speedway 835-2607563. Pedal box from BYOSC PB1–PB4 plates, holes to suit master.",
-      evidence: ["IMG_5884", "IMG_5790", "IMG_5785", "IMG_5792"]
+      spec: [
+        { k: "Instruction sheet", v: "1 in tandem with remote reservoirs, PN 260-7563" },
+        { k: "Overall on the sheet", v: "11.53 in (299.9 mm)" },
+        { k: "Pushrod stroke", v: "1.10 in (27.9 mm)" },
+        { k: "Outlets", v: "3/16 tube, inverted female flare" },
+        { k: "Mount hole", v: "0.34 in diameter (8.6 mm), printed on the sheet" }
+      ],
+      notes: "Speedway 835-2607563. Pedal box from BYOSC PB1–PB4 plates, holes to suit master. The dimensioned instruction sheet is IMG_5934. The rest of the mounting figure is on that page.",
+      evidence: ["IMG_5884", "IMG_5790", "IMG_5785", "IMG_5792", "IMG_5933", "IMG_5934"]
     },
     {
       id: "jegs-rad",
@@ -400,7 +411,8 @@ window.ZO = {
         { k: "Core", v: "13-1/2 × 18-5/8 in" },
         { k: "Fittings", v: "555-530082 −12AN × 1.25 in, qty 2" },
         { k: "Filler", v: "555-530400 1.25×1.25" },
-        { k: "Fan", v: "400-110 / 04001110 12 in low-profile with thermostat" },
+        { k: "Fan on this invoice", v: "400-110 / 04001110 12 in low-profile with thermostat" },
+        { k: "Not this fan", v: "Flex-a-lite 210 is a different sheet, with no invoice" },
         { k: "Hose drain", v: "071063700 radiator hose drain — $17.99, same JEGS invoice" }
       ],
       notes: "",
@@ -425,10 +437,13 @@ window.ZO = {
         { k: "Flywheel bolts", v: "MTM 140052" },
         { k: "Fork / ball stud", v: "15592270 / 15592268" },
         { k: "Returned clutch", v: "C1909-XL082Y + D80132-XL226C" },
-        { k: "Repair kits", v: "NAPA 385 ×2 (CLU REP KIT)" }
+        { k: "Repair kits", v: "NAPA 385 ×2 (CLU REP KIT)" },
+        { k: "EPS print", v: "Engine Power Source GM 3.0L L4 industrial sheet, dated 11/26/2007" },
+        { k: "Written on that print", v: "83–84 4 speed. Melling valve spring VS-380. South Carolina. 1-800-374-7522." },
+        { k: "Clutch parcel", v: "Office Depot to Buck's Engines, 27 Mar 2008, marked auto clutch, 32.75 lb" }
       ],
-      notes: "Flywheel face machined 0.125 in, 9 holes drilled/tapped 5/16-18 × 1 in for the pressure plate.",
-      evidence: ["IMG_5809", "IMG_5807", "IMG_5793", "IMG_5871", "IMG_5863"]
+      notes: "Flywheel face machined 0.125 in, 9 holes drilled/tapped 5/16-18 × 1 in for the pressure plate. The EPS sheet is a printout in the folder, not a measurement of this engine. An S&S Super E/G article is also in the folder and is not an invoice.",
+      evidence: ["IMG_5809", "IMG_5807", "IMG_5793", "IMG_5871", "IMG_5863", "IMG_5929", "IMG_5957"]
     },
     {
       id: "napa-37728",
@@ -631,8 +646,8 @@ window.ZO = {
         { k: "Where", v: "FIREWALL block on IMG_5759" }
       ],
       notes:
-        "Bought with two 8-terminal strips on the same Speedway order. The loom sheet draws the block in the firewall, with relays beside it. Amp ratings per slot are not written on the sheet — read the blades on the car before you restock.",
-      evidence: ["IMG_5862", "IMG_5860", "IMG_5759"]
+        "Bought with two 8-terminal strips on the same Speedway order. The first loom sheet does not list amps. IMG_5955, the later firewall drawing, writes 30A on the fuse positions that are readable. Read the blades on the car before you restock — the drawing and the blades can disagree.",
+      evidence: ["IMG_5862", "IMG_5860", "IMG_5759", "IMG_5955"]
     },
     {
       id: "strip-91064006",
@@ -672,16 +687,16 @@ window.ZO = {
     {
       id: "headlamps",
       name: "Headlamps",
-      pn: "On the loom sheet — no SKU in the folder",
-      brand: "Drawn, not invoiced",
+      pn: "Bobber chrome with visor — no numeric SKU",
+      brand: "Demon's Cycle",
       system: "electrical",
-      role: "Front lamps",
-      status: "watch",
-      confidence: "Circles on the Lights block only",
+      role: "Front lamps, invoice says Harley-Davidson fitment",
+      status: "ok",
+      confidence: "Invoice 12082739, 10 Feb 2011 — qty 2 @ $38.99",
       qty: "2",
       spec: [{ k: "Source", v: "LIGHTS block on IMG_5759" }],
-      notes: "Do not invent a sealed-beam number. The sheet shows two headlamp circles; buy after you read the buckets on the car.",
-      evidence: ["IMG_5759"]
+      notes: "The loom only draws two headlamp circles. The purchase is Demon’s Cycle invoice 12082739, 10 Feb 2011: Bobber Chrome Headlight with Visor, listed as fitting Harley-Davidson, qty 2 at $38.99. No numeric SKU on the invoice. Handwritten on the page: HEAD + TURN, and OK.",
+      evidence: ["IMG_5759", "IMG_5932", "IMG_5956"]
     },
     {
       id: "horn-s10",
@@ -708,8 +723,105 @@ window.ZO = {
       confidence: "Hand-labeled on IMG_5759",
       qty: "1",
       spec: [{ k: "Sheet block", v: "ENGINE" }],
-      notes: "The cooling order is the JEGS 12 in fan 400-110. This circle on the loom is the electrical feed, not a second fan SKU.",
-      evidence: ["IMG_5759"]
+      notes: "The JEGS order is a 12 in fan 400-110. The Flex-a-lite instruction sheet, model 210 underlined, is a second fan document and has no invoice. This circle on the loom is the electrical feed.",
+      evidence: ["IMG_5759", "IMG_5939", "IMG_5941"]
+    },
+    {
+      id: "flex-fan-210",
+      name: "Flex-a-lite puller fan",
+      pn: "Model 210 underlined",
+      brand: "Flex-a-lite",
+      system: "cooling",
+      role: "Instruction sheet, not an invoice",
+      status: "watch",
+      confidence: "Sheet rev 05-02-08, form 99876. Model 210 is the underlined line.",
+      qty: "sheet",
+      spec: [
+        { k: "110", v: "Single fan with thermostatic control and A/C relay" },
+        { k: "120", v: "Single fan without that control" },
+        { k: "210", v: "Dual fan with thermostatic control and A/C relay — this line is underlined" },
+        { k: "220", v: "Dual fan without that control" },
+        { k: "Optional switch", v: "Flex-a-lite 31148, manual, on the wiring page" },
+        { k: "Motor wire", v: "12 AWG. Control wire on the sheet is 14 AWG." },
+        { k: "Probe", v: "Temperature probe into the radiator fins near the inlet hose" }
+      ],
+      notes: "No price. Do not treat this as the JEGS 400-110. The sheet does not say the fan was installed.",
+      evidence: ["IMG_5939", "IMG_5940", "IMG_5941", "IMG_5942"]
+    },
+    {
+      id: "loom-colors",
+      name: "Loom color code",
+      pn: "Handwritten TS-1 / TS-2",
+      brand: "Builder sheets",
+      system: "electrical",
+      role: "Wire colors and terminal letters",
+      status: "watch",
+      confidence: "IMG_5943 handwriting and IMG_5951 typed list. They do not match letter for letter.",
+      qty: "2 sheets",
+      spec: [
+        { k: "Turn ribbon, as written", v: "White turn common. Lt blue left-front turn. Dk blue right turn. Yellow rear left turn and stop. Dk green rear right turn and stop." },
+        { k: "Also written", v: "White from the brake switch. Brown hazard flasher in. Purple flasher in. Black, green/white, and tan bracketed as horn." },
+        { k: "Gauges on TS-II", v: "Gray oil. Blue water. Yellow tach. Red fuel. Green on the last terminal." },
+        { k: "Typed list", v: "IMG_5951 sends fan, lights, and gauges to TS-1 and TS-2 by letter. Use that page, not this sentence, when you land a wire." },
+        { k: "Column", v: "IMG_5953: lt blue, dk blue, green, yellow, purple, white. Horn bottom. Ignition remote: 12V in, 12V out, ACC, start sol." }
+      ],
+      notes: "Trace the car against the sheet you are holding. Do not average the two lists into one circuit.",
+      evidence: ["IMG_5943", "IMG_5951", "IMG_5952", "IMG_5953", "IMG_5955", "IMG_5956"]
+    },
+    {
+      id: "gauges-drawn",
+      name: "Instrument drawing",
+      pn: "No brand on the sheet",
+      brand: "Builder drawing",
+      system: "electrical",
+      role: "Five gauges, no sender numbers",
+      status: "watch",
+      confidence: "IMG_5952 only",
+      qty: "drawing",
+      spec: [
+        { k: "Drawn", v: "Voltage, water temp, oil pressure, gas, tach" },
+        { k: "Each gauge", v: "12V+, light, ground, sensor" },
+        { k: "Switches drawn", v: "Headlamp off / park, and main off / on / auto" },
+        { k: "Flashers drawn", v: "Turn and hazard" }
+      ],
+      notes: "No gauge brand and no sender part number. The firewall drawing also shows a pressure gauge and does not name it.",
+      evidence: ["IMG_5952", "IMG_5955"]
+    },
+    {
+      id: "led-blinkers",
+      name: "Amber LED blinkers",
+      pn: "Diamond mini motorcycle — no numeric SKU",
+      brand: "Demon's Cycle",
+      system: "electrical",
+      role: "Turn signals, same invoice as the headlights",
+      status: "ok",
+      confidence: "Invoice 12082739, 10 Feb 2011 — $23.99",
+      qty: "1",
+      spec: [
+        { k: "Line", v: "Mini Motorcycle LED Blinkers Turn Signals Amber (Diamond), listed for Harley-Davidson" },
+        { k: "With them", v: "Two bobber headlights. Invoice total $101.97, shipping $0." },
+        { k: "Shop", v: "Demon's Cycle South, 1407 SW 10th Ave, Pompano Beach FL" }
+      ],
+      notes: "The invoice quantity is 1. It does not say how many lamps are in that line.",
+      evidence: ["IMG_5932"]
+    },
+    {
+      id: "ss-carb-notes",
+      name: "S&S Super carb prints",
+      pn: "Circled 11-2195 and 11-2465",
+      brand: "S&S Cycle — printouts, not an invoice",
+      system: "engine",
+      role: "Tuning article and parts page in the folder",
+      status: "watch",
+      confidence: "Printed 11/11/2009. No receipt.",
+      qty: "pages",
+      spec: [
+        { k: "What it is", v: "S&S Super E and Super G tuning pages and a body-parts list" },
+        { k: "Circled on the parts page", v: "Needle 11-2195. Seat 11-2465." },
+        { k: "Mark", v: "“R SIDE” written on one page" }
+      ],
+      notes: "Do not order the rest of that parts page. Nothing here says this carb is on the 3.0.",
+      evidence: ["IMG_5936", "IMG_5937", "IMG_5938", "IMG_5946", "IMG_5947", "IMG_5948", "IMG_5949"]
     },
     {
       id: "tires",
@@ -799,6 +911,27 @@ window.ZO = {
       ],
       notes: "No shaft diameter or spline count is on the ticket.",
       evidence: ["IMG_5810"]
+    },
+    {
+      id: "mustang-rack",
+      name: "Manual Mustang II rack",
+      pn: "91034340-MAN",
+      brand: "Speedway",
+      system: "steering",
+      role: "Rack and pinion, plain manual",
+      status: "ok",
+      confidence: "Order E304896, 8 Jun 2008 — $129.99",
+      qty: "1",
+      spec: [
+        { k: "Rack", v: "91034340-MAN Manual Plain Mustang II Rack & Pinion" },
+        { k: "Bolt kit", v: "91034342-2 Mustang II rack bolt kit — $6.99" },
+        { k: "Mounting bushings", v: "91034341 ×2 @ $8.99" },
+        { k: "Rack-end heims", v: "91002126 chrome moly RH male, 5/8-18 shank, 1/2 in hole ×2 @ $20.99" },
+        { k: "Order", v: "E304896 / packing 3773204. Merchandise $409.73, shipping $28.54, total $438.27" },
+        { k: "Handwriting", v: "“NO6 4HRS” on the email. Meaning is not written out." }
+      ],
+      notes: "These mounting bushes are for the rack, not the wishbone silentblocs. The same order bought eight more 91008051-STR rod ends and ten 91001156 jam nuts.",
+      evidence: ["IMG_5930", "IMG_5931"]
     },
     {
       id: "spindle-459756",
@@ -926,6 +1059,38 @@ window.ZO = {
       ],
       notes: "No price. Pair it with 19141004. Do not use 19141914 — that listing is a rear caliper.",
       evidence: []
+    },
+    {
+      id: "residual-valves",
+      name: "Residual pressure valves",
+      pn: "91031347 / 91031345",
+      brand: "Speedway",
+      system: "brakes",
+      role: "10 psi and 2 psi, same order as the rack",
+      status: "ok",
+      confidence: "Order E304896, 8 Jun 2008",
+      qty: "1 each",
+      spec: [
+        { k: "10 psi", v: "91031347 — $14.99" },
+        { k: "2 psi", v: "91031345 — $14.99" },
+        { k: "Which corner", v: "Not written on the order" }
+      ],
+      notes: "The Wilwood remote-reservoir sheet in the folder talks about residual valves in general. It does not say which of these two went to the disc end or the drum end.",
+      evidence: ["IMG_5930", "IMG_5931", "IMG_5935"]
+    },
+    {
+      id: "prop-valve",
+      name: "Proportioning valve",
+      pn: "91031355",
+      brand: "Speedway",
+      system: "brakes",
+      role: "Knob style",
+      status: "ok",
+      confidence: "Order E304896, 8 Jun 2008 — $32.99",
+      qty: "1",
+      spec: [{ k: "Description", v: "Speedway Proportioning Valve, Knob Style" }],
+      notes: "Bought with the residual valves and the Mustang II rack. The sheet does not say where it is mounted.",
+      evidence: ["IMG_5930", "IMG_5931"]
     },
     {
       id: "clutch-fork",
@@ -1189,6 +1354,49 @@ window.ZO = {
       evidence: ["IMG_5816"]
     },
     {
+      id: "side-exhaust-60",
+      name: "Chrome side exhaust, 60 in",
+      pn: "91013460",
+      brand: "Speedway",
+      system: "body",
+      role: "One 60 in chrome side pipe",
+      status: "ok",
+      confidence: "Order E318856, 2 Aug 2008 — $172.99",
+      qty: "1",
+      spec: [
+        { k: "Description", v: "Chrome Side Exhaust, 60 in Long" },
+        { k: "Packing", v: "3259516, 3 Aug 2008" },
+        { k: "Money", v: "Merchandise $172.99, shipping $31.00, total $203.99" },
+        { k: "Handwriting", v: "OK on the email" }
+      ],
+      notes: "This is a Speedway invoice. It is not the Patriot instruction sheet, which still has no receipt.",
+      evidence: ["IMG_5944", "IMG_5945"]
+    },
+    {
+      id: "seats-upholstery",
+      name: "Seats",
+      pn: "Wave / Solar Fleece, black",
+      brand: "The Upholstery Room, Huntsville",
+      system: "body",
+      role: "Two seats, labor and padding",
+      status: "ok",
+      confidence: "Handwritten invoice 2/23/11",
+      qty: "2",
+      spec: [
+        { k: "Material written", v: "Wave — Solar Fleece" },
+        { k: "Color written", v: "Black" },
+        { k: "Work", v: "Seats, labor and padding — $525.00" },
+        { k: "Tax", v: "$43.31" },
+        { k: "Total", v: "$568.31" },
+        { k: "Deposit", v: "$200.00, balance $368.31" },
+        { k: "Shop", v: "526 11th St, Huntsville TX 77340, 936-435-0211" },
+        { k: "Sold to", v: "James Bowers. Phone on the ship-to line 936-891-7236" },
+        { k: "Under the totals", v: "A handwritten line reads like a through-date of Apr 7. The letters in front of it are tight." }
+      ],
+      notes: "No foam brand, no frame number, and no stitch count beyond what is written here.",
+      evidence: ["IMG_5958"]
+    },
+    {
       id: "patriot-pipes",
       name: "Side-pipe kit",
       pn: "Patriot kit — no SKU on the sheet",
@@ -1321,7 +1529,36 @@ window.ZO = {
     IMG_5896: "Aircraft Spruce AN8-25A backorder",
     IMG_5897: "Aircraft Spruce AN8 bolts, nuts, washers",
     IMG_5899: "AOC welding — 4043, ER70S-6, cutoff wheels",
-    IMG_5902: "POR-15 web confirmation 3319347"
+    IMG_5902: "POR-15 web confirmation 3319347",
+    IMG_5929: "Engine Power Source GM 3.0L L4 print, 11/26/2007, with 83–84 4-speed and VS-380 notes",
+    IMG_5930: "Speedway E304896 — Mustang II rack, residual valves, proportioning valve",
+    IMG_5931: "Speedway packing 3773204 for E304896",
+    IMG_5932: "Demon's Cycle 12082739 — two bobber headlights and amber LED blinkers",
+    IMG_5933: "Wilwood 260-7563 remote-reservoir instruction, page 1",
+    IMG_5934: "Wilwood 260-7563 mounting dimensions",
+    IMG_5935: "Wilwood remote reservoir and residual-valve notes",
+    IMG_5936: "S&S Super carb adjustments, page 1 — not an invoice",
+    IMG_5937: "S&S Super carb adjustments, page 2, marked R SIDE",
+    IMG_5938: "S&S Super carb adjustments, page 3",
+    IMG_5939: "Flex-a-lite 110/120/210/220 instructions, model 210 underlined",
+    IMG_5940: "Flex-a-lite puller fan install, form 99876 page 1",
+    IMG_5941: "Flex-a-lite fan wiring, form 99876 page 2",
+    IMG_5942: "Flex-a-lite fan wiring, form 99876 page 3, probe in the fins",
+    IMG_5943: "Handwritten TS-1 / TS-2 color code over the fan wiring page",
+    IMG_5944: "Speedway E318856 — chrome side exhaust 91013460, 60 in",
+    IMG_5945: "Speedway packing 3259516 for the 60 in side exhaust",
+    IMG_5946: "Carburetor exploded view, page 25, no parts list on this photo",
+    IMG_5947: "S&S jetting chart print, 11/11/2009",
+    IMG_5948: "S&S jetting chart page 2",
+    IMG_5949: "S&S Super E/G parts list, needle 11-2195 and seat 11-2465 circled",
+    IMG_5950: "Coldspring shop form for 4961 Old Staley — no part lines",
+    IMG_5951: "Typed terminal list — fan, lights, and gauges to TS-1 and TS-2",
+    IMG_5952: "Instrument drawing — voltage, water, oil, gas, tach",
+    IMG_5953: "Steering-column switch drawing and horn bottom",
+    IMG_5955: "Firewall drawing — fuse positions marked 30A, TS-1, TS-2, ground",
+    IMG_5956: "Lights drawing — head high/low, turn/park, tail/stop, dimmer",
+    IMG_5957: "Office Depot parcel to Buck's Engines, marked auto clutch, 27 Mar 2008",
+    IMG_5958: "Upholstery Room invoice — two seats, Wave / Solar Fleece, black"
   },
   guide: {
     title: "Chassis 1442 build book",
@@ -1398,7 +1635,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, inline filler, hose drain 071063700, 12 in fan 400-110. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, inline filler, hose drain 071063700, 12 in fan 400-110. Flex-a-lite puller-fan instructions are a separate sheet, model 210 underlined, form 99876, no invoice. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {
@@ -1406,7 +1643,7 @@ window.ZO = {
         n: "10",
         title: "Brakes and pedals",
         system: "brakes",
-        body: "Champion pedal box (p.54) converted to inches. Wilwood 1 in tandem 260-7563. Speedway E499097: 3/16 steel line 91031810, AN3 stainless 91031840, tees, banjos, pressure switch 91031305, filler cap 6175021. Follow-up E502605 and the 617-2911 banjo exchange. NAPA wheel cylinders 37625, brake line 413-1206, gauge HR-1.",
+        body: "Champion pedal box (p.54) converted to inches. Wilwood 1 in tandem 260-7563, with the dimensioned instruction sheet in the folder. Speedway E304896, 8 Jun 2008: residual valves 91031347 (10 psi) and 91031345 (2 psi), proportioning valve 91031355. Speedway E499097: 3/16 steel line 91031810, AN3 stainless 91031840, tees, banjos, pressure switch 91031305, filler cap 6175021. Follow-up E502605 and the 617-2911 banjo exchange. NAPA wheel cylinders 37625, brake line 413-1206, gauge HR-1.",
         evidence: ["IMG_5790", "IMG_5884", "IMG_5785"]
       },
       {
@@ -1414,7 +1651,7 @@ window.ZO = {
         n: "11",
         title: "Body",
         system: "body",
-        body: "Kinetic TTL nose bf01s, superscuttle bf04s, 12 in steamroller fenders, windshield kit bw01n. Able Glass 15-1/2×37-1/2 1/4 green lami, W/O 05157111. Hot Rod Leather DFHS-4, buckle pads BP-4, guide loops SSGL-4. Patriot side-pipe instructions, no invoice. Speedway bends 91013670 (1-1/2 in ×4, marked NO.) and 91013874 (2 in ×1).",
+        body: "Kinetic TTL nose bf01s, superscuttle bf04s, 12 in steamroller fenders, windshield kit bw01n. Able Glass 15-1/2×37-1/2 1/4 green lami, W/O 05157111. Hot Rod Leather DFHS-4, buckle pads BP-4, guide loops SSGL-4. The Upholstery Room, 23 Feb 2011: two seats, Wave / Solar Fleece, black, labor and padding $525. Patriot side-pipe instructions still have no invoice. Speedway chrome side exhaust 91013460, 60 in, 2 Aug 2008, $172.99. Bends 91013670 (1-1/2 in ×4, marked NO.) and 91013874 (2 in ×1).",
         evidence: ["IMG_5885", "IMG_5886", "IMG_5830"]
       },
       {
@@ -1422,8 +1659,8 @@ window.ZO = {
         n: "12",
         title: "Loom",
         system: "electrical",
-        body: "Hand-drawn sheet: engine, lights, steering column, firewall. Speedway 7-fuse block 910-64004 and two 8-terminal strips 910-64006 (order E490308, 12 Apr 2010). S10 horn circuit as a reference. SS 510 tail lamps.",
-        evidence: ["IMG_5759", "IMG_5862", "IMG_5860"]
+        body: "Hand-drawn sheet: engine, lights, steering column, firewall. Speedway 7-fuse block 910-64004 and two 8-terminal strips 910-64006 (order E490308, 12 Apr 2010). IMG_5955 writes 30A on the fuse positions. Color code and the TS-1 / TS-2 list are IMG_5943 and IMG_5951 — they do not agree letter for letter, so trace the sheet you are holding. Demon’s Cycle, 10 Feb 2011: two bobber headlights and one amber LED blinker line, no numeric SKUs. SS 510 tail lamps.",
+        evidence: ["IMG_5759", "IMG_5943", "IMG_5955", "IMG_5932"]
       },
       {
         id: "shaft",
