@@ -37,77 +37,74 @@ function callout(x1, y1, x2, y2, label, partId, active, extra = "", gotoSys = ""
 const SKETCH = {
   "front-suspension"(active) {
     return `
-      <g class="hot ghost-wheel" data-part="tires" data-goto="wheels">
-        <ellipse cx="508" cy="208" rx="96" ry="96" />
-        <ellipse cx="508" cy="208" rx="62" ry="62" />
-        ${[0,1,2,3,4,5,6,7].map((i) => {
-          const a = (i * Math.PI) / 4;
-          return `<line class="ink faint" x1="${(508 + 66 * Math.cos(a)).toFixed(1)}" y1="${(208 + 66 * Math.sin(a)).toFixed(1)}" x2="${(508 + 90 * Math.cos(a)).toFixed(1)}" y2="${(208 + 90 * Math.sin(a)).toFixed(1)}" />`;
-        }).join("")}
-      </g>
       <g class="chassis-bay">
-        <rect class="rail" x="58" y="64" width="22" height="292" rx="2" />
-        <rect class="rail" x="92" y="86" width="16" height="248" rx="2" />
-        <line class="ink" x1="80" y1="110" x2="108" y2="96" />
-        <line class="ink" x1="80" y1="162" x2="108" y2="150" />
-        <line class="ink" x1="80" y1="268" x2="108" y2="256" />
-        <line class="ink" x1="80" y1="318" x2="108" y2="308" />
-      </g>
-      <g class="hot ${onCls("lower-wishbone", active)}" data-part="lower-wishbone">
-        <path class="arm" d="M118 252 L 132 252 L 378 232 L 392 246 L 378 268 L 132 318 L 108 318 L 108 268 Z" />
-        <line class="ink" x1="118" y1="260" x2="378" y2="246" />
-        <line class="ink" x1="118" y1="308" x2="378" y2="258" />
-        <rect class="tube" x="102" y="248" width="28" height="22" rx="4" />
-        <rect class="tube" x="102" y="298" width="28" height="22" rx="4" />
+        <rect class="rail" x="46" y="48" width="14" height="320" />
+        <rect class="rail" x="78" y="70" width="12" height="276" />
+        <line class="ink" x1="60" y1="108" x2="90" y2="96" />
+        <line class="ink" x1="60" y1="156" x2="90" y2="146" />
+        <line class="ink" x1="60" y1="268" x2="90" y2="258" />
+        <line class="ink" x1="60" y1="320" x2="90" y2="312" />
       </g>
       <g class="hot ${onCls("upper-wishbone", active)}" data-part="upper-wishbone">
-        <path class="arm" d="M118 108 L 132 108 L 360 168 L 376 182 L 360 198 L 132 168 L 108 168 L 108 118 Z" />
-        <line class="ink" x1="118" y1="118" x2="360" y2="176" />
-        <line class="ink" x1="118" y1="158" x2="360" y2="188" />
-        <rect class="tube" x="102" y="104" width="28" height="22" rx="4" />
-        <rect class="tube" x="102" y="148" width="28" height="22" rx="4" />
+        <path class="arm" d="M104 96 L128 88 L348 148 L362 162 L348 176 L128 148 L104 140 Z" />
+        <path class="ink" d="M118 104 L338 156" />
+        <path class="ink" d="M118 132 L338 168" />
+        <circle class="tube" cx="112" cy="118" r="11" />
+        <circle class="tube" cx="112" cy="118" r="4" />
+      </g>
+      <g class="hot ${onCls("lower-wishbone", active)}" data-part="lower-wishbone">
+        <path class="arm" d="M104 248 L132 240 L372 214 L388 230 L372 252 L132 312 L104 304 Z" />
+        <path class="ink" d="M118 256 L362 226" />
+        <path class="ink" d="M118 292 L362 242" />
+        <circle class="tube" cx="114" cy="276" r="11" />
+        <circle class="tube" cx="114" cy="276" r="4" />
       </g>
       <g class="hot replace ${onCls("poly-135", active)}" data-part="poly-135">
-        <ellipse class="bush" cx="116" cy="115" rx="13" ry="11" />
-        <ellipse class="bush" cx="116" cy="159" rx="13" ry="11" />
-        <circle cx="116" cy="115" r="4" />
-        <circle cx="116" cy="159" r="4" />
+        <ellipse class="bush" cx="112" cy="100" rx="14" ry="10" />
+        <ellipse class="bush" cx="112" cy="142" rx="14" ry="10" />
+        <circle cx="112" cy="100" r="4" />
+        <circle cx="112" cy="142" r="4" />
       </g>
       <g class="hot ${onCls("sw-91008015", active)}" data-part="sw-91008015">
-        <ellipse class="bush" cx="116" cy="259" rx="12" ry="10" />
-        <ellipse class="bush" cx="116" cy="309" rx="12" ry="10" />
-        <circle cx="116" cy="259" r="3.5" />
-        <circle cx="116" cy="309" r="3.5" />
+        <ellipse class="bush" cx="114" cy="256" rx="12" ry="9" />
+        <ellipse class="bush" cx="114" cy="300" rx="12" ry="9" />
+        <circle cx="114" cy="256" r="3.5" />
+        <circle cx="114" cy="300" r="3.5" />
       </g>
       <g class="upright">
-        <path class="arm" d="M368 168 L 398 168 L 406 188 L 406 252 L 392 272 L 368 272 L 360 252 L 360 188 Z" />
-        <line class="ink" x1="383" y1="168" x2="383" y2="272" />
-        <circle cx="508" cy="208" r="22" />
-        <line class="ink" x1="398" y1="208" x2="486" y2="208" />
+        <path class="arm" d="M352 158 L378 150 L392 168 L396 214 L388 246 L368 258 L352 240 L348 188 Z" />
+        <path class="ink" d="M372 162 L376 246" />
+        <path class="ink" d="M388 200 L470 200" />
+        <circle class="rim" cx="500" cy="200" r="22" />
+        <circle cx="500" cy="200" r="8" />
+      </g>
+      <g class="hot ghost-wheel" data-part="tires" data-goto="wheels">
+        <ellipse cx="548" cy="200" rx="78" ry="78" />
+        <ellipse cx="548" cy="200" rx="52" ry="52" />
       </g>
       <g class="hot ${onCls("napa-10269", active)}" data-part="napa-10269">
-        <circle cx="370" cy="182" r="16" />
-        <circle cx="370" cy="182" r="6" />
+        <path class="body" d="M348 150 L372 146 L378 168 L352 174 Z" />
+        <circle cx="360" cy="160" r="5" />
       </g>
       <g class="hot ${onCls("napa-10390", active)}" data-part="napa-10390">
-        <circle cx="382" cy="258" r="16" />
-        <circle cx="382" cy="258" r="6" />
+        <path class="body" d="M360 236 L388 226 L394 248 L366 258 Z" />
+        <circle cx="376" cy="242" r="5" />
       </g>
       <g class="hot coil" data-part="qa1-ur4855p" data-goto="front-dampers">
-        <rect class="hit" x="226" y="76" width="44" height="188" />
-        <line x1="248" y1="248" x2="248" y2="92" />
-        ${[0,1,2,3,4,5,6,7].map((i) => `<ellipse class="spring" cx="248" cy="${236 - i * 16}" rx="18" ry="6" />`).join("")}
-        <circle cx="248" cy="84" r="8" />
-        <circle cx="248" cy="252" r="8" />
+        <rect class="hit" x="214" y="78" width="48" height="176" />
+        <line class="ink" x1="238" y1="92" x2="238" y2="236" />
+        ${[0,1,2,3,4,5,6].map((i) => `<ellipse class="spring" cx="238" cy="${228 - i * 18}" rx="16" ry="5" />`).join("")}
+        <rect class="body" x="228" y="132" width="20" height="62" />
+        <circle cx="238" cy="86" r="7" />
+        <circle cx="238" cy="242" r="7" />
       </g>
-      ${callout(116, 115, 175, 32, "135 POLY .175", "poly-135", active, "replace")}
-      ${callout(200, 136, 250, 72, "Upper 1/4 in plate", "upper-wishbone", active)}
-      ${callout(180, 310, 250, 372, "Lower FINAL MOD", "lower-wishbone", active)}
-      ${callout(370, 182, 430, 48, "BJ 10269", "napa-10269", active)}
-      ${callout(382, 258, 450, 348, "BJ 10390", "napa-10390", active)}
-      ${callout(116, 259, 280, 398, "910-08015 kit", "sw-91008015", active)}
-      ${callout(248, 84, 430, 28, "QA1 coilover", "qa1-ur4855p", active, "", "front-dampers")}
-      <text class="title-note" x="58" y="410">Front corner · chassis 1442 · inboard looking out</text>
+      ${callout(112, 100, 160, 36, "135 POLY .175", "poly-135", active, "replace")}
+      ${callout(180, 118, 250, 56, "Upper plate", "upper-wishbone", active)}
+      ${callout(200, 300, 250, 372, "Lower FINAL MOD", "lower-wishbone", active)}
+      ${callout(360, 160, 400, 48, "BJ 10269", "napa-10269", active)}
+      ${callout(376, 242, 430, 330, "BJ 10390", "napa-10390", active)}
+      ${callout(238, 86, 400, 28, "QA1", "qa1-ur4855p", active, "", "front-dampers")}
+      <text class="title-note" x="46" y="408">Front corner · chassis 1442 · inboard looking out</text>
     `;
   },
 
@@ -120,10 +117,10 @@ const SKETCH = {
       <g class="ghost-wheel"><ellipse cx="500" cy="220" rx="70" ry="70" /><ellipse cx="500" cy="220" rx="42" ry="42" /></g>
       <line class="ink faint" x1="80" y1="80" x2="80" y2="360" />
       <g class="hot ${onCls("qa1-ur4855p", active)}" data-part="qa1-ur4855p">
-        <rect class="body" x="252" y="118" width="56" height="210" rx="10" />
         ${coils}
-        <rect class="body" x="262" y="128" width="36" height="88" rx="6" />
-        <text class="stamp" x="280" y="175" text-anchor="middle">QA1</text>
+        <rect class="body" x="266" y="168" width="28" height="96" />
+        <line class="ink" x1="280" y1="110" x2="280" y2="330" />
+        <text class="stamp" x="320" y="220" text-anchor="start">QA1</text>
       </g>
       <g class="hot ${onCls("qa1-b6031k", active)}" data-part="qa1-b6031k">
         <circle cx="280" cy="92" r="18" />
@@ -142,29 +139,38 @@ const SKETCH = {
 
   steering(active) {
     return `
-      <g class="ghost-wheel"><ellipse cx="500" cy="210" rx="72" ry="72" /><ellipse cx="500" cy="210" rx="44" ry="44" /></g>
+      <g class="hot ${onCls("mustang-rack", active)}" data-part="mustang-rack">
+        <path class="rack" d="M150 214 C170 196, 210 196, 230 214 L390 214 C410 196, 450 196, 470 214 L470 246 C450 264, 410 264, 390 246 L230 246 C210 264, 170 264, 150 246 Z" />
+        <rect class="body" x="250" y="208" width="120" height="44" />
+        <circle class="body" cx="310" cy="188" r="10" />
+        <line class="ink" x1="310" y1="178" x2="310" y2="120" />
+      </g>
       <g class="hot ${onCls("tie-rods", active)}" data-part="tie-rods">
-        <rect class="rack" x="90" y="228" width="250" height="22" rx="4" />
-        <line class="ink thick" x1="340" y1="239" x2="455" y2="210" />
-        <circle cx="340" cy="239" r="7" />
-        <circle cx="455" cy="210" r="8" />
+        <line class="ink thick" x1="118" y1="230" x2="168" y2="230" />
+        <line class="ink thick" x1="452" y1="230" x2="520" y2="198" />
+        <circle cx="168" cy="230" r="6" />
+        <circle cx="452" cy="230" r="6" />
+        <circle cx="520" cy="198" r="7" />
       </g>
       <g class="hot ${onCls("heims", active)}" data-part="heims">
-        <circle cx="110" cy="239" r="10" />
-        <circle cx="455" cy="210" r="6" />
-        <circle cx="200" cy="160" r="8" />
+        <circle class="body" cx="118" cy="230" r="9" />
+        <circle cx="118" cy="230" r="3" />
+        <circle class="body" cx="520" cy="198" r="8" />
+        <circle cx="520" cy="198" r="3" />
       </g>
-      <line class="ink" x1="215" y1="228" x2="215" y2="120" />
-      <line class="ink" x1="215" y1="120" x2="160" y2="70" />
       <g class="wheel-steer">
-        <ellipse cx="145" cy="58" rx="42" ry="16" transform="rotate(-18 145 58)" />
-        <ellipse cx="145" cy="58" rx="18" ry="7" transform="rotate(-18 145 58)" />
+        <circle class="rim" cx="250" cy="78" r="36" />
+        <circle cx="250" cy="78" r="8" />
+        <line class="ink" x1="250" y1="46" x2="250" y2="110" />
+        <line class="ink" x1="218" y1="78" x2="282" y2="78" />
+        <line class="ink" x1="250" y1="114" x2="310" y2="168" />
       </g>
-      <rect class="upright" x="448" y="168" width="18" height="86" rx="2" />
-      ${callout(215, 239, 40, 300, "Track rod 14.82 in", "tie-rods", active)}
-      ${callout(110, 239, 40, 180, "Heims / rod ends", "heims", active)}
-      ${callout(455, 210, 560, 90, "Steering arm", "tie-rods", active)}
-      <text class="title-note" x="72" y="400">Rack, track rod, upright · LHD</text>
+      <path class="upright" d="M512 168 L536 168 L540 188 L534 230 L512 236 L506 200 Z" />
+      <g class="ghost-wheel"><ellipse cx="586" cy="200" rx="46" ry="46" /></g>
+      ${callout(310, 208, 300, 300, "Mustang II 91034340", "mustang-rack", active)}
+      ${callout(500, 210, 500, 330, "Track rod", "tie-rods", active)}
+      ${callout(118, 230, 40, 180, "Heim", "heims", active)}
+      <text class="title-note" x="40" y="400">Manual rack · boots over the inner joints · LHD</text>
     `;
   },
 
@@ -194,51 +200,71 @@ const SKETCH = {
 
   brakes(active) {
     return `
-      <g class="ghost-wheel"><ellipse cx="490" cy="210" rx="76" ry="76" /><ellipse cx="490" cy="210" rx="48" ry="48" /></g>
       <g class="hot ${onCls("wilwood-mc", active)}" data-part="wilwood-mc">
-        <path class="box" d="M80 80 L 210 80 L 210 200 L 80 200 Z" />
-        <line class="ink" x1="110" y1="80" x2="90" y2="40" />
-        <line class="ink" x1="150" y1="80" x2="150" y2="36" />
-        <line class="ink" x1="190" y1="80" x2="210" y2="40" />
-        <rect class="mc" x="220" y="110" width="88" height="36" rx="4" />
-        <text class="stamp" x="264" y="133" text-anchor="middle">WILWOOD</text>
-        <path class="line" d="M308 128 C 360 128, 400 160, 440 200" fill="none" />
+        <path class="box" d="M48 150 L78 118 L150 118 L168 150 L168 196 L48 196 Z" />
+        <line class="ink" x1="70" y1="150" x2="58" y2="96" />
+        <line class="ink" x1="108" y1="150" x2="108" y2="88" />
+        <path class="mc" d="M168 162 L300 162 L312 174 L312 188 L300 200 L168 200 Z" />
+        <path class="mc" d="M186 128 L214 128 L220 148 L180 148 Z" />
+        <path class="mc" d="M236 124 L268 124 L274 148 L230 148 Z" />
+        <path class="hose" d="M200 128 C200 100, 248 96, 252 124" />
+        <line class="ink" x1="312" y1="181" x2="338" y2="181" />
       </g>
       <g class="disc">
-        <circle cx="490" cy="210" r="38" />
-        <circle cx="490" cy="210" r="18" />
+        <circle cx="470" cy="168" r="62" />
+        <circle cx="470" cy="168" r="28" />
+        <circle cx="470" cy="168" r="10" />
+        ${[0,1,2,3,4].map((i) => {
+          const a = (i * Math.PI * 2) / 5 - Math.PI / 2;
+          return `<circle cx="${(470 + 18 * Math.cos(a)).toFixed(1)}" cy="${(168 + 18 * Math.sin(a)).toFixed(1)}" r="2.2" />`;
+        }).join("")}
+      </g>
+      <g class="hot ${onCls("caliper-front-rh", active)}" data-part="caliper-front-rh">
+        <path class="body" d="M430 118 L512 112 L524 132 L512 148 L470 152 L430 146 Z" />
+        <path class="body" d="M434 186 L512 180 L522 200 L508 214 L434 208 Z" />
+        <path class="arm" d="M500 148 L508 148 L508 180 L500 180 Z" />
+        <line class="ink" x1="492" y1="112" x2="492" y2="96" />
+        <circle cx="492" cy="94" r="3" />
       </g>
       <g class="hot ${onCls("an-lines", active)}" data-part="an-lines">
-        <path class="line" d="M308 150 C 380 170, 420 190, 470 210" fill="none" />
-        <rect class="mc" x="360" y="250" width="70" height="28" rx="3" />
-        <text class="stamp" x="395" y="268" text-anchor="middle">AN3</text>
+        <path class="hose" d="M338 181 C380 181, 400 150, 430 140" />
+        <circle class="body" cx="378" cy="196" r="7" />
+        <path class="hose" d="M338 192 C390 230, 430 250, 470 250" />
       </g>
       <g class="hot ${onCls("wc-37625", active)}" data-part="wc-37625">
-        <rect class="mc" x="430" y="250" width="36" height="22" rx="3" />
+        <rect class="mc" x="448" y="236" width="52" height="22" />
+        <circle cx="458" cy="247" r="6" />
+        <circle cx="490" cy="247" r="6" />
+        <line class="ink" x1="474" y1="236" x2="474" y2="226" />
       </g>
-      ${callout(264, 110, 360, 48, "1 in tandem 260-7563", "wilwood-mc", active)}
-      ${callout(150, 80, 40, 240, "Champion pedal box", "wilwood-mc", active)}
-      ${callout(395, 250, 360, 330, "AN lines + switch 91031305", "an-lines", active)}
-      ${callout(448, 250, 500, 330, "WC 37625", "wc-37625", active)}
-      <g class="hot ${onCls("caliper-front-rh", active)}" data-part="caliper-front-rh">
-        <path class="box" d="M452 168 L528 160 L536 214 L444 214 Z" />
+      <g class="hot ${onCls("residual-valves", active)}" data-part="residual-valves">
+        <rect class="body" x="352" y="210" width="16" height="28" />
+        <line class="ink" x1="360" y1="210" x2="360" y2="198" />
+        <line class="ink" x1="360" y1="238" x2="360" y2="250" />
       </g>
-      ${callout(490, 160, 300, 48, "Front R 19141004 · L 19141005", "caliper-front-rh", active)}
-      <text class="title-note" x="24" y="400">E499097 plumbing · NAPA 413-1206 · fronts 19141004 / 19141005</text>
+      ${callout(230, 162, 200, 48, "Wilwood 260-7563", "wilwood-mc", active)}
+      ${callout(470, 118, 520, 48, "19141004 / 005", "caliper-front-rh", active)}
+      ${callout(378, 196, 300, 300, "AN3", "an-lines", active)}
+      ${callout(474, 247, 500, 330, "WC 37625", "wc-37625", active)}
+      <text class="title-note" x="24" y="400">Tandem with remote pots · floating caliper over the disc · drum cylinder separate</text>
     `;
   },
 
   engine(active) {
     return `
       <g class="hot ${onCls("gm-30", active)}" data-part="gm-30">
-        <rect class="block" x="160" y="140" width="280" height="160" rx="6" />
-        <rect class="head" x="170" y="92" width="260" height="52" rx="4" />
-        <rect class="cover" x="190" y="70" width="220" height="28" rx="3" />
-        ${[0,1,2,3].map((i) => `<circle cx="${210 + i * 52}" cy="98" r="10" />`).join("")}
-        <rect class="bell" x="430" y="168" width="70" height="110" rx="8" />
-        <circle cx="500" cy="224" r="48" />
-        <circle cx="500" cy="224" r="22" />
-        <text class="stamp" x="300" y="230" text-anchor="middle">GM 3.0 VORTEC</text>
+        <path class="block" d="M150 168 L150 292 L420 292 L420 210 L400 168 Z" />
+        <path class="head" d="M162 132 L400 132 L408 168 L158 168 Z" />
+        <path class="cover" d="M180 108 L386 108 L392 132 L174 132 Z" />
+        ${[0,1,2,3].map((i) => `<ellipse cx="${210 + i * 52}" cy="150" rx="12" ry="7" />`).join("")}
+        <path class="bell" d="M420 188 L470 176 L488 210 L488 270 L470 286 L420 268 Z" />
+        <circle class="rim" cx="508" cy="228" r="40" />
+        <circle cx="508" cy="228" r="16" />
+        ${[0,1,2,3,4,5].map((i) => {
+          const a = (i * Math.PI) / 3;
+          return `<circle cx="${(508 + 28 * Math.cos(a)).toFixed(1)}" cy="${(228 + 28 * Math.sin(a)).toFixed(1)}" r="3" />`;
+        }).join("")}
+        <path class="hose" d="M200 132 L200 92 L280 78 L340 92 L340 108" />
       </g>
       <g class="hot ${onCls("clutch-fork", active)}" data-part="clutch-fork">
         <path class="line" d="M470 250 L 530 290" fill="none" />
@@ -258,16 +284,22 @@ const SKETCH = {
   cooling(active) {
     return `
       <g class="hot ${onCls("jegs-rad", active)}" data-part="jegs-rad">
-        <rect class="rad" x="90" y="80" width="70" height="240" rx="4" />
-        ${Array.from({ length: 14 }, (_, i) => `<line class="core" x1="98" y1="${92 + i * 16}" x2="152" y2="${92 + i * 16}" />`).join("")}
-        <circle cx="200" cy="200" r="52" />
-        ${[0,1,2,3,4,5].map((i) => {
-          const a = (i * Math.PI) / 3;
-          return `<line class="ink" x1="200" y1="200" x2="${(200 + 46 * Math.cos(a)).toFixed(1)}" y2="${(200 + 46 * Math.sin(a)).toFixed(1)}" />`;
+        <path class="rad" d="M78 70 L168 70 L176 92 L176 300 L168 322 L78 322 L70 300 L70 92 Z" />
+        ${Array.from({ length: 12 }, (_, i) => `<line class="core" x1="86" y1="${104 + i * 16}" x2="160" y2="${104 + i * 16}" />`).join("")}
+        <circle class="rim" cx="250" cy="196" r="58" />
+        <circle cx="250" cy="196" r="14" />
+        ${[0,1,2,3,4,5,6].map((i) => {
+          const a = (i * Math.PI * 2) / 7;
+          const x2 = (250 + 48 * Math.cos(a)).toFixed(1);
+          const y2 = (196 + 48 * Math.sin(a)).toFixed(1);
+          return `<path class="ink" d="M250 196 Q ${(250 + 20 * Math.cos(a + 0.5)).toFixed(1)} ${(196 + 20 * Math.sin(a + 0.5)).toFixed(1)} ${x2} ${y2}" />`;
         }).join("")}
-        <path class="hose" d="M160 100 C 240 90, 280 120, 300 140" fill="none" />
-        <path class="hose" d="M160 280 C 250 300, 300 260, 320 220" fill="none" />
-        <rect class="block-ghost" x="300" y="140" width="180" height="140" rx="6" />
+        <path class="hose" d="M168 108 C 210 96, 250 120, 300 140" />
+        <path class="hose" d="M168 286 C 230 310, 280 270, 320 240" />
+        <path class="block-ghost" d="M320 150 L470 150 L490 180 L490 280 L320 280 Z" />
+      </g>
+      <g class="hot ${onCls("flex-fan-210", active)}" data-part="flex-fan-210">
+        <circle class="rim" cx="250" cy="196" r="58" />
       </g>
       <g class="hot ${onCls("an12-spruce", active)}" data-part="an12-spruce">
         <circle cx="175" cy="100" r="10" />
@@ -275,9 +307,9 @@ const SKETCH = {
       <g class="hot ${onCls("heater-hose", active)}" data-part="heater-hose">
         <path class="hose" d="M160 280 C 250 300, 300 260, 320 220" fill="none" />
       </g>
-      ${callout(125, 80, 40, 48, "JEGS 555-51962", "jegs-rad", active)}
-      ${callout(200, 200, 40, 360, "12 in fan 400-110", "jegs-rad", active)}
-      ${callout(175, 100, 220, 48, "AN833-12D", "an12-spruce", active)}
+      ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
+      ${callout(250, 196, 200, 370, "12 in fan 400-110", "jegs-rad", active)}
+      ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
       <text class="title-note" x="24" y="400">Hose drain 071063700 · heater hose GAT 28432</text>
     `;
   },
@@ -285,14 +317,15 @@ const SKETCH = {
   driveline(active) {
     return `
       <g class="hot ${onCls("gearbox-1442", active)}" data-part="gearbox-1442">
-        <rect class="block" x="48" y="148" width="100" height="80" rx="4" />
-        <rect class="bell" x="132" y="162" width="36" height="52" rx="4" />
-        <text class="stamp" x="98" y="194" text-anchor="middle">TRANS</text>
+        <path class="block" d="M40 150 L130 150 L146 168 L146 214 L130 232 L40 232 Z" />
+        <path class="bell" d="M146 164 L176 156 L184 188 L184 204 L176 226 L146 214 Z" />
       </g>
       <g class="hot ${onCls("driveshaft-1442", active)}" data-part="driveshaft-1442">
-        <rect class="shaft" x="168" y="174" width="240" height="22" rx="6" />
-        <circle cx="168" cy="185" r="16" />
-        <circle cx="408" cy="185" r="16" />
+        <path class="shaft" d="M196 176 L392 176 L392 196 L196 196 Z" />
+        <ellipse class="body" cx="184" cy="186" rx="18" ry="16" />
+        <ellipse class="body" cx="404" cy="186" rx="18" ry="16" />
+        <circle cx="184" cy="186" r="5" />
+        <circle cx="404" cy="186" r="5" />
       </g>
       <rect class="axle" x="420" y="140" width="24" height="110" rx="3" />
       <g class="ghost-wheel"><ellipse cx="520" cy="185" rx="62" ry="62" /></g>
@@ -420,9 +453,18 @@ const SKETCH = {
       </g>
 
       <g class="hot ${onCls("fan-motor", active)}" data-part="fan-motor">
-        <circle class="coil-can" cx="88" cy="210" r="28" />
-        <circle cx="88" cy="210" r="10" />
-        <text class="stamp" x="88" y="252" text-anchor="middle">FAN MOTOR</text>
+        <circle class="rim" cx="88" cy="200" r="30" />
+        <circle cx="88" cy="200" r="8" />
+        ${[0,1,2,3].map((i) => {
+          const a = (i * Math.PI) / 2 + 0.4;
+          const x1 = (88 + 9 * Math.cos(a)).toFixed(1);
+          const y1 = (200 + 9 * Math.sin(a)).toFixed(1);
+          const x2 = (88 + 26 * Math.cos(a + 0.4)).toFixed(1);
+          const y2 = (200 + 26 * Math.sin(a + 0.4)).toFixed(1);
+          const x3 = (88 + 24 * Math.cos(a - 0.12)).toFixed(1);
+          const y3 = (200 + 24 * Math.sin(a - 0.12)).toFixed(1);
+          return `<path class="ink" d="M${x1} ${y1} L${x2} ${y2} L${x3} ${y3} Z" />`;
+        }).join("")}
       </g>
       <g class="ign-block">
         <rect class="box" x="128" y="88" width="58" height="44" rx="3" />
@@ -447,16 +489,16 @@ const SKETCH = {
       <circle class="relay" cx="430" cy="182" r="12" />
 
       <g class="hot ${onCls("headlamps", active)}" data-part="headlamps">
-        <circle class="lamp" cx="560" cy="92" r="26" />
-        <circle class="lamp" cx="628" cy="92" r="26" />
-        <circle cx="560" cy="92" r="10" />
-        <circle cx="628" cy="92" r="10" />
-        <text class="stamp" x="594" y="136" text-anchor="middle">HEAD</text>
+        <path class="lamp" d="M534 70 L586 70 L598 92 L586 118 L534 118 L524 92 Z" />
+        <path class="lamp" d="M604 70 L656 70 L668 92 L656 118 L604 118 L594 92 Z" />
+        <circle cx="560" cy="94" r="10" />
+        <circle cx="630" cy="94" r="10" />
       </g>
       <g class="hot ${onCls("ss-510", active)}" data-part="ss-510">
-        <circle class="lamp tail" cx="560" cy="210" r="20" />
-        <circle class="lamp tail" cx="628" cy="210" r="20" />
-        <text class="stamp" x="594" y="246" text-anchor="middle">SS 510</text>
+        <path class="lamp tail" d="M540 186 L582 186 L590 210 L582 234 L540 234 L532 210 Z" />
+        <path class="lamp tail" d="M608 186 L650 186 L658 210 L650 234 L608 234 L600 210 Z" />
+        <circle class="lamp tail" cx="561" cy="210" r="8" />
+        <circle class="lamp tail" cx="629" cy="210" r="8" />
       </g>
 
       <g class="hot ${onCls("horn-s10", active)}" data-part="horn-s10">
@@ -471,35 +513,36 @@ const SKETCH = {
         <text class="stamp" x="400" y="318" text-anchor="middle">STALK</text>
       </g>
 
-      ${callout(333, 78, 248, 58, "7-fuse block", "fuse-91064004", active)}
-      ${callout(332, 178, 455, 248, "8-term strip ×2", "strip-91064006", active)}
+      ${callout(390, 90, 478, 68, "7-fuse", "fuse-91064004", active)}
+      ${callout(332, 192, 360, 228, "8-term ×2", "strip-91064006", active)}
       ${callout(88, 182, 155, 278, "Fan motor", "fan-motor", active)}
-      ${callout(560, 66, 500, 48, "Headlamps", "headlamps", active)}
+      ${callout(560, 66, 530, 22, "Headlamps", "headlamps", active)}
       ${callout(628, 210, 655, 188, "SS 510", "ss-510", active)}
       ${callout(520, 322, 560, 420, "S10 horn ref", "horn-s10", active)}
       ${callout(150, 70, 210, 22, "Loom sheet", "loom-1442", active)}
-      <text class="title-note" x="28" y="448">7-fuse + two 8-term strips · Speedway E490308 · no amp ratings on the sheet</text>
+      <text class="title-note" x="28" y="448">7-fuse + two 8-term strips · Speedway E490308 · firewall drawing writes 30A</text>
     `;
   },
 
   wheels(active) {
     return `
       <g class="hot ${onCls("tires", active)}" data-part="tires">
-        <ellipse class="tire" cx="280" cy="210" rx="150" ry="150" />
-        <ellipse class="tire-inner" cx="280" cy="210" rx="108" ry="108" />
+        <ellipse class="tire" cx="250" cy="210" rx="150" ry="150" />
+        <ellipse class="tire-inner" cx="250" cy="210" rx="112" ry="112" />
       </g>
       <g class="hot ${onCls("wheel-adp", active)}" data-part="wheel-adp">
-        <circle cx="280" cy="210" r="92" />
+        <circle class="rim" cx="250" cy="210" r="100" />
+        <circle class="rim" cx="250" cy="210" r="36" />
         ${[0,1,2,3,4].map((i) => {
           const a = (i * Math.PI * 2) / 5 - Math.PI / 2;
-          return `<circle cx="${(280 + 58 * Math.cos(a)).toFixed(1)}" cy="${(210 + 58 * Math.sin(a)).toFixed(1)}" r="8" />`;
+          return `<circle cx="${(250 + 62 * Math.cos(a)).toFixed(1)}" cy="${(210 + 62 * Math.sin(a)).toFixed(1)}" r="7" />`;
         }).join("")}
-        <circle cx="280" cy="210" r="22" />
-        <rect class="adapter" x="400" y="186" width="70" height="48" rx="4" />
-        <text class="stamp" x="435" y="214" text-anchor="middle">2 in</text>
+        <circle cx="250" cy="210" r="12" />
+        <path class="adapter" d="M390 186 L470 186 L478 198 L478 230 L470 242 L390 242 L382 230 L382 198 Z" />
+        <text class="stamp" x="430" y="220" text-anchor="middle">2 in</text>
       </g>
-      ${callout(280, 70, 80, 36, "P205/75R14", "tires", active)}
-      ${callout(435, 186, 520, 80, "4.75 adapter", "wheel-adp", active)}
+      ${callout(250, 60, 80, 36, "P205/75R14", "tires", active)}
+      ${callout(430, 186, 500, 80, "4.75 adapter", "wheel-adp", active)}
       <text class="title-note" x="72" y="400">Geometry size as-built · update Current size if you swapped them</text>
     `;
   },
@@ -516,13 +559,7 @@ window.sketchSVG = function sketchSVG(systemId, activePart) {
   const h = BOX.h;
   return `
     <svg class="branch-map sketch-map" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img">
-      <defs>
-        <pattern id="sheetgrid" width="16" height="16" patternUnits="userSpaceOnUse">
-          <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#d9d0ba" stroke-width="0.35" />
-        </pattern>
-      </defs>
       <rect class="paper" x="0" y="0" width="${w}" height="${h}" />
-      <rect class="sheetgrid" x="0" y="0" width="${w}" height="${h}" />
       ${inner}
     </svg>`;
 };

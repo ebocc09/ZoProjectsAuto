@@ -528,8 +528,8 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
 .key-btn.on { background: #241c12; }
 .key-btn.on span, .key-btn.on small { color: var(--amber); }
 .diagram-viz {
-  background: #10140f;
-  color: #2a261f;
+  background: #141914;
+  color: var(--paper);
   border-radius: 12px;
   padding: 10px;
   display: flex;
@@ -553,48 +553,74 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   object-fit: contain;
 }
 .sketch-map { background: transparent; }
-.sketch-map .paper { fill: #efe6d2; stroke: #c9bea6; stroke-width: 1; }
-.sketch-map .sheetgrid { fill: url(#sheetgrid); stroke: none; pointer-events: none; }
-.sketch-map line, .sketch-map path, .sketch-map rect, .sketch-map circle, .sketch-map ellipse {
-  stroke: #2a261f; stroke-width: 1.15; fill: none;
+.sketch-map .paper { fill: #141914; stroke: none; }
+.sketch-map line, .sketch-map path, .sketch-map rect, .sketch-map circle, .sketch-map ellipse, .sketch-map polygon {
+  stroke: #d9cfb8; stroke-width: 1.35; fill: none; stroke-linejoin: round; stroke-linecap: round;
 }
 .sketch-map .ink { fill: none; }
-.sketch-map .arm, .sketch-map .rail, .sketch-map .upright, .sketch-map .axle, .sketch-map .block,
-.sketch-map .head, .sketch-map .cover, .sketch-map .bell, .sketch-map .box, .sketch-map .adapter,
-.sketch-map .shaft, .sketch-map .tube, .sketch-map .panel, .sketch-map .body, .sketch-map .rack,
-.sketch-map .rad, .sketch-map .mc, .sketch-map .fuse, .sketch-map .fuse-cell, .sketch-map .jug,
-.sketch-map .jug-cap, .sketch-map .strip, .sketch-map .relay, .sketch-map .coil-can, .sketch-map .ign-sw,
-.sketch-map .stalk, .sketch-map .horn, .sketch-map .nose, .sketch-map .scuttle, .sketch-map .tub,
-.sketch-map .screen, .sketch-map .lamp, .sketch-map .lamp.tail, .sketch-map .disc circle,
-.sketch-map .bush, .sketch-map .replace ellipse, .sketch-map .replace circle {
-  fill: none;
-  stroke: #2a261f;
+.sketch-map .arm { fill: rgba(47,106,72,0.28); stroke: #8fd0a4; stroke-width: 1.45; }
+.sketch-map .rail, .sketch-map .upright, .sketch-map .axle, .sketch-map .block, .sketch-map .head,
+.sketch-map .cover, .sketch-map .bell, .sketch-map .box, .sketch-map .adapter, .sketch-map .shaft,
+.sketch-map .tube, .sketch-map .panel {
+  fill: rgba(47,106,72,0.16); stroke: #8fd0a4;
 }
-.sketch-map .fender, .sketch-map .hoop, .sketch-map .hose, .sketch-map .loom, .sketch-map .core { stroke: #2a261f; fill: none; stroke-width: 1.25; }
-.sketch-map .ghost-wheel ellipse, .sketch-map .ghost, .sketch-map .block-ghost { stroke: #8a8172; stroke-dasharray: 3 3; fill: none; }
-.sketch-map .spring, .sketch-map .coil .spring, .sketch-map .coil circle { fill: none; stroke: #2a261f; }
-.sketch-map .tire, .sketch-map .tire-inner { fill: none; stroke: #2a261f; stroke-width: 1.25; }
-.sketch-map .wire { fill: none; stroke: #2a261f; stroke-width: 1; }
-.sketch-map .wire-bat { stroke-dasharray: 5 3; }
-.sketch-map .wire-light { stroke-dasharray: 1.5 2.5; }
-.sketch-map .wire-gnd { stroke-dasharray: 8 3; }
+.sketch-map .body, .sketch-map .rack { fill: rgba(138,147,160,0.16); stroke: #c5ced6; }
+.sketch-map .rad, .sketch-map .mc { fill: rgba(106,50,40,0.28); stroke: #e07a4a; }
+.sketch-map .fuse, .sketch-map .fuse-cell { fill: rgba(217,138,43,0.22); stroke: #e0a85a; }
+.sketch-map .jug { fill: rgba(47,106,72,0.22); stroke: #8fd0a4; }
+.sketch-map .jug-cap { fill: rgba(138,147,160,0.28); stroke: #c5ced6; }
+.sketch-map .strip { fill: rgba(138,147,160,0.2); stroke: #c5ced6; }
+.sketch-map .relay, .sketch-map .coil-can, .sketch-map .ign-sw { fill: rgba(90,100,110,0.28); stroke: #d9cfb8; }
+.sketch-map .stalk { fill: rgba(138,147,160,0.22); stroke: #d9cfb8; }
+.sketch-map .horn { fill: rgba(217,138,43,0.28); stroke: #e0a85a; }
+.sketch-map .nose, .sketch-map .scuttle, .sketch-map .tub { fill: rgba(47,106,72,0.22); stroke: #8fd0a4; stroke-width: 1.45; }
+.sketch-map .screen { fill: rgba(135,160,176,0.18); stroke: #c5d4de; }
+.sketch-map .fender, .sketch-map .hoop, .sketch-map .hose, .sketch-map .loom, .sketch-map .core { stroke: #d9cfb8; fill: none; stroke-width: 1.5; }
+.sketch-map .ghost-wheel ellipse, .sketch-map .ghost { stroke: #6a7370; stroke-dasharray: 3 3; fill: none; }
+.sketch-map .bush, .sketch-map .replace ellipse, .sketch-map .replace circle { fill: rgba(196,90,42,0.45); stroke: #e07a4a; }
+.sketch-map .spring { fill: none; stroke: #c5ced6; }
+.sketch-map .coil .spring, .sketch-map .coil circle { stroke: #c5ced6; fill: none; }
+.sketch-map .tire { fill: rgba(18,18,18,0.72); stroke: #8a93a0; stroke-width: 1.6; }
+.sketch-map .tire-inner { fill: #141914; stroke: #8a93a0; stroke-width: 1.4; }
+.sketch-map .rim { fill: rgba(160,170,180,0.12); stroke: #c5ced6; }
+.sketch-map .disc circle, .sketch-map .disc ellipse { fill: rgba(90,80,72,0.2); stroke: #c5ced6; }
+.sketch-map .lamp { fill: rgba(242,230,190,0.35); stroke: #f0e6c8; }
+.sketch-map .lamp.tail { fill: rgba(196,90,42,0.35); stroke: #e07a4a; }
+.sketch-map .block-ghost { fill: none; stroke: #6a7370; stroke-dasharray: 4 3; }
+.sketch-map .wire { fill: none; stroke-width: 1.35; }
+.sketch-map .wire-ign { stroke: #8fd0a4; }
+.sketch-map .wire-bat { stroke: #e0a85a; }
+.sketch-map .wire-light { stroke: #efe7d6; }
+.sketch-map .wire-gnd { stroke: #8a93a0; }
 .sketch-map .hit { fill: transparent; stroke: none; pointer-events: all; }
 .sketch-map .hot { cursor: pointer; pointer-events: all; }
-.sketch-map .hot path, .sketch-map .hot ellipse, .sketch-map .hot circle, .sketch-map .hot rect { pointer-events: all; }
-.sketch-map .hot:hover path, .sketch-map .hot:hover ellipse, .sketch-map .hot:hover circle, .sketch-map .hot:hover rect,
-.sketch-map .hot.on path, .sketch-map .hot.on ellipse, .sketch-map .hot.on circle, .sketch-map .hot.on rect {
-  stroke: #8c4a16;
+.sketch-map .hot path, .sketch-map .hot ellipse, .sketch-map .hot circle, .sketch-map .hot rect, .sketch-map .hot polygon {
+  pointer-events: all;
+}
+.sketch-map .hot:hover .arm, .sketch-map .hot:hover .body, .sketch-map .hot:hover .block,
+.sketch-map .hot:hover .nose, .sketch-map .hot:hover .scuttle, .sketch-map .hot:hover .tub,
+.sketch-map .hot:hover .rack, .sketch-map .hot:hover .rad, .sketch-map .hot:hover .tire,
+.sketch-map .hot:hover .panel, .sketch-map .hot:hover .fuse, .sketch-map .hot:hover .lamp,
+.sketch-map .hot:hover .strip, .sketch-map .hot:hover .fuse-cell, .sketch-map .hot:hover .jug,
+.sketch-map .hot:hover .mc {
+  fill: rgba(217,138,43,0.28);
+}
+.sketch-map .hot.on .arm, .sketch-map .hot.on .body, .sketch-map .hot.on .block,
+.sketch-map .hot.on .nose, .sketch-map .hot.on .scuttle, .sketch-map .hot.on .tub,
+.sketch-map .hot.on .rack, .sketch-map .hot.on .rad, .sketch-map .hot.on .tire,
+.sketch-map .hot.on .panel, .sketch-map .hot.on .fuse, .sketch-map .hot.on .lamp,
+.sketch-map .hot.on .strip, .sketch-map .hot.on .fuse-cell, .sketch-map .hot.on .jug,
+.sketch-map .hot.on .mc, .sketch-map .hot.on ellipse, .sketch-map .hot.on circle {
+  stroke: #e0a85a;
   stroke-width: 1.8;
 }
-.sketch-map .leader { stroke: #6d6558; stroke-width: 0.7; fill: none; }
-.sketch-map .pin { fill: none; stroke: #8c4a16; stroke-width: 1; }
-.sketch-map .call, .sketch-map .stamp, .sketch-map .panel-title, .sketch-map .title-note {
-  fill: #2a261f; stroke: none; font-family: "IBM Plex Mono", monospace;
-}
-.sketch-map .call { font-size: 11px; }
-.sketch-map .hot.on .call { fill: #8c4a16; font-weight: 500; }
-.sketch-map .stamp, .sketch-map .panel-title { font-size: 11px; letter-spacing: 0.08em; }
-.sketch-map .title-note { font-size: 10px; fill: #5c564c; letter-spacing: 0.04em; }
+.sketch-map .leader { stroke: #8a93a0; stroke-width: 1; fill: none; }
+.sketch-map .pin { fill: #e0a85a; stroke: none; }
+.sketch-map .call { fill: #efe7d6; font-size: 11px; font-family: "IBM Plex Mono", monospace; stroke: none; }
+.sketch-map .hot.on .call { fill: #f0b45a; font-weight: 500; }
+.sketch-map .stamp, .sketch-map .panel-title { fill: #8fd0a4; font-size: 11px; font-family: "IBM Plex Mono", monospace; stroke: none; }
+.sketch-map .panel-title { font-size: 12px; letter-spacing: 0.12em; }
+.sketch-map .title-note { fill: #8a93a0; font-size: 10px; font-family: "IBM Plex Mono", monospace; stroke: none; letter-spacing: 0.04em; }
 .sketch-map .thick { stroke-width: 3.2; }
 .sketch-map .faint { opacity: 0.35; }
 .back-sketch { margin: 10px 12px 0; background: transparent; color: var(--paper); border: 1px solid var(--line); }
