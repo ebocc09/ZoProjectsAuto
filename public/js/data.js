@@ -60,7 +60,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "Custom spindle/knuckle, 14.820 in track rod, steering arm 6.479 in. United Machine Works modified two steering shafts 20 Apr 2009 for $150 cash."
+        "Custom spindle/knuckle. Castings read on the parts: right 459756, left 459755, G-body / 2WD S10 family, not on an invoice. 14.820 in track rod, steering arm 6.479 in. United Machine Works modified two steering shafts 20 Apr 2009 for $150 cash."
     },
     {
       id: "rear-suspension",
@@ -74,11 +74,11 @@ window.ZO = {
     {
       id: "brakes",
       name: "Brakes",
-      short: "Wilwood tandem master, AN3",
+      short: "Wilwood master, S10 front calipers",
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "Wilwood 1 in tandem 260-7563. Speedway AN3/AN4 plumbing on E499097 ($255.84) includes pressure switch 91031305. NAPA wheel cylinders 37625, brake line 413-1206, gauge HR-1."
+        "Wilwood 1 in tandem 260-7563. Speedway AN3/AN4 plumbing on E499097 ($255.84) includes pressure switch 91031305. NAPA wheel cylinders 37625, brake line 413-1206, gauge HR-1. Front calipers were read on the car, not on a receipt: passenger GM 19141004 and driver GM 19141005, single-piston S10 1983–1997. 19141914 is a rear number. Right spindle casting 459756, left 459755."
     },
     {
       id: "engine",
@@ -801,6 +801,25 @@ window.ZO = {
       evidence: ["IMG_5810"]
     },
     {
+      id: "spindle-459756",
+      name: "Front spindles",
+      pn: "459756 / 459755",
+      brand: "GM casting",
+      system: "steering",
+      role: "Right and left knuckles, read on the parts",
+      status: "watch",
+      confidence: "Casting numbers read on the knuckles. Not on an invoice.",
+      qty: "1 pair",
+      spec: [
+        { k: "Right", v: "459756 — passenger side, as seated in the driver seat" },
+        { k: "Left", v: "459755 — driver side" },
+        { k: "Family", v: "1979–1988 GM G-body disc spindle, same family used on 2WD S10 of those years" },
+        { k: "Not a caliper", v: "459756 is the knuckle. The caliper numbers are 19141004 and 19141005." }
+      ],
+      notes: "G-body and S10 2WD share this spindle family. Ball-joint-to-tie-rod length is not identical on every listing, so measure the arm before treating a G-body spindle as a straight S10 swap. No price — these were not on a receipt.",
+      evidence: []
+    },
+    {
       id: "an-lines",
       name: "AN brake and fuel plumbing",
       pn: "E499097 / E502605",
@@ -864,6 +883,49 @@ window.ZO = {
       ],
       notes: "The ticket does not say what HR-1 measures (fuel, oil, temp, or vacuum).",
       evidence: ["IMG_5876"]
+    },
+    {
+      id: "caliper-front-rh",
+      name: "Front caliper, right",
+      pn: "19141004",
+      brand: "GM / ACDelco 18FR755",
+      system: "brakes",
+      role: "Passenger side, read on the part",
+      status: "watch",
+      confidence: "Read on the car and matched to the GM listing. Not on an invoice.",
+      qty: "1",
+      spec: [
+        { k: "Position", v: "Front, passenger / right, as seated in the driver seat" },
+        { k: "ACDelco", v: "18FR755" },
+        { k: "Fitment", v: "S10 and S10 Blazer 1983–1997, one piston, cast iron, floating" },
+        { k: "In the box", v: "Slides included. Bracket not included. Pads not included." },
+        { k: "Check", v: "One piston is this number. Two pistons is the 1998–2004 pair, a different number." },
+        { k: "Mount", v: "Bleeder ends up on top" },
+        { k: "Not this", v: "19141914 and 19141006 are rear numbers" }
+      ],
+      notes: "No price. This was not on a 2007–2011 receipt. Current GM list price is not the catalog price.",
+      evidence: []
+    },
+    {
+      id: "caliper-front-lh",
+      name: "Front caliper, left",
+      pn: "19141005",
+      brand: "GM / ACDelco 18FR756",
+      system: "brakes",
+      role: "Driver side, the mate to 19141004",
+      status: "watch",
+      confidence: "Mate to the passenger number read on the car. GM listing, not an invoice.",
+      qty: "1",
+      spec: [
+        { k: "Position", v: "Front, driver / left, as seated in the driver seat" },
+        { k: "ACDelco", v: "18FR756" },
+        { k: "Fitment", v: "S10 and S10 Blazer 1983–1997, one piston, cast iron, floating" },
+        { k: "In the box", v: "Slides included. Bracket not included. Pads not included." },
+        { k: "Check", v: "Count the pistons. Two pistons means this pair is the wrong generation." },
+        { k: "Mount", v: "Bleeder ends up on top" }
+      ],
+      notes: "No price. Pair it with 19141004. Do not use 19141914 — that listing is a rear caliper.",
+      evidence: []
     },
     {
       id: "clutch-fork",

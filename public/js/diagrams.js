@@ -220,7 +220,11 @@ const SKETCH = {
       ${callout(150, 80, 40, 240, "Champion pedal box", "wilwood-mc", active)}
       ${callout(395, 250, 360, 330, "AN lines + switch 91031305", "an-lines", active)}
       ${callout(448, 250, 500, 330, "WC 37625", "wc-37625", active)}
-      <text class="title-note" x="24" y="400">E499097 plumbing · NAPA 413-1206 line · gauge HR-1</text>
+      <g class="hot ${onCls("caliper-front-rh", active)}" data-part="caliper-front-rh">
+        <path class="box" d="M452 168 L528 160 L536 214 L444 214 Z" />
+      </g>
+      ${callout(490, 160, 300, 48, "Front R 19141004 · L 19141005", "caliper-front-rh", active)}
+      <text class="title-note" x="24" y="400">E499097 plumbing · NAPA 413-1206 · fronts 19141004 / 19141005</text>
     `;
   },
 

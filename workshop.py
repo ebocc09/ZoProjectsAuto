@@ -6,7 +6,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-PATH = Path(__file__).resolve().parent / "workshop.json"
+PATH = Path(__file__).resolve().parent / "public" / "workbook.json"
 
 
 def empty() -> dict:

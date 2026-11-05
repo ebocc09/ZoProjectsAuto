@@ -241,6 +241,9 @@ const CAT_KIND = {
   "steer-shafts": "shaft",
   "an-lines": "hose",
   "wc-37625": "cyl",
+  "caliper-front-rh": "caliper",
+  "caliper-front-lh": "caliper",
+  "spindle-459756": "arm",
   "brk-4131206": "gauge",
   "clutch-fork": "fork",
   "bucks-15530202": "mystery",
@@ -372,6 +375,9 @@ const CAT_PLACES = {
   "steer-shafts": [
     { where: "United Machine Works, New Waverly", when: "20 Apr 2009", order: "17299 / shipment 14401", item: "Two steering shafts modified", price: "$150.00 cash" },
   ],
+  "spindle-459756": [
+    { where: "On the knuckles — S10 donor", when: "Not on a receipt", order: "459756 right · 459755 left", item: "Casting numbers read on the spindles. G-body / 2WD S10 family. Not a caliper.", price: "No price" },
+  ],
   "an-lines": [
     { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "Brake line, AN3/AN4 fittings, switch 91031305, cap 6175021, fuel line 91011429-10", price: "order $255.84" },
     { where: "Speedway Motors", when: "14 May 2010", order: "E502605", item: "18 in AN3 line, clamps, 90° bulkhead", price: "order $50.98" },
@@ -383,6 +389,12 @@ const CAT_PLACES = {
   "brk-4131206": [
     { where: "Burton Auto Supply, Trinity", when: "13 May 2010", order: "cash ticket", item: "413-1206 brake line ×2", price: "net $4.89 ea · $9.78" },
     { where: "Burton Auto Supply, Trinity", when: "13 May 2010", order: "same ticket", item: "HR-1 gauge", price: "net $13.93 · ticket $25.73" },
+  ],
+  "caliper-front-rh": [
+    { where: "On the car — S10 donor", when: "Not on a receipt", order: "GM 19141004", item: "Front passenger, right. ACDelco 18FR755. One piston. Bracket not included.", price: "No price" },
+  ],
+  "caliper-front-lh": [
+    { where: "On the car — S10 donor", when: "Not on a receipt", order: "GM 19141005", item: "Front driver, left. ACDelco 18FR756. One piston. Mate to 19141004.", price: "No price" },
   ],
   "clutch-fork": [
     { where: "Buck's Engines, Lubbock", when: "21 Mar 2008", order: "P015582B", item: "15592270 clutch fork", price: "$10.00" },

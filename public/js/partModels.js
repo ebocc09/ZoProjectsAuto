@@ -363,6 +363,12 @@ const BUILD = {
     put(g, mesh(new THREE.BoxGeometry(0.28, 0.2, 0.22), mat.leather), 0, 0.12, 0);
     put(g, mesh(new THREE.BoxGeometry(0.16, 0.06, 0.01), mat.alum), 0, 0.14, 0.11);
   },
+  caliper(g) {
+    put(g, mesh(new THREE.BoxGeometry(0.36, 0.08, 0.2), mat.dark), 0, 0.1, 0);
+    put(g, mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.07, 20), mat.steel), 0.02, 0.15, 0);
+    put(g, cyl(0.012, 0.05, mat.brass), 0.12, 0.18, 0.05);
+    put(g, mesh(new THREE.BoxGeometry(0.07, 0.08, 0.16), mat.black), -0.2, 0.09, 0);
+  },
 };
 
 function jug(g, liquid) {
@@ -434,7 +440,7 @@ export async function ensurePartPhotos() {
   const kinds = [
     "bush", "heim", "ball", "tierod", "arm", "coil", "bar", "master", "rad", "engine", "slave", "box", "shaft",
     "jug-oil", "jug-atf", "jug-cool", "jug-brake", "jug-clutch",
-    "fuse", "strip", "lamp", "taillamp", "horn", "fan", "tire", "plate", "hose", "cyl", "gauge", "fork",
+    "fuse", "strip", "lamp", "taillamp", "horn", "fan", "tire", "plate", "hose", "cyl", "caliper", "gauge", "fork",
     "clutch", "belt", "seal", "fitting", "tube", "bolts", "steel", "paint", "spool", "bend", "pipes",
     "strap", "glass", "body", "sheet", "mystery",
   ];

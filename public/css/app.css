@@ -375,6 +375,29 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   border-radius: 10px; padding: 10px 12px; font: 14px/1.45 var(--sans);
 }
 
+.canvas-wrap.is-workbook {
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: auto;
+  padding: 0 0 16px;
+}
+.workbook { padding: 8px 18px 28px; max-width: 920px; }
+.workbook h2 {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--amber); font-weight: 500; margin: 18px 0 8px;
+}
+.workbook .lede { color: var(--paper-2); font-size: 14px; line-height: 1.45; }
+.wb-row {
+  border: 1px solid var(--line); border-radius: 12px; background: #121712; padding: 12px 14px; margin: 0 0 8px;
+}
+.wb-row time { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--amber); margin-bottom: 4px; }
+.wb-row b { display: block; margin-bottom: 4px; }
+.wb-row p { margin: 0; color: var(--paper-2); font-size: 14px; line-height: 1.45; }
+.wb-row small { display: block; margin-top: 6px; color: var(--steel); font-family: var(--mono); font-size: 11px; }
+.token-form { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; margin-top: 8px; }
+.token-form label { flex: 1 1 220px; }
+.token-form input { width: 100%; }
+
 .canvas-wrap.is-catalog {
   align-items: stretch;
   justify-content: flex-start;
@@ -814,7 +837,7 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
 
   .phone-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 6px;
     padding: 6px 10px calc(6px + env(safe-area-inset-bottom));
     background: #10140f;
@@ -826,8 +849,8 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
     border: 1px solid transparent;
     background: transparent;
     color: var(--steel);
-    font-size: 13px;
-    letter-spacing: 0.14em;
+    font-size: 11px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
   .phone-nav button.on {

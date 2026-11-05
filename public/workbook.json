@@ -1,0 +1,75 @@
+{
+  "updatedAt": "2026-11-05T02:00:00.000000+00:00",
+  "vehicle": {
+    "vitals": {
+      "Tires": "P185/60R14"
+    }
+  },
+  "systems": {
+    "wheels": {
+      "notes": [
+        "Changed tire size"
+      ]
+    },
+    "brakes": {
+      "notes": [
+        "Front calipers read on the car. Passenger/right GM 19141004 (ACDelco 18FR755). Driver/left GM 19141005 (ACDelco 18FR756). Single piston, S10 1983–1997. 19141914 is a rear number and is not these. Not on an invoice."
+      ]
+    },
+    "steering": {
+      "notes": [
+        "Spindle castings read on the knuckles. Right 459756, left 459755. G-body / 2WD S10 family. These are knuckles, not calipers. Not on an invoice."
+      ]
+    }
+  },
+  "parts": {
+    "tires": {
+      "notes": [
+        "Changed tire size"
+      ],
+      "pn": "P185/60R14",
+      "spec": {
+        "As-built size": "P205/75R14",
+        "Camber / caster": "−1° / +5°",
+        "Current size": "P205/75R14"
+      }
+    }
+  },
+  "log": [
+    {
+      "id": "n1",
+      "at": "2026-11-04T00:16:50.239538+00:00",
+      "system": "wheels",
+      "part": "tires",
+      "text": "Changed tire size",
+      "patch": {
+        "spec": {
+          "As-built size": "P205/75R14",
+          "Camber / caster": "−1° / +5°",
+          "Current size": "P205/75R14"
+        },
+        "pn": "P185/60R14",
+        "vital": {
+          "k": "Tires",
+          "v": "P185/60R14"
+        }
+      }
+    },
+    {
+      "id": "n2",
+      "at": "2026-11-05T01:50:00.000000+00:00",
+      "system": "brakes",
+      "part": "caliper-front-rh",
+      "text": "Front calipers read on the car. Passenger/right GM 19141004 (ACDelco 18FR755). Driver/left GM 19141005 (ACDelco 18FR756). Single piston, S10 1983–1997. 19141914 is a rear number and is not these. Not on an invoice.",
+      "patch": {}
+    },
+    {
+      "id": "n3",
+      "at": "2026-11-05T01:55:00.000000+00:00",
+      "system": "steering",
+      "part": "spindle-459756",
+      "text": "Spindle castings read on the knuckles. Right 459756, left 459755. G-body / 2WD S10 family. These are knuckles, not calipers. Not on an invoice.",
+      "patch": {}
+    }
+  ]
+}

@@ -62,7 +62,7 @@ const ZO_PROJECTS = [
         body: "Which wheels were locked, whether the bleeder freed them, and what the fluid looked like (clear, dark, or chunky). Put it in the note below so the next session starts from the car, not from a guess."
       }
     ],
-    parts: ["wilwood-mc", "wc-37625", "an-lines", "brk-4131206", "fluid-brake"],
+    parts: ["wilwood-mc", "caliper-front-rh", "caliper-front-lh", "wc-37625", "an-lines", "brk-4131206", "fluid-brake"],
     evidence: ["IMG_5884", "IMG_5867", "IMG_5858", "IMG_5876"]
   }
 ];

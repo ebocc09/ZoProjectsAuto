@@ -1,5 +1,5 @@
 import { mountStudio } from "./car3d.js?v=wire2";
-import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model7";
+import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model8";
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -14,6 +14,7 @@ const state = {
   catalogSys: "all",
   catalogQ: "",
   project: null,
+  workbookMsg: "",
 };
 let workshop = { log: [], parts: {}, systems: {}, vehicle: {} };
 let studio = null;
@@ -66,8 +67,18 @@ async function init() {
     }
   });
   $(".phone-nav")?.addEventListener("click", (e) => {
-    const b = e.target.closest("[data-phone]");
-    if (b) showPhone(b.dataset.phone);
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.open === "workbook") {
+      openWorkbook();
+      return;
+    }
+    if (!b.dataset.phone) return;
+    if (state.view === "workbook" && b.dataset.phone === "stage") {
+      state.view = "hero";
+      renderStage();
+    }
+    showPhone(b.dataset.phone);
   });
   $("#picker")?.addEventListener("click", onPicker);
   syncPhoneLabel();
@@ -82,6 +93,7 @@ const PICK_VIEWS = [
   ["diagram", "Diagram"],
   ["guide", "Book"],
   ["catalog", "Catalog"],
+  ["workbook", "Workbook"],
 ];
 
 function renderPicker() {
@@ -154,6 +166,7 @@ function onPicker(e) {
     const v = view.dataset.view;
     if (v === "guide") openGuide();
     else if (v === "catalog") openCatalog();
+    else if (v === "workbook") openWorkbook();
     else setView(v);
     return;
   }
@@ -192,7 +205,13 @@ function showPhone(which) {
   const ws = document.querySelector(".workspace");
   if (!ws) return;
   ws.dataset.phone = which;
-  $$(".phone-nav button").forEach((b) => b.classList.toggle("on", b.dataset.phone === which));
+  $$(".phone-nav button").forEach((b) => {
+    if (b.dataset.open === "workbook") {
+      b.classList.toggle("on", state.view === "workbook" && which === "stage");
+    } else {
+      b.classList.toggle("on", b.dataset.phone === which && !(state.view === "workbook" && which === "stage"));
+    }
+  });
   syncPhoneLabel();
   requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
 }
@@ -202,6 +221,8 @@ function renderRail() {
   if (book) book.classList.toggle("on", state.view === "guide");
   const cat = $("#catbtn");
   if (cat) cat.classList.toggle("on", state.view === "catalog");
+  const work = $("#workbtn");
+  if (work) work.classList.toggle("on", state.view === "workbook");
   const jobs = $("#projlist");
   if (jobs && window.ZO_PROJECTS) {
     jobs.innerHTML = ZO_PROJECTS.map((job) => {
@@ -329,14 +350,22 @@ function renderStage() {
   if (state.view === "diagram" && !state.system) state.view = "hero";
   const sys = ZO.systems.find((s) => s.id === state.system);
   const job = state.view === "project" ? ZO_PROJECTS.find((p) => p.id === state.project) : null;
-  $("#stageTitle").textContent = job ? job.title : state.view === "catalog" ? "Parts catalog" : ZO.vehicle.name;
+  $("#stageTitle").textContent = job
+    ? job.title
+    : state.view === "catalog"
+      ? "Parts catalog"
+      : state.view === "workbook"
+        ? "Workbook"
+        : ZO.vehicle.name;
   $("#stageSub").textContent = job
     ? job.summary
     : state.view === "catalog"
       ? "Click a photo to spin that part. Prices under it are the invoice figures."
-      : state.view === "diagram" && sys
-        ? `${sys.name} — click a piece on the sketch`
-        : ZO.vehicle.identity;
+      : state.view === "workbook"
+        ? "Every note and field change, newest first."
+        : state.view === "diagram" && sys
+          ? `${sys.name} — click a piece on the sketch`
+          : ZO.vehicle.identity;
   renderJobStrip();
   $$(".views button").forEach((b) => b.classList.toggle("on", b.dataset.view === state.view));
   syncPhoneLabel();
@@ -346,7 +375,9 @@ function renderStage() {
     hint.textContent =
       state.view === "catalog"
         ? "Click a photo to turn the model · prices are what the tickets say"
-        : state.view === "project"
+        : state.view === "workbook"
+          ? "Notes saved here go into the repo when a GitHub token is stored on this phone"
+          : state.view === "project"
           ? "Check a step when you have tried it · Sketch takes you back to the car"
           : state.view === "diagram"
             ? "Click a branch for that part · Sketch takes you back to the model"
@@ -354,6 +385,19 @@ function renderStage() {
   }
   renderPicker();
   const host = $("#svghost");
+  if (state.view === "workbook") {
+    if (studio) {
+      studio.dispose();
+      studio = null;
+    }
+    $("#tag")?.classList.remove("on");
+    host.classList.remove("is-3d", "is-diagram", "is-catalog", "is-project");
+    host.classList.add("is-workbook");
+    host.innerHTML = renderWorkbook();
+    bindWorkbook(host);
+    return;
+  }
+  host.classList.remove("is-workbook");
   if (state.view === "project") {
     if (studio) {
       studio.dispose();
@@ -432,6 +476,15 @@ window.setView = (v) => {
   renderStage();
   showPhone("stage");
 };
+
+function openWorkbook() {
+  state.view = "workbook";
+  state.project = null;
+  renderRail();
+  renderStage();
+  showPhone("stage");
+}
+window.openWorkbook = openWorkbook;
 
 window.openCatalog = () => {
   if (state.view === "catalog") {
@@ -819,7 +872,8 @@ function workshopBranch(systemId) {
       <label>Add a note
         <textarea name="text" rows="2" required placeholder="Replaced the tires. Old P205/75R14, now …"></textarea>
       </label>
-      <button type="submit">Save to workshop log</button>
+      ${workbookStatusLine()}
+      <button type="submit">Save to workbook</button>
     </form>
   </details>`;
 }
@@ -1013,18 +1067,180 @@ function editForm(p) {
       </label>
       ${specFields}
       ${tireHint}
-      <button type="submit">Save to workshop log</button>
+      ${workbookStatusLine()}
+      <button type="submit">Save to workbook</button>
     </form>`;
 }
 
-async function loadWorkshop() {
+const GH_REPO = "ebocc09/ZoProjectsAuto";
+const GH_FILE = "public/workbook.json";
+const TOKEN_KEY = "zo-github-token";
+const LOCAL_KEY = "zo-workbook";
+
+function emptyWorkbook() {
+  return { updatedAt: null, vehicle: {}, systems: {}, parts: {}, log: [] };
+}
+
+function parseWorkbook(raw) {
+  const data = raw && typeof raw === "object" ? raw : emptyWorkbook();
+  data.vehicle = data.vehicle || {};
+  data.systems = data.systems || {};
+  data.parts = data.parts || {};
+  data.log = Array.isArray(data.log) ? data.log : [];
+  return data;
+}
+
+function workbookTime(ws) {
+  const stamp = Date.parse(ws && ws.updatedAt) || 0;
+  const last = ws && ws.log && ws.log.length ? Date.parse(ws.log[ws.log.length - 1].at) || 0 : 0;
+  return Math.max(stamp, last);
+}
+
+function readLocalWorkbook() {
   try {
-    const res = await fetch("/api/workshop");
-    workshop = await res.json();
-    applyWorkshop(workshop);
+    return JSON.parse(localStorage.getItem(LOCAL_KEY) || "null");
   } catch {
-    workshop = { log: [], parts: {}, systems: {}, vehicle: {} };
+    return null;
   }
+}
+
+function rememberWorkbook() {
+  try {
+    localStorage.setItem(LOCAL_KEY, JSON.stringify(workshop));
+  } catch {
+    /* private mode */
+  }
+}
+
+function workbookStatusLine() {
+  return state.workbookMsg ? `<p class="hint-inline">${esc(state.workbookMsg)}</p>` : "";
+}
+
+async function loadWorkshop() {
+  const found = [];
+  try {
+    const res = await fetch("workbook.json?t=" + Date.now(), { cache: "no-store" });
+    if (res.ok) found.push(parseWorkbook(await res.json()));
+  } catch {
+    /* static file missing */
+  }
+  try {
+    const res = await fetch("/api/workshop", { cache: "no-store" });
+    if (res.ok) found.push(parseWorkbook(await res.json()));
+  } catch {
+    /* GitHub Pages has no shop server */
+  }
+  const local = readLocalWorkbook();
+  if (local) found.push(parseWorkbook(local));
+  found.sort((a, b) => workbookTime(b) - workbookTime(a));
+  workshop = found[0] || emptyWorkbook();
+  applyWorkshop(workshop);
+}
+
+function appendNote(body) {
+  const text = String(body.text || "").trim();
+  const patch = body.patch || {};
+  if (!text && !Object.keys(patch).length) throw new Error("Write what changed.");
+  const now = new Date().toISOString();
+  workshop = parseWorkbook(workshop);
+  workshop.log.push({
+    id: "n" + Date.now().toString(36),
+    at: now,
+    system: body.system || null,
+    part: body.part || null,
+    text,
+    patch,
+  });
+  workshop.updatedAt = now;
+  if (body.part) {
+    const slot = workshop.parts[body.part] || {};
+    if (text) {
+      const notes = Array.isArray(slot.notes) ? slot.notes : slot.notes ? [slot.notes] : [];
+      notes.push(text);
+      slot.notes = notes;
+    }
+    ["pn", "name", "status"].forEach((key) => {
+      if (patch[key]) slot[key] = patch[key];
+    });
+    if (patch.spec && typeof patch.spec === "object") slot.spec = Object.assign({}, slot.spec || {}, patch.spec);
+    workshop.parts[body.part] = slot;
+  }
+  if (patch.vital && patch.vital.k && patch.vital.v) {
+    workshop.vehicle.vitals = workshop.vehicle.vitals || {};
+    workshop.vehicle.vitals[patch.vital.k] = patch.vital.v;
+  }
+  if (body.system && text) {
+    const slot = workshop.systems[body.system] || {};
+    const notes = Array.isArray(slot.notes) ? slot.notes : slot.notes ? [slot.notes] : [];
+    notes.push(text);
+    slot.notes = notes.slice(-12);
+    workshop.systems[body.system] = slot;
+  }
+}
+
+function utf8ToB64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) {
+    bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  }
+  return btoa(bin);
+}
+
+function b64ToUtf8(b64) {
+  const bin = atob(String(b64).replace(/\s/g, ""));
+  const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+function mergeRemote(remote) {
+  remote = parseWorkbook(remote);
+  const ids = new Set(workshop.log.map((n) => n.id));
+  remote.log.forEach((n) => {
+    if (n && n.id && !ids.has(n.id)) workshop.log.push(n);
+  });
+  workshop.log.sort((a, b) => String(a.at).localeCompare(String(b.at)));
+  Object.keys(remote.parts).forEach((id) => {
+    if (!workshop.parts[id]) workshop.parts[id] = remote.parts[id];
+  });
+}
+
+async function pushWorkbookToGit(token) {
+  const headers = {
+    Authorization: "Bearer " + token,
+    Accept: "application/vnd.github+json",
+    "Content-Type": "application/json",
+  };
+  const url = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
+  const got = await fetch(url + "?ref=main", { headers, cache: "no-store" });
+  let sha;
+  if (got.ok) {
+    const meta = await got.json();
+    sha = meta.sha;
+    try {
+      mergeRemote(JSON.parse(b64ToUtf8(meta.content || "")));
+    } catch {
+      /* keep the copy we already have */
+    }
+  } else if (got.status !== 404) {
+    const err = await got.json().catch(() => ({}));
+    throw new Error(err.message || "GitHub " + got.status);
+  }
+  const put = await fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify({
+      message: "Update the workbook.",
+      content: utf8ToB64(JSON.stringify(workshop, null, 2) + "\n"),
+      branch: "main",
+      sha,
+    }),
+  });
+  if (!put.ok) {
+    const err = await put.json().catch(() => ({}));
+    throw new Error(err.message || "GitHub " + put.status);
+  }
+  rememberWorkbook();
 }
 
 function applyWorkshop(ws) {
@@ -1080,32 +1296,116 @@ async function saveNote(form) {
       if (fluidVital[partId]) patch.vital = { k: fluidVital[partId], v: spec["Current fill"] };
     }
   const text = String(fd.get("text") || "").trim();
+  const payload = { system: state.system, part: partId || null, text, patch };
+  let wrote = false;
   try {
     const res = await fetch("/api/note", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        system: state.system,
-        part: partId || null,
-        text,
-        patch,
-      }),
+      body: JSON.stringify(payload),
     });
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({ error: `Save failed (${res.status})` }));
-      alert(err.error || "Save failed");
+    if (res.ok) {
+      workshop = parseWorkbook(await res.json());
+      wrote = true;
+    }
+  } catch {
+    /* Pages has no shop server — write the note here, then into git */
+  }
+  if (!wrote) {
+    try {
+      appendNote(payload);
+    } catch (err) {
+      state.workbookMsg = err.message || "Write what changed.";
+      renderPanel(state.system);
       return;
     }
-    workshop = await res.json();
-    applyWorkshop(workshop);
-    state.editing = null;
-    if (part) state.part = part.id;
-    renderRail();
-    renderStage();
-    renderPanel(state.system);
-  } catch {
-    alert("This copy has no workshop log. Project checkboxes stay on this phone.");
   }
+  rememberWorkbook();
+  applyWorkshop(workshop);
+  const token = localStorage.getItem(TOKEN_KEY) || "";
+  if (token) {
+    try {
+      await pushWorkbookToGit(token);
+      state.workbookMsg = "Written into the repo. The site updates when Pages finishes.";
+    } catch (err) {
+      state.workbookMsg = "Saved on this phone. GitHub said: " + (err.message || "could not write the file");
+    }
+  } else if (wrote) {
+    state.workbookMsg = "Saved on this computer. Open Workbook and add a GitHub token to publish it.";
+  } else {
+    state.workbookMsg = "Saved on this phone. Open Workbook and add a GitHub token to write it into the repo.";
+  }
+  state.editing = null;
+  if (part) state.part = part.id;
+  renderRail();
+  renderStage();
+  renderPanel(state.system);
+}
+
+function patchLine(note) {
+  const patch = note.patch || {};
+  const bits = [];
+  if (patch.pn) bits.push("PN " + patch.pn);
+  if (patch.name) bits.push(patch.name);
+  if (patch.status) bits.push(patch.status);
+  if (patch.spec) bits.push(Object.entries(patch.spec).map(([k, v]) => k + ": " + v).join(" · "));
+  if (patch.vital) bits.push(patch.vital.k + " → " + patch.vital.v);
+  return bits.join(" · ");
+}
+
+function renderWorkbook() {
+  const notes = (workshop.log || []).slice().reverse();
+  const hasToken = !!localStorage.getItem(TOKEN_KEY);
+  const rows = notes.length
+    ? notes
+        .map((n) => {
+          const part = ZO.parts.find((p) => p.id === n.part);
+          const sys = ZO.systems.find((s) => s.id === n.system);
+          const who = [sys ? sys.name : "", part ? part.name : n.part || ""].filter(Boolean).join(" · ");
+          const extra = patchLine(n);
+          return `<article class="wb-row">
+            <time>${esc(fmtWhen(n.at))}</time>
+            ${who ? `<b>${esc(who)}</b>` : ""}
+            <p>${esc(n.text || "Field update")}</p>
+            ${extra ? `<small>${esc(extra)}</small>` : ""}
+          </article>`;
+        })
+        .join("")
+    : `<p class="lede">No notes yet. Save one from a part and it shows up here.</p>`;
+  return `<div class="workbook">
+    <h2>Git</h2>
+    <p class="lede">${
+      hasToken
+        ? "A token is saved in this browser. The next note commits public/workbook.json on main. The token never goes into the repo."
+        : "Paste a GitHub token with contents access to ZoProjectsAuto. It stays in this browser. Without it, notes stay on this phone."
+    }</p>
+    ${state.workbookMsg ? `<p class="hint-inline">${esc(state.workbookMsg)}</p>` : ""}
+    <form class="token-form" id="tokenform">
+      <label>GitHub token
+        <input name="token" type="password" autocomplete="off" placeholder="${hasToken ? "Saved — paste a new one to replace it" : "github_pat_… or classic repo token"}" />
+      </label>
+      <button type="submit">Save token</button>
+      ${hasToken ? `<button type="button" id="cleartoken">Clear</button>` : ""}
+    </form>
+    <h2>Changes · ${notes.length}</h2>
+    ${rows}
+  </div>`;
+}
+
+function bindWorkbook(host) {
+  host.querySelector("#tokenform")?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const value = String(new FormData(e.target).get("token") || "").trim();
+    if (!value) return;
+    localStorage.setItem(TOKEN_KEY, value);
+    state.workbookMsg = "Token saved in this browser. The next note writes the workbook into the repo.";
+    renderStage();
+  });
+  host.querySelector("#cleartoken")?.addEventListener("click", () => {
+    localStorage.removeItem(TOKEN_KEY);
+    state.workbookMsg = "Token cleared from this browser.";
+    renderStage();
+  });
 }
 
 function uniqueEvidence(parts) {
