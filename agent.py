@@ -254,11 +254,16 @@ TOPICS: list[dict] = [
         "keys": [
             ("radiator", 8), ("rad", 4), ("cooling", 6), ("fan", 3),
             ("12an", 6), ("jegs", 5), ("555-51962", 10),
+            ("hose", 5), ("24024", 10), ("coolant", 4),
         ],
         "reply": (
             "JEGS 555-51962 dragster/roadster radiator, 17 × 19-1/2 overall, −12AN. "
-            "Fittings 555-530082 ×2, inline filler 555-530400, hose drain 071063700, 12 in fan 400-110. "
-            "Aircraft Spruce AN833-12D, AN821-12D elbow, AN924-12D nut in May 2009. Gates heater hose 28432 ×2 in June 2011."
+            "Fittings 555-530082 ×2, inline filler 555-530400, hose drain 071063700. "
+            "The fan in hand is a Flex-a-lite model 110, bought from Peyton Performance in Waxahachie. "
+            "The 2008 JEGS line 400-110 was deducted and is not in either box. "
+            "Aircraft Spruce AN833-12D, AN821-12D elbow, AN924-12D nut in May 2009. Gates heater hose 28432 ×2 in June 2011 is the 3/4 in hose. "
+            "The radiator-to-block hose that burst matches Gates 24024, a 1-1/2 in × 3 ft stick rated 60 psi. "
+            "NAPA 609, Dayco 76150, and Continental 56024 are the same hose. Not bought yet."
         ),
         "pills": ["Engine", "AN fittings"],
     },

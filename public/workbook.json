@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T02:00:00.000000+00:00",
+  "updatedAt": "2026-11-07T13:30:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -20,9 +20,29 @@
       "notes": [
         "Spindle castings read on the knuckles. Right 459756, left 459755. G-body / 2WD S10 family. These are knuckles, not calipers. Not on an invoice."
       ]
+    },
+    "cooling": {
+      "notes": [
+        "Radiator-to-block hose burst. Intact section matches a 1-1/2 in stick, Gates 24024. O'Reilly: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 Same hose is NAPA 609, Dayco 76150, Continental 56024. Rated 60 psi, which covers this system. Gates 24224 is the 100 psi stick. Not bought yet."
+      ]
     }
   },
   "parts": {
+    "rad-hose": {
+      "notes": [
+        "Radiator-to-block hose burst. Intact section matches a 1-1/2 in stick, Gates 24024. O'Reilly: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 Same hose is NAPA 609, Dayco 76150, Continental 56024. Rated 60 psi, which covers this system. Gates 24224 is the 100 psi stick. Not bought yet."
+      ],
+      "pn": "24024",
+      "status": "replace",
+      "spec": {
+        "Size": "1-1/2 in inside. Thumb and middle finger just meet on the intact hose. Blown end was flared.",
+        "Buy": "Gates 24024, NAPA 609, Dayco 76150, or Continental 56024. 1-1/2 in × 3 ft, 60 psi.",
+        "O'Reilly": "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024",
+        "Pressure": "60 psi is the hose rating. Cap pressure is usually 13–16 psi. GM 3.0 manual says not to pressure-test above 20 psi.",
+        "Heavier stick": "Gates 24224, same size, 100 psi.",
+        "If it slops": "JEGS 555-53082 is a 1-1/4 in barb. Use Gates 24020 or NAPA 605."
+      }
+    },
     "tires": {
       "notes": [
         "Changed tire size"
@@ -70,6 +90,25 @@
       "part": "spindle-459756",
       "text": "Spindle castings read on the knuckles. Right 459756, left 459755. G-body / 2WD S10 family. These are knuckles, not calipers. Not on an invoice.",
       "patch": {}
+    },
+    {
+      "id": "n4",
+      "at": "2026-11-07T13:30:00.000000+00:00",
+      "system": "cooling",
+      "part": "rad-hose",
+      "text": "Radiator-to-block hose burst. Stamps EOSA3AG1 (also read E0SA3AG1) and E09 AG 1 are factory marks, not a part number. On the intact hose, thumb and middle finger just meet, which matches a 1-1/2 in inside stick, about 1.89 in outside. The blown end was flared. Gates 28432 is the 3/4 in heater hose from 2011. Buy Gates 24024, NAPA 609, Dayco 76150, or Continental 56024: 1-1/2 in × 3 ft, SAE 20R1, 60 psi. 60 psi is the hose rating. The cap holds the system around 13–16 psi, and the GM 3.0 manual says not to pressure-test above 20 psi. Gates 24224 is the same size at 100 psi. If the 1-1/2 in hose is loose, the neck is the JEGS 555-53082 barb and the stick is Gates 24020 or NAPA 605. O'Reilly listing: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 Not bought yet. No receipt.",
+      "patch": {
+        "pn": "24024",
+        "status": "replace",
+        "spec": {
+          "Size": "1-1/2 in inside. Thumb and middle finger just meet on the intact hose. Blown end was flared.",
+          "Buy": "Gates 24024, NAPA 609, Dayco 76150, or Continental 56024. 1-1/2 in × 3 ft, 60 psi.",
+          "O'Reilly": "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024",
+          "Pressure": "60 psi is the hose rating. Cap pressure is usually 13–16 psi. GM 3.0 manual says not to pressure-test above 20 psi.",
+          "Heavier stick": "Gates 24224, same size, 100 psi.",
+          "If it slops": "JEGS 555-53082 is a 1-1/4 in barb. Use Gates 24020 or NAPA 605."
+        }
+      }
     }
   ]
 }

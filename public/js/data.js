@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700, 12 in fan 400-110. A separate Flex-a-lite puller-fan instruction sheet is in the folder with model 210 underlined — no Flex-a-lite invoice. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. The intact section matches a 1-1/2 in stick, Gates 24024. Not bought yet."
     },
     {
       id: "driveline",
@@ -411,12 +411,55 @@ window.ZO = {
         { k: "Core", v: "13-1/2 × 18-5/8 in" },
         { k: "Fittings", v: "555-530082 −12AN × 1.25 in, qty 2" },
         { k: "Filler", v: "555-530400 1.25×1.25" },
-        { k: "Fan on this invoice", v: "400-110 / 04001110 12 in low-profile with thermostat" },
-        { k: "Not this fan", v: "Flex-a-lite 210 is a different sheet, with no invoice" },
+        { k: "Fan", v: "Flex-a-lite model 110, bought from Peyton. The 2008 JEGS line was deducted. See that part." },
         { k: "Hose drain", v: "071063700 radiator hose drain — $17.99, same JEGS invoice" }
       ],
-      notes: "",
+      notes: "Box 1 is the filler, fittings, and hose drain. Box 2 is the radiator. The fan line is on the confirmation only. The hose from this radiator into the block is the separate radiator-hose part.",
       evidence: ["IMG_5825", "IMG_5813", "IMG_5812"]
+    },
+    {
+      id: "rad-hose",
+      name: "Radiator hose",
+      pn: "24024",
+      brand: "Gates",
+      system: "cooling",
+      role: "Radiator straight into the engine block",
+      status: "replace",
+      confidence: "Hand fit on 7 Nov 2026. Not taped. Not bought yet.",
+      qty: "1",
+      spec: [
+        { k: "Size", v: "1-1/2 in inside. On the intact hose, thumb and middle finger just meet. The blown end was flared and felt bigger. Outside of this size is about 1.89 in." },
+        { k: "Stamps", v: "EOSA3AG1, also read as E0SA3AG1, and E09 AG 1. Factory marks on the hose. Not a catalog number." },
+        { k: "Buy", v: "Gates 24024, NAPA 609, Dayco 76150, or Continental 56024. Straight coolant hose, 1-1/2 in × 3 ft, SAE 20R1, 60 psi." },
+        { k: "O'Reilly", v: "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024" },
+        { k: "Pressure", v: "60 psi is what the hose can hold. The cap sets cooling-system pressure, usually 13–16 psi. The GM 3.0 manual says not to pressure-test this system above 20 psi. 60 psi covers it." },
+        { k: "Heavier stick", v: "Gates 24224 is the same 1-1/2 in × 3 ft at 100 psi." },
+        { k: "If it slops", v: "JEGS 555-53082 is a −12AN fitting with a 1-1/4 in barb. A loose 1-1/2 in hose means the neck is that barb: Gates 24020 or NAPA 605." },
+        { k: "Heater hose", v: "Gates 28432 on the 23 Jun 2011 ticket is 3/4 in heater hose. Different hose." }
+      ],
+      notes: "Cut the 3 ft stick to the old length after the end starts onto the metal neck. No receipt yet, so there is no price.",
+      evidence: []
+    },
+    {
+      id: "flex-fan-110",
+      name: "Radiator fan",
+      pn: "110",
+      brand: "Flex-a-lite",
+      system: "cooling",
+      role: "Single puller, bought",
+      status: "ok",
+      confidence: "Bought from Peyton Performance, Waxahachie. Same model as the deducted 2008 JEGS line 400-110. No receipt in the folder.",
+      qty: "1",
+      spec: [
+        { k: "Bought", v: "Peyton Performance, 422 FM 1493, Waxahachie. 972-923-1699. Their page listed model 110 at $130.73." },
+        { k: "2008 order", v: "JEGS 400-110, w/Adjustable Thermostat, $141.99. Deducted. Not in either box of invoice 098828080208." },
+        { k: "What 110 is", v: "Form 99876: single fan with thermostatic control and an A/C relay." },
+        { k: "Peyton listing", v: "12 in, 10 blades, 1,250 cfm, 9.5 amp, shroud 15 × 13-1/2 × 2.625. Not measured on this fan." },
+        { k: "Not 111", v: "105400 is the later 8-blade S-blade. That is not the fan that was bought." },
+        { k: "Not 210", v: "The underlined dual is 26-1/4 in wide. This radiator is 17 in wide, core 13-1/2 × 18-5/8." }
+      ],
+      notes: "JEGS prefix 400 is Flex-a-lite, so the 2008 line 400-110 is model 110. That line was pulled before it shipped. The fan now in hand is a model 110 from Peyton, the number on that order.",
+      evidence: ["IMG_5825", "IMG_5812", "IMG_5813", "IMG_5939"]
     },
     {
       id: "gm-30",
@@ -723,7 +766,7 @@ window.ZO = {
       confidence: "Hand-labeled on IMG_5759",
       qty: "1",
       spec: [{ k: "Sheet block", v: "ENGINE" }],
-      notes: "The JEGS order is a 12 in fan 400-110. The Flex-a-lite instruction sheet, model 210 underlined, is a second fan document and has no invoice. This circle on the loom is the electrical feed.",
+      notes: "This circle is the electrical feed on the loom. The fan now in hand is a Flex-a-lite 110. The 2008 JEGS line for that model was deducted and never shipped.",
       evidence: ["IMG_5759", "IMG_5939", "IMG_5941"]
     },
     {
@@ -745,7 +788,7 @@ window.ZO = {
         { k: "Motor wire", v: "12 AWG. Control wire on the sheet is 14 AWG." },
         { k: "Probe", v: "Temperature probe into the radiator fins near the inlet hose" }
       ],
-      notes: "No price. Do not treat this as the JEGS 400-110. The sheet does not say the fan was installed.",
+      notes: "No price. Model 210 is the dual on this sheet. That shroud is 26-1/4 in wide. This radiator is 17 in wide, so the dual does not fit the core. The fan that was bought is the single, model 110.",
       evidence: ["IMG_5939", "IMG_5940", "IMG_5941", "IMG_5942"]
     },
     {
@@ -1219,7 +1262,7 @@ window.ZO = {
         { k: "Bullet terminal", v: "MTM 85X32 TERM BULLET 16 ×1" },
         { k: "Socket", v: "MTM 85S10 SOCKET 3 TERM H ×1" }
       ],
-      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket.",
+      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is the separate part 24024.",
       evidence: ["IMG_5878"]
     },
     {
@@ -1635,7 +1678,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, inline filler, hose drain 071063700, 12 in fan 400-110. Flex-a-lite puller-fan instructions are a separate sheet, model 210 underlined, form 99876, no invoice. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. The intact section matches a 1-1/2 in stick, Gates 24024, also NAPA 609, Dayco 76150, and Continental 56024. That hose is rated 60 psi, which covers a system the GM 3.0 manual says not to test above 20 psi. Gates 24224 is the 100 psi stick in the same size. Not bought yet.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {

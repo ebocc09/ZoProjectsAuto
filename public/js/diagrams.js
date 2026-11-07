@@ -298,7 +298,7 @@ const SKETCH = {
         <path class="hose" d="M168 286 C 230 310, 280 270, 320 240" />
         <path class="block-ghost" d="M320 150 L470 150 L490 180 L490 280 L320 280 Z" />
       </g>
-      <g class="hot ${onCls("flex-fan-210", active)}" data-part="flex-fan-210">
+      <g class="hot ${onCls("flex-fan-110", active)}" data-part="flex-fan-110">
         <circle class="rim" cx="250" cy="196" r="58" />
       </g>
       <g class="hot ${onCls("an12-spruce", active)}" data-part="an12-spruce">
@@ -308,7 +308,7 @@ const SKETCH = {
         <path class="hose" d="M160 280 C 250 300, 300 260, 320 220" fill="none" />
       </g>
       ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
-      ${callout(250, 196, 200, 370, "12 in fan 400-110", "jegs-rad", active)}
+      ${callout(250, 196, 200, 370, "model 110", "flex-fan-110", active)}
       ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
       <text class="title-note" x="24" y="400">Hose drain 071063700 · heater hose GAT 28432</text>
     `;

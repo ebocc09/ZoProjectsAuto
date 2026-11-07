@@ -235,6 +235,7 @@ const CAT_KIND = {
   headlamps: "lamp",
   "horn-s10": "horn",
   "fan-motor": "fan",
+  "flex-fan-110": "fan",
   "flex-fan-210": "fan",
   "loom-colors": "sheet",
   "gauges-drawn": "gauge",
@@ -262,6 +263,7 @@ const CAT_KIND = {
   "seals-tim": "seal",
   "fuel-hardware": "hose",
   "heater-hose": "hose",
+  "rad-hose": "hose",
   "an12-spruce": "fitting",
   "tube-4130": "tube",
   "an8-bolts": "bolts",
@@ -326,13 +328,17 @@ const CAT_PLACES = {
   "wilwood-mc": [
     { where: "Speedway Motors", when: "1 Mar 2010", order: "E472885 / 3308961", item: "835-2607563 Wilwood 1 in tandem", price: "$121.99" },
   ],
+  "flex-fan-110": [
+    { where: "Peyton Performance, Waxahachie", when: "5 Nov 2026", order: "972-923-1699", item: "Flex-a-lite model 110, single puller. Bought. No receipt in the folder.", price: "Page listed $130.73" },
+    { where: "JEGS confirmation, then removed", when: "2 Aug 2008", order: "3195204", item: "400-110 w/Adjustable Thermostat. Same model, never shipped.", price: "$141.99 deducted" },
+    { where: "Not in the boxes", when: "3 Aug 2008", order: "098828080208", item: "Box 1 is fittings and the drain. Box 2 is the radiator.", price: "No fan shipped" },
+  ],
   "flex-fan-210": [
-    { where: "Instruction sheet only", when: "rev 05-02-08", order: "Form 99876", item: "Model 210 underlined. Dual puller with thermostatic control. Optional switch 31148.", price: "No price" },
+    { where: "Instruction sheet only", when: "rev 05-02-08", order: "Form 99876", item: "Model 210 underlined. Dual puller, shroud 26-1/4 in wide. This radiator is 17 in wide.", price: "No price" },
   ],
   "jegs-rad": [
-    { where: "JEGS", when: "Aug 2008", order: "098828080208", item: "055551962 aluminum radiator −12AN", price: "$299.99" },
-    { where: "JEGS", when: "Aug 2008", order: "same invoice, box 1", item: "Filler 055553040, fittings 055553082 ×2, drain 071063700", price: "box $119.20" },
-    { where: "JEGS", when: "5 Aug 2008", order: "098827080208", item: "04001110 / 400-110 12 in fan with thermostat", price: "$141.99 · box $144.24" },
+    { where: "JEGS", when: "3 Aug 2008", order: "098828080208, box 2", item: "055551962 aluminum radiator −12AN", price: "$299.99" },
+    { where: "JEGS", when: "3 Aug 2008", order: "098828080208, box 1", item: "Filler 055553040, fittings 055553082 ×2, drain 071063700", price: "box $119.20" },
   ],
   "gm-30": [
     { where: "Buck's Engines, Lubbock", when: "23 Oct 2007 note", order: "IMG_5809", item: "VORTEC 3.0 LITER. Flywheel handwritten 270.00. No engine total.", price: "No engine total" },
@@ -390,7 +396,7 @@ const CAT_PLACES = {
     { where: "1988 S10 reference sheet", when: "Printed 13 Oct 2009", order: "IMG_5818", item: "Horn circuit diagram, not a horn purchase", price: "No price" },
   ],
   "fan-motor": [
-    { where: "Labeled on the loom", when: "No motor invoice", order: "IMG_5759", item: "The cooling fan that was bought is JEGS 400-110", price: "No separate motor price" },
+    { where: "Labeled on the loom", when: "No motor invoice", order: "IMG_5759", item: "Fan feed on the engine block of the sheet. 400-110 was deducted.", price: "No separate motor price" },
   ],
   tires: [
     { where: "Size on the geometry sheet", when: "No tire invoice", order: "IMG_5803", item: "P205/75R14. A later size lives in the workshop log if you wrote one.", price: "No price" },
@@ -459,6 +465,12 @@ const CAT_PLACES = {
   ],
   "heater-hose": [
     { where: "Auto Plus / Reliable", when: "23 Jun 2011", order: "REF 0000403749", item: "GAT 28432 ×2, TDL 5216 ×2, MTM terminals", price: "pay $10.11" },
+  ],
+  "rad-hose": [
+    { where: "O'Reilly", when: "7 Nov 2026", order: "24024", item: "Gates Vulco straight coolant hose, 1-1/2 in × 3 ft, 60 psi. Same stick as NAPA 609, Dayco 76150, and Continental 56024.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024", link: "O'Reilly listing" },
+    { where: "NAPA", when: "7 Nov 2026", order: "609", item: "NAPA Belts & Hoses, 1-1/2 in × 3 ft straight coolant hose.", price: "No receipt" },
+    { where: "Heavier stick, same size", when: "7 Nov 2026", order: "24224", item: "Gates Green Stripe, 1-1/2 in × 3 ft, 100 psi.", price: "No receipt" },
+    { where: "If the 1-1/2 in hose is loose", when: "7 Nov 2026", order: "24020 / NAPA 605", item: "1-1/4 in × 3 ft. That is the barb on JEGS 555-53082.", price: "No receipt" },
   ],
   "an12-spruce": [
     { where: "Aircraft Spruce", when: "11 May 2009", order: "701046 / 777986", item: "AN833-12D $15.75, AN821-12D $9.30, AN924-12D $3.35, washers $0.70", price: "shipped $31.46" },

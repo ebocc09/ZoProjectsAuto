@@ -450,7 +450,8 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
 .places { list-style: none; margin: 10px 0 0; padding: 0; }
 .places li { padding: 7px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; }
 .places b { font-size: 13px; font-weight: 600; }
-.places span, .places small { grid-column: 1; font-size: 12px; color: var(--paper-2); }
+.places span, .places small, .places a { grid-column: 1; font-size: 12px; color: var(--paper-2); }
+.places a, .note-log a, .wb-row a, .part p a, .spec-tree a { color: var(--amber-2); text-decoration: underline; text-underline-offset: 2px; word-break: break-word; }
 .places em { grid-column: 2; grid-row: 1; font-style: normal; font-family: var(--mono); font-size: 12px; color: var(--amber-2); text-align: right; }
 .cat-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 

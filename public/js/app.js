@@ -639,6 +639,7 @@ function renderCatalog() {
                   <span>${esc([r.when, r.order].filter(Boolean).join(" · "))}</span>
                   <em>${esc(r.price)}</em>
                   ${r.item ? `<small>${esc(r.item)}</small>` : ""}
+                  ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.link || "Open listing")}</a>` : ""}
                 </li>`
               )
               .join("")}
@@ -897,7 +898,7 @@ function workshopBranch(systemId) {
 function partBranch(p) {
   const open = state.part === p.id ? "open" : "";
   const spec = (p.spec || [])
-    .map((s) => `<li><span>${esc(s.k)}</span> ${esc(s.v)}</li>`)
+    .map((s) => `<li><span>${esc(s.k)}</span> ${linkify(s.v)}</li>`)
     .join("");
   const log = partLog(p.id);
   const ev = (p.evidence || [])
@@ -913,7 +914,7 @@ function partBranch(p) {
       </summary>
       <div class="branch-body">
         <div class="pn">${esc(p.brand)} · ${esc(p.pn)} · ${esc(p.role || "")}</div>
-        ${p.notes ? `<p>${esc(p.notes)}</p>` : ""}
+        ${p.notes ? `<p>${linkify(p.notes)}</p>` : ""}
         ${p.replaceWith ? `<p><b>Replace with:</b> ${esc(p.replaceWith)}</p>` : ""}
         ${spec ? `<details open><summary>Spec</summary><ul class="spec-tree">${spec}</ul></details>` : ""}
         ${
@@ -921,7 +922,7 @@ function partBranch(p) {
             ? `<details open><summary>Workshop notes</summary><ul class="note-log">${log
                 .slice(-8)
                 .reverse()
-                .map((n) => `<li><time>${esc(fmtWhen(n.at))}</time> ${esc(n.text || "Updated")}</li>`)
+                .map((n) => `<li><time>${esc(fmtWhen(n.at))}</time> ${linkify(n.text || "Updated")}</li>`)
                 .join("")}</ul></details>`
             : ""
         }
@@ -996,6 +997,14 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function linkify(s) {
+  return esc(s).replace(/https?:\/\/[^\s<]+/g, (url) => {
+    const clean = url.replace(/[),.;]+$/, "");
+    const tail = url.slice(clean.length);
+    return `<a href="${clean}" target="_blank" rel="noopener">${clean}</a>${tail}`;
+  });
+}
+
 function fmtWhen(iso) {
   if (!iso) return "";
   const d = new Date(iso);
@@ -1018,7 +1027,7 @@ function workshopBlock(systemId) {
     .reverse()
     .map(
       (n) =>
-        `<li><time>${esc(fmtWhen(n.at))}</time> ${esc(n.text || "Field update")}${
+        `<li><time>${esc(fmtWhen(n.at))}</time> ${linkify(n.text || "Field update")}${
           n.part ? ` <span class="pn">${esc(n.part)}</span>` : ""
         }</li>`
     )
@@ -1033,13 +1042,13 @@ function workshopBlock(systemId) {
 }
 
 function partCard(p) {
-  const spec = (p.spec || []).map((s) => `<tr><th>${esc(s.k)}</th><td>${esc(s.v)}</td></tr>`).join("");
+  const spec = (p.spec || []).map((s) => `<tr><th>${esc(s.k)}</th><td>${linkify(s.v)}</td></tr>`).join("");
   const log = partLog(p.id);
   const logHtml = log.length
     ? `<ul class="note-log">${log
         .slice(-8)
         .reverse()
-        .map((n) => `<li><time>${esc(fmtWhen(n.at))}</time> ${esc(n.text || "Updated fields")}</li>`)
+        .map((n) => `<li><time>${esc(fmtWhen(n.at))}</time> ${linkify(n.text || "Updated fields")}</li>`)
         .join("")}</ul>`
     : "";
   const open = state.editing === p.id;
@@ -1052,7 +1061,7 @@ function partCard(p) {
       <h4>${esc(p.name)}</h4>
       <div class="pn">${esc(p.brand)}  ·  ${esc(p.pn)}</div>
       ${spec ? `<table class="kv">${spec}</table>` : ""}
-      ${p.notes ? `<p>${esc(p.notes)}</p>` : ""}
+      ${p.notes ? `<p>${linkify(p.notes)}</p>` : ""}
       ${p.replaceWith ? `<p><b>Replace with:</b> ${esc(p.replaceWith)}</p>` : ""}
       ${logHtml}
       ${open ? editForm(p) : ""}
@@ -1383,7 +1392,7 @@ function renderWorkbook() {
           return `<article class="wb-row">
             <time>${esc(fmtWhen(n.at))}</time>
             ${who ? `<b>${esc(who)}</b>` : ""}
-            <p>${esc(n.text || "Field update")}</p>
+            <p>${linkify(n.text || "Field update")}</p>
             ${extra ? `<small>${esc(extra)}</small>` : ""}
           </article>`;
         })
