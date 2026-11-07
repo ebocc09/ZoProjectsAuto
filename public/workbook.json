@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T13:30:00.000000+00:00",
+  "updatedAt": "2026-11-07T23:40:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -23,24 +23,24 @@
     },
     "cooling": {
       "notes": [
-        "Radiator-to-block hose burst. Intact section matches a 1-1/2 in stick, Gates 24024. O'Reilly: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 Same hose is NAPA 609, Dayco 76150, Continental 56024. Rated 60 psi, which covers this system. Gates 24224 is the 100 psi stick. Not bought yet."
+        "Radiator-to-block hose has to bend. Gates 24024 is a straight stick and is the wrong shape. Buy Vulco-Flex II 25478, 1-1/2 in by 17 in, or the length that matches. O'Reilly: https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys The old end looks about 1 mm over 1-1/2 in. 1-1/2 in is 38 mm. A 33 mm reading is Gates 25253. Not bought yet."
       ]
     }
   },
   "parts": {
     "rad-hose": {
       "notes": [
-        "Radiator-to-block hose burst. Intact section matches a 1-1/2 in stick, Gates 24024. O'Reilly: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 Same hose is NAPA 609, Dayco 76150, Continental 56024. Rated 60 psi, which covers this system. Gates 24224 is the 100 psi stick. Not bought yet."
+        "Radiator-to-block hose has to bend. Gates 24024 is a straight stick and is the wrong shape. Buy Vulco-Flex II 25478, 1-1/2 in by 17 in, or the length that matches. O'Reilly: https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys The old end looks about 1 mm over 1-1/2 in. 1-1/2 in is 38 mm. A 33 mm reading is Gates 25253. Not bought yet."
       ],
-      "pn": "24024",
+      "pn": "25478",
       "status": "replace",
       "spec": {
-        "Size": "1-1/2 in inside. Thumb and middle finger just meet on the intact hose. Blown end was flared.",
-        "Buy": "Gates 24024, NAPA 609, Dayco 76150, or Continental 56024. 1-1/2 in × 3 ft, 60 psi.",
-        "O'Reilly": "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024",
-        "Pressure": "60 psi is the hose rating. Cap pressure is usually 13–16 psi. GM 3.0 manual says not to pressure-test above 20 psi.",
-        "Heavier stick": "Gates 24224, same size, 100 psi.",
-        "If it slops": "JEGS 555-53082 is a 1-1/4 in barb. Use Gates 24020 or NAPA 605."
+        "Size": "1-1/2 in inside, 38 mm. Old end looks about 1 mm larger from wear.",
+        "33 mm": "33 mm is 1.30 in. That is Gates 25253, the 1-1/4 in flex hose.",
+        "Shape": "24024 is a straight stick. This run bends. Do not buy it.",
+        "Buy": "Vulco-Flex II, 1-1/2 in. 25474 is 12 in, 25476 is 14 in, 25478 is 17 in, 25480 is 20 in, 25482 is 22 in, 25484 is 25 in. Trim the plain cuffs.",
+        "O'Reilly": "https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys",
+        "Pressure": "About 30 psi on the Gates page for this diameter. GM 3.0 manual says not to pressure-test above 20 psi."
       }
     },
     "tires": {
@@ -96,17 +96,17 @@
       "at": "2026-11-07T13:30:00.000000+00:00",
       "system": "cooling",
       "part": "rad-hose",
-      "text": "Radiator-to-block hose burst. Stamps EOSA3AG1 (also read E0SA3AG1) and E09 AG 1 are factory marks, not a part number. On the intact hose, thumb and middle finger just meet, which matches a 1-1/2 in inside stick, about 1.89 in outside. The blown end was flared. Gates 28432 is the 3/4 in heater hose from 2011. Buy Gates 24024, NAPA 609, Dayco 76150, or Continental 56024: 1-1/2 in × 3 ft, SAE 20R1, 60 psi. 60 psi is the hose rating. The cap holds the system around 13–16 psi, and the GM 3.0 manual says not to pressure-test above 20 psi. Gates 24224 is the same size at 100 psi. If the 1-1/2 in hose is loose, the neck is the JEGS 555-53082 barb and the stick is Gates 24020 or NAPA 605. O'Reilly listing: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 Not bought yet. No receipt.",
+      "text": "Correction. The radiator-to-block hose has to bend, so Gates 24024 is the wrong hose. 24024 is a straight stick for straight connections. Buy Gates Vulco-Flex II. 25478 is 1-1/2 in by 17 in. 25474 is 12, 25476 is 14, 25480 is 20, 25482 is 22, 25484 is 25. Trim the plain cuffs. The old end looks about 1 mm bigger than 1-1/2 in. 1-1/2 in is 38 mm, so that is a worn opening, not the next size. 33 mm is 1.30 in, which is the 1-1/4 in flex hose, Gates 25253. Gates rates the 1-1/2 in flex hose about 30 psi. O'Reilly: https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys Not bought yet.",
       "patch": {
-        "pn": "24024",
+        "pn": "25478",
         "status": "replace",
         "spec": {
-          "Size": "1-1/2 in inside. Thumb and middle finger just meet on the intact hose. Blown end was flared.",
-          "Buy": "Gates 24024, NAPA 609, Dayco 76150, or Continental 56024. 1-1/2 in × 3 ft, 60 psi.",
-          "O'Reilly": "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024",
-          "Pressure": "60 psi is the hose rating. Cap pressure is usually 13–16 psi. GM 3.0 manual says not to pressure-test above 20 psi.",
-          "Heavier stick": "Gates 24224, same size, 100 psi.",
-          "If it slops": "JEGS 555-53082 is a 1-1/4 in barb. Use Gates 24020 or NAPA 605."
+          "Size": "1-1/2 in inside, 38 mm. Old end looks about 1 mm larger from wear.",
+          "33 mm": "33 mm is 1.30 in. That is Gates 25253, the 1-1/4 in flex hose.",
+          "Shape": "24024 is a straight stick. This run bends. Do not buy it.",
+          "Buy": "Vulco-Flex II, 1-1/2 in. 25474 is 12 in, 25476 is 14 in, 25478 is 17 in, 25480 is 20 in, 25482 is 22 in, 25484 is 25 in. Trim the plain cuffs.",
+          "O'Reilly": "https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys",
+          "Pressure": "About 30 psi on the Gates page for this diameter. GM 3.0 manual says not to pressure-test above 20 psi."
         }
       }
     }

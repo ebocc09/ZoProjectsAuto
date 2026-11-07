@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. The intact section matches a 1-1/2 in stick, Gates 24024. Not bought yet."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. It has to bend, so the replacement is Gates Vulco-Flex II 25478, not the straight stick 24024. Not bought yet."
     },
     {
       id: "driveline",
@@ -420,24 +420,24 @@ window.ZO = {
     {
       id: "rad-hose",
       name: "Radiator hose",
-      pn: "24024",
+      pn: "25478",
       brand: "Gates",
       system: "cooling",
-      role: "Radiator straight into the engine block",
+      role: "Radiator into the engine block, has to bend",
       status: "replace",
-      confidence: "Hand fit on 7 Nov 2026. Not taped. Not bought yet.",
+      confidence: "Hand fit on 7 Nov 2026. Old end looks about 1 mm over 1-1/2 in. Not taped. Not bought yet.",
       qty: "1",
       spec: [
-        { k: "Size", v: "1-1/2 in inside. On the intact hose, thumb and middle finger just meet. The blown end was flared and felt bigger. Outside of this size is about 1.89 in." },
+        { k: "Size", v: "1-1/2 in inside, which is 38 mm. The old end looks about 1 mm larger. That is a worn opening. 1-5/8 in is 41 mm, about 3 mm bigger, and would be loose." },
+        { k: "33 mm", v: "33 mm is 1.30 in, just over 1-1/4 in (32 mm). 1-1/2 in is 38 mm. A ruler reading of 33 mm means the 1-1/4 in flex hose, Gates 25253." },
+        { k: "Shape", v: "Gates 24024 is a straight stick for straight connections. This run bends. Do not buy 24024." },
+        { k: "Buy", v: "Gates Vulco-Flex II, 1-1/2 in, wire inside so it can curve. 25474 is 12 in, 25476 is 14 in, 25478 is 17 in, 25480 is 20 in, 25482 is 22 in, 25484 is 25 in. Trim the plain cuffs." },
+        { k: "O'Reilly", v: "https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys" },
+        { k: "Pressure", v: "Gates rates this flex hose SAE 20R5 Class D-2. Their page lists 0.21 MPa, about 30 psi, for hoses up to 38 mm, and also prints 40 psi maximum. The GM 3.0 manual says not to pressure-test above 20 psi." },
         { k: "Stamps", v: "EOSA3AG1, also read as E0SA3AG1, and E09 AG 1. Factory marks on the hose. Not a catalog number." },
-        { k: "Buy", v: "Gates 24024, NAPA 609, Dayco 76150, or Continental 56024. Straight coolant hose, 1-1/2 in × 3 ft, SAE 20R1, 60 psi." },
-        { k: "O'Reilly", v: "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024" },
-        { k: "Pressure", v: "60 psi is what the hose can hold. The cap sets cooling-system pressure, usually 13–16 psi. The GM 3.0 manual says not to pressure-test this system above 20 psi. 60 psi covers it." },
-        { k: "Heavier stick", v: "Gates 24224 is the same 1-1/2 in × 3 ft at 100 psi." },
-        { k: "If it slops", v: "JEGS 555-53082 is a −12AN fitting with a 1-1/4 in barb. A loose 1-1/2 in hose means the neck is that barb: Gates 24020 or NAPA 605." },
         { k: "Heater hose", v: "Gates 28432 on the 23 Jun 2011 ticket is 3/4 in heater hose. Different hose." }
       ],
-      notes: "Cut the 3 ft stick to the old length after the end starts onto the metal neck. No receipt yet, so there is no price.",
+      notes: "Measure the old hose along the curve and take the flex hose a little longer. Cut only the smooth cuffs. No receipt yet, so there is no price.",
       evidence: []
     },
     {
@@ -1262,7 +1262,7 @@ window.ZO = {
         { k: "Bullet terminal", v: "MTM 85X32 TERM BULLET 16 ×1" },
         { k: "Socket", v: "MTM 85S10 SOCKET 3 TERM H ×1" }
       ],
-      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is the separate part 24024.",
+      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is Gates 25478.",
       evidence: ["IMG_5878"]
     },
     {
@@ -1678,7 +1678,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. The intact section matches a 1-1/2 in stick, Gates 24024, also NAPA 609, Dayco 76150, and Continental 56024. That hose is rated 60 psi, which covers a system the GM 3.0 manual says not to test above 20 psi. Gates 24224 is the 100 psi stick in the same size. Not bought yet.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. It has to bend, so Gates 24024, the straight stick, is the wrong shape. The replacement is Vulco-Flex II 25478, 1-1/2 in by 17 in, or another length in that family. Gates rates that flex hose about 30 psi. The old end looks about 1 mm over 1-1/2 in, which is wear. 1-1/2 in is 38 mm. A real 33 mm reading is the 1-1/4 in flex hose, 25253. Not bought yet.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {

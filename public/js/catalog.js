@@ -467,10 +467,9 @@ const CAT_PLACES = {
     { where: "Auto Plus / Reliable", when: "23 Jun 2011", order: "REF 0000403749", item: "GAT 28432 ×2, TDL 5216 ×2, MTM terminals", price: "pay $10.11" },
   ],
   "rad-hose": [
-    { where: "O'Reilly", when: "7 Nov 2026", order: "24024", item: "Gates Vulco straight coolant hose, 1-1/2 in × 3 ft, 60 psi. Same stick as NAPA 609, Dayco 76150, and Continental 56024.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024", link: "O'Reilly listing" },
-    { where: "NAPA", when: "7 Nov 2026", order: "609", item: "NAPA Belts & Hoses, 1-1/2 in × 3 ft straight coolant hose.", price: "No receipt" },
-    { where: "Heavier stick, same size", when: "7 Nov 2026", order: "24224", item: "Gates Green Stripe, 1-1/2 in × 3 ft, 100 psi.", price: "No receipt" },
-    { where: "If the 1-1/2 in hose is loose", when: "7 Nov 2026", order: "24020 / NAPA 605", item: "1-1/4 in × 3 ft. That is the barb on JEGS 555-53082.", price: "No receipt" },
+    { where: "O'Reilly", when: "7 Nov 2026", order: "25478", item: "Gates Vulco-Flex II, 1-1/2 in × 17 in. Bends. Same family: 25474 is 12 in, 25476 is 14 in, 25480 is 20 in, 25482 is 22 in, 25484 is 25 in.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys", link: "O'Reilly listing" },
+    { where: "If a ruler reads 33 mm", when: "7 Nov 2026", order: "25253", item: "33 mm is 1.30 in. That is the 1-1/4 in flex hose, Gates 25253, 17 in. 1-1/2 in is 38 mm.", price: "No receipt" },
+    { where: "Do not buy", when: "7 Nov 2026", order: "24024", item: "Straight stick. Gates makes it for straight connections. This run bends.", price: "No receipt" },
   ],
   "an12-spruce": [
     { where: "Aircraft Spruce", when: "11 May 2009", order: "701046 / 777986", item: "AN833-12D $15.75, AN821-12D $9.30, AN924-12D $3.35, washers $0.70", price: "shipped $31.46" },
