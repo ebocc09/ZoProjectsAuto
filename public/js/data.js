@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. It has to bend, so the replacement is Gates Vulco-Flex II 25478, not the straight stick 24024. Not bought yet."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Molded hoses did not match the one in hand, so the run is being built from beaded elbows, splices, and cut hose. Not bought yet."
     },
     {
       id: "driveline",
@@ -420,24 +420,80 @@ window.ZO = {
     {
       id: "rad-hose",
       name: "Radiator hose",
-      pn: "25478",
+      pn: "24024",
       brand: "Gates",
       system: "cooling",
-      role: "Radiator into the engine block, has to bend",
+      role: "Radiator into the engine block. Build it from elbows and cut hose.",
       status: "replace",
-      confidence: "Hand fit on 7 Nov 2026. Old end looks about 1 mm over 1-1/2 in. Not taped. Not bought yet.",
-      qty: "1",
+      confidence: "Molded numbers did not match the hose in hand. Building it. Not bought yet.",
+      qty: "1 stick, cut to legs",
       spec: [
-        { k: "Size", v: "1-1/2 in inside, which is 38 mm. The old end looks about 1 mm larger. That is a worn opening. 1-5/8 in is 41 mm, about 3 mm bigger, and would be loose." },
-        { k: "33 mm", v: "33 mm is 1.30 in, just over 1-1/4 in (32 mm). 1-1/2 in is 38 mm. A ruler reading of 33 mm means the 1-1/4 in flex hose, Gates 25253." },
-        { k: "Shape", v: "Gates 24024 is a straight stick for straight connections. This run bends. Do not buy 24024." },
-        { k: "Buy", v: "Gates Vulco-Flex II, 1-1/2 in, wire inside so it can curve. 25474 is 12 in, 25476 is 14 in, 25478 is 17 in, 25480 is 20 in, 25482 is 22 in, 25484 is 25 in. Trim the plain cuffs." },
-        { k: "O'Reilly", v: "https://www.oreillyauto.com/detail/c/vulco-flex-ii/engine-cooling/radiator-hose/b0a07a12b12d/gates-vulco-flex-ii-coolant-hose/gatc/25478/v/a/15820/automotive-truck-1956-jeep-willys" },
-        { k: "Pressure", v: "Gates rates this flex hose SAE 20R5 Class D-2. Their page lists 0.21 MPa, about 30 psi, for hoses up to 38 mm, and also prints 40 psi maximum. The GM 3.0 manual says not to pressure-test above 20 psi." },
-        { k: "Stamps", v: "EOSA3AG1, also read as E0SA3AG1, and E09 AG 1. Factory marks on the hose. Not a catalog number." },
+        { k: "Build", v: "Metal tube OD equals hose ID. Bead on each metal end. Slide hose on past the bead. Clamp behind the bead. Two clamps per joint." },
+        { k: "Hose", v: "Gates 24024, 1-1/2 in × 3 ft Vulco stick. Cut into short legs. Do not run the whole 3 ft around the bend as one piece. O'Reilly: https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024 JEGS silicone 6 in legs are 555-511271." },
+        { k: "Radiator", v: "This radiator's barb is 1-1/4 in, JEGS 555-53082. 1-1/2 hose on that barb needs JEGS 555-511285, the 8 in silicone 1-1/2 to 1-1/4 reducer. Or build the whole run in 1-1/4 with 24020, 555-511175, and 555-511170." },
+        { k: "Clamps", v: "Worm size 28 on 1-1/2 hose. Gates 32028. Size 24 on 1-1/4. Two per joint." },
+        { k: "Skip", v: "Spectre 5166 is a clamp, not an elbow. Spectre intake tubing and PVC are not coolant. 555-511186 title says aluminum; the body is aluminized steel. Do not order 555-511178." },
+        { k: "Stamps", v: "EOSA3AG1, E09 AG 1, 3093AG1. Factory marks. Not a catalog number for this hose." },
         { k: "Heater hose", v: "Gates 28432 on the 23 Jun 2011 ticket is 3/4 in heater hose. Different hose." }
       ],
-      notes: "Measure the old hose along the curve and take the flex hose a little longer. Cut only the smooth cuffs. No receipt yet, so there is no price.",
+      notes: "90, 45, and straight couplings are separate catalog parts. No receipt yet, so there is no price.",
+      evidence: []
+    },
+    {
+      id: "hose-elbow-90",
+      name: "Hose elbow 90",
+      pn: "555-511176",
+      brand: "JEGS",
+      system: "cooling",
+      role: "Beaded 90 for the custom radiator hose",
+      status: "replace",
+      confidence: "JEGS and Amazon pages. Not bought yet.",
+      qty: "as needed",
+      spec: [
+        { k: "This one", v: "Aluminum 90, 1-1/2 in OD, 3-1/4 in legs. Tube OD is hose ID. Page $19.99. More than 10. https://www.jegs.com/i/jegs-555-511176-aluminum-radiator-hose-connector-90-degree-elbow-1-1-2-in-o-d-inlet-outlet" },
+        { k: "Amazon", v: "https://www.amazon.com/JEGS-511176-Radiator-Hose-Connector/dp/B07HBBSTQS" },
+        { k: "Speedway", v: "32-1001-1.50, aluminum 90, 1-1/2 in OD, beaded, can be cut. Amazon B01N6V6DWP. Page $23.99. https://www.speedwaymotors.com/Aluminum-90-Degree-Radiator-Hose-Connectors,49595.html" },
+        { k: "1-1/4", v: "JEGS 555-511175, aluminum 90, 1-1/4 in OD, 3 in legs. Amazon B07HB8BCPC. Same family as 511176." },
+        { k: "Stainless", v: "Filler Neck Supply D150A90SS, 304, 1-1/2 in OD, beaded 90, about 11.5 in long. Amazon B01EM3S5DY. A beaded stainless 45 was not confirmed." }
+      ],
+      notes: "No receipt. Page prices only.",
+      evidence: []
+    },
+    {
+      id: "hose-elbow-45",
+      name: "Hose elbow 45",
+      pn: "555-511181",
+      brand: "JEGS",
+      system: "cooling",
+      role: "Beaded 45 for the custom radiator hose",
+      status: "replace",
+      confidence: "JEGS page. Aluminized steel, not aluminum. Not bought yet.",
+      qty: "as needed",
+      spec: [
+        { k: "This one", v: "Aluminized steel 45, 1-1/2 in OD, legs 7 in and 3-3/4 in. Not aluminum. Page $21.99. More than 10. https://www.jegs.com/i/jegs-555-511181-aluminized-steel-radiator-hose-connector-45-degree-elbow-1-1-2-in-o-d-inlet-outlet" },
+        { k: "Amazon", v: "https://www.amazon.com/JEGS-511181-Radiator-Hose-Connector/dp/B00CO6NNVG" },
+        { k: "Long 90 steel", v: "555-511186 is the longer 90 in this steel family, 1-1/2 in OD, legs 8-1/2 and 5-1/4. Title says aluminum. Body says aluminized steel. 555-511185 is the 1-1/4 in steel 90, legs 8 in and 5 in." }
+      ],
+      notes: "JEGS does not list an aluminum 45 in 1-1/2. This steel 45 is the confirmed 45. No receipt.",
+      evidence: []
+    },
+    {
+      id: "hose-splice",
+      name: "Hose splice",
+      pn: "555-511171",
+      brand: "JEGS",
+      system: "cooling",
+      role: "Straight coupling between hose legs",
+      status: "replace",
+      confidence: "JEGS and Speedway pages. Not bought yet.",
+      qty: "as needed",
+      spec: [
+        { k: "This one", v: "Aluminum straight, 1-1/2 in OD × 3 in. Page $5.99. More than 10. https://www.jegs.com/i/jegs-555-511171-aluminum-radiator-hose-connector-3-in-straight-length-1-1-2-in-o-d-inlet-outlet" },
+        { k: "1-1/4", v: "JEGS 555-511170, aluminum straight, 1-1/4 in OD × 3 in. Page $5.99." },
+        { k: "Speedway", v: "9108251, aluminum 1.50 OD × 6 in, beaded, pair. Page $27.99. https://www.speedwaymotors.com/Aluminum-Radiator-Hose-Connector-1-50-O-D-6-Length-2-PK,400048.html" },
+        { k: "Reducer", v: "JEGS 555-511285 is silicone, not metal. 8 in straight, 1-1/2 ID to 1-1/4 ID. For the 1-1/4 radiator barb. https://www.jegs.com/i/jegs-555-511285-silicone-radiator-hose-8-in-straight-length-reducer-1-1-2-in-i-d-to-1-1-4-in-i-d" }
+      ],
+      notes: "No receipt. Page prices only.",
       evidence: []
     },
     {
@@ -1262,7 +1318,7 @@ window.ZO = {
         { k: "Bullet terminal", v: "MTM 85X32 TERM BULLET 16 ×1" },
         { k: "Socket", v: "MTM 85S10 SOCKET 3 TERM H ×1" }
       ],
-      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is Gates 25478.",
+      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is being built from elbows and cut hose, not this part.",
       evidence: ["IMG_5878"]
     },
     {
@@ -1678,7 +1734,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. It has to bend, so Gates 24024, the straight stick, is the wrong shape. The replacement is Vulco-Flex II 25478, 1-1/2 in by 17 in, or another length in that family. Gates rates that flex hose about 30 psi. The old end looks about 1 mm over 1-1/2 in, which is wear. 1-1/2 in is 38 mm. A real 33 mm reading is the 1-1/4 in flex hose, 25253. Not bought yet.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Molded hoses did not match the one in hand. Build the run from beaded couplings and cut hose: JEGS 555-511176 aluminum 90 (1-1/2 OD), 555-511181 aluminized-steel 45, 555-511171 aluminum straight 3 in, Gates 24024 cut into legs. The radiator barb is 1-1/4, so 1-1/2 hose needs reducer 555-511285 on that end. Not bought yet.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {
