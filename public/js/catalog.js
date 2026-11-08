@@ -470,10 +470,8 @@ const CAT_PLACES = {
     { where: "Auto Plus / Reliable", when: "23 Jun 2011", order: "REF 0000403749", item: "GAT 28432 ×2, TDL 5216 ×2, MTM terminals", price: "pay $10.11" },
   ],
   "rad-hose": [
-    { where: "O'Reilly", when: "7 Nov 2026", order: "24024", item: "Gates Vulco 1-1/2 in × 3 ft. Cut into short legs between the metal elbows. Do not run the whole stick around the bend.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/vulco/gates-vulco-coolant-hose/gatg/24024", link: "O'Reilly listing" },
-    { where: "JEGS", when: "7 Nov 2026", order: "555-511271", item: "Silicone 1-1/2 in ID × 6 in straight. Same job as a cut 24024 leg. Page $9.99.", price: "No receipt", url: "https://www.jegs.com/i/jegs-555-511271-silicone-radiator-hose-6-in-straight-length-1-1-2-in-i-d-inlet-outlet", link: "JEGS listing" },
-    { where: "JEGS", when: "7 Nov 2026", order: "555-511285", item: "Silicone reducer, 8 in, 1-1/2 ID to 1-1/4 ID. For the 1-1/4 radiator barb. Page $28.99.", price: "No receipt", url: "https://www.jegs.com/i/jegs-555-511285-silicone-radiator-hose-8-in-straight-length-reducer-1-1-2-in-i-d-to-1-1-4-in-i-d", link: "JEGS listing" },
-    { where: "1-1/4 stick", when: "7 Nov 2026", order: "24020", item: "Gates Vulco 1-1/4 in × 3 ft if the whole run is built on the 1-1/4 barb size.", price: "No receipt" },
+    { where: "O'Reilly", when: "8 Nov 2026", order: "26502", item: "Gates Green Stripe Vulco-Flex, 1-3/4 in both ends × 16-1/2 in. Even 1-3/4. Other lengths: 26601 6, 26602 8-1/2, 26603 11, 26501 13-1/2, 26611 19, 26612 23-1/2.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/green-stripe-vulco-flex/gates-green-stripe-vulco-flex-coolant-hose/gaa7/26502", link: "O'Reilly listing" },
+    { where: "O'Reilly", when: "8 Nov 2026", order: "25530", item: "Gates Vulco-Flex II step, 1-1/2 × 1-3/4 × 20 in. Other lengths: 25526 13.2, 25527 15, 25528 16-1/2, 25532 22, 25535 27.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/vulco-flex-ii/gates-vulco-flex-ii-coolant-hose/gatc/25530", link: "O'Reilly listing" },
   ],
   "hose-elbow-90": [
     { where: "JEGS", when: "7 Nov 2026", order: "555-511176", item: "Aluminum 90, 1-1/2 in OD, 3-1/4 in legs. Page $19.99.", price: "No receipt", url: "https://www.jegs.com/i/jegs-555-511176-aluminum-radiator-hose-connector-90-degree-elbow-1-1-2-in-o-d-inlet-outlet", link: "JEGS listing" },
