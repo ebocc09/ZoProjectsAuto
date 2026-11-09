@@ -244,9 +244,10 @@ TOPICS: list[dict] = [
         ],
         "reply": (
             "Need a new valve cover, not the head. GM 181 / 3.0L four cover, Mercury 8M0122491 "
-            "(also 3853784 / 65635A8 / 851036T). Wholesale Marine page $115.49. Not read off this engine. "
+            "(also 3853784 / 65635A8 / 851036T). Stamped steel. Wholesale Marine page $115.49. "
+            "Eagle Engine Sales analog $65. No new chrome dress-up cover for this four. "
             "Marine covers can have a different PCV / oil-fill — check this one before ordering. "
-            "EPS on the print: 1-800-374-7522. Gasket is Sierra 18-0347 / NAPA SME180347. Not bought yet."
+            "Gasket is Sierra 18-0347 / NAPA SME180347. Not bought yet."
         ),
         "pills": ["Valve cover gasket", "Thermostat", "Engine"],
     },

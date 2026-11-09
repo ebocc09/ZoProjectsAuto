@@ -375,8 +375,11 @@ const CAT_PLACES = {
     { where: "eBasicPower", when: "9 Mar 2010", order: "82085", item: "OSCM04-GH $7.00 and DET59565AS $30.95. Old set. Not the new valve-cover gasket.", price: "order $50.95" },
   ],
   "valve-cover": [
-    { where: "Wholesale Marine", when: "8 Nov 2026", order: "8M0122491", item: "Need new. Steel valve cover for GM 181 / 3.0L L4. Also 3853784 / 65635A8 / 851036T. Not the head.", price: "Page $115.49", url: "https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/", link: "Wholesale Marine listing" },
-    { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four.", price: "No receipt", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
+    { where: "Eagle Engine Sales", when: "9 Nov 2026", order: "8M0122491 analog", item: "New 181 / 3.0L steel cover. Also 3853784 / GM 02770089. Not chrome.", price: "Page $65.00", url: "https://www.eagleenginesales.com/product-page/3-0l-181-cid-valve-rocker-cover-mercruiser-8m0122491-volvo-penta-3853784-3", link: "Eagle Engine Sales listing" },
+    { where: "Wholesale Marine", when: "8 Nov 2026", order: "8M0122491", item: "Need new. Mercury OEM stamped steel. Special order. Not the head.", price: "Page $115.49", url: "https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/", link: "Wholesale Marine listing" },
+    { where: "MarineEngine.com", when: "9 Nov 2026", order: "8M0122491", item: "Quicksilver current. Same OEM steel cover.", price: "Page $130.99", url: "https://www.marineengine.com/newparts/part_details.php?pnum=MER8M0122491", link: "MarineEngine listing" },
+    { where: "eBasicPower", when: "9 Nov 2026", order: "QSTVC4CYL", item: "Steel cover, GM inline 4 153/181. Will not replace cast aluminum with shift linkage. Limited availability.", price: "Page $129.95", url: "https://bpi.ebasicpower.com/shop/all-applications/engine-system/tinware/valve-covers/valve-cover-for-gm-inline-4-cylinder-mercruiser-omc-volvo-penta", link: "eBasicPower listing" },
+    { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four. UK.", price: "Page £125.00", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
   ],
   "valve-cover-gasket": [
     { where: "NAPA", when: "9 Nov 2026", order: "SME180347", item: "Found. Sierra 18-0347 valve cover gasket, GM 153 and 181 CID (2.5L and 3.0L). NAPA Small Engine. Not bought.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME180347", link: "NAPA listing" },

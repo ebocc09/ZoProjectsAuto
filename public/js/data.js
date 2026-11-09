@@ -584,10 +584,11 @@ window.ZO = {
       spec: [
         { k: "On sheet", v: "Valve cover 8M0122491" },
         { k: "This one", v: "Steel valve cover for the GM 181 / 3.0L four. Mercury 8M0122491. Also 3853784, 65635A8, 851036T. Not the cylinder head." },
-        { k: "Buy", v: "Wholesale Marine page $115.49. https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/" },
-        { k: "Also", v: "Repower Marine, new GM steel cover. https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html" },
+        { k: "Buy", v: "Wholesale Marine, Mercury 8M0122491, page $115.49, special order. https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/" },
+        { k: "Also", v: "Eagle Engine Sales, new 181 / 3.0L cover, $65. Replaces 8M0122491 / 3853784 / GM 02770089. Carol Stream IL. https://www.eagleenginesales.com/product-page/3-0l-181-cid-valve-rocker-cover-mercruiser-8m0122491-volvo-penta-3853784-3" },
+        { k: "Look", v: "Stamped steel. No new chrome or aluminum dress-up cover is sold for this 181 four. Edelbrock chrome is V8. Cast aluminum 65635A16 is a used boat cover with shift bosses. Paint or powder the steel cover." },
         { k: "Confirm", v: "Marine covers can have a different PCV / oil-fill. Check this cover before ordering. EPS on the print: 1-800-374-7522." },
-        { k: "Not", v: "Not the head. Not DET59565AS. Not OSCM04-GH." }
+        { k: "Not", v: "Not the head. Not DET59565AS. Not OSCM04-GH. Not a small-block Chevy cover." }
       ],
       notes: "No receipt. Page prices only. Gasket is the separate part Sierra 18-0347 / NAPA SME180347.",
       evidence: ["IMG_5929", "IMG_5809"]
