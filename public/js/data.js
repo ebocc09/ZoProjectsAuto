@@ -87,7 +87,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Filter stubs: 3/8 H-172 onto 5/16 line with Gates 28594. Not bought yet."
+        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
     },
     {
       id: "cooling",
@@ -555,7 +555,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Filter stubs: H-172 3/8 plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
+        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -639,22 +639,22 @@ window.ZO = {
     {
       id: "fuel-hose",
       name: "Fuel filter hose stubs",
-      pn: "H-172 / 28594",
+      pn: "H350A / 28594",
       brand: "NAPA / Gates",
       system: "engine",
       role: "Short rubber fuel hose from the line onto the Wix 33003. Need new.",
       status: "replace",
-      confidence: "Research. Line on the car is a bit smaller than the 3/8 filter barb. H-176 catalogs as 5/16. Not calipered. Not bought.",
-      qty: "cut from 2 ft + 2 reducers",
-      sheet: "5/16–3/8 stubs",
+      confidence: "Research. ~4 in 3/8 stubs. No 4 in packaged SKU. Cut from 1 ft. Not bought.",
+      qty: "two ~4 in stubs (1 ft) + 2 reducers",
+      sheet: "3/8 × ~4 in",
       spec: [
-        { k: "On sheet", v: "5/16–3/8 stubs" },
-        { k: "This one", v: "NAPA H-172, 3/8 in × 2 ft SAE J30R7. Same family as the 2010 H-176. Cut short stubs for the Wix 33003 3/8 barbs. NAPA: https://www.napaonline.com/en/p/NBHH172" },
-        { k: "Line size", v: "Enzo: the main fuel line is a bit smaller than 3/8. NAPA H-176 catalogs as 5/16 in, ID .3125. 5/16 × 2 ft pegboard is H-171. Leftover H-176 from 2010 can cover the 5/16 side. https://www.napaonline.com/en/p/NBHH176" },
-        { k: "Step", v: "There is no common molded 3/8-to-5/16 rubber fuel hose. Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer, gasoline-rated. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594" },
-        { k: "O'Reilly same hose", v: "Gates Safety Stripe 27004 is 3/8 SAE J30R7. 27003 is 5/16. Same 50 psi family as H-172 / H-176." },
-        { k: "If 1/4", v: "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. That is a bigger step than 'a bit smaller than 3/8.' Measure the hard line before buying 28594." },
-        { k: "Not", v: "Not a 3/8-to-5/16 molded fuel hose SKU. Not Wix 33033 (those extra hoses are still 3/8). Not stretching 5/16 hose onto a 3/8 barb. H-172 / H-176 is not for EFI pressure lines — Barricade FI if this 3.0 is injected." }
+        { k: "On sheet", v: "3/8 × ~4 in" },
+        { k: "This one", v: "Two ~4 in stubs of 3/8 fuel hose on the Wix 33003 barbs. No packaged 4 in SKU. Ask NAPA for 1 ft of 3/8 off the reel — NAPA H350A Barricade MPI, priced per foot. Cut two 4 in pieces. https://www.napaonline.com/en/p/NBHH350A" },
+        { k: "Also", v: "Same 3/8 cut from Gates 27004 / NAPA H-177 at the counter if they have the reel. H-172 2 ft pegboard is more than needed." },
+        { k: "Line size", v: "Enzo: the main fuel line is a bit smaller than 3/8. NAPA H-176 catalogs as 5/16 in, ID .3125. Leftover H-176 can cover the 5/16 side." },
+        { k: "Step", v: "Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594" },
+        { k: "If 1/4", v: "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. Measure the hard line before buying 28594." },
+        { k: "Not", v: "Not a 4 in packaged hose. Not the 2 ft H-172 pegboard. Not Wix 33033. Not stretching 5/16 onto a 3/8 barb." }
       ],
       notes: "Research, not an official lock. Not bought.",
       evidence: ["IMG_5877"]
@@ -1841,7 +1841,7 @@ window.ZO = {
         n: "08",
         title: "Engine and clutch",
         system: "engine",
-        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: NAPA H-172 3/8 × 2 ft plus Gates 28594 5/16–3/8 reducers. Not bought yet.",
+        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
         evidence: ["IMG_5809", "IMG_5793", "IMG_5871", "IMG_5869"]
       },
       {

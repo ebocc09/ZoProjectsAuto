@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T19:30:00.000000+00:00",
+  "updatedAt": "2026-11-09T19:36:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -31,7 +31,7 @@
       "notes": [
         "Need a new valve cover, not the head. Cover analog is GM 181 / 3.0L 8M0122491. Check PCV / oil-fill before ordering. Not bought yet.",
         "Buy list. Not bought yet. Fuel filter Wix 33003. Valve cover gasket Sierra 18-0347 / NAPA SME180347. Thermostat kit Sierra 18-3650 / NAPA SME183650.",
-        "Filter stubs: line is a bit smaller than the 3/8 Wix 33003 barb. H-176 catalogs as 5/16. Cut 3/8 NAPA H-172 and step with Gates 28594. Not bought yet."
+        "Filter stubs: two ~4 in of 3/8, not a 2 ft pack. 1 ft of NAPA H350A off the reel, cut, plus Gates 28594. Not bought yet."
       ]
     }
   },
@@ -54,18 +54,19 @@
     },
     "fuel-hose": {
       "notes": [
-        "Research. Line is a bit smaller than the 3/8 Wix 33003 barb. H-176 catalogs as 5/16. Cut 3/8 NAPA H-172 stubs and step with Gates 28594. Not bought yet. https://www.napaonline.com/en/p/NBHH172 https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594"
+        "Two ~4 in stubs of 3/8, not a 2 ft pack. No packaged 4 in SKU. 1 ft of NAPA H350A off the reel, cut two pieces, Gates 28594 to 5/16. Not bought yet. https://www.napaonline.com/en/p/NBHH350A"
       ],
-      "pn": "H-172 / 28594",
+      "pn": "H350A / 28594",
       "status": "replace",
-      "sheet": "5/16–3/8 stubs",
+      "sheet": "3/8 × ~4 in",
       "spec": {
-        "On sheet": "5/16–3/8 stubs",
-        "This one": "NAPA H-172, 3/8 in × 2 ft SAE J30R7. Same family as the 2010 H-176. Cut short stubs for the Wix 33003 3/8 barbs. NAPA: https://www.napaonline.com/en/p/NBHH172",
-        "Line size": "Enzo: the main fuel line is a bit smaller than 3/8. NAPA H-176 catalogs as 5/16 in, ID .3125. 5/16 × 2 ft pegboard is H-171. Leftover H-176 from 2010 can cover the 5/16 side.",
-        "Step": "There is no common molded 3/8-to-5/16 rubber fuel hose. Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer, gasoline-rated. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
-        "If 1/4": "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. That is a bigger step than 'a bit smaller than 3/8.' Measure the hard line before buying 28594.",
-        "Not": "Not a 3/8-to-5/16 molded fuel hose SKU. Not Wix 33033 (those extra hoses are still 3/8). Not stretching 5/16 hose onto a 3/8 barb. H-172 / H-176 is not for EFI pressure lines."
+        "On sheet": "3/8 × ~4 in",
+        "This one": "Two ~4 in stubs of 3/8 fuel hose on the Wix 33003 barbs. No packaged 4 in SKU. Ask NAPA for 1 ft of 3/8 off the reel — NAPA H350A Barricade MPI, priced per foot. Cut two 4 in pieces. https://www.napaonline.com/en/p/NBHH350A",
+        "Also": "Same 3/8 cut from Gates 27004 / NAPA H-177 at the counter if they have the reel. H-172 2 ft pegboard is more than needed.",
+        "Line size": "Enzo: the main fuel line is a bit smaller than 3/8. NAPA H-176 catalogs as 5/16 in, ID .3125. Leftover H-176 can cover the 5/16 side.",
+        "Step": "Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
+        "If 1/4": "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. Measure the hard line before buying 28594.",
+        "Not": "Not a 4 in packaged hose. Not the 2 ft H-172 pegboard. Not Wix 33033. Not stretching 5/16 onto a 3/8 barb."
       }
     },
     "valve-cover": {
@@ -461,6 +462,25 @@
           "spec": {
             "Line": "Filter barbs are 3/8 in. The hard line on the car is a bit smaller. NAPA H-176 on the 2010 ticket catalogs as 5/16 in (.3125). Ticket itself did not print ID. Stubs are the separate fuel-hose part."
           }
+        }
+      }
+    },
+    {
+      "id": "n16",
+      "at": "2026-11-09T19:36:00.000000+00:00",
+      "system": "engine",
+      "part": "fuel-hose",
+      "text": "Don't need 2 ft. Two ~4 in stubs of 3/8 on the Wix 33003. No packaged 4 in SKU. Ask NAPA for 1 ft of 3/8 H350A (Barricade MPI, priced per foot) and cut two 4 in pieces. Gates 28594 still joins to 5/16. H-172 pegboard is more than needed. Not bought yet. https://www.napaonline.com/en/p/NBHH350A",
+      "patch": {
+        "pn": "H350A / 28594",
+        "status": "replace",
+        "sheet": "3/8 × ~4 in",
+        "spec": {
+          "On sheet": "3/8 × ~4 in",
+          "This one": "Two ~4 in stubs of 3/8 fuel hose on the Wix 33003 barbs. No packaged 4 in SKU. Ask NAPA for 1 ft of 3/8 off the reel — NAPA H350A Barricade MPI, priced per foot. Cut two 4 in pieces. https://www.napaonline.com/en/p/NBHH350A",
+          "Also": "Same 3/8 cut from Gates 27004 / NAPA H-177 at the counter if they have the reel. H-172 2 ft pegboard is more than needed.",
+          "Step": "Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
+          "Not": "Not a 4 in packaged hose. Not the 2 ft H-172 pegboard. Not Wix 33033. Not stretching 5/16 onto a 3/8 barb."
         }
       }
     }
