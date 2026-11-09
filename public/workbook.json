@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T14:58:00.000000+00:00",
+  "updatedAt": "2026-11-09T19:17:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -23,14 +23,14 @@
     },
     "cooling": {
       "notes": [
-        "Need a thermostat. PSI industrial Z33001814 on the WINCO GM 3.0L sheet. Gasket Z101488. Opening temp is not printed. Not the marine 140. Not TDL 5216. Not bought yet.",
+        "Marine 181 CID 3.0L thermostat analog is Sierra 18-3550 / NAPA SME183550, 140°F, Mercury 59078. Same NAPA small-engine line as the cover gasket. Closed-cooling 160° is Sierra 18-3649 / SME183649. WINCO Z33001814 has no printed temp and no catalog cross. Not bought yet.",
         "Official solution. Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match for the burst radiator-to-block hose. O'Reilly https://www.oreillyauto.com/detail/c/green-stripe-vulco-flex/gates-green-stripe-vulco-flex-coolant-hose/gaa7/26502 Earlier 1-1/2 flex, molded SKUs, elbows, and the 1-1/2 × 1-3/4 step were failed research. Not bought yet."
       ]
     },
     "engine": {
       "notes": [
         "Fuel filter was not on the build plans. Read on the car: Wix 33003, 3/8 in in-line. Need new. Not bought yet.",
-        "Need a new valve cover, not the head, plus the gasket. Cover analog is GM 181 / 3.0L 8M0122491. Gasket is GM 14096154. Thermostat is the separate cooling part Z33001814. Not bought yet."
+        "Need a new valve cover, not the head, plus the gasket. Cover analog is GM 181 / 3.0L 8M0122491. Gasket found at NAPA: Sierra 18-0347 / SME180347. Thermostat marine 181 analog is Sierra 18-3550. Not bought yet."
       ]
     }
   },
@@ -69,33 +69,35 @@
     },
     "valve-cover-gasket": {
       "notes": [
-        "Need a new valve cover gasket, not a head gasket. GM 14096154 for the 181 / 3.0L four. Also Sierra 18-0347, GLM 32210, Mercury 27-806452, Fel-Pro Marine 17900. DET59565AS is the old 2010 set, not this dedicated gasket. Not bought yet."
+        "Found at NAPA. Sierra 18-0347 / SME180347 valve cover gasket for GM 153 and 181 CID. Mercury 27-52145 / 27-806452. GM analog 14096154 is still listed at Marine Engine Depot. Not bought yet. https://www.napaonline.com/en/p/SME180347"
       ],
-      "pn": "14096154",
+      "pn": "18-0347",
       "status": "replace",
-      "sheet": "Gasket 14096154",
+      "sheet": "18-0347",
       "spec": {
-        "On sheet": "Gasket 14096154",
-        "This one": "GM 14096154. Valve cover gasket for the 181 / 3.0L four. Amazon: https://www.amazon.com/ACDelco-14096154-Original-Equipment-Gasket/dp/B01LYVRVLJ",
-        "Also": "Sierra 18-0347, GLM 32210, Mercury 27-806452 / 27-851040, Fel-Pro Marine 17900. Marine Engine Depot: https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
+        "On sheet": "18-0347",
+        "This one": "Sierra 18-0347, NAPA SME180347. Valve cover gasket for GM 153 and 181 CID (2.5L and 3.0L), OMC / Mercruiser / Volvo Penta. NAPA: https://www.napaonline.com/en/p/SME180347",
+        "OEM": "Mercury 27-52145, 27-806452, 27-851040, 27-34041. OMC 913277 / 912981 / 3852693. Volvo Penta 3852693. GLM 32210. Fel-Pro Marine 17900.",
+        "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
         "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part."
       }
     },
     "thermostat": {
       "notes": [
-        "Need a thermostat. PSI industrial Z33001814 on the WINCO GM 3.0L sheet, including PF-25 engines. Gasket Z101488. Opening temp is not printed. Not the marine 140. Not TDL 5216. Not bought yet."
+        "Marine 181 CID 3.0L thermostat analog is Sierra 18-3550 / NAPA SME183550, 140°F, Mercury 59078. Same NAPA small-engine line as the cover gasket. Kit is Sierra 18-3650. Closed-cooling 160° is Sierra 18-3649 / SME183649. WINCO Z33001814 has no printed temp and no catalog cross. Not bought yet. https://www.napaonline.com/en/p/SME183550"
       ],
-      "pn": "Z33001814",
+      "pn": "18-3550",
       "status": "replace",
-      "sheet": "Thermostat Z33001814",
+      "sheet": "18-3550 · 140°",
       "spec": {
-        "On sheet": "Thermostat Z33001814",
-        "This one": "PSI / GM industrial Z33001814. On the WINCO GM 3.0L sheet, including 350775 engines that take PF-25. Same 181 / 3.0L four as this car.",
-        "Gasket": "Z101488. Same sheet also lists Z103152.",
-        "Other 3.0L": "WINCO row 350002-13 is Z32000435. That row also takes PF-25. Same gasket.",
-        "Temp": "Opening temperature is not printed on that sheet or any invoice.",
-        "Not": "Not the marine 140° / 160° boat stat. Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110."
+        "On sheet": "18-3550 · 140°",
+        "This one": "Sierra 18-3550, NAPA SME183550. 140°F thermostat for Mercruiser 140 / 3.0L GM 181 (s/n 0L340999 and below) and 165. Replaces Mercury 59078. NAPA: https://www.napaonline.com/en/p/SME183550",
+        "Kit": "Sierra 18-3650 is the 140° kit: 18-3550 plus cover gasket 18-2831. Replaces Mercury 59078T3 / 59078Q3.",
+        "160° closed": "Later closed / fresh-water GM marine cooling uses Sierra 18-3649, NAPA SME183649, 160°F, Mercury 8072522 / 807252T2. NAPA: https://www.napaonline.com/en/p/SME183649",
+        "WINCO sheet": "PSI Z33001814 was the industrial number on the WINCO GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3550. One WINCO reseller titles Z33001814 as a belt, so that number is not locked.",
+        "Street note": "140° is the boat raw-water 181 OEM. This Locost has a JEGS street radiator, closed glycol. It may run cool. Not confirmed on this housing.",
+        "Not": "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110."
       }
     },
     "rad-hose": {
@@ -328,6 +330,47 @@
           "Cross": "NAPA Gold 3003. NAPA ProSelect 23003. Metal version with hoses and clamps is Wix 33033.",
           "Line": "The 2010 H-176 fuel-line ticket does not print hose ID. This filter's ports are 3/8 in.",
           "Not": "Not on any packing slip. Not an oil filter."
+        }
+      }
+    },
+    {
+      "id": "n12",
+      "at": "2026-11-09T19:16:00.000000+00:00",
+      "system": "engine",
+      "part": "valve-cover-gasket",
+      "text": "Found at NAPA. Sierra 18-0347 / SME180347 valve cover gasket for GM 153 and 181 CID. Mercury 27-52145 / 27-806452. GM analog 14096154 is still listed at Marine Engine Depot. Not bought yet. https://www.napaonline.com/en/p/SME180347",
+      "patch": {
+        "pn": "18-0347",
+        "status": "replace",
+        "sheet": "18-0347",
+        "spec": {
+          "On sheet": "18-0347",
+          "This one": "Sierra 18-0347, NAPA SME180347. Valve cover gasket for GM 153 and 181 CID (2.5L and 3.0L), OMC / Mercruiser / Volvo Penta. NAPA: https://www.napaonline.com/en/p/SME180347",
+          "OEM": "Mercury 27-52145, 27-806452, 27-851040, 27-34041. OMC 913277 / 912981 / 3852693. Volvo Penta 3852693. GLM 32210. Fel-Pro Marine 17900.",
+          "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
+          "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
+          "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part."
+        }
+      }
+    },
+    {
+      "id": "n13",
+      "at": "2026-11-09T19:17:00.000000+00:00",
+      "system": "cooling",
+      "part": "thermostat",
+      "text": "Marine 181 CID 3.0L thermostat analog is Sierra 18-3550 / NAPA SME183550, 140°F, Mercury 59078. Same NAPA small-engine line as the cover gasket. Kit is Sierra 18-3650. Closed-cooling 160° is Sierra 18-3649 / SME183649. WINCO Z33001814 has no printed temp and no catalog cross. 140° is boat raw-water OEM; this car has a JEGS street radiator. Not bought yet. https://www.napaonline.com/en/p/SME183550",
+      "patch": {
+        "pn": "18-3550",
+        "status": "replace",
+        "sheet": "18-3550 · 140°",
+        "spec": {
+          "On sheet": "18-3550 · 140°",
+          "This one": "Sierra 18-3550, NAPA SME183550. 140°F thermostat for Mercruiser 140 / 3.0L GM 181 (s/n 0L340999 and below) and 165. Replaces Mercury 59078. NAPA: https://www.napaonline.com/en/p/SME183550",
+          "Kit": "Sierra 18-3650 is the 140° kit: 18-3550 plus cover gasket 18-2831. Replaces Mercury 59078T3 / 59078Q3.",
+          "160° closed": "Later closed / fresh-water GM marine cooling uses Sierra 18-3649, NAPA SME183649, 160°F, Mercury 8072522 / 807252T2. NAPA: https://www.napaonline.com/en/p/SME183649",
+          "WINCO sheet": "PSI Z33001814 was the industrial number on the WINCO GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3550. One WINCO reseller titles Z33001814 as a belt, so that number is not locked.",
+          "Street note": "140° is the boat raw-water 181 OEM. This Locost has a JEGS street radiator, closed glycol. It may run cool. Not confirmed on this housing.",
+          "Not": "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110."
         }
       }
     }

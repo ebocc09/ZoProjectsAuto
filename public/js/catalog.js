@@ -378,13 +378,14 @@ const CAT_PLACES = {
     { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four.", price: "No receipt", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
   ],
   "valve-cover-gasket": [
-    { where: "Amazon / GM", when: "8 Nov 2026", order: "14096154", item: "Need new. GM valve cover gasket for 181 / 3.0L L4. Not a head gasket.", price: "No receipt", url: "https://www.amazon.com/ACDelco-14096154-Original-Equipment-Gasket/dp/B01LYVRVLJ", link: "Amazon listing" },
-    { where: "Marine Engine Depot", when: "8 Nov 2026", order: "801096", item: "Same GM 14096154. Also Sierra 18-0347, GLM 32210, Mercury 27-806452.", price: "Page $30.39", url: "https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm", link: "Marine Engine Depot listing" },
+    { where: "NAPA", when: "9 Nov 2026", order: "SME180347", item: "Found. Sierra 18-0347 valve cover gasket, GM 153 and 181 CID (2.5L and 3.0L). NAPA Small Engine. Not bought.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME180347", link: "NAPA listing" },
+    { where: "Marine Engine Depot", when: "8 Nov 2026", order: "801096", item: "Authentic GM 14096154 for the 181 / 3.0L valve cover.", price: "Page $30.39", url: "https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm", link: "Marine Engine Depot listing" },
     { where: "eBasicPower, already bought", when: "9 Mar 2010", order: "82085", item: "DET59565AS 2.5/3.0L set $30.95. Old set. Not this dedicated gasket.", price: "$30.95 on that order" },
   ],
   "thermostat": [
-    { where: "WINCO / PSI sheet", when: "8 Nov 2026", order: "Z33001814", item: "Need new. PSI industrial thermostat on the GM 3.0L sheet, including PF-25 engines. Gasket Z101488. Opening temp is not printed.", price: "No receipt" },
-    { where: "Same sheet, other 3.0L", when: "8 Nov 2026", order: "Z32000435", item: "350002-13 also takes PF-25. Same gasket Z101488.", price: "No receipt" },
+    { where: "NAPA", when: "9 Nov 2026", order: "SME183550", item: "Marine 181 analog. Sierra 18-3550, 140°F, Mercury 59078. Mercruiser 140 / 3.0L GM 181 s/n 0L340999 and below. Not bought.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183550", link: "NAPA listing" },
+    { where: "NAPA 160° closed", when: "9 Nov 2026", order: "SME183649", item: "Sierra 18-3649, 160°F fresh-water / closed cooling. Mercury 8072522. Not the 140° 181 raw-water stat.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183649", link: "NAPA listing" },
+    { where: "WINCO / PSI sheet", when: "8 Nov 2026", order: "Z33001814", item: "Industrial number on the GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3550.", price: "No receipt" },
   ],
   "napa-37728": [
     { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "page 2 of the $213.99 ticket", item: "UP CLU SLAV", price: "net $32.57" },

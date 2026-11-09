@@ -303,7 +303,7 @@ const SKETCH = {
       </g>
       ${callout(300, 70, 80, 40, "3.0L I4 · 181 cid", "gm-30", active)}
       ${callout(280, 108, 420, 36, sheetLabel("valve-cover", "Valve cover 8M0122491"), "valve-cover", active)}
-      ${callout(186, 132, 40, 70, sheetLabel("valve-cover-gasket", "Gasket 14096154"), "valve-cover-gasket", active)}
+      ${callout(186, 132, 40, 70, sheetLabel("valve-cover-gasket", "18-0347"), "valve-cover-gasket", active)}
       ${callout(500, 224, 560, 70, "AWS 04-065 clutch", "gm-30", active)}
       ${callout(530, 290, 500, 360, "Fork 15592270", "clutch-fork", active)}
       ${callout(80, 320, 40, 360, "Fuel H-176 · choke 732-1153", "fuel-hardware", active)}
@@ -346,7 +346,7 @@ const SKETCH = {
       </g>
       ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
       ${callout(230, 118, 40, 210, sheetLabel("rad-hose", "26502 · 1-3/4"), "rad-hose", active, "replace")}
-      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "Thermostat Z33001814"), "thermostat", active)}
+      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "18-3550 · 140°"), "thermostat", active)}
       ${callout(250, 196, 200, 370, "model 110", "flex-fan-110", active)}
       ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
       <text class="title-note" x="24" y="400">${sheetLabel("rad-hose", "26502 · 1-3/4")} · heater hose GAT 28432</text>
