@@ -87,7 +87,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified."
+        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491, gasket GM 14096154, and thermostat Z33001814. Not bought yet."
     },
     {
       id: "cooling",
@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Not bought yet."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Need thermostat PSI Z33001814. Not bought yet."
     },
     {
       id: "driveline",
@@ -439,6 +439,26 @@ window.ZO = {
       evidence: []
     },
     {
+      id: "thermostat",
+      name: "Thermostat",
+      pn: "Z33001814",
+      brand: "PSI / GM industrial",
+      system: "cooling",
+      role: "Coolant thermostat on the 3.0. Need new.",
+      status: "replace",
+      confidence: "Need new. PSI industrial number. Not on an invoice. Not bought.",
+      qty: "1",
+      spec: [
+        { k: "This one", v: "PSI / GM industrial Z33001814. On the WINCO GM 3.0L sheet, including 350775 engines that take PF-25. Same 181 / 3.0L four as this car." },
+        { k: "Gasket", v: "Z101488. Same sheet also lists Z103152." },
+        { k: "Other 3.0L", v: "WINCO row 350002-13 is Z32000435. That row also takes PF-25. Same gasket." },
+        { k: "Temp", v: "Opening temperature is not printed on that sheet or any invoice." },
+        { k: "Not", v: "Not the marine 140° / 160° boat stat. Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110." }
+      ],
+      notes: "No receipt. Page / catalog ID only. Housing on the 2011 ticket stays TDL 5216 C/HOUSING until that line is read on the part.",
+      evidence: ["IMG_5929"]
+    },
+    {
       id: "hose-elbow-90",
       name: "Hose elbow 90",
       pn: "555-511176",
@@ -528,7 +548,8 @@ window.ZO = {
       qty: "1",
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
-        { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set" },
+        { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
+        { k: "Need now", v: "New valve cover (not the head) 8M0122491, gasket GM 14096154, thermostat Z33001814. Separate parts. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -540,8 +561,47 @@ window.ZO = {
         { k: "Written on that print", v: "83–84 4 speed. Melling valve spring VS-380. South Carolina. 1-800-374-7522." },
         { k: "Clutch parcel", v: "Office Depot to Buck's Engines, 27 Mar 2008, marked auto clutch, 32.75 lb" }
       ],
-      notes: "Flywheel face machined 0.125 in, 9 holes drilled/tapped 5/16-18 × 1 in for the pressure plate. The EPS sheet is a printout in the folder, not a measurement of this engine. An S&S Super E/G article is also in the folder and is not an invoice.",
+      notes: "Flywheel face machined 0.125 in, 9 holes drilled/tapped 5/16-18 × 1 in for the pressure plate. The EPS sheet is a printout in the folder, not a measurement of this engine. An S&S Super E/G article is also in the folder and is not an invoice. Valve cover, gasket, and thermostat are the separate parts that need buying.",
       evidence: ["IMG_5809", "IMG_5807", "IMG_5793", "IMG_5871", "IMG_5863", "IMG_5929", "IMG_5957"]
+    },
+    {
+      id: "valve-cover",
+      name: "Valve cover",
+      pn: "8M0122491",
+      brand: "GM / Mercury",
+      system: "engine",
+      role: "Rocker cover. Not the head.",
+      status: "replace",
+      confidence: "Need new. 181 / 3.0L L4 cover. Not read off this engine. Not bought.",
+      qty: "1",
+      spec: [
+        { k: "This one", v: "Steel valve cover for the GM 181 / 3.0L four. Mercury 8M0122491. Also 3853784, 65635A8, 851036T. Not the cylinder head." },
+        { k: "Buy", v: "Wholesale Marine page $115.49. https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/" },
+        { k: "Also", v: "Repower Marine, new GM steel cover. https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html" },
+        { k: "Confirm", v: "Marine covers can have a different PCV / oil-fill. Check this cover before ordering. EPS on the print: 1-800-374-7522." },
+        { k: "Not", v: "Not the head. Not DET59565AS. Not OSCM04-GH." }
+      ],
+      notes: "No receipt. Page prices only. Gasket is the separate part 14096154.",
+      evidence: ["IMG_5929", "IMG_5809"]
+    },
+    {
+      id: "valve-cover-gasket",
+      name: "Valve cover gasket",
+      pn: "14096154",
+      brand: "GM",
+      system: "engine",
+      role: "Seal under the valve cover. Not a head gasket.",
+      status: "replace",
+      confidence: "Need new. GM 181 / 3.0L L4 gasket. Not bought.",
+      qty: "1",
+      spec: [
+        { k: "This one", v: "GM 14096154. Valve cover gasket for the 181 / 3.0L four. Amazon: https://www.amazon.com/ACDelco-14096154-Original-Equipment-Gasket/dp/B01LYVRVLJ" },
+        { k: "Also", v: "Sierra 18-0347, GLM 32210, Mercury 27-806452 / 27-851040, Fel-Pro Marine 17900. Marine Engine Depot: https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
+        { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
+        { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." }
+      ],
+      notes: "No receipt. Goes on with the new valve cover.",
+      evidence: ["IMG_5863", "IMG_5929"]
     },
     {
       id: "napa-37728",
@@ -1725,7 +1785,7 @@ window.ZO = {
         n: "08",
         title: "Engine and clutch",
         system: "engine",
-        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice.",
+        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Gasket GM 14096154. Thermostat PSI Z33001814. Not bought yet.",
         evidence: ["IMG_5809", "IMG_5793", "IMG_5871", "IMG_5869"]
       },
       {
@@ -1733,7 +1793,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Not bought yet.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Need thermostat PSI Z33001814, gasket Z101488. Not the marine 140. Not bought yet.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {

@@ -200,6 +200,19 @@ const CAT_DRAW = {
   mystery: () => catFrame(`
     <rect ${CAT_S} x="58" y="28" width="84" height="64" rx="4"/>
     <text class="sk-lab" x="100" y="66" text-anchor="middle">?</text>`),
+  cover: () => catFrame(`
+    <path ${CAT_S} d="M36 44 H164 L158 86 H42 Z"/>
+    <path ${CAT_A} d="M48 36 H152 L148 44 H52 Z"/>
+    ${[0, 1, 2, 3].map((i) => `<circle ${CAT_D} cx="${58 + i * 28}" cy="40" r="4"/>`).join("")}`),
+  gasket: () => catFrame(`
+    <path ${CAT_A} d="M40 42 H160 L154 82 H46 Z" fill="none" stroke-width="5"/>
+    <path ${CAT_G} d="M52 50 H148 L144 74 H56 Z"/>
+    ${[0, 1, 2, 3].map((i) => `<circle ${CAT_D} cx="${60 + i * 26}" cy="46" r="3"/>`).join("")}`),
+  stat: () => catFrame(`
+    <circle ${CAT_S} cx="100" cy="60" r="34"/>
+    <circle ${CAT_F} cx="100" cy="60" r="18"/>
+    <circle ${CAT_A} cx="100" cy="60" r="7"/>
+    <path ${CAT_G} d="M100 42 v36 M82 60 h36"/>`),
 };
 
 const CAT_KIND = {
@@ -219,6 +232,9 @@ const CAT_KIND = {
   "wilwood-mc": "master",
   "jegs-rad": "rad",
   "gm-30": "engine",
+  "valve-cover": "cover",
+  "valve-cover-gasket": "gasket",
+  "thermostat": "stat",
   "napa-37728": "slave",
   "gearbox-1442": "box",
   "driveshaft-1442": "shaft",
@@ -348,7 +364,20 @@ const CAT_PLACES = {
     { where: "Buck's Engines", when: "21 Mar 2008", order: "P015582B", item: "Pilot 3914000 and T/O 614018", price: "$3.00 and $15.50" },
     { where: "AutoStar / Reliable, Huntsville", when: "26 Mar 2008", order: "REF 0000202137", item: "AWS 04-065 clutch kit", price: "cost $103.39" },
     { where: "AutoStar / Reliable", when: "26 Mar 2008", order: "same ticket", item: "MTM 140052 flywheel bolts", price: "cost $5.69" },
-    { where: "eBasicPower", when: "9 Mar 2010", order: "82085", item: "OSCM04-GH $7.00 and DET59565AS $30.95", price: "order $50.95" },
+    { where: "eBasicPower", when: "9 Mar 2010", order: "82085", item: "OSCM04-GH $7.00 and DET59565AS $30.95. Old set. Not the new valve-cover gasket.", price: "order $50.95" },
+  ],
+  "valve-cover": [
+    { where: "Wholesale Marine", when: "8 Nov 2026", order: "8M0122491", item: "Need new. Steel valve cover for GM 181 / 3.0L L4. Also 3853784 / 65635A8 / 851036T. Not the head.", price: "Page $115.49", url: "https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/", link: "Wholesale Marine listing" },
+    { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four.", price: "No receipt", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
+  ],
+  "valve-cover-gasket": [
+    { where: "Amazon / GM", when: "8 Nov 2026", order: "14096154", item: "Need new. GM valve cover gasket for 181 / 3.0L L4. Not a head gasket.", price: "No receipt", url: "https://www.amazon.com/ACDelco-14096154-Original-Equipment-Gasket/dp/B01LYVRVLJ", link: "Amazon listing" },
+    { where: "Marine Engine Depot", when: "8 Nov 2026", order: "801096", item: "Same GM 14096154. Also Sierra 18-0347, GLM 32210, Mercury 27-806452.", price: "Page $30.39", url: "https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm", link: "Marine Engine Depot listing" },
+    { where: "eBasicPower, already bought", when: "9 Mar 2010", order: "82085", item: "DET59565AS 2.5/3.0L set $30.95. Old set. Not this dedicated gasket.", price: "$30.95 on that order" },
+  ],
+  "thermostat": [
+    { where: "WINCO / PSI sheet", when: "8 Nov 2026", order: "Z33001814", item: "Need new. PSI industrial thermostat on the GM 3.0L sheet, including PF-25 engines. Gasket Z101488. Opening temp is not printed.", price: "No receipt" },
+    { where: "Same sheet, other 3.0L", when: "8 Nov 2026", order: "Z32000435", item: "350002-13 also takes PF-25. Same gasket Z101488.", price: "No receipt" },
   ],
   "napa-37728": [
     { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "page 2 of the $213.99 ticket", item: "UP CLU SLAV", price: "net $32.57" },

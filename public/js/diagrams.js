@@ -255,7 +255,6 @@ const SKETCH = {
       <g class="hot ${onCls("gm-30", active)}" data-part="gm-30">
         <path class="block" d="M150 168 L150 292 L420 292 L420 210 L400 168 Z" />
         <path class="head" d="M162 132 L400 132 L408 168 L158 168 Z" />
-        <path class="cover" d="M180 108 L386 108 L392 132 L174 132 Z" />
         ${[0,1,2,3].map((i) => `<ellipse cx="${210 + i * 52}" cy="150" rx="12" ry="7" />`).join("")}
         <path class="bell" d="M420 188 L470 176 L488 210 L488 270 L470 286 L420 268 Z" />
         <circle class="rim" cx="508" cy="228" r="40" />
@@ -266,6 +265,12 @@ const SKETCH = {
         }).join("")}
         <path class="hose" d="M200 132 L200 92 L280 78 L340 92 L340 108" />
       </g>
+      <g class="hot ${onCls("valve-cover", active)}" data-part="valve-cover">
+        <path class="cover" d="M180 108 L386 108 L392 132 L174 132 Z" />
+      </g>
+      <g class="hot ${onCls("valve-cover-gasket", active)}" data-part="valve-cover-gasket">
+        <path class="cover" d="M178 130 L390 130 L392 134 L176 134 Z" />
+      </g>
       <g class="hot ${onCls("clutch-fork", active)}" data-part="clutch-fork">
         <path class="line" d="M470 250 L 530 290" fill="none" />
         <circle cx="530" cy="290" r="8" />
@@ -274,6 +279,8 @@ const SKETCH = {
         <path class="hose" d="M170 220 C 120 240, 90 280, 80 320" fill="none" />
       </g>
       ${callout(300, 70, 80, 40, "3.0L I4 · 181 cid", "gm-30", active)}
+      ${callout(280, 108, 420, 36, "Valve cover 8M0122491", "valve-cover", active)}
+      ${callout(186, 132, 40, 70, "Gasket 14096154", "valve-cover-gasket", active)}
       ${callout(500, 224, 560, 70, "AWS 04-065 clutch", "gm-30", active)}
       ${callout(530, 290, 500, 360, "Fork 15592270", "clutch-fork", active)}
       ${callout(80, 320, 40, 360, "Fuel H-176 · choke 732-1153", "fuel-hardware", active)}
@@ -307,7 +314,12 @@ const SKETCH = {
       <g class="hot ${onCls("heater-hose", active)}" data-part="heater-hose">
         <path class="hose" d="M160 280 C 250 300, 300 260, 320 220" fill="none" />
       </g>
+      <g class="hot ${onCls("thermostat", active)}" data-part="thermostat">
+        <circle class="rim" cx="318" cy="148" r="14" />
+        <circle cx="318" cy="148" r="6" />
+      </g>
       ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
+      ${callout(318, 148, 430, 48, "Thermostat Z33001814", "thermostat", active)}
       ${callout(250, 196, 200, 370, "model 110", "flex-fan-110", active)}
       ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
       <text class="title-note" x="24" y="400">Hose drain 071063700 · heater hose GAT 28432</text>

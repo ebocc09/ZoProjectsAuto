@@ -1,5 +1,5 @@
 import { mountStudio } from "./car3d.js?v=wire2";
-import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model8";
+import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model9";
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];

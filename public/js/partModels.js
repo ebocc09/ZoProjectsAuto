@@ -363,6 +363,21 @@ const BUILD = {
     put(g, mesh(new THREE.BoxGeometry(0.28, 0.2, 0.22), mat.leather), 0, 0.12, 0);
     put(g, mesh(new THREE.BoxGeometry(0.16, 0.06, 0.01), mat.alum), 0, 0.14, 0.11);
   },
+  cover(g) {
+    put(g, mesh(new THREE.BoxGeometry(0.5, 0.06, 0.24), mat.steel), 0, 0.16, 0);
+    put(g, mesh(new THREE.BoxGeometry(0.46, 0.04, 0.18), mat.alum), 0, 0.2, 0);
+    for (let i = 0; i < 4; i++) put(g, cyl(0.012, 0.05, mat.chrome), -0.18 + i * 0.12, 0.24, 0.06);
+  },
+  gasket(g) {
+    put(g, mesh(new THREE.TorusGeometry(0.16, 0.018, 8, 28), mat.boot), 0, 0.08, 0, Math.PI / 2, 0, 0);
+    put(g, mesh(new THREE.BoxGeometry(0.42, 0.01, 0.18), mat.boot), 0, 0.08, 0);
+  },
+  stat(g) {
+    put(g, mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.04, 24), mat.brass), 0, 0.1, 0);
+    put(g, mesh(new THREE.CylinderGeometry(0.07, 0.07, 0.06, 20), mat.steel), 0, 0.14, 0);
+    put(g, mesh(new THREE.SphereGeometry(0.035, 12, 10), mat.chrome), 0, 0.18, 0);
+    put(g, cyl(0.008, 0.08, mat.dark), 0, 0.06, 0);
+  },
   caliper(g) {
     put(g, mesh(new THREE.BoxGeometry(0.36, 0.08, 0.2), mat.dark), 0, 0.1, 0);
     put(g, mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.07, 20), mat.steel), 0.02, 0.15, 0);
@@ -442,7 +457,7 @@ export async function ensurePartPhotos() {
     "jug-oil", "jug-atf", "jug-cool", "jug-brake", "jug-clutch",
     "fuse", "strip", "lamp", "taillamp", "horn", "fan", "tire", "plate", "hose", "cyl", "caliper", "gauge", "fork",
     "clutch", "belt", "seal", "fitting", "tube", "bolts", "steel", "paint", "spool", "bend", "pipes",
-    "strap", "glass", "body", "sheet", "mystery",
+    "strap", "glass", "body", "sheet", "mystery", "cover", "gasket", "stat",
   ];
   const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: false });
   renderer.setSize(520, 340, false);

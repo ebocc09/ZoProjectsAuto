@@ -186,9 +186,65 @@ TOPICS: list[dict] = [
             "First GM clutch C1909-XL082Y / D80132-XL226C came back as a mismatch. Kept AutoStar AWS 04-065, "
             "flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, throwout 614018. "
             "NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Fuel line H-176 and choke kit 732-1153. "
-            "Buck's line 15530202 is printed IRRIGATION and is not identified."
+            "Buck's line 15530202 is printed IRRIGATION and is not identified. "
+            "Need a new valve cover, not the head: 8M0122491. Gasket GM 14096154. Thermostat Z33001814. Not bought yet."
         ),
-        "pills": ["Radiator", "Fluids", "Clutch kit"],
+        "pills": ["Valve cover", "Radiator", "Clutch kit"],
+    },
+    {
+        "id": "valve-cover",
+        "system": "engine",
+        "view": "diagram",
+        "part": "valve-cover",
+        "evidence": "IMG_5929",
+        "keys": [
+            ("valve cover", 12), ("rocker cover", 12), ("valvecover", 10),
+            ("8m0122491", 12), ("3853784", 10),
+        ],
+        "reply": (
+            "Need a new valve cover, not the head. GM 181 / 3.0L four cover, Mercury 8M0122491 "
+            "(also 3853784 / 65635A8 / 851036T). Wholesale Marine page $115.49. Not read off this engine. "
+            "Marine covers can have a different PCV / oil-fill — check this one before ordering. "
+            "EPS on the print: 1-800-374-7522. Gasket is the separate part GM 14096154. Not bought yet."
+        ),
+        "pills": ["Valve cover gasket", "Thermostat", "Engine"],
+    },
+    {
+        "id": "valve-gasket",
+        "system": "engine",
+        "view": "diagram",
+        "part": "valve-cover-gasket",
+        "evidence": "IMG_5863",
+        "keys": [
+            ("valve cover gasket", 14), ("cover gasket", 10), ("14096154", 12),
+            ("18-0347", 10),
+        ],
+        "reply": (
+            "Need a new valve cover gasket, not a head gasket. GM 14096154 for the 181 / 3.0L four. "
+            "Also Sierra 18-0347, GLM 32210, Mercury 27-806452, Fel-Pro Marine 17900. "
+            "The 2010 eBasicPower set DET59565AS is the old 2.5/3.0L set, not this dedicated gasket. "
+            "Goes on with the new cover 8M0122491. Not bought yet."
+        ),
+        "pills": ["Valve cover", "Thermostat", "Engine"],
+    },
+    {
+        "id": "thermostat",
+        "system": "cooling",
+        "view": "diagram",
+        "part": "thermostat",
+        "evidence": "IMG_5929",
+        "keys": [
+            ("thermostat", 12), ("tstat", 10), ("t-stat", 10),
+            ("z33001814", 12), ("z101488", 10),
+        ],
+        "reply": (
+            "Need a new thermostat. PSI industrial Z33001814 on the WINCO GM 3.0L sheet, "
+            "including the 350775 engines that take PF-25. Gasket Z101488. "
+            "Opening temperature is not printed on that sheet or any invoice. "
+            "Not the marine 140 / 160 boat stat. Not TDL 5216 on the 2011 heater-hose ticket. "
+            "Not the Flex-a-lite fan adjustable thermostat. Not bought yet."
+        ),
+        "pills": ["Valve cover", "Radiator hose", "Engine"],
     },
     {
         "id": "driveline",
@@ -256,6 +312,7 @@ TOPICS: list[dict] = [
             ("12an", 6), ("jegs", 5), ("555-51962", 10),
             ("hose", 5), ("26502", 10), ("green stripe", 8), ("coolant", 4),
             ("flex", 6), ("vulco", 8),
+
         ],
         "reply": (
             "JEGS 555-51962 dragster/roadster radiator, 17 × 19-1/2 overall, −12AN. "
@@ -264,9 +321,10 @@ TOPICS: list[dict] = [
             "The 2008 JEGS line 400-110 was deducted and is not in either box. "
             "Aircraft Spruce AN833-12D, AN821-12D elbow, AN924-12D nut in May 2009. Gates heater hose 28432 ×2 in June 2011 is the 3/4 in hose. "
             "The radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, "
-            "1-3/4 both ends × 16-1/2 in. Perfect match. Not bought yet."
+            "1-3/4 both ends × 16-1/2 in. Perfect match. Need thermostat PSI Z33001814, gasket Z101488. "
+            "Not the marine 140. Not bought yet."
         ),
-        "pills": ["Engine", "AN fittings"],
+        "pills": ["Thermostat", "Engine", "AN fittings"],
     },
     {
         "id": "brakes",
@@ -485,6 +543,9 @@ FOLLOW = [
     (r"rear|trailing", "trailing"),
     (r"shock|coilover|damper", "coilovers"),
     (r"ball", "balljoint"),
+    (r"valve cover gasket|cover gasket", "valve-gasket"),
+    (r"valve cover|rocker cover", "valve-cover"),
+    (r"thermostat|tstat|t-stat", "thermostat"),
     (r"engine|motor|clutch", "engine"),
     (r"fuse|terminal strip", "fuse-block"),
     (r"lock|seize|bleeder|stuck brake|won t roll", "brake-lock"),
