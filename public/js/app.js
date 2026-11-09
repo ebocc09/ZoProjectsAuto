@@ -1276,9 +1276,12 @@ function latestPartOverlay(ws, id) {
   let overlay = {};
   Object.assign(overlay, (ws.parts || {})[id] || {});
   (ws.log || []).forEach((n) => {
-    if (!n || n.part !== id || !n.patch || !Object.keys(n.patch).length) return;
-    const spec = n.patch.spec || overlay.spec;
-    Object.assign(overlay, n.patch);
+    const fromPart = n && n.part === id && n.patch && Object.keys(n.patch).length ? n.patch : null;
+    const fromBundle = n && n.patches && n.patches[id] && Object.keys(n.patches[id]).length ? n.patches[id] : null;
+    const patch = fromBundle || fromPart;
+    if (!patch) return;
+    const spec = patch.spec || overlay.spec;
+    Object.assign(overlay, patch);
     if (spec) overlay.spec = spec;
   });
   return overlay;

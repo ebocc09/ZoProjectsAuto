@@ -383,9 +383,10 @@ const CAT_PLACES = {
     { where: "eBasicPower, already bought", when: "9 Mar 2010", order: "82085", item: "DET59565AS 2.5/3.0L set $30.95. Old set. Not this dedicated gasket.", price: "$30.95 on that order" },
   ],
   "thermostat": [
-    { where: "NAPA", when: "9 Nov 2026", order: "SME183550", item: "Marine 181 analog. Sierra 18-3550, 140°F, Mercury 59078. Mercruiser 140 / 3.0L GM 181 s/n 0L340999 and below. Not bought.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183550", link: "NAPA listing" },
-    { where: "NAPA 160° closed", when: "9 Nov 2026", order: "SME183649", item: "Sierra 18-3649, 160°F fresh-water / closed cooling. Mercury 8072522. Not the 140° 181 raw-water stat.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183649", link: "NAPA listing" },
-    { where: "WINCO / PSI sheet", when: "8 Nov 2026", order: "Z33001814", item: "Industrial number on the GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3550.", price: "No receipt" },
+    { where: "NAPA", when: "9 Nov 2026", order: "SME183650", item: "Buy list. Sierra 18-3650 140°F kit: 18-3550 thermostat plus 18-2831 cover gasket. Mercury 59078T3 / 59078Q3. Not bought.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183650", link: "NAPA listing" },
+    { where: "NAPA stat only", when: "9 Nov 2026", order: "SME183550", item: "Sierra 18-3550, 140°F, Mercury 59078. Inside the kit. Not the buy-list line.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183550", link: "NAPA listing" },
+    { where: "NAPA 160° closed", when: "9 Nov 2026", order: "SME183649", item: "Sierra 18-3649, 160°F fresh-water / closed cooling. Mercury 8072522. Not the 140° kit.", price: "No receipt", url: "https://www.napaonline.com/en/p/SME183649", link: "NAPA listing" },
+    { where: "WINCO / PSI sheet", when: "8 Nov 2026", order: "Z33001814", item: "Industrial number on the GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3650.", price: "No receipt" },
   ],
   "napa-37728": [
     { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "page 2 of the $213.99 ticket", item: "UP CLU SLAV", price: "net $32.57" },
@@ -504,7 +505,7 @@ const CAT_PLACES = {
     { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "1/4 in aluminum fuel line 91011429-10 and cap 6175021", price: "$8.99 and $24.99" },
   ],
   "fuel-filter": [
-    { where: "Read on the car", when: "9 Nov 2026", order: "33003", item: "Wix in-line fuel filter, 3/8 in both ends. Not on any invoice or CAD sheet.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/wix/fuel---emissions/fuel-injection/fuel-filter-water-separator/25614d8c10ec/wix-fuel-filter/wix0/33003", link: "O'Reilly listing" },
+    { where: "O'Reilly", when: "9 Nov 2026", order: "33003", item: "Buy list. Wix in-line fuel filter, 3/8 in both ends. Read on the car. Not bought.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003", link: "O'Reilly listing" },
     { where: "Wix catalog", when: "9 Nov 2026", order: "33003", item: "Plastic in-line, cellulose 20 micron. NAPA Gold 3003. Metal version is 33033.", price: "No receipt", url: "https://m.wixfilters.com/Search/PartDetail?PartID=47940", link: "Wix listing" },
   ],
   "heater-hose": [

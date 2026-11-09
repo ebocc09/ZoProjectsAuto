@@ -346,7 +346,7 @@ const SKETCH = {
       </g>
       ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
       ${callout(230, 118, 40, 210, sheetLabel("rad-hose", "26502 · 1-3/4"), "rad-hose", active, "replace")}
-      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "18-3550 · 140°"), "thermostat", active)}
+      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "18-3650 · 140°"), "thermostat", active)}
       ${callout(250, 196, 200, 370, "model 110", "flex-fan-110", active)}
       ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
       <text class="title-note" x="24" y="400">${sheetLabel("rad-hose", "26502 · 1-3/4")} · heater hose GAT 28432</text>
