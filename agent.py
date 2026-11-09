@@ -254,8 +254,8 @@ TOPICS: list[dict] = [
         "keys": [
             ("radiator", 8), ("rad", 4), ("cooling", 6), ("fan", 3),
             ("12an", 6), ("jegs", 5), ("555-51962", 10),
-            ("hose", 5), ("26502", 10), ("25530", 10), ("coolant", 4),
-            ("flex", 6), ("vulco", 8), ("elbow", 4), ("511176", 6), ("coupling", 4),
+            ("hose", 5), ("26502", 10), ("green stripe", 8), ("coolant", 4),
+            ("flex", 6), ("vulco", 8),
         ],
         "reply": (
             "JEGS 555-51962 dragster/roadster radiator, 17 × 19-1/2 overall, −12AN. "
@@ -263,8 +263,8 @@ TOPICS: list[dict] = [
             "The fan in hand is a Flex-a-lite model 110, bought from Peyton Performance in Waxahachie. "
             "The 2008 JEGS line 400-110 was deducted and is not in either box. "
             "Aircraft Spruce AN833-12D, AN821-12D elbow, AN924-12D nut in May 2009. Gates heater hose 28432 ×2 in June 2011 is the 3/4 in hose. "
-            "The radiator-to-block hose burst. Current plan is a flex hose, not elbows: "
-            "Gates Green Stripe Vulco-Flex 26502 (1-3/4 even, 16-1/2 in) or Vulco-Flex II 25530 (1-1/2 × 1-3/4 step, 20 in). Not bought yet."
+            "The radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, "
+            "1-3/4 both ends × 16-1/2 in. Perfect match. Not bought yet."
         ),
         "pills": ["Engine", "AN fittings"],
     },

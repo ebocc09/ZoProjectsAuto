@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Current plan is a flex hose, not elbows: Green Stripe Vulco-Flex 1-3/4 even, or Vulco-Flex II 1-1/2 × 1-3/4 step. Not bought yet."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Not bought yet."
     },
     {
       id: "driveline",
@@ -423,20 +423,19 @@ window.ZO = {
       pn: "26502",
       brand: "Gates",
       system: "cooling",
-      role: "Radiator into the engine block. One flex hose, not elbows.",
+      role: "Radiator into the engine block. Official: Green Stripe Vulco-Flex 1-3/4.",
       status: "replace",
-      confidence: "Print fit pointed at 1-1/2. Flex is simpler than couplings. Two sizes on the table. Not bought yet.",
+      confidence: "Perfect match. Official solution. Not bought yet.",
       qty: "1",
       spec: [
-        { k: "Plan", v: "One flex hose. Not elbows and cut legs. Trim the plain cuffs." },
-        { k: "1-3/4 even", v: "Gates Green Stripe Vulco-Flex, 1-3/4 both ends. US Vulco-Flex II has no even 1-3/4. 26601 is 6 in, 26602 8-1/2, 26603 11, 26501 13-1/2, 26502 16-1/2 (the 17 in analog), 26611 19, 26612 23-1/2. O'Reilly: https://www.oreillyauto.com/detail/c/green-stripe-vulco-flex/gates-green-stripe-vulco-flex-coolant-hose/gaa7/26502" },
-        { k: "1-1/2 × 1-3/4", v: "Gates Vulco-Flex II step hose. 25526 is 13.2 in, 25527 15, 25528 16-1/2, 25530 20, 25532 22, 25535 27. O'Reilly: https://www.oreillyauto.com/detail/c/vulco-flex-ii/gates-vulco-flex-ii-coolant-hose/gatc/25530" },
-        { k: "Radiator", v: "This radiator's barb is still 1-1/4 in, JEGS 555-53082. A 1-3/4 or 1-1/2 cuff is loose on that barb." },
-        { k: "Clamps", v: "Size 32 on 1-3/4, Gates 32032. Size 28 on 1-1/2, Gates 32028." },
+        { k: "This one", v: "Gates Green Stripe Vulco-Flex 26502. 1-3/4 in both ends × 16-1/2 in. Official. Perfect match. O'Reilly: https://www.oreillyauto.com/detail/c/green-stripe-vulco-flex/gates-green-stripe-vulco-flex-coolant-hose/gaa7/26502" },
+        { k: "Lengths", v: "Same 1-3/4 even family: 26601 is 6 in, 26602 8-1/2, 26603 11, 26501 13-1/2, 26502 16-1/2, 26611 19, 26612 23-1/2. Trim the plain cuffs." },
+        { k: "Clamps", v: "Size 32 on 1-3/4. Gates 32032." },
+        { k: "Failed", v: "Not 25478 (1-1/2 Vulco-Flex II). Not 24024 stick. Not molded 22039 / 22476 / 05-3093 / 20121. Not elbows 555-511176 / 511181 / 511171. Not step hose 25530." },
         { k: "Stamps", v: "EOSA3AG1, E09 AG 1, 3093AG1. Factory marks. Not a catalog number for this hose." },
         { k: "Heater hose", v: "Gates 28432 on the 23 Jun 2011 ticket is 3/4 in heater hose. Different hose." }
       ],
-      notes: "Couplings stay in the catalog as backup. No receipt yet, so there is no price.",
+      notes: "Official solution. No receipt yet, so there is no price.",
       evidence: []
     },
     {
@@ -445,9 +444,9 @@ window.ZO = {
       pn: "555-511176",
       brand: "JEGS",
       system: "cooling",
-      role: "Beaded 90. Backup if the flex hose is not used.",
+      role: "Failed research. Not the hose.",
       status: "replace",
-      confidence: "Parked. Flex hose is the current plan. Not bought.",
+      confidence: "Failed attempt. Official hose is Green Stripe Vulco-Flex 26502.",
       qty: "as needed",
       spec: [
         { k: "This one", v: "Aluminum 90, 1-1/2 in OD, 3-1/4 in legs. Tube OD is hose ID. Page $19.99. More than 10. https://www.jegs.com/i/jegs-555-511176-aluminum-radiator-hose-connector-90-degree-elbow-1-1-2-in-o-d-inlet-outlet" },
@@ -465,9 +464,9 @@ window.ZO = {
       pn: "555-511181",
       brand: "JEGS",
       system: "cooling",
-      role: "Beaded 45. Backup if the flex hose is not used.",
+      role: "Failed research. Not the hose.",
       status: "replace",
-      confidence: "Parked. Flex hose is the current plan. Not bought.",
+      confidence: "Failed attempt. Official hose is Green Stripe Vulco-Flex 26502.",
       qty: "as needed",
       spec: [
         { k: "This one", v: "Aluminized steel 45, 1-1/2 in OD, legs 7 in and 3-3/4 in. Not aluminum. Page $21.99. More than 10. https://www.jegs.com/i/jegs-555-511181-aluminized-steel-radiator-hose-connector-45-degree-elbow-1-1-2-in-o-d-inlet-outlet" },
@@ -483,9 +482,9 @@ window.ZO = {
       pn: "555-511171",
       brand: "JEGS",
       system: "cooling",
-      role: "Straight coupling. Backup if the flex hose is not used.",
+      role: "Failed research. Not the hose.",
       status: "replace",
-      confidence: "Parked. Flex hose is the current plan. Not bought.",
+      confidence: "Failed attempt. Official hose is Green Stripe Vulco-Flex 26502.",
       qty: "as needed",
       spec: [
         { k: "This one", v: "Aluminum straight, 1-1/2 in OD × 3 in. Page $5.99. More than 10. https://www.jegs.com/i/jegs-555-511171-aluminum-radiator-hose-connector-3-in-straight-length-1-1-2-in-o-d-inlet-outlet" },
@@ -1318,7 +1317,7 @@ window.ZO = {
         { k: "Bullet terminal", v: "MTM 85X32 TERM BULLET 16 ×1" },
         { k: "Socket", v: "MTM 85S10 SOCKET 3 TERM H ×1" }
       ],
-      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is a flex hose, not this part.",
+      notes: "Hose length is not on the ticket. Terminals are electrical hardware on a cooling-parts ticket. This is the 3/4 in heater hose. The radiator-to-block hose is Gates Green Stripe Vulco-Flex 26502, not this part.",
       evidence: ["IMG_5878"]
     },
     {
@@ -1734,7 +1733,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Molded hoses did not match the one in hand. Current plan is a flex hose, not elbows: Gates Green Stripe Vulco-Flex 26502 (1-3/4 even, 16-1/2 in) or Vulco-Flex II 25530 (1-1/2 × 1-3/4 step, 20 in). The radiator barb is still 1-1/4, JEGS 555-53082. Not bought yet.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Not bought yet.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {
