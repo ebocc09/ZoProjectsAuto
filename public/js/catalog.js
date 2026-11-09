@@ -285,6 +285,7 @@ const CAT_KIND = {
   "seals-tim": "seal",
   "fuel-hardware": "hose",
   "fuel-filter": "filter",
+  "fuel-hose": "hose",
   "heater-hose": "hose",
   "rad-hose": "hose",
   "hose-elbow-90": "bend",
@@ -507,6 +508,12 @@ const CAT_PLACES = {
   "fuel-filter": [
     { where: "O'Reilly", when: "9 Nov 2026", order: "33003", item: "Buy list. Wix in-line fuel filter, 3/8 in both ends. Read on the car. Not bought.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003", link: "O'Reilly listing" },
     { where: "Wix catalog", when: "9 Nov 2026", order: "33003", item: "Plastic in-line, cellulose 20 micron. NAPA Gold 3003. Metal version is 33033.", price: "No receipt", url: "https://m.wixfilters.com/Search/PartDetail?PartID=47940", link: "Wix listing" },
+  ],
+  "fuel-hose": [
+    { where: "NAPA", when: "9 Nov 2026", order: "H-172", item: "Research. 3/8 in × 2 ft SAE J30R7 fuel hose. Cut stubs for the Wix 33003 barbs. Same family as the 2010 H-176. Not bought.", price: "No receipt", url: "https://www.napaonline.com/en/p/NBHH172", link: "NAPA listing" },
+    { where: "NAPA 5/16", when: "9 Nov 2026", order: "H-176", item: "Already bought 30 Dec 2010 ×5. Catalog is 5/16 in. 2-ft pegboard is H-171.", price: "net $1.29 on that ticket", url: "https://www.napaonline.com/en/p/NBHH176", link: "NAPA listing" },
+    { where: "O'Reilly", when: "9 Nov 2026", order: "28594", item: "Gates 5/16–3/8 nylon reducer. Joins 3/8 stubs to 5/16 hose. Gasoline-rated. Need two.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594", link: "O'Reilly listing" },
+    { where: "O'Reilly same hose", when: "9 Nov 2026", order: "27004", item: "Gates Safety Stripe 3/8 SAE J30R7. 27003 is the 5/16.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/safety-stripe/gates-safety-stripe-fuel-hose/gats/27004", link: "O'Reilly listing" },
   ],
   "heater-hose": [
     { where: "Auto Plus / Reliable", when: "23 Jun 2011", order: "REF 0000403749", item: "GAT 28432 ×2, TDL 5216 ×2, MTM terminals", price: "pay $10.11" },

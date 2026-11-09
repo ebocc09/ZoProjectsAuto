@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T19:25:00.000000+00:00",
+  "updatedAt": "2026-11-09T19:30:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -30,7 +30,8 @@
     "engine": {
       "notes": [
         "Need a new valve cover, not the head. Cover analog is GM 181 / 3.0L 8M0122491. Check PCV / oil-fill before ordering. Not bought yet.",
-        "Buy list. Not bought yet. Fuel filter Wix 33003. Valve cover gasket Sierra 18-0347 / NAPA SME180347. Thermostat kit Sierra 18-3650 / NAPA SME183650."
+        "Buy list. Not bought yet. Fuel filter Wix 33003. Valve cover gasket Sierra 18-0347 / NAPA SME180347. Thermostat kit Sierra 18-3650 / NAPA SME183650.",
+        "Filter stubs: line is a bit smaller than the 3/8 Wix 33003 barb. H-176 catalogs as 5/16. Cut 3/8 NAPA H-172 and step with Gates 28594. Not bought yet."
       ]
     }
   },
@@ -47,8 +48,24 @@
         "This one": "Wix 33003. Plastic in-line fuel filter, 3/8 in inlet and outlet. Read on the car. Not on the build plans. O'Reilly: https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003",
         "Wix sheet": "Complete in-line. Cellulose, 20 micron. Height 3.661 in, OD 2.087 in. Gasoline only. https://m.wixfilters.com/Search/PartDetail?PartID=47940",
         "Cross": "NAPA Gold 3003. NAPA ProSelect 23003. Metal version with hoses and clamps is Wix 33033.",
-        "Line": "The 2010 H-176 fuel-line ticket does not print hose ID. This filter's ports are 3/8 in.",
+        "Line": "Filter barbs are 3/8 in. The hard line on the car is a bit smaller. NAPA H-176 on the 2010 ticket catalogs as 5/16 in (.3125). Ticket itself did not print ID. Stubs are the separate fuel-hose part.",
         "Not": "Not on any packing slip. Not an oil filter."
+      }
+    },
+    "fuel-hose": {
+      "notes": [
+        "Research. Line is a bit smaller than the 3/8 Wix 33003 barb. H-176 catalogs as 5/16. Cut 3/8 NAPA H-172 stubs and step with Gates 28594. Not bought yet. https://www.napaonline.com/en/p/NBHH172 https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594"
+      ],
+      "pn": "H-172 / 28594",
+      "status": "replace",
+      "sheet": "5/16–3/8 stubs",
+      "spec": {
+        "On sheet": "5/16–3/8 stubs",
+        "This one": "NAPA H-172, 3/8 in × 2 ft SAE J30R7. Same family as the 2010 H-176. Cut short stubs for the Wix 33003 3/8 barbs. NAPA: https://www.napaonline.com/en/p/NBHH172",
+        "Line size": "Enzo: the main fuel line is a bit smaller than 3/8. NAPA H-176 catalogs as 5/16 in, ID .3125. 5/16 × 2 ft pegboard is H-171. Leftover H-176 from 2010 can cover the 5/16 side.",
+        "Step": "There is no common molded 3/8-to-5/16 rubber fuel hose. Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer, gasoline-rated. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
+        "If 1/4": "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. That is a bigger step than 'a bit smaller than 3/8.' Measure the hard line before buying 28594.",
+        "Not": "Not a 3/8-to-5/16 molded fuel hose SKU. Not Wix 33033 (those extra hoses are still 3/8). Not stretching 5/16 hose onto a 3/8 barb. H-172 / H-176 is not for EFI pressure lines."
       }
     },
     "valve-cover": {
@@ -416,6 +433,33 @@
             "WINCO sheet": "PSI Z33001814 was the industrial number on the WINCO GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3650.",
             "Street note": "140° is the boat raw-water 181 OEM. This Locost has a JEGS street radiator, closed glycol. It may run cool. Not confirmed on this housing.",
             "Not": "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110. Not the valve-cover gasket 18-0347."
+          }
+        }
+      }
+    },
+    {
+      "id": "n15",
+      "at": "2026-11-09T19:30:00.000000+00:00",
+      "system": "engine",
+      "part": "fuel-hose",
+      "text": "Filter stubs. Wix 33003 barbs are 3/8. The main fuel line on the car is a bit smaller than 3/8. NAPA H-176 from the 2010 ticket catalogs as 5/16 in SAE J30R7 — the ticket did not print ID. There is no common molded 3/8-to-5/16 rubber fuel hose. Cut short 3/8 stubs from NAPA H-172 (2 ft pegboard) and join to 5/16 with Gates 28594 reducers, two of them. Leftover H-176 can cover the 5/16 side. If the hard line is the Speedway 1/4 aluminum, measure first. Not bought yet. https://www.napaonline.com/en/p/NBHH172 https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
+      "patch": {
+        "pn": "H-172 / 28594",
+        "status": "replace",
+        "sheet": "5/16–3/8 stubs",
+        "spec": {
+          "On sheet": "5/16–3/8 stubs",
+          "This one": "NAPA H-172, 3/8 in × 2 ft SAE J30R7. Same family as the 2010 H-176. Cut short stubs for the Wix 33003 3/8 barbs. NAPA: https://www.napaonline.com/en/p/NBHH172",
+          "Line size": "Enzo: the main fuel line is a bit smaller than 3/8. NAPA H-176 catalogs as 5/16 in, ID .3125. 5/16 × 2 ft pegboard is H-171. Leftover H-176 from 2010 can cover the 5/16 side.",
+          "Step": "There is no common molded 3/8-to-5/16 rubber fuel hose. Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer, gasoline-rated. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
+          "If 1/4": "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. That is a bigger step than 'a bit smaller than 3/8.' Measure the hard line before buying 28594.",
+          "Not": "Not a 3/8-to-5/16 molded fuel hose SKU. Not Wix 33033 (those extra hoses are still 3/8). Not stretching 5/16 hose onto a 3/8 barb. H-172 / H-176 is not for EFI pressure lines."
+        }
+      },
+      "patches": {
+        "fuel-filter": {
+          "spec": {
+            "Line": "Filter barbs are 3/8 in. The hard line on the car is a bit smaller. NAPA H-176 on the 2010 ticket catalogs as 5/16 in (.3125). Ticket itself did not print ID. Stubs are the separate fuel-hose part."
           }
         }
       }

@@ -296,6 +296,10 @@ const SKETCH = {
       <g class="hot ${onCls("fuel-hardware", active)}" data-part="fuel-hardware">
         <path class="hose" d="M170 220 C 120 240, 90 280, 80 320" fill="none" />
       </g>
+      <g class="hot ${onCls("fuel-hose", active)}" data-part="fuel-hose">
+        <path class="hose" d="M110 248 C 88 232, 70 220, 58 236" fill="none" />
+        <path class="hose" d="M110 292 C 88 308, 72 328, 80 340" fill="none" />
+      </g>
       <g class="hot ${onCls("fuel-filter", active)}" data-part="fuel-filter">
         <rect class="cover" x="96" y="248" width="28" height="44" rx="10" />
         <circle cx="110" cy="258" r="4" />
@@ -308,6 +312,7 @@ const SKETCH = {
       ${callout(530, 290, 500, 360, "Fork 15592270", "clutch-fork", active)}
       ${callout(80, 320, 40, 360, "Fuel H-176 · choke 732-1153", "fuel-hardware", active)}
       ${callout(110, 270, 200, 360, sheetLabel("fuel-filter", "Wix 33003"), "fuel-filter", active)}
+      ${callout(96, 248, 200, 220, sheetLabel("fuel-hose", "5/16–3/8 stubs"), "fuel-hose", active)}
       <text class="title-note" x="24" y="400">Pilot 3914000 · T/O 614018 · belt 25-7417 · 15530202 printed IRRIGATION</text>
     `;
   },

@@ -208,9 +208,31 @@ TOPICS: list[dict] = [
             "plastic in-line, 3/8 in inlet and outlet, cellulose 20 micron. "
             "O'Reilly listing: https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003 "
             "NAPA Gold 3003 is the same filter. Metal version with hoses is Wix 33033. Gasoline only. "
+            "Barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. "
             "On the buy list with the cover gasket and thermostat kit. Not bought yet."
         ),
-        "pills": ["Fuel line", "Engine", "Valve cover"],
+        "pills": ["Fuel hose", "Engine", "Valve cover"],
+    },
+    {
+        "id": "fuel-hose",
+        "system": "engine",
+        "view": "diagram",
+        "part": "fuel-hose",
+        "evidence": "IMG_5877",
+        "keys": [
+            ("fuel hose", 14), ("fuel line hose", 12), ("h-172", 12), ("h172", 10),
+            ("28594", 12), ("5/16", 6), ("3/8 hose", 8), ("filter hose", 10),
+            ("h-171", 8), ("27004", 8),
+        ],
+        "reply": (
+            "Wix 33003 barbs are 3/8. The main line on the car is a bit smaller than that. "
+            "NAPA H-176 from the 2010 ticket catalogs as 5/16 in SAE J30R7 — ticket did not print ID. "
+            "There is no common molded 3/8-to-5/16 rubber fuel hose. Cut short 3/8 stubs from NAPA H-172 "
+            "(2 ft pegboard, same family as H-176) and join to 5/16 hose with Gates 28594 reducers, two of them. "
+            "Leftover H-176 can cover the 5/16 side. If the hard line is the Speedway 1/4 aluminum, measure first. "
+            "Not for EFI pressure. Not bought yet."
+        ),
+        "pills": ["Fuel filter", "Engine", "Thermostat"],
     },
     {
         "id": "valve-cover",
@@ -571,6 +593,7 @@ FOLLOW = [
     (r"valve cover gasket|cover gasket", "valve-gasket"),
     (r"valve cover|rocker cover", "valve-cover"),
     (r"thermostat|tstat|t-stat|18-3650|183650|18-3550|59078", "thermostat"),
+    (r"fuel hose|h-172|h172|28594|filter hose|5/16.*3/8|3/8.*5/16", "fuel-hose"),
     (r"fuel filter|wix|33003", "fuel-filter"),
     (r"engine|motor|clutch", "engine"),
     (r"fuse|terminal strip", "fuse-block"),
