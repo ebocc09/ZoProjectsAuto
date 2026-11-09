@@ -1,5 +1,5 @@
 import { mountStudio } from "./car3d.js?v=wire2";
-import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model9";
+import { ensurePartPhotos, openPartViewer, closePartViewer } from "./partModels.js?v=model10";
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -1082,7 +1082,9 @@ function editForm(p) {
       ? `<p class="hint-inline">Current size writes through to the car vitals. As-built size on the geometry sheet stays put.</p>`
       : p.system === "fluids"
         ? `<p class="hint-inline">Current fill writes through to the car vitals. Paperwork stays “not on file” until you log a bottle.</p>`
-        : "";
+        : (p.spec || []).some((s) => s.k === "On sheet")
+          ? `<p class="hint-inline">On sheet is the label on the diagram. Saving it updates the blueprint.</p>`
+          : "";
   return `
     <form class="edit-form" data-part="${esc(p.id)}">
       <label>What changed
@@ -1185,9 +1187,10 @@ function appendNote(body) {
       notes.push(text);
       slot.notes = notes;
     }
-    ["pn", "name", "status"].forEach((key) => {
+    ["pn", "name", "status", "sheet"].forEach((key) => {
       if (patch[key]) slot[key] = patch[key];
     });
+    if (patch.spec && patch.spec["On sheet"]) slot.sheet = patch.spec["On sheet"];
     if (patch.spec && typeof patch.spec === "object") slot.spec = Object.assign({}, slot.spec || {}, patch.spec);
     workshop.parts[body.part] = slot;
   }
@@ -1269,20 +1272,40 @@ async function pushWorkbookToGit(token) {
   rememberWorkbook();
 }
 
-function applyWorkshop(ws) {
-  const parts = ws.parts || {};
-  ZO.parts.forEach((p) => {
-    const patch = parts[p.id];
-    if (!patch) return;
-    if (patch.pn) p.pn = patch.pn;
-    if (patch.name) p.name = patch.name;
-    if (patch.status) p.status = patch.status;
-    if (patch.spec && p.spec) {
-      p.spec.forEach((row) => {
-        if (patch.spec[row.k]) row.v = patch.spec[row.k];
-      });
-    }
+function latestPartOverlay(ws, id) {
+  let overlay = {};
+  Object.assign(overlay, (ws.parts || {})[id] || {});
+  (ws.log || []).forEach((n) => {
+    if (!n || n.part !== id || !n.patch || !Object.keys(n.patch).length) return;
+    const spec = n.patch.spec || overlay.spec;
+    Object.assign(overlay, n.patch);
+    if (spec) overlay.spec = spec;
   });
+  return overlay;
+}
+
+function applyPartOverlay(p, patch) {
+  if (!patch) return;
+  if (patch.pn) p.pn = patch.pn;
+  if (patch.name) p.name = patch.name;
+  if (patch.status) p.status = patch.status;
+  if (patch.sheet) p.sheet = patch.sheet;
+  if (Array.isArray(patch.notes) && patch.notes.length) p.notes = patch.notes[patch.notes.length - 1];
+  else if (typeof patch.notes === "string" && patch.notes) p.notes = patch.notes;
+  if (patch.spec && typeof patch.spec === "object") {
+    p.spec = p.spec || [];
+    p.spec.forEach((row) => {
+      if (patch.spec[row.k]) row.v = patch.spec[row.k];
+    });
+    Object.keys(patch.spec).forEach((k) => {
+      if (!p.spec.some((row) => row.k === k)) p.spec.push({ k, v: patch.spec[k] });
+    });
+    if (patch.spec["On sheet"]) p.sheet = patch.spec["On sheet"];
+  }
+}
+
+function applyWorkshop(ws) {
+  ZO.parts.forEach((p) => applyPartOverlay(p, latestPartOverlay(ws, p.id)));
   const vitals = (ws.vehicle || {}).vitals || {};
   (ZO.vehicle.vitals || []).forEach((row) => {
     if (vitals[row.k]) row.v = vitals[row.k];
@@ -1308,6 +1331,7 @@ async function saveNote(form) {
   const pn = String(fd.get("pn") || "").trim();
   const patch = {};
   if (Object.keys(spec).length) patch.spec = spec;
+  if (spec["On sheet"]) patch.sheet = spec["On sheet"];
   if (pn) patch.pn = pn;
   if (partId === "tires" && pn) patch.vital = { k: "Tires", v: pn };
     else if (spec["Current size"]) patch.vital = { k: "Tires", v: spec["Current size"] };

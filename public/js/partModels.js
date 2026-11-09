@@ -372,6 +372,13 @@ const BUILD = {
     put(g, mesh(new THREE.TorusGeometry(0.16, 0.018, 8, 28), mat.boot), 0, 0.08, 0, Math.PI / 2, 0, 0);
     put(g, mesh(new THREE.BoxGeometry(0.42, 0.01, 0.18), mat.boot), 0, 0.08, 0);
   },
+  filter(g) {
+    put(g, mesh(new THREE.CylinderGeometry(0.08, 0.08, 0.22, 20), mat.plastic), 0, 0.16, 0);
+    put(g, cyl(0.018, 0.08, mat.steel), 0, 0.3, 0);
+    put(g, cyl(0.018, 0.08, mat.steel), 0, 0.02, 0);
+    put(g, mesh(new THREE.TorusGeometry(0.022, 0.008, 8, 12), mat.boot), 0, 0.26, 0);
+    put(g, mesh(new THREE.TorusGeometry(0.022, 0.008, 8, 12), mat.boot), 0, 0.06, 0);
+  },
   stat(g) {
     put(g, mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.04, 24), mat.brass), 0, 0.1, 0);
     put(g, mesh(new THREE.CylinderGeometry(0.07, 0.07, 0.06, 20), mat.steel), 0, 0.14, 0);
@@ -456,7 +463,7 @@ export async function ensurePartPhotos() {
     "bush", "heim", "ball", "tierod", "arm", "coil", "bar", "master", "rad", "engine", "slave", "box", "shaft",
     "jug-oil", "jug-atf", "jug-cool", "jug-brake", "jug-clutch",
     "fuse", "strip", "lamp", "taillamp", "horn", "fan", "tire", "plate", "hose", "cyl", "caliper", "gauge", "fork",
-    "clutch", "belt", "seal", "fitting", "tube", "bolts", "steel", "paint", "spool", "bend", "pipes",
+    "clutch", "belt", "seal", "fitting", "tube", "bolts", "steel", "paint", "spool", "bend", "pipes", "filter",
     "strap", "glass", "body", "sheet", "mystery", "cover", "gasket", "stat",
   ];
   const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: false });

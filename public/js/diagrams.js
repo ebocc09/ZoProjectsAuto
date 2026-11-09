@@ -6,6 +6,24 @@ function onCls(id, active) {
   return id === active ? "on" : "";
 }
 
+function partById(id) {
+  return (window.ZO && Array.isArray(ZO.parts) && ZO.parts.find((p) => p.id === id)) || null;
+}
+
+function specVal(id, key) {
+  const row = ((partById(id) || {}).spec || []).find((s) => s.k === key);
+  return row && row.v ? String(row.v) : "";
+}
+
+/** Live blueprint label. Workbook `sheet` / spec "On sheet" win over the inked fallback. */
+function sheetLabel(id, fallback) {
+  const p = partById(id);
+  if (p && p.sheet) return p.sheet;
+  const onSheet = specVal(id, "On sheet");
+  if (onSheet) return onSheet;
+  return fallback;
+}
+
 function callout(x1, y1, x2, y2, label, partId, active, extra = "", gotoSys = "") {
   const goto = gotoSys ? `data-goto="${gotoSys}"` : "";
   const tw = Math.min(label.length * 6.7 + 8, 230);
@@ -278,12 +296,18 @@ const SKETCH = {
       <g class="hot ${onCls("fuel-hardware", active)}" data-part="fuel-hardware">
         <path class="hose" d="M170 220 C 120 240, 90 280, 80 320" fill="none" />
       </g>
+      <g class="hot ${onCls("fuel-filter", active)}" data-part="fuel-filter">
+        <rect class="cover" x="96" y="248" width="28" height="44" rx="10" />
+        <circle cx="110" cy="258" r="4" />
+        <circle cx="110" cy="282" r="4" />
+      </g>
       ${callout(300, 70, 80, 40, "3.0L I4 · 181 cid", "gm-30", active)}
-      ${callout(280, 108, 420, 36, "Valve cover 8M0122491", "valve-cover", active)}
-      ${callout(186, 132, 40, 70, "Gasket 14096154", "valve-cover-gasket", active)}
+      ${callout(280, 108, 420, 36, sheetLabel("valve-cover", "Valve cover 8M0122491"), "valve-cover", active)}
+      ${callout(186, 132, 40, 70, sheetLabel("valve-cover-gasket", "Gasket 14096154"), "valve-cover-gasket", active)}
       ${callout(500, 224, 560, 70, "AWS 04-065 clutch", "gm-30", active)}
       ${callout(530, 290, 500, 360, "Fork 15592270", "clutch-fork", active)}
       ${callout(80, 320, 40, 360, "Fuel H-176 · choke 732-1153", "fuel-hardware", active)}
+      ${callout(110, 270, 200, 360, sheetLabel("fuel-filter", "Wix 33003"), "fuel-filter", active)}
       <text class="title-note" x="24" y="400">Pilot 3914000 · T/O 614018 · belt 25-7417 · 15530202 printed IRRIGATION</text>
     `;
   },
@@ -301,9 +325,11 @@ const SKETCH = {
           const y2 = (196 + 48 * Math.sin(a)).toFixed(1);
           return `<path class="ink" d="M250 196 Q ${(250 + 20 * Math.cos(a + 0.5)).toFixed(1)} ${(196 + 20 * Math.sin(a + 0.5)).toFixed(1)} ${x2} ${y2}" />`;
         }).join("")}
+        <path class="block-ghost" d="M320 150 L470 150 L490 180 L490 280 L320 280 Z" />
+      </g>
+      <g class="hot ${onCls("rad-hose", active)}" data-part="rad-hose">
         <path class="hose" d="M168 108 C 210 96, 250 120, 300 140" />
         <path class="hose" d="M168 286 C 230 310, 280 270, 320 240" />
-        <path class="block-ghost" d="M320 150 L470 150 L490 180 L490 280 L320 280 Z" />
       </g>
       <g class="hot ${onCls("flex-fan-110", active)}" data-part="flex-fan-110">
         <circle class="rim" cx="250" cy="196" r="58" />
@@ -319,10 +345,11 @@ const SKETCH = {
         <circle cx="318" cy="148" r="6" />
       </g>
       ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
-      ${callout(318, 148, 430, 48, "Thermostat Z33001814", "thermostat", active)}
+      ${callout(230, 118, 40, 210, sheetLabel("rad-hose", "26502 · 1-3/4"), "rad-hose", active, "replace")}
+      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "Thermostat Z33001814"), "thermostat", active)}
       ${callout(250, 196, 200, 370, "model 110", "flex-fan-110", active)}
       ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
-      <text class="title-note" x="24" y="400">Hose drain 071063700 · heater hose GAT 28432</text>
+      <text class="title-note" x="24" y="400">${sheetLabel("rad-hose", "26502 · 1-3/4")} · heater hose GAT 28432</text>
     `;
   },
 

@@ -213,6 +213,12 @@ const CAT_DRAW = {
     <circle ${CAT_F} cx="100" cy="60" r="18"/>
     <circle ${CAT_A} cx="100" cy="60" r="7"/>
     <path ${CAT_G} d="M100 42 v36 M82 60 h36"/>`),
+  filter: () => catFrame(`
+    <rect ${CAT_S} x="70" y="28" width="60" height="64" rx="18"/>
+    <path ${CAT_G} d="M100 16 v12 M100 92 v12"/>
+    <circle ${CAT_A} cx="100" cy="28" r="6"/>
+    <circle ${CAT_A} cx="100" cy="92" r="6"/>
+    <path ${CAT_G} d="M82 50 H118 M82 62 H118"/>`),
 };
 
 const CAT_KIND = {
@@ -278,6 +284,7 @@ const CAT_KIND = {
   "vbelt-257417": "belt",
   "seals-tim": "seal",
   "fuel-hardware": "hose",
+  "fuel-filter": "filter",
   "heater-hose": "hose",
   "rad-hose": "hose",
   "hose-elbow-90": "bend",
@@ -494,6 +501,10 @@ const CAT_PLACES = {
   "fuel-hardware": [
     { where: "Burton Auto Supply, Trinity", when: "30 Dec 2010", order: "cash ticket", item: "H-176 ×5, hose end 05705B-C02, CL1 ×4, choke 732-1153", price: "ticket $34.12" },
     { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "1/4 in aluminum fuel line 91011429-10 and cap 6175021", price: "$8.99 and $24.99" },
+  ],
+  "fuel-filter": [
+    { where: "Read on the car", when: "9 Nov 2026", order: "33003", item: "Wix in-line fuel filter, 3/8 in both ends. Not on any invoice or CAD sheet.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/wix/fuel---emissions/fuel-injection/fuel-filter-water-separator/25614d8c10ec/wix-fuel-filter/wix0/33003", link: "O'Reilly listing" },
+    { where: "Wix catalog", when: "9 Nov 2026", order: "33003", item: "Plastic in-line, cellulose 20 micron. NAPA Gold 3003. Metal version is 33033.", price: "No receipt", url: "https://m.wixfilters.com/Search/PartDetail?PartID=47940", link: "Wix listing" },
   ],
   "heater-hose": [
     { where: "Auto Plus / Reliable", when: "23 Jun 2011", order: "REF 0000403749", item: "GAT 28432 ×2, TDL 5216 ×2, MTM terminals", price: "pay $10.11" },

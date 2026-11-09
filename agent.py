@@ -187,9 +187,28 @@ TOPICS: list[dict] = [
             "flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, throwout 614018. "
             "NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Fuel line H-176 and choke kit 732-1153. "
             "Buck's line 15530202 is printed IRRIGATION and is not identified. "
-            "Need a new valve cover, not the head: 8M0122491. Gasket GM 14096154. Thermostat Z33001814. Not bought yet."
+            "Need a new valve cover, not the head: 8M0122491. Gasket GM 14096154. Thermostat Z33001814. "
+            "Fuel filter read on the car is Wix 33003. Not bought yet."
         ),
-        "pills": ["Valve cover", "Radiator", "Clutch kit"],
+        "pills": ["Fuel filter", "Valve cover", "Clutch kit"],
+    },
+    {
+        "id": "fuel-filter",
+        "system": "engine",
+        "view": "diagram",
+        "part": "fuel-filter",
+        "evidence": "IMG_5877",
+        "keys": [
+            ("fuel filter", 14), ("wix", 10), ("33003", 12), ("3003", 8),
+            ("in-line filter", 10), ("inline filter", 10),
+        ],
+        "reply": (
+            "Fuel filter was not on the build plans. It was read on the car: Wix 33003, "
+            "plastic in-line, 3/8 in inlet and outlet, cellulose 20 micron. "
+            "NAPA Gold 3003 is the same filter. Metal version with hoses is Wix 33033. Gasoline only. "
+            "The 2010 H-176 ticket does not print hose ID. Not on any invoice. Need new. Not bought yet."
+        ),
+        "pills": ["Fuel line", "Engine", "Valve cover"],
     },
     {
         "id": "valve-cover",
@@ -546,6 +565,7 @@ FOLLOW = [
     (r"valve cover gasket|cover gasket", "valve-gasket"),
     (r"valve cover|rocker cover", "valve-cover"),
     (r"thermostat|tstat|t-stat", "thermostat"),
+    (r"fuel filter|wix|33003", "fuel-filter"),
     (r"engine|motor|clutch", "engine"),
     (r"fuse|terminal strip", "fuse-block"),
     (r"lock|seize|bleeder|stuck brake|won t roll", "brake-lock"),

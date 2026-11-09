@@ -87,7 +87,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491, gasket GM 14096154, and thermostat Z33001814. Not bought yet."
+        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491, gasket GM 14096154, thermostat Z33001814, and Wix fuel filter 33003. Not bought yet."
     },
     {
       id: "cooling",
@@ -427,8 +427,11 @@ window.ZO = {
       status: "replace",
       confidence: "Perfect match. Official solution. Not bought yet.",
       qty: "1",
+      sheet: "26502 · 1-3/4",
       spec: [
+        { k: "On sheet", v: "26502 · 1-3/4" },
         { k: "This one", v: "Gates Green Stripe Vulco-Flex 26502. 1-3/4 in both ends × 16-1/2 in. Official. Perfect match. O'Reilly: https://www.oreillyauto.com/detail/c/green-stripe-vulco-flex/gates-green-stripe-vulco-flex-coolant-hose/gaa7/26502" },
+        { k: "Size", v: "1-3/4 in both ends × 16-1/2 in. Official. Not 1-1/2 / 38 mm." },
         { k: "Lengths", v: "Same 1-3/4 even family: 26601 is 6 in, 26602 8-1/2, 26603 11, 26501 13-1/2, 26502 16-1/2, 26611 19, 26612 23-1/2. Trim the plain cuffs." },
         { k: "Clamps", v: "Size 32 on 1-3/4. Gates 32032." },
         { k: "Failed", v: "Not 25478 (1-1/2 Vulco-Flex II). Not 24024 stick. Not molded 22039 / 22476 / 05-3093 / 20121. Not elbows 555-511176 / 511181 / 511171. Not step hose 25530." },
@@ -448,7 +451,9 @@ window.ZO = {
       status: "replace",
       confidence: "Need new. PSI industrial number. Not on an invoice. Not bought.",
       qty: "1",
+      sheet: "Thermostat Z33001814",
       spec: [
+        { k: "On sheet", v: "Thermostat Z33001814" },
         { k: "This one", v: "PSI / GM industrial Z33001814. On the WINCO GM 3.0L sheet, including 350775 engines that take PF-25. Same 181 / 3.0L four as this car." },
         { k: "Gasket", v: "Z101488. Same sheet also lists Z103152." },
         { k: "Other 3.0L", v: "WINCO row 350002-13 is Z32000435. That row also takes PF-25. Same gasket." },
@@ -549,7 +554,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "New valve cover (not the head) 8M0122491, gasket GM 14096154, thermostat Z33001814. Separate parts. Not bought." },
+        { k: "Need now", v: "New valve cover (not the head) 8M0122491, gasket GM 14096154, thermostat Z33001814, Wix fuel filter 33003. Separate parts. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -574,7 +579,9 @@ window.ZO = {
       status: "replace",
       confidence: "Need new. 181 / 3.0L L4 cover. Not read off this engine. Not bought.",
       qty: "1",
+      sheet: "Valve cover 8M0122491",
       spec: [
+        { k: "On sheet", v: "Valve cover 8M0122491" },
         { k: "This one", v: "Steel valve cover for the GM 181 / 3.0L four. Mercury 8M0122491. Also 3853784, 65635A8, 851036T. Not the cylinder head." },
         { k: "Buy", v: "Wholesale Marine page $115.49. https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/" },
         { k: "Also", v: "Repower Marine, new GM steel cover. https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html" },
@@ -594,7 +601,9 @@ window.ZO = {
       status: "replace",
       confidence: "Need new. GM 181 / 3.0L L4 gasket. Not bought.",
       qty: "1",
+      sheet: "Gasket 14096154",
       spec: [
+        { k: "On sheet", v: "Gasket 14096154" },
         { k: "This one", v: "GM 14096154. Valve cover gasket for the 181 / 3.0L four. Amazon: https://www.amazon.com/ACDelco-14096154-Original-Equipment-Gasket/dp/B01LYVRVLJ" },
         { k: "Also", v: "Sierra 18-0347, GLM 32210, Mercury 27-806452 / 27-851040, Fel-Pro Marine 17900. Marine Engine Depot: https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
@@ -602,6 +611,28 @@ window.ZO = {
       ],
       notes: "No receipt. Goes on with the new valve cover.",
       evidence: ["IMG_5863", "IMG_5929"]
+    },
+    {
+      id: "fuel-filter",
+      name: "Fuel filter",
+      pn: "33003",
+      brand: "Wix",
+      system: "engine",
+      role: "In-line fuel filter. Read on the car.",
+      status: "replace",
+      confidence: "Read on the car. Not on any invoice or CAD sheet. Need new. Not bought.",
+      qty: "1",
+      sheet: "Wix 33003",
+      spec: [
+        { k: "On sheet", v: "Wix 33003" },
+        { k: "This one", v: "Wix 33003. Plastic in-line fuel filter, 3/8 in inlet and outlet. Read on the car. Not on the build plans. O'Reilly: https://www.oreillyauto.com/detail/c/wix/fuel---emissions/fuel-injection/fuel-filter-water-separator/25614d8c10ec/wix-fuel-filter/wix0/33003" },
+        { k: "Wix sheet", v: "Complete in-line. Cellulose, 20 micron. Height 3.661 in, OD 2.087 in. Gasoline only. https://m.wixfilters.com/Search/PartDetail?PartID=47940" },
+        { k: "Cross", v: "NAPA Gold 3003. NAPA ProSelect 23003. Metal version with hoses and clamps is Wix 33033." },
+        { k: "Line", v: "The 2010 H-176 fuel-line ticket does not print hose ID. This filter's ports are 3/8 in." },
+        { k: "Not", v: "Not on any packing slip. Not an oil filter." }
+      ],
+      notes: "No receipt. Found on the car, then written onto the engine blueprint.",
+      evidence: ["IMG_5877"]
     },
     {
       id: "napa-37728",
@@ -1358,7 +1389,7 @@ window.ZO = {
         { k: "Choke kit", v: "732-1153 BK CHOK KIT, net $19.29" },
         { k: "Also bought (Speedway)", v: "1/4 in aluminum fuel line 91011429-10 and filler cap 6175021 — see AN plumbing" }
       ],
-      notes: "Hose inside diameter is not printed. Choke kit application is not printed.",
+      notes: "Hose inside diameter is not printed. Choke kit application is not printed. The in-line fuel filter on the car is Wix 33003, a separate part, not on this ticket.",
       evidence: ["IMG_5877", "IMG_5858"]
     },
     {
@@ -1785,7 +1816,7 @@ window.ZO = {
         n: "08",
         title: "Engine and clutch",
         system: "engine",
-        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Gasket GM 14096154. Thermostat PSI Z33001814. Not bought yet.",
+        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Gasket GM 14096154. Thermostat PSI Z33001814. Fuel filter read on the car: Wix 33003, 3/8 in in-line. It was not on the build plans. Not bought yet.",
         evidence: ["IMG_5809", "IMG_5793", "IMG_5871", "IMG_5869"]
       },
       {
