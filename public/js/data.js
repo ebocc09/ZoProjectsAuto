@@ -459,7 +459,10 @@ window.ZO = {
         { k: "160° closed", v: "Later closed / fresh-water GM marine cooling uses Sierra 18-3649, NAPA SME183649, 160°F, Mercury 8072522 / 807252T2." },
         { k: "WINCO sheet", v: "PSI Z33001814 was the industrial number on the WINCO GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3650." },
         { k: "Street note", v: "140° is the boat raw-water 181 OEM. This Locost has a JEGS street radiator, closed glycol. It may run cool. Not confirmed on this housing." },
-        { k: "Not", v: "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110. Not the valve-cover gasket 18-0347." }
+        { k: "Housing kit", v: "Marine housing is Mercury 861493A07 / Sierra 18-1910, MCM 140/3.0L s/n 0L340999 and below. Cast housing + gaskets. Stat is separate (18-3650). Not read on this engine. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
+        { k: "Hoses", v: "No one SKU is housing + all hoses + stat for this street radiator. Marine pump hose is Sierra 18-70931 / Mercury 32-96879. Manifold and transom hoses are boat. This car's radiator hose is already Gates 26502." },
+        { k: "Bolt-on", v: "If this housing is still the marine two-piece, unbolt the cover and drop in 18-3650. If the casting is junk, 18-1910 replaces the housing. Look at this engine first — Buck's industrial 181 may not have the boat housing." },
+        { k: "Not", v: "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not Sierra 18-1993 (V8 305/350 housing). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110. Not the valve-cover gasket 18-0347." }
       ],
       notes: "On the 9 Nov 2026 buy list with the fuel filter and valve-cover gasket. No receipt.",
       evidence: ["IMG_5929"]

@@ -280,6 +280,7 @@ TOPICS: list[dict] = [
             ("thermostat", 12), ("tstat", 10), ("t-stat", 10),
             ("18-3650", 12), ("183650", 12), ("18-3550", 10), ("183550", 8),
             ("59078", 10), ("z33001814", 8), ("z101488", 6),
+            ("861493", 10), ("18-1910", 10), ("181910", 8), ("18-70931", 8),
         ],
         "reply": (
             "Buy-list thermostat is the kit: Sierra 18-3650, NAPA SME183650, 140°F. "
@@ -288,6 +289,8 @@ TOPICS: list[dict] = [
             "Closed / fresh-water marine cooling uses the 160° Sierra 18-3649 / NAPA SME183649. "
             "WINCO industrial Z33001814 has no printed temperature and no catalog cross to 18-3650. "
             "140° is boat raw-water OEM. This car has a JEGS street radiator. Not bought yet. "
+            "Housing kit is Mercury 861493A07 / Sierra 18-1910 — cast housing, not a full hose assembly. "
+            "Marine pump hose 18-70931 is boat. Radiator hose is already 26502. Look at this housing first. "
             "https://www.napaonline.com/en/p/SME183650"
         ),
         "pills": ["Valve cover", "Radiator hose", "Engine"],
