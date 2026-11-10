@@ -322,6 +322,83 @@ const SKETCH = {
     `;
   },
 
+  fuel(active) {
+    const arr = (x) => `<polygon class="arrow-head" points="${x - 6},184 ${x},190 ${x - 6},196" />`;
+    return `
+      <text class="title-note" x="24" y="28">Fuel install order — one regulator, then the tee you already have</text>
+      <text class="title-note" x="24" y="46">Holley 12-804 is that regulator. Cut after the filter, before the tee. Arrow toward the carbs.</text>
+
+      <g class="hot ${onCls("fuel-hardware", active)}" data-part="fuel-hardware">
+        <rect class="tank" x="20" y="148" width="72" height="86" rx="7" />
+        <rect class="cover" x="42" y="140" width="28" height="10" rx="2" />
+        <text class="call" x="56" y="186" text-anchor="middle">TANK</text>
+        <text class="call" x="56" y="204" text-anchor="middle">rear</text>
+      </g>
+      <text class="stamp" x="56" y="252" text-anchor="middle">1</text>
+      <path class="hose" d="M92 190 L126 190" />
+      ${arr(126)}
+
+      <g>
+        <rect class="box" x="128" y="162" width="92" height="56" rx="5" />
+        <text class="call" x="174" y="186" text-anchor="middle">MECH PUMP</text>
+        <text class="call" x="174" y="204" text-anchor="middle">cam-driven</text>
+      </g>
+      <text class="stamp" x="174" y="252" text-anchor="middle">2</text>
+      <path class="hose" d="M220 190 L252 190" />
+      ${arr(252)}
+
+      <g class="hot ${onCls("fuel-filter", active)}" data-part="fuel-filter">
+        <rect class="cover" x="254" y="158" width="40" height="64" rx="12" />
+        <circle cx="274" cy="172" r="4" />
+        <circle cx="274" cy="208" r="4" />
+        <text class="call" x="274" y="196" text-anchor="middle">Wix</text>
+      </g>
+      <text class="stamp" x="274" y="252" text-anchor="middle">3</text>
+      <text class="call" x="274" y="270" text-anchor="middle">33003</text>
+      <path class="hose" d="M294 190 L328 190" />
+      ${arr(328)}
+
+      <g class="hot ${onCls("carb", active)}" data-part="carb">
+        <rect class="reg" x="330" y="158" width="96" height="64" rx="5" />
+        <text class="call" x="378" y="184" text-anchor="middle">12-804</text>
+        <text class="call" x="378" y="202" text-anchor="middle">regulator · ~2 psi</text>
+      </g>
+      <text class="stamp" x="378" y="252" text-anchor="middle">4</text>
+      <path class="hose" d="M426 190 L458 190" />
+      ${arr(458)}
+
+      <g>
+        <circle class="tube" cx="470" cy="190" r="10" />
+        <path class="hose" d="M470 180 L470 118 L500 118" />
+        <path class="hose" d="M470 200 L470 262 L500 262" />
+        <text class="call" x="470" y="292" text-anchor="middle">TEE</text>
+      </g>
+      <text class="stamp" x="470" y="308" text-anchor="middle">5</text>
+      <polygon class="arrow-head" points="494,112 500,118 494,124" />
+      <polygon class="arrow-head" points="494,256 500,262 494,268" />
+
+      <g class="hot ${onCls("carb", active)}" data-part="carb">
+        <rect class="body" x="502" y="100" width="58" height="36" rx="4" />
+        <rect class="cover" x="512" y="86" width="38" height="16" rx="3" />
+        <text class="call" x="531" y="122" text-anchor="middle">CARB L</text>
+        <text class="call" x="531" y="148" text-anchor="middle">#7</text>
+        <rect class="body" x="502" y="244" width="58" height="36" rx="4" />
+        <rect class="cover" x="512" y="230" width="38" height="16" rx="3" />
+        <text class="call" x="531" y="266" text-anchor="middle">CARB R</text>
+        <text class="call" x="531" y="292" text-anchor="middle">#7</text>
+      </g>
+      <text class="stamp" x="531" y="328" text-anchor="middle">6</text>
+
+      <g class="hot ${onCls("gm-30", active)}" data-part="gm-30">
+        <path class="block-ghost" d="M568 132 L618 132 L628 168 L628 268 L568 268 Z" />
+        <text class="call" x="598" y="206" text-anchor="middle">181</text>
+      </g>
+
+      <text class="title-note" x="24" y="360">Do not put the regulator between the tank and the pump.</text>
+      <text class="title-note" x="24" y="378">Keep the tee and plug the unused 12-804 outlet. Or drop the tee and run one outlet to each #7.</text>
+    `;
+  },
+
   cooling(active) {
     return `
       <g class="hot ${onCls("jegs-rad", active)}" data-part="jegs-rad">
@@ -356,7 +433,7 @@ const SKETCH = {
       </g>
       ${callout(125, 78, 190, 36, "JEGS 555-51962", "jegs-rad", active)}
       ${callout(230, 118, 40, 210, sheetLabel("rad-hose", "26502 · 1-3/4"), "rad-hose", active, "replace")}
-      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "clean first"), "thermostat", active)}
+      ${callout(318, 148, 430, 48, sheetLabel("thermostat", "cleaned · gasket"), "thermostat", active)}
       ${callout(250, 196, 200, 370, "model 110", "flex-fan-110", active)}
       ${callout(175, 100, 320, 72, "AN833-12D", "an12-spruce", active)}
       <text class="title-note" x="24" y="400">${sheetLabel("rad-hose", "26502 · 1-3/4")} · heater hose GAT 28432</text>
@@ -598,9 +675,11 @@ const SKETCH = {
 };
 
 window.sketchSVG = function sketchSVG(systemId, activePart) {
+  const fuelParts = ["carb", "fuel-filter", "fuel-hose", "fuel-hardware"];
+  const useFuel = systemId === "fuel" || (systemId === "engine" && fuelParts.includes(activePart));
   const wide = systemId === "electrical";
   BOX = { w: wide ? 720 : 640, h: wide ? 460 : 420 };
-  const draw = SKETCH[systemId];
+  const draw = useFuel ? SKETCH.fuel : SKETCH[systemId];
   const inner = draw
     ? draw(activePart)
     : `<text x="320" y="200" text-anchor="middle" class="call">No sketch for this system yet</text>`;

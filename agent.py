@@ -190,7 +190,7 @@ TOPICS: list[dict] = [
             "Need a new valve cover, not the head: 8M0122491. "
             "Live problem: two S&S carbs flood after a few minutes, idle dies, fuel spills. Electric pump is off; mechanical (engine-driven) now. Easy path: running pressure, then 11-2195 / 11-2465 both sides. "
             "Buy list: Wix 33003, gasket Sierra 18-0347 / NAPA SME180347. "
-            "Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Not bought yet."
+            "Thermostat housing pulled and cleaned 10 Nov 2026. Waiting on Sierra 18-0164-9. Lid gasket already on hand. 18-1910 not bought."
         ),
         "pills": ["Carb floods", "Fuel filter", "Valve cover"],
     },
@@ -314,13 +314,11 @@ TOPICS: list[dict] = [
             ("18-0164", 10), ("open", 8), ("housing", 8),
         ],
         "reply": (
-            "Enzo 9 Nov 2026: this is the marine 181 in the Locost, not the street version. "
-            "Housing opened, no thermostat, inside corroded. Same coolant went through the iron "
-            "block jackets, so scale in there is likely. That is not the aluminum housing being "
-            "eaten through, and it is not a new engine by itself. Light down the block outlet, "
-            "flush, see what comes out. Flakes can clog the JEGS radiator. "
-            "Clean the housing first if sealing faces are still flat. "
-            "Pits across a face → Sierra 18-1910 / Mercury 861493A07. Stat still not locked."
+            "Enzo 10 Nov 2026: housing pulled off the block, cleaned, corrosion came off. "
+            "Keeping this casting. Waiting on Sierra 18-0164-9 to reinstall. "
+            "Lid gasket 18-2831 already on hand from the thermostat kit. "
+            "Finger the gasket path before it goes back on. 18-1910 not bought. "
+            "Stat still not locked. Housing is off, so light down the block outlet if you have not yet."
         ),
         "pills": ["Valve cover", "Radiator hose", "Engine"],
     },

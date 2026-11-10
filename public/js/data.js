@@ -87,7 +87,7 @@ window.ZO = {
       status: "watch",
       statusLabel: "Carb floods",
       summary:
-        "GM Vortec 3.0L four. Enzo 9 Nov 2026: two S&S Super E/G carbs, custom on the 181. After a few minutes they spill, idle dies, then it shuts off. 10 Nov 2026: previous owner took the electric pump off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high (inlet limit 7 psi), needle 11-2195 and seat 11-2465 both sides. Super E/G have an enrichment lever, not a choke. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
+        "GM Vortec 3.0L four. Enzo 9 Nov 2026: two S&S Super E/G carbs, custom on the 181. After a few minutes they spill, idle dies, then it shuts off. 10 Nov 2026: previous owner took the electric pump off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high (inlet limit 7 psi), needle 11-2195 and seat 11-2465 both sides. Super E/G have an enrichment lever, not a choke. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
     },
     {
       id: "cooling",
@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat housing opened 9 Nov 2026: no thermostat, inside corroded. Enzo: marine 181 in the Locost, not the street version. Clean first. 18-1910 only if sealing faces are pitted through. Neck must take 26502."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat housing pulled 10 Nov 2026: corrosion came off, keeping this casting. Waiting on Sierra 18-0164-9 body gasket. Lid gasket 18-2831 already on hand. 18-1910 not bought. Neck must take 26502."
     },
     {
       id: "driveline",
@@ -444,32 +444,32 @@ window.ZO = {
     {
       id: "thermostat",
       name: "Thermostat housing",
-      pn: "18-1910",
-      brand: "Sierra / Mercury / Barr",
+      pn: "reuse · 18-0164",
+      brand: "Sierra / Mercury / this casting",
       system: "cooling",
-      role: "Marine 181 housing, corroded inside, no thermostat. Clean first.",
+      role: "Marine 181 housing. Pulled, cleaned, waiting on the body gasket.",
       status: "watch",
-      confidence: "Enzo 9 Nov 2026: marine 181 in the Locost, not the street version. Housing corroded, read open. Clean first. 18-1910 if faces are pitted through.",
+      confidence: "Enzo 10 Nov 2026: housing off the block. Corrosion came off. Keeping this casting. Waiting on 18-0164-9. Lid gasket 18-2831 already on hand.",
       qty: "1",
-      sheet: "clean first",
+      sheet: "cleaned · gasket",
       spec: [
-        { k: "On sheet", v: "clean first" },
-        { k: "This one", v: "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Enzo: this is the marine 181, not the street version, even though it sits in the Locost. Try cleaning before buying 18-1910." },
-        { k: "Marine", v: "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 are the analog. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing family on the car." },
-        { k: "Clean", v: "Yes if gasket faces, thermostat seat, and hose necks are not pitted through. Brass or nylon brush. Aluminum-safe scale remover or vinegar, then rinse and dry. Do not steel-wheel a sealing face — that dishes it. Finger across the gasket path and the stat ledge: if you can feel pits that would leak, the kit is cheaper than doing this twice." },
-        { k: "Jacket", v: "Same coolant went through the housing and the block. The 181 block and head are iron. Scale in the jackets is likely. That is not the same as the aluminum housing being eaten through. Not a new engine by itself. Light down the block outlet once the housing is off. Flush and see what comes out. Flakes can clog the JEGS radiator. Coolant type was never invoiced." },
-        { k: "Fail", v: "Pits across the gasket path, eaten thermostat ledge, thin or cracked hose neck, junk sender/plug threads → Sierra 18-1910 / Mercury 861493A07. Still the analog. Not bought." },
-        { k: "Two pieces", v: "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting, in the kit." },
-        { k: "Kit", v: "Backup if clean fails. Mercury 861493A07 / Sierra 18-1910 is both halves. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
-        { k: "Lower", v: "What the photo shows. Bolts to the block. Barr MC-29-47587, bare lower only. ~$74." },
-        { k: "Cover", v: "Top lid. Old Mercury 60372A2, superseded into 861493A07. Barr MC-29-60372 / Sierra 18-1969 still sold alone." },
-        { k: "Gasket", v: "Reuse still needs new gaskets. Housing-to-block: Sierra 18-0164 / Mercury 27-8146801. Cover-to-housing: Mercury 27-475901. https://www.macombmarineparts.com/products/gasket-thermostat-housing-sierra-18-0164" },
+        { k: "On sheet", v: "cleaned · gasket" },
+        { k: "This one", v: "Enzo 10 Nov 2026. Housing pulled off the block. Gave it a clean. Corrosion came off with a screwdriver. Keeping this casting. Waiting on Sierra 18-0164-9 to reinstall. Lid gasket 18-2831 already on hand from the thermostat kit." },
+        { k: "Marine", v: "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 stay analog only. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing on the car." },
+        { k: "Clean", v: "Done 10 Nov 2026. Finger the gasket path and the thermostat ledge before the new gasket goes on. A screwdriver can leave a groove that will leak. 18-1910 only if a pit still crosses the seal." },
+        { k: "Jacket", v: "Housing is off now. Light down the block outlet. Flush if junk comes out. Flakes can clog the JEGS radiator. Coolant type was never invoiced." },
+        { k: "Fail", v: "Pits still across the gasket path, eaten thermostat ledge, thin or cracked hose neck → Sierra 18-1910 / Mercury 861493A07. Not the current plan. Not bought." },
+        { k: "Two pieces", v: "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them." },
+        { k: "Kit", v: "18-1910 is off the buy list unless the seal face is still pitted through. Mercury 861493A07 / Sierra 18-1910. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
+        { k: "Lower", v: "This casting. Bolts to the block. Barr MC-29-47587 is the replacement lower if this one fails later." },
+        { k: "Cover", v: "Top lid stayed with the engine. Lid gasket 18-2831 is already on hand." },
+        { k: "Gasket", v: "Body-to-block: Sierra 18-0164 / 18-0164-9 2-pack, Mercury 27-8146801. AutoZone SKU 1064979. Waiting. Not bought until a receipt. Lid gasket 18-2831 already in the thermostat kit. https://www.autozone.com/p/sierra-marine-engine-coolant-thermostat-housing-gasket-18-0164-9/1064979" },
         { k: "Neck", v: "This car's radiator hose is Gates 26502 1-3/4. The neck on this housing has to take that cuff." },
-        { k: "Stat", v: "Still none in it. After a clean, seat a thermostat. Marine analog Sierra 18-3650 / Mercury 59078. Not locked until the seat is measured. Not bought." },
+        { k: "Stat", v: "Still none in the housing. The 18-3650 kit thermostat is not locked to this seat. Housing can go back on empty. Coolant stays unrestricted until a thermostat sits in that ledge." },
         { k: "WINCO sheet", v: "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked." },
-        { k: "Not", v: "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110." }
+        { k: "Not", v: "Not 18-1910 unless the seal face is still pitted through. Not TDL 5216. Not Sierra 18-1993 (V8). Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110." }
       ],
-      notes: "Marine 181 in the Locost. Clean first. Same coolant in the jackets — scale likely, not a dead block. 18-1910 only if faces are pitted through. Not bought.",
+      notes: "Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Lid gasket already on hand. 18-1910 not bought.",
       evidence: ["IMG_5929"]
     },
     {
@@ -563,7 +563,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Live: two S&S carbs flood after a few minutes. Electric pump is off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. Buy list still: Wix 33003, gasket 18-0347. Thermostat housing: clean first. Not bought." },
+        { k: "Need now", v: "Live: two S&S carbs flood after a few minutes. Electric pump is off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. Buy list still: Wix 33003, gasket 18-0347. Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -684,6 +684,7 @@ window.ZO = {
         { k: "This one", v: "Enzo 9 Nov 2026. Two S&S carbs, custom on the 181. Drives a few minutes, then fuel spills, idle dies unless you keep giving it throttle, then it shuts off. Look for E or G cast under S&S SUPER on each body. Super E is 1-7/8 in, Super G is 2-1/16 in." },
         { k: "Means", v: "Bowls overfilling. S&S Super E/G are Harley shorty carbs. They were built for a petcock, not a car pump. Extra fuel dumps into the intake so idle goes full rich. Throttle adds air until the overflow wins." },
         { k: "Pump", v: "Enzo 10 Nov 2026: previous owner took the electric pump off. The car is on a mechanical pump — cam-driven by the engine, not a hand lever. No pump SKU on any ticket. Do not lock a marine mechanical-pump number until the tag is read." },
+        { k: "Line", v: "Enzo 10 Nov 2026: one fuel line splits into two right at the carbs. Regulator goes on that single line after the filter, before the tee." },
         { k: "Inlet on paper", v: "IMG_5937 (R SIDE) labels #7 Fuel Inlet. It is the brass barb on the float bowl. Fuel hose clamps onto it. Do not open the bowl to measure pressure. Also on that page: #6 Overflow Tube Fitting, #8 Bowl Vent Hole, #9 Bowl Plug." },
         { k: "Easy", v: "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure with the engine running. Tee a gauge into the hose that feeds #7 Fuel Inlet. A mechanical pump does not run key-on / engine-off. Shop practice on Super E/G is about 1.5–2 psi. A typical carb mechanical pump is 4–7 psi, still too much for these Harley needles. Taking the electric off does not fix the flood by itself. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804" },
         { k: "Needle", v: "S&S 11-2195, already circled on IMG_5949. Fits Super E and G. Page $19.95. Need two. https://autoplicity.com/8595253-ss-cycle-float-needle" },
@@ -1891,7 +1892,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Thermostat housing opened 9 Nov 2026: no thermostat, inside corroded. Enzo: marine 181 in the Locost, not the street version. Clean first. 18-1910 / 861493A07 only if sealing faces are pitted through. Gasket Sierra 18-0164. Neck must take 26502. Stat still not locked.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Thermostat housing pulled 10 Nov 2026: corrosion came off, keeping this casting. Waiting on Sierra 18-0164-9 body gasket. Lid gasket 18-2831 already on hand. 18-1910 not bought. Neck must take 26502. Stat still not locked.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {

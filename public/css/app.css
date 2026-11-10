@@ -588,6 +588,14 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
 .sketch-map .lamp { fill: rgba(242,230,190,0.35); stroke: #f0e6c8; }
 .sketch-map .lamp.tail { fill: rgba(196,90,42,0.35); stroke: #e07a4a; }
 .sketch-map .block-ghost { fill: none; stroke: #6a7370; stroke-dasharray: 4 3; }
+.sketch-map .tank { fill: rgba(47,106,72,0.22); stroke: #8fd0a4; }
+.sketch-map .reg { fill: rgba(196,90,42,0.35); stroke: #e07a4a; }
+.sketch-map .arrow-head { fill: #d9cfb8; stroke: none; }
+.proj-schematic {
+  margin: 4px 0 12px; border: 1px solid var(--line); border-radius: 12px;
+  overflow: hidden; background: #141914;
+}
+.proj-schematic svg { display: block; width: 100%; height: auto; max-height: 360px; }
 .sketch-map .wire { fill: none; stroke-width: 1.35; }
 .sketch-map .wire-ign { stroke: #8fd0a4; }
 .sketch-map .wire-bat { stroke: #e0a85a; }

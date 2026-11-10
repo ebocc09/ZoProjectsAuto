@@ -43,6 +43,11 @@ const ZO_PROJECTS = [
         body: "IMG_5937 labels it. Look at the float bowl. Find the brass barb with the fuel hose clamped on. That is #7 Fuel Inlet. Do not remove the bowl. Do not unscrew anything on the carb for the pressure test."
       },
       {
+        id: "plumb",
+        title: "Put the 12-804 on the single line",
+        body: "One regulator. Holley 12-804 is that part — not a second one. Cut the single line after the filter, before the tee. Put 12-804 there. Arrow toward the carbs. Set it toward 2 psi. Keep your tee and plug the unused outlet, or drop the tee and run one 12-804 outlet to each #7. Do not put it between the tank and the pump."
+      },
+      {
         id: "pressure",
         title: "Measure fuel pressure at #7",
         body: "Tee a gauge into the hose that feeds #7. Engine running. Read it before the flood. If it is more than about 2 psi, add a 1–4 psi regulator. Holley 12-804 has two outlets, one per carb, page $51.95. Preset 2.8 — turn it down. That regulator’s inlet is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style."
@@ -63,6 +68,7 @@ const ZO_PROJECTS = [
         body: "E or G on each body, the running pressure reading, whether the floats sloshed, and whether a regulator went on. Put it in the note below."
       }
     ],
+    schematic: "fuel",
     parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
     evidence: ["IMG_5937", "IMG_5949", "IMG_5877"]
   },
