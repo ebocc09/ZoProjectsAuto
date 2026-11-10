@@ -2,6 +2,70 @@
    What the car is doing now comes from the bench. */
 const ZO_PROJECTS = [
   {
+    id: "carb-flood",
+    title: "Carb floods",
+    status: "open",
+    system: "engine",
+    summary:
+      "After a few minutes of driving, fuel spills from the carburetor, the engine floods, idle will not hold unless you keep giving it throttle, then it dies.",
+    why: [
+      {
+        title: "The bowl is overfilling",
+        body: "Fuel coming out of the carb after it has been running is the overflow, not a hose weeping on the way there. Extra fuel dumps into the intake. Idle goes full rich and the engine stalls. Throttle adds air, so it will still pull until the overflow wins. That matches Enzo 9 Nov 2026: drives, then spills, then dies at idle."
+      },
+      {
+        title: "Float taking on fuel",
+        body: "A brass float with a pinhole, or a foam float that has soaked, holds for a few minutes and then sinks. The needle stays open and the bowl dumps. That delay is the usual tell. Shake the float once the lid is off — if it sloshes, it is done."
+      },
+      {
+        title: "Needle and seat not sealing",
+        body: "Dirt, a worn needle, or a bad seat lets fuel keep filling past the float. It can look fine until the fuel is warm. No needle/seat SKU is on a ticket. Do not order the S&S 11-2195 / 11-2465 circled on the Super E print — nothing on that page says that carb is on this 181."
+      },
+      {
+        title: "Fuel pressure too high",
+        body: "A fuel pump is not on any invoice. A Locost with a rear tank is often an electric pump. Carb needles usually want well under 7 psi. Too much pressure overpowers the float. Measure at the inlet while it is still running, before it floods. Do not lock a pump SKU until you read what is on the car."
+      },
+      {
+        title: "Choke stuck shut",
+        body: "Burton ticket 30 Dec 2010 bought choke kit 732-1153, net $19.29. Application not printed. A choke that stays closed makes it rich from the first second. Spill after a few minutes of driving is still a bowl problem first. Look at the flap once it is hot anyway."
+      }
+    ],
+    steps: [
+      {
+        id: "stop",
+        title: "Stop running it flooded",
+        body: "Raw fuel washing the walls dilutes the oil. Smell the dipstick. If it smells like gasoline, change the oil before the next long run. Do not keep driving it in this state just to confirm the stall."
+      },
+      {
+        id: "count",
+        title: "Count the carbs and read the tag",
+        body: "Enzo said carburetors, plural. Marine 181 is usually one 2-barrel. Dual would be a later fit. Write down how many, the brand, and any number stamped on the base or bowl. No carb SKU is on an invoice."
+      },
+      {
+        id: "pump",
+        title: "Key on, pump on, engine off",
+        body: "If fuel spills from the carb with the engine not running, the needle is already open or pressure is wild. If it only spills after a few minutes of running, that is the delayed float/seat path."
+      },
+      {
+        id: "float",
+        title: "Pull the lid and shake the float",
+        body: "If it sloshes or feels heavy, replace the float. If it is light and dry, look at the needle and seat. Do not order parts until the tag is read."
+      },
+      {
+        id: "pressure",
+        title: "Measure fuel pressure at the inlet",
+        body: "Tee a gauge at the carb inlet while it is still running, before the flood. Write the number. Carb needles usually want well under 7 psi. A pump is not on the tickets."
+      },
+      {
+        id: "log",
+        title: "Write down what you found",
+        body: "How many carbs, the tag, whether it spilled with the engine off, whether the float sloshed, and the pressure reading. Put it in the note below so the next session starts from the car."
+      }
+    ],
+    parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
+    evidence: ["IMG_5877", "IMG_5949"]
+  },
+  {
     id: "brake-lock",
     title: "Brake lockup",
     status: "open",

@@ -286,6 +286,7 @@ const CAT_KIND = {
   "fuel-hardware": "hose",
   "fuel-filter": "filter",
   "fuel-hose": "hose",
+  carb: "engine",
   "heater-hose": "hose",
   "rad-hose": "hose",
   "hose-elbow-90": "bend",
@@ -514,6 +515,11 @@ const CAT_PLACES = {
   "fuel-hardware": [
     { where: "Burton Auto Supply, Trinity", when: "30 Dec 2010", order: "cash ticket", item: "H-176 ×5, hose end 05705B-C02, CL1 ×4, choke 732-1153", price: "ticket $34.12" },
     { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "1/4 in aluminum fuel line 91011429-10 and cap 6175021", price: "$8.99 and $24.99" },
+  ],
+  carb: [
+    { where: "Read on the car", when: "9 Nov 2026", order: "floods · no idle", item: "After a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read. Enzo said carburetors — count them.", price: "No price" },
+    { where: "Burton Auto Supply, Trinity", when: "30 Dec 2010", order: "732-1153", item: "Choke kit on the fuel ticket. Application not printed. Not a carb purchase.", price: "net $19.29" },
+    { where: "Printout, not a receipt", when: "11 Nov 2009", order: "S&S 11-2195 / 11-2465", item: "Circled on the Super E/G page. Nothing there says that carb is on this 181. Do not order for this flood.", price: "No price" },
   ],
   "fuel-filter": [
     { where: "O'Reilly", when: "9 Nov 2026", order: "33003", item: "Buy list. Wix in-line fuel filter, 3/8 in both ends. Read on the car. Not bought.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003", link: "O'Reilly listing" },

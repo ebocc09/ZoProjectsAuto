@@ -188,10 +188,36 @@ TOPICS: list[dict] = [
             "NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Fuel line H-176 and choke kit 732-1153. "
             "Buck's line 15530202 is printed IRRIGATION and is not identified. "
             "Need a new valve cover, not the head: 8M0122491. "
+            "Live problem 9 Nov 2026: carb floods after a few minutes, idle dies, fuel spills. Tag not read. "
             "Buy list: Wix 33003, gasket Sierra 18-0347 / NAPA SME180347. "
             "Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Not bought yet."
         ),
-        "pills": ["Fuel filter", "Valve cover", "Clutch kit"],
+        "pills": ["Carb floods", "Fuel filter", "Valve cover"],
+    },
+    {
+        "id": "carb",
+        "system": "engine",
+        "view": "diagram",
+        "part": "carb",
+        "evidence": "IMG_5877",
+        "keys": [
+            ("carb", 14), ("carburetor", 14), ("carberator", 14), ("flood", 12),
+            ("idle", 10), ("stall", 8), ("spill", 10), ("float", 10),
+            ("needle", 8), ("choke", 8), ("732-1153", 8),
+        ],
+        "reply": (
+            "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, "
+            "the engine floods, idle will not hold unless you keep giving it throttle, then it dies. "
+            "That is the bowl overfilling. Extra fuel dumps into the intake so idle goes full rich. "
+            "Stop running it flooded and smell the dipstick for gasoline in the oil. "
+            "Count the carbs and read the tag — no SKU is on an invoice. "
+            "Key on, pump on, engine off: spill then means the needle is already open. "
+            "Spill only after running: pull the lid and shake the float. "
+            "A fuel pump is not on the tickets. Measure pressure at the inlet before it floods. "
+            "Do not order the S&S Super E needle 11-2195 from the folder print. "
+            "Choke kit 732-1153 was bought 30 Dec 2010; application not printed."
+        ),
+        "pills": ["Fuel filter", "Engine", "Valve cover"],
     },
     {
         "id": "fuel-filter",
@@ -596,6 +622,7 @@ FOLLOW = [
     (r"valve cover gasket|cover gasket", "valve-gasket"),
     (r"valve cover|rocker cover", "valve-cover"),
     (r"thermostat|tstat|t-stat|18-3650|183650|18-3550|59078", "thermostat"),
+    (r"carb|carberator|carburetor|flood|idle|stall|float|needle", "carb"),
     (r"fuel hose|h350a|h-350|h-172|h172|28594|filter hose|5/16.*3/8|3/8.*5/16", "fuel-hose"),
     (r"fuel filter|wix|33003", "fuel-filter"),
     (r"engine|motor|clutch", "engine"),

@@ -84,10 +84,10 @@ window.ZO = {
       id: "engine",
       name: "Engine & clutch",
       short: "GM 3.0 Vortec, S10 clutch path",
-      status: "ok",
-      statusLabel: "Documented",
+      status: "watch",
+      statusLabel: "Carb floods",
       summary:
-        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
+        "GM Vortec 3.0L four. Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, the engine floods, idle dies unless you keep giving it throttle, then it shuts off. Carb tag not read. Choke kit 732-1153 was bought 30 Dec 2010; application not printed. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
     },
     {
       id: "cooling",
@@ -563,7 +563,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing: marine 181, clean first, 18-1910 only if faces are pitted. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
+        { k: "Need now", v: "Live: carb floods after a few minutes, idle dies, fuel spills. Tag not read. Buy list still: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing: clean first. Filter stubs: two ~4 in of 3/8 plus Gates 28594. Valve cover 8M0122491. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -666,6 +666,30 @@ window.ZO = {
         { k: "Not", v: "Not a 4 in packaged hose. Not the 2 ft H-172 pegboard. Not Wix 33033. Not stretching 5/16 onto a 3/8 barb." }
       ],
       notes: "Research, not an official lock. Not bought.",
+      evidence: ["IMG_5877"]
+    },
+    {
+      id: "carb",
+      name: "Carburetor",
+      pn: "unread",
+      brand: "Not read on the car",
+      system: "engine",
+      role: "Floods after a few minutes of running. Idle dies. Spills fuel.",
+      status: "replace",
+      confidence: "Enzo 9 Nov 2026. Symptom on the car. Tag not read. No carb SKU on any invoice.",
+      qty: "Enzo said carburetors — count them",
+      sheet: "floods · no idle",
+      spec: [
+        { k: "On sheet", v: "floods · no idle" },
+        { k: "This one", v: "Enzo 9 Nov 2026. Drives a few minutes, then fuel spills from the carburetor, the engine floods, idle will not hold, rpm drops unless you keep giving it throttle, then it dies. Tag not read." },
+        { k: "Means", v: "The bowl is overfilling. Extra fuel dumps into the intake, so idle goes full rich and it stalls. Throttle adds air, so it will still pull until the overflow wins. Spilling out of the carb is the overflow, not a hose weeping on the way there." },
+        { k: "Likely", v: "Float taking on fuel (holds a few minutes, then sinks). Needle and seat not sealing. Fuel pressure too high for the needle. A fuel pump is not on any ticket — Locost rear tank is often electric. Measure at the inlet before it floods. Carb needles usually want well under 7 psi. Not locked to a pump SKU." },
+        { k: "Choke ticket", v: "NAPA 732-1153 choke kit, 30 Dec 2010, net $19.29. Application not printed. A stuck-closed choke makes it rich from the start. Spill after a few minutes of driving is still a bowl problem first." },
+        { k: "Paper", v: "S&S Super E/G prints in the folder circled needle 11-2195 and seat 11-2465. Nothing on those pages says that carb is on this 181. Do not order them for this flood." },
+        { k: "Do", v: "Stop running it flooded. Smell the dipstick — raw fuel in the oil from washing the walls. Count how many carbs. Read the tag. Key on, pump on, engine off: if it spills immediately the needle is already open or pressure is wild. If it only spills after it has been running, pull the lid and shake the float. Log it." },
+        { k: "Not", v: "Not a locked Rochester / Mercarb / Weber number. Not the S&S Super E. Not Wix 33003 causing a spill out of the bowl." }
+      ],
+      notes: "Floods after a few minutes. No idle. Tag not read. Not bought.",
       evidence: ["IMG_5877"]
     },
     {
@@ -1850,7 +1874,7 @@ window.ZO = {
         n: "08",
         title: "Engine and clutch",
         system: "engine",
-        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
+        body: "GM Vortec 3.0L (181). Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, the engine floods, idle dies unless you keep giving it throttle, then it shuts off. Carb tag not read. First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
         evidence: ["IMG_5809", "IMG_5793", "IMG_5871", "IMG_5869"]
       },
       {

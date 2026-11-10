@@ -305,6 +305,10 @@ const SKETCH = {
         <circle cx="110" cy="258" r="4" />
         <circle cx="110" cy="282" r="4" />
       </g>
+      <g class="hot ${onCls("carb", active)}" data-part="carb">
+        <rect class="body" x="96" y="148" width="52" height="36" rx="4" />
+        <rect class="cover" x="106" y="132" width="32" height="18" rx="3" />
+      </g>
       ${callout(300, 70, 80, 40, "3.0L I4 · 181 cid", "gm-30", active)}
       ${callout(280, 108, 420, 36, sheetLabel("valve-cover", "Valve cover 8M0122491"), "valve-cover", active)}
       ${callout(186, 132, 40, 70, sheetLabel("valve-cover-gasket", "18-0347"), "valve-cover-gasket", active)}
@@ -313,6 +317,7 @@ const SKETCH = {
       ${callout(80, 320, 40, 360, "Fuel H-176 · choke 732-1153", "fuel-hardware", active)}
       ${callout(110, 270, 200, 360, sheetLabel("fuel-filter", "Wix 33003"), "fuel-filter", active)}
       ${callout(96, 248, 200, 220, sheetLabel("fuel-hose", "3/8 × ~4 in"), "fuel-hose", active)}
+      ${callout(122, 148, 40, 88, sheetLabel("carb", "floods · no idle"), "carb", active)}
       <text class="title-note" x="24" y="400">Pilot 3914000 · T/O 614018 · belt 25-7417 · 15530202 printed IRRIGATION</text>
     `;
   },

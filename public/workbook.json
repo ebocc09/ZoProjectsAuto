@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T04:26:00.000000+00:00",
+  "updatedAt": "2026-11-10T04:33:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -37,7 +37,8 @@
       "notes": [
         "Need a new valve cover, not the head. Cover analog is GM 181 / 3.0L 8M0122491. Check PCV / oil-fill before ordering. Not bought yet.",
         "Buy list. Not bought yet. Fuel filter Wix 33003. Valve cover gasket Sierra 18-0347 / NAPA SME180347. Thermostat kit Sierra 18-3650 / NAPA SME183650.",
-        "Filter stubs: two ~4 in of 3/8, not a 2 ft pack. 1 ft of NAPA H350A off the reel, cut, plus Gates 28594. Not bought yet."
+        "Filter stubs: two ~4 in of 3/8, not a 2 ft pack. 1 ft of NAPA H350A off the reel, cut, plus Gates 28594. Not bought yet.",
+        "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read."
       ]
     }
   },
@@ -73,6 +74,25 @@
         "Step": "Join 3/8 stubs to 5/16 hose with Gates 28594, 5/16–3/8 nylon reducer. Two, in and out. O'Reilly: https://www.oreillyauto.com/detail/c/gates/gates-5-16-3-8-inch-hose-connector/gat0/28594",
         "If 1/4": "Speedway 91011429-10 on the 2010 AN ticket is 1/4 in aluminum. Measure the hard line before buying 28594.",
         "Not": "Not a 4 in packaged hose. Not the 2 ft H-172 pegboard. Not Wix 33033. Not stretching 5/16 onto a 3/8 barb."
+      }
+    },
+    "carb": {
+      "notes": [
+        "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read. Do not order the S&S Super E needle from the folder print."
+      ],
+      "pn": "unread",
+      "name": "Carburetor",
+      "status": "replace",
+      "sheet": "floods · no idle",
+      "spec": {
+        "On sheet": "floods · no idle",
+        "This one": "Enzo 9 Nov 2026. Drives a few minutes, then fuel spills from the carburetor, the engine floods, idle will not hold, rpm drops unless you keep giving it throttle, then it dies. Tag not read.",
+        "Means": "The bowl is overfilling. Extra fuel dumps into the intake, so idle goes full rich and it stalls. Throttle adds air, so it will still pull until the overflow wins. Spilling out of the carb is the overflow, not a hose weeping on the way there.",
+        "Likely": "Float taking on fuel (holds a few minutes, then sinks). Needle and seat not sealing. Fuel pressure too high for the needle. A fuel pump is not on any ticket — Locost rear tank is often electric. Measure at the inlet before it floods. Carb needles usually want well under 7 psi. Not locked to a pump SKU.",
+        "Choke ticket": "NAPA 732-1153 choke kit, 30 Dec 2010, net $19.29. Application not printed. A stuck-closed choke makes it rich from the start. Spill after a few minutes of driving is still a bowl problem first.",
+        "Paper": "S&S Super E/G prints in the folder circled needle 11-2195 and seat 11-2465. Nothing on those pages says that carb is on this 181. Do not order them for this flood.",
+        "Do": "Stop running it flooded. Smell the dipstick — raw fuel in the oil from washing the walls. Count how many carbs. Read the tag. Key on, pump on, engine off: if it spills immediately the needle is already open or pressure is wild. If it only spills after it has been running, pull the lid and shake the float. Log it.",
+        "Not": "Not a locked Rochester / Mercarb / Weber number. Not the S&S Super E. Not Wix 33003 causing a spill out of the bowl."
       }
     },
     "valve-cover": {
@@ -649,6 +669,29 @@
           "Stat": "Still none in it. After a clean, seat a thermostat. Marine analog Sierra 18-3650 / Mercury 59078. Not locked until the seat is measured. Not bought.",
           "WINCO sheet": "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked.",
           "Not": "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
+        }
+      }
+    },
+    {
+      "id": "n23",
+      "at": "2026-11-10T04:33:00.000000+00:00",
+      "system": "engine",
+      "part": "carb",
+      "text": "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, the engine floods, idle dies unless you keep giving it throttle, then it shuts off. Bowl overfilling. Tag not read. Count the carbs. Do not order the S&S Super E needle from the folder print. Choke kit 732-1153 was bought 30 Dec 2010; application not printed. Fuel pump is not on a ticket.",
+      "patch": {
+        "pn": "unread",
+        "name": "Carburetor",
+        "status": "replace",
+        "sheet": "floods · no idle",
+        "spec": {
+          "On sheet": "floods · no idle",
+          "This one": "Enzo 9 Nov 2026. Drives a few minutes, then fuel spills from the carburetor, the engine floods, idle will not hold, rpm drops unless you keep giving it throttle, then it dies. Tag not read.",
+          "Means": "The bowl is overfilling. Extra fuel dumps into the intake, so idle goes full rich and it stalls. Throttle adds air, so it will still pull until the overflow wins. Spilling out of the carb is the overflow, not a hose weeping on the way there.",
+          "Likely": "Float taking on fuel (holds a few minutes, then sinks). Needle and seat not sealing. Fuel pressure too high for the needle. A fuel pump is not on any ticket — Locost rear tank is often electric. Measure at the inlet before it floods. Carb needles usually want well under 7 psi. Not locked to a pump SKU.",
+          "Choke ticket": "NAPA 732-1153 choke kit, 30 Dec 2010, net $19.29. Application not printed. A stuck-closed choke makes it rich from the start. Spill after a few minutes of driving is still a bowl problem first.",
+          "Paper": "S&S Super E/G prints in the folder circled needle 11-2195 and seat 11-2465. Nothing on those pages says that carb is on this 181. Do not order them for this flood.",
+          "Do": "Stop running it flooded. Smell the dipstick — raw fuel in the oil from washing the walls. Count how many carbs. Read the tag. Key on, pump on, engine off: if it spills immediately the needle is already open or pressure is wild. If it only spills after it has been running, pull the lid and shake the float. Log it.",
+          "Not": "Not a locked Rochester / Mercarb / Weber number. Not the S&S Super E. Not Wix 33003 causing a spill out of the bowl."
         }
       }
     }
