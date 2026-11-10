@@ -7,11 +7,11 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Two S&S Super E/G carbs, custom on the 181. After a few minutes of driving they spill fuel, idle dies, then the engine shuts off.",
+      "Two S&S Super E/G carbs, custom on the 181. Mechanical (engine-driven) pump — electric is off. After a few minutes they spill fuel, idle dies, then the engine shuts off.",
     why: [
       {
-        title: "Harley carbs on a car pump",
-        body: "S&S Super E/G are shorty Harley carbs. They were built for a petcock. A Locost electric pump is usually more pressure than the needle can hold. Shop practice with a pump is about 1.5–2 psi. That delay — drives, then spills — is pressure overpowering the needle, or a float taking on fuel."
+        title: "Harley carbs on a mechanical pump",
+        body: "S&S Super E/G are shorty Harley carbs. They were built for a petcock. Enzo 10 Nov 2026: previous owner took the electric pump off. The car is on a mechanical pump — cam-driven by the engine, not a hand lever. A typical carb mechanical pump is still 4–7 psi. These needles want about 1.5–2. Taking the electric off does not fix the flood by itself. That delay — drives, then spills — is pressure rising with rpm, or a float taking on fuel."
       },
       {
         title: "Needle and seat — already circled",
@@ -30,7 +30,7 @@ const ZO_PROJECTS = [
       {
         id: "stop",
         title: "Stop running it flooded",
-        body: "Smell the dipstick. Raw fuel in the oil from washing the walls. Change it before the next long run."
+        body: "Smell the dipstick. Raw fuel in the oil from washing the walls, or from a mechanical-pump diaphragm leaking into the crankcase. Change it before the next long run."
       },
       {
         id: "eg",
@@ -40,7 +40,7 @@ const ZO_PROJECTS = [
       {
         id: "pressure",
         title: "Measure fuel pressure at an inlet",
-        body: "Tee a gauge while it is still running, before the flood. If it is more than about 2 psi, add a 1–4 psi regulator. Holley 12-804 has two outlets, one per carb, page $51.95. Preset 2.8 — turn it down. That regulator’s inlet is limited to 7 psi. If the pump is hotter, 12-804 is the wrong style."
+        body: "Tee a gauge at an inlet with the engine running, before the flood. A mechanical pump does not run key-on / engine-off. If it is more than about 2 psi, add a 1–4 psi regulator. Holley 12-804 has two outlets, one per carb, page $51.95. Preset 2.8 — turn it down. That regulator’s inlet is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style."
       },
       {
         id: "needle",
@@ -55,7 +55,7 @@ const ZO_PROJECTS = [
       {
         id: "log",
         title: "Write down what you found",
-        body: "E or G on each body, the pressure reading, whether the floats sloshed, and whether a regulator went on. Put it in the note below."
+        body: "E or G on each body, the running pressure reading, whether the floats sloshed, and whether a regulator went on. Put it in the note below."
       }
     ],
     parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],

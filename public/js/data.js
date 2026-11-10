@@ -87,7 +87,7 @@ window.ZO = {
       status: "watch",
       statusLabel: "Carb floods",
       summary:
-        "GM Vortec 3.0L four. Enzo 9 Nov 2026: two S&S Super E/G carbs, custom on the 181. After a few minutes they spill, idle dies, then it shuts off. Easy path: measure pressure, Holley 12-804 if high (inlet limit 7 psi), needle 11-2195 and seat 11-2465 both sides. Super E/G have an enrichment lever, not a choke. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
+        "GM Vortec 3.0L four. Enzo 9 Nov 2026: two S&S Super E/G carbs, custom on the 181. After a few minutes they spill, idle dies, then it shuts off. 10 Nov 2026: previous owner took the electric pump off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high (inlet limit 7 psi), needle 11-2195 and seat 11-2465 both sides. Super E/G have an enrichment lever, not a choke. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
     },
     {
       id: "cooling",
@@ -563,7 +563,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Live: two S&S carbs flood after a few minutes. Easy path: measure pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. Buy list still: Wix 33003, gasket 18-0347. Thermostat housing: clean first. Not bought." },
+        { k: "Need now", v: "Live: two S&S carbs flood after a few minutes. Electric pump is off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. Buy list still: Wix 33003, gasket 18-0347. Thermostat housing: clean first. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -676,22 +676,23 @@ window.ZO = {
       system: "engine",
       role: "Two S&S carbs, custom on the 181. Floods after a few minutes. Idle dies.",
       status: "replace",
-      confidence: "Enzo 9 Nov 2026: two S&S carbs, looks custom. Folder Super E/G prints, R SIDE on one page. Needle 11-2195 and seat 11-2465 circled.",
+      confidence: "Enzo 9 Nov 2026: two S&S carbs, looks custom. 10 Nov 2026: electric pump off, mechanical (engine-driven) now. Folder Super E/G prints, R SIDE. Needle 11-2195 and seat 11-2465 circled.",
       qty: "2",
       sheet: "2× S&S · floods",
       spec: [
         { k: "On sheet", v: "2× S&S · floods" },
         { k: "This one", v: "Enzo 9 Nov 2026. Two S&S carbs, custom on the 181. Drives a few minutes, then fuel spills, idle dies unless you keep giving it throttle, then it shuts off. Look for E or G cast under S&S SUPER on each body. Super E is 1-7/8 in, Super G is 2-1/16 in." },
         { k: "Means", v: "Bowls overfilling. S&S Super E/G are Harley shorty carbs. They were built for a petcock, not a car pump. Extra fuel dumps into the intake so idle goes full rich. Throttle adds air until the overflow wins." },
-        { k: "Easy", v: "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure at an inlet. Shop practice on Super E/G with a pump is about 1.5–2 psi. A Locost electric pump is usually more than that. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. If the pump is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804" },
+        { k: "Pump", v: "Enzo 10 Nov 2026: previous owner took the electric pump off. The car is on a mechanical pump — cam-driven by the engine, not a hand lever. No pump SKU on any ticket. Do not lock a marine mechanical-pump number until the tag is read." },
+        { k: "Easy", v: "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure at an inlet with the engine running — a mechanical pump does not run key-on / engine-off. Shop practice on Super E/G is about 1.5–2 psi. A typical carb mechanical pump is 4–7 psi, still too much for these Harley needles. Taking the electric off does not fix the flood by itself. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804" },
         { k: "Needle", v: "S&S 11-2195, already circled on the folder page. Fits Super E and G. Page $19.95. Need two. https://autoplicity.com/8595253-ss-cycle-float-needle" },
         { k: "Seat", v: "S&S 11-2465 .160 in inlet seat, already circled. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/" },
         { k: "Float", v: "S&S 11-2187. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
-        { k: "Not", v: "Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
+        { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],
-      notes: "Two S&S, custom. Easy path: pressure, then 11-2195 / 11-2465 both sides. Not bought.",
+      notes: "Two S&S, custom. Mechanical pump, electric off. Easy path: running pressure, then 11-2195 / 11-2465 both sides. Not bought.",
       evidence: ["IMG_5949", "IMG_5937", "IMG_5877"]
     },
     {
@@ -1876,7 +1877,7 @@ window.ZO = {
         n: "08",
         title: "Engine and clutch",
         system: "engine",
-        body: "GM Vortec 3.0L (181). Enzo 9 Nov 2026: two S&S Super E/G carbs, custom on the 181. After a few minutes they spill, idle dies, then it shuts off. Easy path: measure pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
+        body: "GM Vortec 3.0L (181). Enzo 9 Nov 2026: two S&S Super E/G carbs, custom on the 181. After a few minutes they spill, idle dies, then it shuts off. 10 Nov 2026: previous owner took the electric pump off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
         evidence: ["IMG_5809", "IMG_5793", "IMG_5871", "IMG_5869"]
       },
       {

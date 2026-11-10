@@ -188,7 +188,7 @@ TOPICS: list[dict] = [
             "NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Fuel line H-176 and choke kit 732-1153. "
             "Buck's line 15530202 is printed IRRIGATION and is not identified. "
             "Need a new valve cover, not the head: 8M0122491. "
-            "Live problem 9 Nov 2026: two S&S carbs flood after a few minutes, idle dies, fuel spills. Easy path: pressure, then 11-2195 / 11-2465 both sides. "
+            "Live problem: two S&S carbs flood after a few minutes, idle dies, fuel spills. Electric pump is off; mechanical (engine-driven) now. Easy path: running pressure, then 11-2195 / 11-2465 both sides. "
             "Buy list: Wix 33003, gasket Sierra 18-0347 / NAPA SME180347. "
             "Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Not bought yet."
         ),
@@ -205,17 +205,22 @@ TOPICS: list[dict] = [
             ("idle", 10), ("stall", 8), ("spill", 10), ("float", 10),
             ("s&s", 14), ("super e", 12), ("super g", 12),
             ("11-2195", 12), ("11-2465", 12), ("12-804", 10),
+            ("mechanical pump", 14), ("electric pump", 12), ("fuel pump", 10),
             ("needle", 8), ("choke", 8), ("732-1153", 8),
         ],
         "reply": (
             "Enzo 9 Nov 2026: two S&S carbs, custom on the 181. After a few minutes they spill, "
-            "idle dies, then it shuts off. These are Harley Super E/G shorties — petcock carbs, "
-            "not car-pump carbs. Easy path: keep them. Measure pressure, then a 1–4 psi regulator "
+            "idle dies, then it shuts off. 10 Nov 2026: previous owner took the electric pump off; "
+            "the car is on a mechanical pump — cam-driven by the engine, not a hand lever. "
+            "These are Harley Super E/G shorties — petcock carbs. A typical carb mechanical pump "
+            "is still 4–7 psi; the needles want about 1.5–2. Taking the electric off does not "
+            "fix the flood by itself. Easy path: keep them. Measure running pressure "
+            "(mechanical does not run key-on / engine-off), then a 1–4 psi regulator "
             "(Holley 12-804 has two outlets, one per carb, page $51.95, inlet limit 7 psi) "
             "and the needle 11-2195 plus seat 11-2465 already circled, two of each. "
             "Shake both floats 11-2187. Do not rip the custom manifold for a Rochester — "
             "that needs the stock 181 intake. Look for E or G cast on each body. "
-            "Super E/G have an enrichment lever, not a choke."
+            "Super E/G have an enrichment lever, not a choke. No pump SKU on a ticket."
         ),
         "pills": ["Fuel filter", "Engine", "Valve cover"],
     },
@@ -622,7 +627,7 @@ FOLLOW = [
     (r"valve cover gasket|cover gasket", "valve-gasket"),
     (r"valve cover|rocker cover", "valve-cover"),
     (r"thermostat|tstat|t-stat|18-3650|183650|18-3550|59078", "thermostat"),
-    (r"carb|carberator|carburetor|flood|idle|stall|float|needle|s&s|super e|12-804", "carb"),
+    (r"carb|carberator|carburetor|flood|idle|stall|float|needle|s&s|super e|12-804|fuel pump|mechanical pump", "carb"),
     (r"fuel hose|h350a|h-350|h-172|h172|28594|filter hose|5/16.*3/8|3/8.*5/16", "fuel-hose"),
     (r"fuel filter|wix|33003", "fuel-filter"),
     (r"engine|motor|clutch", "engine"),
