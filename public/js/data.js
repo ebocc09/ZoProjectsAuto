@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat housing opened 9 Nov 2026: no thermostat, inside corroded. Housing analog Sierra 18-1910 / Barr 47587 if marine bosses. Neck must take 26502."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat housing opened 9 Nov 2026: no thermostat, inside corroded. Enzo: marine 181 in the Locost, not the street version. Clean first. 18-1910 only if sealing faces are pitted through. Neck must take 26502."
     },
     {
       id: "driveline",
@@ -447,25 +447,28 @@ window.ZO = {
       pn: "18-1910",
       brand: "Sierra / Mercury / Barr",
       system: "cooling",
-      role: "Housing opened, corroded inside, no thermostat. Replace the housing.",
-      status: "replace",
-      confidence: "Housing corroded, read open 9 Nov 2026. 18-1910 is the sold 181 kit if this casting has marine hose bosses. Neck must take 26502 1-3/4.",
+      role: "Marine 181 housing, corroded inside, no thermostat. Clean first.",
+      status: "watch",
+      confidence: "Enzo 9 Nov 2026: marine 181 in the Locost, not the street version. Housing corroded, read open. Clean first. 18-1910 if faces are pitted through.",
       qty: "1",
-      sheet: "housing due",
+      sheet: "clean first",
       spec: [
-        { k: "On sheet", v: "housing due" },
-        { k: "This one", v: "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Replace the housing. Coolant is unrestricted until a new stat goes in with it." },
-        { k: "Two pieces", v: "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting." },
-        { k: "Kit", v: "Mercury 861493A07 / Sierra 18-1910 is both halves. Sierra catalog replaces 47587, 47587A2, 47588, 60372A1, 60372A2, 63908A2. Mercury superseded the old cover 60372A2 into this kit. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
-        { k: "Lower", v: "What the photo shows. Bolts to the block. Hose bosses. Barr MC-29-47587, bare lower only. ~$74. Palmer: https://palmerpower.com/barr-mc-29-47587-mercruiser-lower-thermostat-housing/" },
-        { k: "Cover", v: "Top lid, not in the kit photo. Old Mercury 60372A2 COVER ASSEMBLY, ~1.25 lb. Mercury no longer sells it alone. Barr MC-29-60372 / Sierra 18-1969 still sold. Hardin: https://www.hardin-marine.com/p-113746-mercruiser-4-and-6-cylinder-upper-thermostat-housing.aspx" },
-        { k: "Gasket", v: "Housing-to-block: Sierra 18-0164, Mercury 27-814680 / 27-8146801, OMC 311069. https://www.macombmarineparts.com/products/gasket-thermostat-housing-sierra-18-0164" },
-        { k: "Confirm", v: "Count hose bosses on the old casting. Extra pump / manifold nipples = marine, 18-1910 fits. One 1-3/4 radiator neck only = industrial PSI outlet, marine kit is wrong. This car's hose is Gates 26502 1-3/4 — the new neck has to take that cuff." },
-        { k: "Stat", v: "Still none in it. Seat the new thermostat in the new housing. 18-3650 marine 140° only if this is the marine seat. Not locked." },
+        { k: "On sheet", v: "clean first" },
+        { k: "This one", v: "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Enzo: this is the marine 181, not the street version, even though it sits in the Locost. Try cleaning before buying 18-1910." },
+        { k: "Marine", v: "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 are the analog. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing family on the car." },
+        { k: "Clean", v: "Yes if gasket faces, thermostat seat, and hose necks are not pitted through. Brass or nylon brush. Aluminum-safe scale remover or vinegar, then rinse and dry. Do not steel-wheel a sealing face — that dishes it. Finger across the gasket path and the stat ledge: if you can feel pits that would leak, the kit is cheaper than doing this twice." },
+        { k: "Fail", v: "Pits across the gasket path, eaten thermostat ledge, thin or cracked hose neck, junk sender/plug threads → Sierra 18-1910 / Mercury 861493A07. Still the analog. Not bought." },
+        { k: "Two pieces", v: "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting, in the kit." },
+        { k: "Kit", v: "Backup if clean fails. Mercury 861493A07 / Sierra 18-1910 is both halves. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
+        { k: "Lower", v: "What the photo shows. Bolts to the block. Barr MC-29-47587, bare lower only. ~$74." },
+        { k: "Cover", v: "Top lid. Old Mercury 60372A2, superseded into 861493A07. Barr MC-29-60372 / Sierra 18-1969 still sold alone." },
+        { k: "Gasket", v: "Reuse still needs new gaskets. Housing-to-block: Sierra 18-0164 / Mercury 27-8146801. Cover-to-housing: Mercury 27-475901. https://www.macombmarineparts.com/products/gasket-thermostat-housing-sierra-18-0164" },
+        { k: "Neck", v: "This car's radiator hose is Gates 26502 1-3/4. The neck on this housing has to take that cuff." },
+        { k: "Stat", v: "Still none in it. After a clean, seat a thermostat. Marine analog Sierra 18-3650 / Mercury 59078. Not locked until the seat is measured. Not bought." },
         { k: "WINCO sheet", v: "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked." },
         { k: "Not", v: "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110." }
       ],
-      notes: "Housing corroded. Open, no stat. 18-1910 / Barr 47587 if the old casting has marine bosses. Neck must take 26502. Not bought.",
+      notes: "Marine 181 in the Locost. Clean first. 18-1910 only if faces are pitted through. Neck must take 26502. Not bought.",
       evidence: ["IMG_5929"]
     },
     {
@@ -559,7 +562,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing corroded and open — 18-1910 / Barr 47587 if marine bosses, neck must take 26502. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
+        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing: marine 181, clean first, 18-1910 only if faces are pitted. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -1854,7 +1857,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Thermostat housing opened 9 Nov 2026: no thermostat, inside corroded. Replace the housing. Sierra 18-1910 / Mercury 861493A07 if the old casting has marine hose bosses. Barr MC-29-47587 is the lower only. Gasket Sierra 18-0164. Neck must take 26502. Stat still not locked.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Thermostat housing opened 9 Nov 2026: no thermostat, inside corroded. Enzo: marine 181 in the Locost, not the street version. Clean first. 18-1910 / 861493A07 only if sealing faces are pitted through. Gasket Sierra 18-0164. Neck must take 26502. Stat still not locked.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {
