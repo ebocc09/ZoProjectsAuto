@@ -684,10 +684,12 @@ window.ZO = {
         { k: "This one", v: "Enzo 9 Nov 2026. Two S&S carbs, custom on the 181. Drives a few minutes, then fuel spills, idle dies unless you keep giving it throttle, then it shuts off. Look for E or G cast under S&S SUPER on each body. Super E is 1-7/8 in, Super G is 2-1/16 in." },
         { k: "Means", v: "Bowls overfilling. S&S Super E/G are Harley shorty carbs. They were built for a petcock, not a car pump. Extra fuel dumps into the intake so idle goes full rich. Throttle adds air until the overflow wins." },
         { k: "Pump", v: "Enzo 10 Nov 2026: previous owner took the electric pump off. The car is on a mechanical pump — cam-driven by the engine, not a hand lever. No pump SKU on any ticket. Do not lock a marine mechanical-pump number until the tag is read." },
-        { k: "Easy", v: "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure at an inlet with the engine running — a mechanical pump does not run key-on / engine-off. Shop practice on Super E/G is about 1.5–2 psi. A typical carb mechanical pump is 4–7 psi, still too much for these Harley needles. Taking the electric off does not fix the flood by itself. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804" },
-        { k: "Needle", v: "S&S 11-2195, already circled on the folder page. Fits Super E and G. Page $19.95. Need two. https://autoplicity.com/8595253-ss-cycle-float-needle" },
-        { k: "Seat", v: "S&S 11-2465 .160 in inlet seat, already circled. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/" },
-        { k: "Float", v: "S&S 11-2187. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
+        { k: "Inlet on paper", v: "IMG_5937 (R SIDE) labels #7 Fuel Inlet. It is the brass barb on the float bowl. Fuel hose clamps onto it. Do not open the bowl to measure pressure. Also on that page: #6 Overflow Tube Fitting, #8 Bowl Vent Hole, #9 Bowl Plug." },
+        { k: "Easy", v: "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure with the engine running. Tee a gauge into the hose that feeds #7 Fuel Inlet. A mechanical pump does not run key-on / engine-off. Shop practice on Super E/G is about 1.5–2 psi. A typical carb mechanical pump is 4–7 psi, still too much for these Harley needles. Taking the electric off does not fix the flood by itself. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804" },
+        { k: "Needle", v: "S&S 11-2195, already circled on IMG_5949. Fits Super E and G. Page $19.95. Need two. https://autoplicity.com/8595253-ss-cycle-float-needle" },
+        { k: "Seat", v: "S&S 11-2465 .160 in inlet seat, already circled on IMG_5949. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/" },
+        { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
+        { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
@@ -1063,14 +1065,18 @@ window.ZO = {
       system: "engine",
       role: "Tuning article and parts page in the folder",
       status: "watch",
-      confidence: "Printed 11/11/2009. No receipt.",
+      confidence: "Printed 11/11/2009. No receipt. Re-read 10 Nov 2026.",
       qty: "pages",
       spec: [
-        { k: "What it is", v: "S&S Super E and Super G tuning pages and a body-parts list" },
-        { k: "Circled on the parts page", v: "Needle 11-2195. Seat 11-2465." },
-        { k: "Mark", v: "“R SIDE” written on one page" }
+        { k: "What it is", v: "S&S Super E and Super G tuning pages (bikernet / millers) and body-parts list. Printed 11/11/2009." },
+        { k: "IMG_5936 labels", v: "1 Idle Speed Screw. 2 Idle Mixture Screw. 3 Accelerator Pump Adjustment Screw. 4 Enrichment Device. 5 Serial Number." },
+        { k: "IMG_5937 labels", v: "Marked R SIDE. 6 Overflow Tube Fitting. 7 Fuel Inlet. 8 Bowl Vent Hole. 9 Bowl Plug. Stock baseline: idle mixture 1-1/4 turns out, idle speed 1/2 turn from engagement, accelerator 2 turns out." },
+        { k: "IMG_5938 labels", v: "Bowl off view. 10 Accelerator Pump Pushrod. 11 Intermediate Jet. 12 Main Jet. 13 Main Jet Air Bleed. 14 Auxiliary Bowl Vent Plug." },
+        { k: "IMG_5946", v: "Exploded body. Fuel inlet fitting is item 37 into the bowl. Fuel line with 90° bend is item 50." },
+        { k: "Circled on IMG_5949", v: "Needle 11-2195. Seat 11-2465. Seat/bowl plug o-ring 50-8009. Float on the list is 11-2187. Fuel line 19-0475. Hose clamp 50-8002." },
+        { k: "Mark", v: "“R SIDE” handwritten on IMG_5937 — right carb of the pair." }
       ],
-      notes: "Enzo 9 Nov 2026: two S&S carbs are on the 181, custom. R SIDE is the right carb. Circled 11-2195 and 11-2465 are the flood parts.",
+      notes: "Re-read 10 Nov 2026. Paper labels Fuel Inlet as #7. Do not open the carb to measure pressure. Tee into the hose on that barb.",
       evidence: ["IMG_5936", "IMG_5937", "IMG_5938", "IMG_5946", "IMG_5947", "IMG_5948", "IMG_5949"]
     },
     {

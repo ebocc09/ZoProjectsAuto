@@ -206,21 +206,18 @@ TOPICS: list[dict] = [
             ("s&s", 14), ("super e", 12), ("super g", 12),
             ("11-2195", 12), ("11-2465", 12), ("12-804", 10),
             ("mechanical pump", 14), ("electric pump", 12), ("fuel pump", 10),
+            ("fuel inlet", 14), ("#7", 10), ("bowl plug", 8),
             ("needle", 8), ("choke", 8), ("732-1153", 8),
         ],
         "reply": (
-            "Enzo 9 Nov 2026: two S&S carbs, custom on the 181. After a few minutes they spill, "
-            "idle dies, then it shuts off. 10 Nov 2026: previous owner took the electric pump off; "
-            "the car is on a mechanical pump — cam-driven by the engine, not a hand lever. "
-            "These are Harley Super E/G shorties — petcock carbs. A typical carb mechanical pump "
-            "is still 4–7 psi; the needles want about 1.5–2. Taking the electric off does not "
-            "fix the flood by itself. Easy path: keep them. Measure running pressure "
-            "(mechanical does not run key-on / engine-off), then a 1–4 psi regulator "
-            "(Holley 12-804 has two outlets, one per carb, page $51.95, inlet limit 7 psi) "
-            "and the needle 11-2195 plus seat 11-2465 already circled, two of each. "
-            "Shake both floats 11-2187. Do not rip the custom manifold for a Rochester — "
-            "that needs the stock 181 intake. Look for E or G cast on each body. "
-            "Super E/G have an enrichment lever, not a choke. No pump SKU on a ticket."
+            "Folder print IMG_5937 (R SIDE) labels #7 Fuel Inlet. That is the brass barb on the "
+            "float bowl where the fuel hose clamps on. Do not open the carb to measure pressure. "
+            "Tee a gauge into that hose with the engine running. Also on that page: #6 Overflow, "
+            "#8 Bowl Vent, #9 Bowl Plug. Two S&S Super E/G on the 181, custom. Mechanical pump "
+            "now (electric off). Needles want about 1.5–2 psi; a typical mechanical pump is 4–7. "
+            "Easy path: keep them. Running pressure, then Holley 12-804 if high (inlet limit 7 psi), "
+            "then circled 11-2195 needle, 11-2465 seat, and 50-8009 o-ring — two of each. "
+            "Shake floats 11-2187. Super E/G use an enrichment lever, not a choke."
         ),
         "pills": ["Fuel filter", "Engine", "Valve cover"],
     },

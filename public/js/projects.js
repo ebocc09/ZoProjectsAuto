@@ -38,14 +38,19 @@ const ZO_PROJECTS = [
         body: "Cast under S&S SUPER. Super E is 1-7/8 in, Super G is 2-1/16 in. Needle 11-2195 and seat 11-2465 fit both. Write which letter is on each."
       },
       {
+        id: "inlet",
+        title: "Find Fuel Inlet #7 on the bowl",
+        body: "IMG_5937 labels it. Look at the float bowl. Find the brass barb with the fuel hose clamped on. That is #7 Fuel Inlet. Do not remove the bowl. Do not unscrew anything on the carb for the pressure test."
+      },
+      {
         id: "pressure",
-        title: "Measure fuel pressure at an inlet",
-        body: "Tee a gauge at an inlet with the engine running, before the flood. A mechanical pump does not run key-on / engine-off. If it is more than about 2 psi, add a 1–4 psi regulator. Holley 12-804 has two outlets, one per carb, page $51.95. Preset 2.8 — turn it down. That regulator’s inlet is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style."
+        title: "Measure fuel pressure at #7",
+        body: "Tee a gauge into the hose that feeds #7. Engine running. Read it before the flood. If it is more than about 2 psi, add a 1–4 psi regulator. Holley 12-804 has two outlets, one per carb, page $51.95. Preset 2.8 — turn it down. That regulator’s inlet is limited to 7 psi. A stock mechanical carb pump is usually in that band; if the reading is hotter, 12-804 is the wrong style."
       },
       {
         id: "needle",
         title: "Needle, seat, and floats — both carbs",
-        body: "11-2195 needle and 11-2465 seat, already circled. Two of each. Shake both 11-2187 floats. Do this even if the regulator fixes the spill — the needles have been overpowered."
+        body: "11-2195 needle and 11-2465 seat, circled on IMG_5949. Also circled: o-ring 50-8009. Two of each. Shake both 11-2187 floats. Do this even if the regulator fixes the spill — the needles have been overpowered."
       },
       {
         id: "enrich",
@@ -59,7 +64,7 @@ const ZO_PROJECTS = [
       }
     ],
     parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
-    evidence: ["IMG_5877", "IMG_5949"]
+    evidence: ["IMG_5937", "IMG_5949", "IMG_5877"]
   },
   {
     id: "brake-lock",
