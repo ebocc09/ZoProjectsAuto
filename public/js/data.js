@@ -457,6 +457,7 @@ window.ZO = {
         { k: "This one", v: "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Enzo: this is the marine 181, not the street version, even though it sits in the Locost. Try cleaning before buying 18-1910." },
         { k: "Marine", v: "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 are the analog. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing family on the car." },
         { k: "Clean", v: "Yes if gasket faces, thermostat seat, and hose necks are not pitted through. Brass or nylon brush. Aluminum-safe scale remover or vinegar, then rinse and dry. Do not steel-wheel a sealing face — that dishes it. Finger across the gasket path and the stat ledge: if you can feel pits that would leak, the kit is cheaper than doing this twice." },
+        { k: "Jacket", v: "Same coolant went through the housing and the block. The 181 block and head are iron. Scale in the jackets is likely. That is not the same as the aluminum housing being eaten through. Not a new engine by itself. Light down the block outlet once the housing is off. Flush and see what comes out. Flakes can clog the JEGS radiator. Coolant type was never invoiced." },
         { k: "Fail", v: "Pits across the gasket path, eaten thermostat ledge, thin or cracked hose neck, junk sender/plug threads → Sierra 18-1910 / Mercury 861493A07. Still the analog. Not bought." },
         { k: "Two pieces", v: "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting, in the kit." },
         { k: "Kit", v: "Backup if clean fails. Mercury 861493A07 / Sierra 18-1910 is both halves. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
@@ -468,7 +469,7 @@ window.ZO = {
         { k: "WINCO sheet", v: "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked." },
         { k: "Not", v: "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110." }
       ],
-      notes: "Marine 181 in the Locost. Clean first. 18-1910 only if faces are pitted through. Neck must take 26502. Not bought.",
+      notes: "Marine 181 in the Locost. Clean first. Same coolant in the jackets — scale likely, not a dead block. 18-1910 only if faces are pitted through. Not bought.",
       evidence: ["IMG_5929"]
     },
     {

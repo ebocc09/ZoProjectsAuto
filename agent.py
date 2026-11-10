@@ -282,16 +282,17 @@ TOPICS: list[dict] = [
             ("59078", 6), ("z33001814", 8), ("z101488", 6),
             ("861493", 10), ("18-1910", 12), ("181910", 8), ("47587", 10),
             ("60372", 10), ("18-1969", 8), ("cover", 6), ("clean", 8),
+            ("jacket", 10), ("block", 6), ("flush", 8), ("corrod", 10),
             ("18-0164", 10), ("open", 8), ("housing", 8),
         ],
         "reply": (
             "Enzo 9 Nov 2026: this is the marine 181 in the Locost, not the street version. "
-            "Housing opened, no thermostat, inside corroded. Clean first and save the kit money "
-            "if gasket faces, thermostat seat, and hose necks are not pitted through. "
-            "Brass or nylon brush, aluminum-safe cleaner or vinegar, rinse, dry. "
-            "Pits across a sealing face, eaten stat ledge, or a thin hose neck → "
-            "Sierra 18-1910 / Mercury 861493A07 (both halves, lid is in the kit). "
-            "Reuse still needs gasket 18-0164 and a thermostat. Stat still not locked."
+            "Housing opened, no thermostat, inside corroded. Same coolant went through the iron "
+            "block jackets, so scale in there is likely. That is not the aluminum housing being "
+            "eaten through, and it is not a new engine by itself. Light down the block outlet, "
+            "flush, see what comes out. Flakes can clog the JEGS radiator. "
+            "Clean the housing first if sealing faces are still flat. "
+            "Pits across a face → Sierra 18-1910 / Mercury 861493A07. Stat still not locked."
         ),
         "pills": ["Valve cover", "Radiator hose", "Engine"],
     },

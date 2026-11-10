@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T04:16:00.000000+00:00",
+  "updatedAt": "2026-11-10T04:26:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -29,7 +29,8 @@
         "Opened 9 Nov 2026. No thermostat in the housing. Hollow, straight into the engine. 18-3650 is not the lock.",
         "Housing inside is corroded. Replace it. Sierra 18-1910 / Barr MC-29-47587 if marine bosses. Neck must take 26502.",
         "861493A07 photo is the lower body. Top cover is a separate lid, old 60372A2, superseded into that kit. Barr MC-29-60372 / Sierra 18-1969 still sold alone.",
-        "Enzo: marine 181 in the Locost, not the street version. Clean the housing first. 18-1910 only if sealing faces are pitted through."
+        "Enzo: marine 181 in the Locost, not the street version. Clean the housing first. 18-1910 only if sealing faces are pitted through.",
+        "Same coolant in the iron jackets. Scale likely. Not a dead block. Light down the outlet, flush, see what comes out."
       ]
     },
     "engine": {
@@ -113,7 +114,8 @@
         "Opened 9 Nov 2026. No thermostat. Housing hollow, straight into the engine. 18-3650 marine analog is not this housing. Measure the seat.",
         "Housing inside is corroded. Replace it. Sierra 18-1910 / Mercury 861493A07 if marine bosses. Barr MC-29-47587 lower only. Gasket 18-0164. Neck must take 26502. Not bought.",
         "861493A07 photo is the lower body. Top cover is a separate lid, old Mercury 60372A2 COVER ASSEMBLY, superseded into that kit. Barr MC-29-60372 / Sierra 18-1969 still sold alone.",
-        "Enzo: marine 181 in the Locost, not the street version. Clean the housing first. 18-1910 only if sealing faces are pitted through."
+        "Enzo: marine 181 in the Locost, not the street version. Clean the housing first. 18-1910 only if sealing faces are pitted through.",
+        "Same coolant in the iron jackets. Scale likely. Not a dead block. Light down the outlet, flush, see what comes out."
       ],
       "pn": "18-1910",
       "name": "Thermostat housing",
@@ -124,6 +126,7 @@
         "This one": "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Enzo: this is the marine 181, not the street version, even though it sits in the Locost. Try cleaning before buying 18-1910.",
         "Marine": "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 are the analog. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing family on the car.",
         "Clean": "Yes if gasket faces, thermostat seat, and hose necks are not pitted through. Brass or nylon brush. Aluminum-safe scale remover or vinegar, then rinse and dry. Do not steel-wheel a sealing face — that dishes it. Finger across the gasket path and the stat ledge: if you can feel pits that would leak, the kit is cheaper than doing this twice.",
+        "Jacket": "Same coolant went through the housing and the block. The 181 block and head are iron. Scale in the jackets is likely. That is not the same as the aluminum housing being eaten through. Not a new engine by itself. Light down the block outlet once the housing is off. Flush and see what comes out. Flakes can clog the JEGS radiator. Coolant type was never invoiced.",
         "Fail": "Pits across the gasket path, eaten thermostat ledge, thin or cracked hose neck, junk sender/plug threads → Sierra 18-1910 / Mercury 861493A07. Still the analog. Not bought.",
         "Two pieces": "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting, in the kit.",
         "Kit": "Backup if clean fails. Mercury 861493A07 / Sierra 18-1910 is both halves. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07",
@@ -606,6 +609,36 @@
           "This one": "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Enzo: this is the marine 181, not the street version, even though it sits in the Locost. Try cleaning before buying 18-1910.",
           "Marine": "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 are the analog. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing family on the car.",
           "Clean": "Yes if gasket faces, thermostat seat, and hose necks are not pitted through. Brass or nylon brush. Aluminum-safe scale remover or vinegar, then rinse and dry. Do not steel-wheel a sealing face — that dishes it. Finger across the gasket path and the stat ledge: if you can feel pits that would leak, the kit is cheaper than doing this twice.",
+          "Fail": "Pits across the gasket path, eaten thermostat ledge, thin or cracked hose neck, junk sender/plug threads → Sierra 18-1910 / Mercury 861493A07. Still the analog. Not bought.",
+          "Two pieces": "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting, in the kit.",
+          "Kit": "Backup if clean fails. Mercury 861493A07 / Sierra 18-1910 is both halves. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07",
+          "Lower": "What the photo shows. Bolts to the block. Barr MC-29-47587, bare lower only. ~$74.",
+          "Cover": "Top lid. Old Mercury 60372A2, superseded into 861493A07. Barr MC-29-60372 / Sierra 18-1969 still sold alone.",
+          "Gasket": "Reuse still needs new gaskets. Housing-to-block: Sierra 18-0164 / Mercury 27-8146801. Cover-to-housing: Mercury 27-475901. https://www.macombmarineparts.com/products/gasket-thermostat-housing-sierra-18-0164",
+          "Neck": "This car's radiator hose is Gates 26502 1-3/4. The neck on this housing has to take that cuff.",
+          "Stat": "Still none in it. After a clean, seat a thermostat. Marine analog Sierra 18-3650 / Mercury 59078. Not locked until the seat is measured. Not bought.",
+          "WINCO sheet": "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked.",
+          "Not": "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
+        }
+      }
+    },
+    {
+      "id": "n22",
+      "at": "2026-11-10T04:26:00.000000+00:00",
+      "system": "cooling",
+      "part": "thermostat",
+      "text": "Housing corrosion does not mean the iron block is eaten through. Same coolant, so scale in the jackets is likely. Light down the block outlet, flush, see what comes out. Flakes can clog the JEGS radiator. Not a new engine by itself. Coolant type was never invoiced.",
+      "patch": {
+        "pn": "18-1910",
+        "name": "Thermostat housing",
+        "status": "watch",
+        "sheet": "clean first",
+        "spec": {
+          "On sheet": "clean first",
+          "This one": "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Enzo: this is the marine 181, not the street version, even though it sits in the Locost. Try cleaning before buying 18-1910.",
+          "Marine": "Cooling parts are boat. 861493A07 / 18-1910 / Barr 47587 + 60372 are the analog. Buck's EPS print still says industrial/irrigation — that is the paperwork in the folder, not the housing family on the car.",
+          "Clean": "Yes if gasket faces, thermostat seat, and hose necks are not pitted through. Brass or nylon brush. Aluminum-safe scale remover or vinegar, then rinse and dry. Do not steel-wheel a sealing face — that dishes it. Finger across the gasket path and the stat ledge: if you can feel pits that would leak, the kit is cheaper than doing this twice.",
+          "Jacket": "Same coolant went through the housing and the block. The 181 block and head are iron. Scale in the jackets is likely. That is not the same as the aluminum housing being eaten through. Not a new engine by itself. Light down the block outlet once the housing is off. Flush and see what comes out. Flakes can clog the JEGS radiator. Coolant type was never invoiced.",
           "Fail": "Pits across the gasket path, eaten thermostat ledge, thin or cracked hose neck, junk sender/plug threads → Sierra 18-1910 / Mercury 861493A07. Still the analog. Not bought.",
           "Two pieces": "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting, in the kit.",
           "Kit": "Backup if clean fails. Mercury 861493A07 / Sierra 18-1910 is both halves. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07",
