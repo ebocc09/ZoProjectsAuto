@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T03:39:00.000000+00:00",
+  "updatedAt": "2026-11-10T04:10:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -27,7 +27,8 @@
         "Thermostat kit is on the 9 Nov 2026 buy list: Sierra 18-3650 / NAPA SME183650.",
         "No full housing-plus-all-hoses street kit. Marine housing is 861493A07 / Sierra 18-1910. Pump hose 18-70931 is boat. Radiator hose stays 26502.",
         "Opened 9 Nov 2026. No thermostat in the housing. Hollow, straight into the engine. 18-3650 is not the lock.",
-        "Housing inside is corroded. Replace it. Sierra 18-1910 / Barr MC-29-47587 if marine bosses. Neck must take 26502."
+        "Housing inside is corroded. Replace it. Sierra 18-1910 / Barr MC-29-47587 if marine bosses. Neck must take 26502.",
+        "861493A07 photo is the lower body. Top cover is a separate lid, old 60372A2, superseded into that kit. Barr MC-29-60372 / Sierra 18-1969 still sold alone."
       ]
     },
     "engine": {
@@ -109,7 +110,8 @@
         "On the 9 Nov 2026 buy list with the fuel filter and cover gasket. Sierra 18-3650 / NAPA SME183650 140°F kit. https://www.napaonline.com/en/p/SME183650 Not bought yet.",
         "Housing kit Mercury 861493A07 / Sierra 18-1910 is the cast marine housing, not a bolt-on with all hoses. Pump hose 18-70931 is boat. This car's radiator hose is 26502. Look at this housing first. Not bought.",
         "Opened 9 Nov 2026. No thermostat. Housing hollow, straight into the engine. 18-3650 marine analog is not this housing. Measure the seat.",
-        "Housing inside is corroded. Replace it. Sierra 18-1910 / Mercury 861493A07 if marine bosses. Barr MC-29-47587 lower only. Gasket 18-0164. Neck must take 26502. Not bought."
+        "Housing inside is corroded. Replace it. Sierra 18-1910 / Mercury 861493A07 if marine bosses. Barr MC-29-47587 lower only. Gasket 18-0164. Neck must take 26502. Not bought.",
+        "861493A07 photo is the lower body. Top cover is a separate lid, old Mercury 60372A2 COVER ASSEMBLY, superseded into that kit. Barr MC-29-60372 / Sierra 18-1969 still sold alone."
       ],
       "pn": "18-1910",
       "name": "Thermostat housing",
@@ -118,13 +120,15 @@
       "spec": {
         "On sheet": "housing due",
         "This one": "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Replace the housing. Coolant is unrestricted until a new stat goes in with it.",
-        "Housing": "Sold 181 kit: Sierra 18-1910 / Mercury 861493A07. Cast housing. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07",
-        "Lower only": "Barr MC-29-47587, the base that bolts to the block. ~$74. Palmer: https://palmerpower.com/barr-mc-29-47587-mercruiser-lower-thermostat-housing/ Upper cover Barr MC-29-60372 if buying pieces.",
+        "Two pieces": "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting.",
+        "Kit": "Mercury 861493A07 / Sierra 18-1910 is both halves. Sierra catalog replaces 47587, 47587A2, 47588, 60372A1, 60372A2, 63908A2. Mercury superseded the old cover 60372A2 into this kit. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07",
+        "Lower": "What the photo shows. Bolts to the block. Hose bosses. Barr MC-29-47587, bare lower only. ~$74. Palmer: https://palmerpower.com/barr-mc-29-47587-mercruiser-lower-thermostat-housing/",
+        "Cover": "Top lid, not in the kit photo. Old Mercury 60372A2 COVER ASSEMBLY, ~1.25 lb. Mercury no longer sells it alone. Barr MC-29-60372 / Sierra 18-1969 still sold. Hardin: https://www.hardin-marine.com/p-113746-mercruiser-4-and-6-cylinder-upper-thermostat-housing.aspx",
         "Gasket": "Housing-to-block: Sierra 18-0164, Mercury 27-814680 / 27-8146801, OMC 311069. https://www.macombmarineparts.com/products/gasket-thermostat-housing-sierra-18-0164",
         "Confirm": "Count hose bosses on the old casting. Extra pump / manifold nipples = marine, 18-1910 fits. One 1-3/4 radiator neck only = industrial PSI outlet, marine kit is wrong. This car's hose is Gates 26502 1-3/4 — the new neck has to take that cuff.",
         "Stat": "Still none in it. Seat the new thermostat in the new housing. 18-3650 marine 140° only if this is the marine seat. Not locked.",
         "WINCO sheet": "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked.",
-        "Not": "Not TDL 5216. Not Sierra 18-1993 (V8). Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
+        "Not": "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
       }
     },
     "rad-hose": {
@@ -552,6 +556,32 @@
           "Stat": "Still none in it. Seat the new thermostat in the new housing. 18-3650 marine 140° only if this is the marine seat. Not locked.",
           "WINCO sheet": "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked.",
           "Not": "Not TDL 5216. Not Sierra 18-1993 (V8). Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
+        }
+      }
+    },
+    {
+      "id": "n20",
+      "at": "2026-11-10T04:10:00.000000+00:00",
+      "system": "cooling",
+      "part": "thermostat",
+      "text": "861493A07 photo is the lower body. Top cover is a separate lid. Old Mercury 60372A2 COVER ASSEMBLY was superseded into this kit. Barr still sells the cover alone as MC-29-60372 / Sierra 18-1969. Lower alone is Barr MC-29-47587. Sierra 18-1910 is the same two-piece kit. MarineEngine 18-1993 equivalent is V8, ignore it. Not bought.",
+      "patch": {
+        "pn": "18-1910",
+        "name": "Thermostat housing",
+        "status": "replace",
+        "sheet": "housing due",
+        "spec": {
+          "On sheet": "housing due",
+          "This one": "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow into the engine. Inside is corroded. Replace the housing. Coolant is unrestricted until a new stat goes in with it.",
+          "Two pieces": "Marine 181 housing is a lower body plus a top cover. Thermostat sits between them. The MarineEngine photo is the lower body only. The lid is a separate casting.",
+          "Kit": "Mercury 861493A07 / Sierra 18-1910 is both halves. Sierra catalog replaces 47587, 47587A2, 47588, 60372A1, 60372A2, 63908A2. Mercury superseded the old cover 60372A2 into this kit. Page $122–$193. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07",
+          "Lower": "What the photo shows. Bolts to the block. Hose bosses. Barr MC-29-47587, bare lower only. ~$74. Palmer: https://palmerpower.com/barr-mc-29-47587-mercruiser-lower-thermostat-housing/",
+          "Cover": "Top lid, not in the kit photo. Old Mercury 60372A2 COVER ASSEMBLY, ~1.25 lb. Mercury no longer sells it alone. Barr MC-29-60372 / Sierra 18-1969 still sold. Hardin: https://www.hardin-marine.com/p-113746-mercruiser-4-and-6-cylinder-upper-thermostat-housing.aspx",
+          "Gasket": "Housing-to-block: Sierra 18-0164, Mercury 27-814680 / 27-8146801, OMC 311069. https://www.macombmarineparts.com/products/gasket-thermostat-housing-sierra-18-0164",
+          "Confirm": "Count hose bosses on the old casting. Extra pump / manifold nipples = marine, 18-1910 fits. One 1-3/4 radiator neck only = industrial PSI outlet, marine kit is wrong. This car's hose is Gates 26502 1-3/4 — the new neck has to take that cuff.",
+          "Stat": "Still none in it. Seat the new thermostat in the new housing. 18-3650 marine 140° only if this is the marine seat. Not locked.",
+          "WINCO sheet": "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked.",
+          "Not": "Not TDL 5216. Not Sierra 18-1993 (V8) — MarineEngine lists it as an equivalent of 861493A07; it is not. Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
         }
       }
     }

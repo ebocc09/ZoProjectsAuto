@@ -281,11 +281,14 @@ TOPICS: list[dict] = [
             ("18-3650", 8), ("183650", 8), ("18-3550", 6), ("183550", 6),
             ("59078", 6), ("z33001814", 8), ("z101488", 6),
             ("861493", 10), ("18-1910", 12), ("181910", 8), ("47587", 10),
+            ("60372", 10), ("18-1969", 8), ("cover", 6),
             ("18-0164", 10), ("open", 8), ("housing", 8),
         ],
         "reply": (
             "Housing opened 9 Nov 2026: no thermostat, hollow into the engine, inside corroded. "
-            "Replace the housing. Sold 181 kit is Sierra 18-1910 / Mercury 861493A07. "
+            "Marine 181 housing is two pieces. The 861493A07 photo is the lower body. "
+            "The top cover is a separate lid, old Mercury 60372A2, superseded into that kit. "
+            "Barr still sells the cover alone as MC-29-60372 / Sierra 18-1969. "
             "Lower only is Barr MC-29-47587 with gasket Sierra 18-0164. "
             "Count hose bosses on the old casting first — extra pump/manifold nipples means marine kit. "
             "One 1-3/4 radiator neck only means industrial, marine kit is wrong. "
