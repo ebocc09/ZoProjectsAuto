@@ -87,7 +87,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
+        "GM Vortec 3.0L four. Kept clutch is AWS 04-065 with flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA V-belt 25-7417, Timken seals, fuel line H-176, choke kit 732-1153. Buck's line 15530202 is printed IRRIGATION — unidentified. Need a new valve cover (not the head) 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594. Not bought yet."
     },
     {
       id: "cooling",
@@ -96,7 +96,7 @@ window.ZO = {
       status: "ok",
       statusLabel: "Documented",
       summary:
-        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat kit on the buy list is Sierra 18-3650 / NAPA SME183650, 140°F. Not bought yet."
+        "JEGS 555-51962 radiator, −12AN fittings, inline filler, hose drain 071063700. The 2008 fan line, 400-110, was deducted and never shipped. A Flex-a-lite model 110 was bought from Peyton Performance in Waxahachie. The underlined 210 is a dual wider than this radiator. Aircraft Spruce AN833-12D / AN821-12D / AN924-12D in 2009. Gates heater hose 28432 in 2011. The radiator-to-block hose burst on 7 Nov 2026. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat housing opened 9 Nov 2026: no thermostat, hollow into the engine. 18-3650 marine analog is not the lock."
     },
     {
       id: "driveline",
@@ -444,27 +444,26 @@ window.ZO = {
     {
       id: "thermostat",
       name: "Thermostat",
-      pn: "18-3650",
-      brand: "Sierra / NAPA",
+      pn: "open",
+      brand: "none in housing",
       system: "cooling",
-      role: "Marine 181 CID 3.0L thermostat kit. Need new.",
+      role: "Housing opened. No thermostat. Passage is open into the engine.",
       status: "replace",
-      confidence: "Buy list. NAPA SME183650 kit. Not bought. Not read off this housing.",
+      confidence: "Read on the car 9 Nov 2026. Open. 18-3650 was a marine analog, not this housing.",
       qty: "1",
-      sheet: "18-3650 · 140°",
+      sheet: "open · no stat",
       spec: [
-        { k: "On sheet", v: "18-3650 · 140°" },
-        { k: "This one", v: "Sierra 18-3650, NAPA SME183650. 140°F thermostat kit for 1998-and-older MCM GM in-line 4- and 6-cylinder. Includes 18-3550 thermostat and 18-2831 cover gasket. Replaces Mercury 59078T3 / 59078Q3. NAPA: https://www.napaonline.com/en/p/SME183650" },
-        { k: "Inside", v: "Stat only is Sierra 18-3550 / NAPA SME183550, Mercury 59078. Kit is the one on the buy list." },
-        { k: "160° closed", v: "Later closed / fresh-water GM marine cooling uses Sierra 18-3649, NAPA SME183649, 160°F, Mercury 8072522 / 807252T2." },
-        { k: "WINCO sheet", v: "PSI Z33001814 was the industrial number on the WINCO GM 3.0L sheet. Opening temp is not printed. No catalog cross to 18-3650." },
-        { k: "Street note", v: "140° is the boat raw-water 181 OEM. This Locost has a JEGS street radiator, closed glycol. It may run cool. Not confirmed on this housing." },
-        { k: "Housing kit", v: "Marine housing is Mercury 861493A07 / Sierra 18-1910, MCM 140/3.0L s/n 0L340999 and below. Cast housing + gaskets. Stat is separate (18-3650). Not read on this engine. https://www.marineengine.com/newparts/part_details.php?pnum=MER861493A07" },
-        { k: "Hoses", v: "No one SKU is housing + all hoses + stat for this street radiator. Marine pump hose is Sierra 18-70931 / Mercury 32-96879. Manifold and transom hoses are boat. This car's radiator hose is already Gates 26502." },
-        { k: "Bolt-on", v: "If this housing is still the marine two-piece, unbolt the cover and drop in 18-3650. If the casting is junk, 18-1910 replaces the housing. Look at this engine first — Buck's industrial 181 may not have the boat housing." },
-        { k: "Not", v: "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not Sierra 18-1993 (V8 305/350 housing). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110. Not the valve-cover gasket 18-0347." }
+        { k: "On sheet", v: "open · no stat" },
+        { k: "This one", v: "Read on the car 9 Nov 2026. Housing opened. No thermostat. Hollow, straight into the engine. Coolant is unrestricted." },
+        { k: "Means", v: "The stat was pulled, or never installed. Full flow all the time. Engine can run cold on the JEGS street radiator. Warm-up, heater, and oil temp stay low until a thermostat goes back in." },
+        { k: "PSI industrial", v: "PSI 3.0L industrial manual: thermostat sits between the water-outlet neck and the housing that bolts to the block. Empty is not the design. Housing bolts 38 N·m / 28 lb-ft. Outlet bolts 28 N·m / 21 lb-ft." },
+        { k: "Need", v: "Measure the flange seat (OD / ID / depth). Spring toward the engine. Do not buy 18-3650 until that seat matches the marine 59078. A parts-store 180°/195° GM stat is the usual industrial/street piece — not locked until measured." },
+        { k: "18-3650", v: "Sierra 18-3650 / NAPA SME183650 was the marine 140° analog. Not in this housing. Not the lock." },
+        { k: "WINCO sheet", v: "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked." },
+        { k: "Housing kit", v: "Marine 861493A07 / Sierra 18-1910 is a boat housing. This engine already has a housing. Do not replace it just because it is empty." },
+        { k: "Not", v: "Not TDL 5216 (C/HOUSING on the 2011 heater-hose ticket). Not Sierra 18-1993 (V8). Not the Flex-a-lite fan 'adjustable thermostat' on 400-110." }
       ],
-      notes: "On the 9 Nov 2026 buy list with the fuel filter and valve-cover gasket. No receipt.",
+      notes: "Opened 9 Nov 2026. No thermostat in the housing. Passage open into the engine. 18-3650 not confirmed. Measure the seat.",
       evidence: ["IMG_5929"]
     },
     {
@@ -558,7 +557,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
+        { k: "Need now", v: "Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing is open — no stat in it, measure the seat. Filter stubs: two ~4 in of 3/8 (1 ft of H350A) plus Gates 28594 onto 5/16. Valve cover 8M0122491 is separate. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -1845,7 +1844,7 @@ window.ZO = {
         n: "08",
         title: "Engine and clutch",
         system: "engine",
-        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347, thermostat kit Sierra 18-3650 / SME183650. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
+        body: "GM Vortec 3.0L (181). First GM clutch returned. Kept AWS 04-065, flywheel bolts MTM 140052, fork 15592270, ball stud 15592268, pilot 3914000, T/O 614018. NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Timken seals 96138, 7412S, 21043, 6510. Fuel line H-176, choke kit 732-1153. Buck's 15530202 prints as IRRIGATION and is not identified. Flywheel faced 0.125 in, nine 5/16-18 holes. Gaskets OSCM04-GH and DET59565AS. Slave 37728. S10 5-speed was a candidate — no gearbox invoice. Need a new valve cover, not the head: 8M0122491. Buy list: Wix 33003, gasket Sierra 18-0347 / SME180347. Thermostat housing opened 9 Nov 2026: no stat. Wix 33003 barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. Filter stubs: two ~4 in of 3/8, cut from 1 ft of NAPA H350A, plus Gates 28594. Not bought yet.",
         evidence: ["IMG_5809", "IMG_5793", "IMG_5871", "IMG_5869"]
       },
       {
@@ -1853,7 +1852,7 @@ window.ZO = {
         n: "09",
         title: "Cooling",
         system: "cooling",
-        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Thermostat kit on the buy list is Sierra 18-3650 / NAPA SME183650, 140°F (18-3550 + cover gasket 18-2831). Closed-cooling 160° is Sierra 18-3649 / SME183649. WINCO industrial Z33001814 has no printed temp and no catalog cross. Not bought yet.",
+        body: "JEGS 555-51962 roadster radiator −12AN, 17×19-1/2 overall, core 13-1/2×18-5/8, inline filler, hose drain 071063700. Confirmation 3195204 listed 400-110 with an adjustable thermostat at $141.99. That line was deducted and is not in invoice 098828080208. A Flex-a-lite model 110 was later bought from Peyton Performance in Waxahachie. Their page listed it at $130.73. No receipt is in the folder. 111 / 105400 is a later 8-blade fan and was not bought. The underlined model 210 is the dual, 26-1/4 in wide, which does not fit this radiator. Aircraft Spruce AN833-12D, AN821-12D, AN924-12D in May 2009. Gates heater hose 28432 in June 2011 is 3/4 in. On 7 Nov 2026 the radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, 1-3/4 both ends × 16-1/2 in. Perfect match. Molded SKUs, 1-1/2 Vulco-Flex II, elbows, and the 1-1/2 × 1-3/4 step were failed research. Thermostat housing opened 9 Nov 2026: no thermostat, hollow into the engine. Sierra 18-3650 was a marine analog, not confirmed for this housing. Measure the flange seat before buying a stat.",
         evidence: ["IMG_5825", "IMG_5813"]
       },
       {

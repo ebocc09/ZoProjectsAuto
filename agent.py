@@ -188,8 +188,8 @@ TOPICS: list[dict] = [
             "NAPA 385 is a clutch repair kit ×2. V-belt 25-7417. Fuel line H-176 and choke kit 732-1153. "
             "Buck's line 15530202 is printed IRRIGATION and is not identified. "
             "Need a new valve cover, not the head: 8M0122491. "
-            "Buy list: Wix 33003, gasket Sierra 18-0347 / NAPA SME180347, "
-            "thermostat kit Sierra 18-3650 / NAPA SME183650. Not bought yet."
+            "Buy list: Wix 33003, gasket Sierra 18-0347 / NAPA SME180347. "
+            "Thermostat housing opened 9 Nov 2026: no stat, open into the engine. Not bought yet."
         ),
         "pills": ["Fuel filter", "Valve cover", "Clutch kit"],
     },
@@ -209,7 +209,7 @@ TOPICS: list[dict] = [
             "O'Reilly listing: https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003 "
             "NAPA Gold 3003 is the same filter. Metal version with hoses is Wix 33033. Gasoline only. "
             "Barbs are 3/8. The hard line is a bit smaller; H-176 catalogs as 5/16. "
-            "On the buy list with the cover gasket and thermostat kit. Not bought yet."
+            "On the buy list with the cover gasket. Not bought yet."
         ),
         "pills": ["Fuel hose", "Engine", "Valve cover"],
     },
@@ -266,7 +266,7 @@ TOPICS: list[dict] = [
             "NAPA SME180347, GM 153 and 181 CID. Mercury 27-52145 / 27-806452. "
             "Marine Engine Depot still lists authentic GM 14096154 for the same 181 cover. "
             "The 2010 eBasicPower set DET59565AS is the old 2.5/3.0L set, not this dedicated gasket. "
-            "Goes on with the new cover 8M0122491. On the buy list with Wix 33003 and thermostat kit 18-3650. Not bought yet."
+            "Goes on with the new cover 8M0122491. On the buy list with Wix 33003. Not bought yet."
         ),
         "pills": ["Valve cover", "Thermostat", "Engine"],
     },
@@ -278,20 +278,16 @@ TOPICS: list[dict] = [
         "evidence": "IMG_5929",
         "keys": [
             ("thermostat", 12), ("tstat", 10), ("t-stat", 10),
-            ("18-3650", 12), ("183650", 12), ("18-3550", 10), ("183550", 8),
-            ("59078", 10), ("z33001814", 8), ("z101488", 6),
-            ("861493", 10), ("18-1910", 10), ("181910", 8), ("18-70931", 8),
+            ("18-3650", 8), ("183650", 8), ("18-3550", 6), ("183550", 6),
+            ("59078", 6), ("z33001814", 8), ("z101488", 6),
+            ("861493", 6), ("18-1910", 6), ("open", 8),
         ],
         "reply": (
-            "Buy-list thermostat is the kit: Sierra 18-3650, NAPA SME183650, 140°F. "
-            "Includes 18-3550 thermostat and 18-2831 cover gasket. Mercury 59078T3 / 59078Q3. "
-            "Same NAPA small-engine line as the cover gasket SME180347. "
-            "Closed / fresh-water marine cooling uses the 160° Sierra 18-3649 / NAPA SME183649. "
-            "WINCO industrial Z33001814 has no printed temperature and no catalog cross to 18-3650. "
-            "140° is boat raw-water OEM. This car has a JEGS street radiator. Not bought yet. "
-            "Housing kit is Mercury 861493A07 / Sierra 18-1910 — cast housing, not a full hose assembly. "
-            "Marine pump hose 18-70931 is boat. Radiator hose is already 26502. Look at this housing first. "
-            "https://www.napaonline.com/en/p/SME183650"
+            "Read on the car 9 Nov 2026: housing opened, no thermostat, hollow straight into the engine. "
+            "That is a deleted stat, not a special open housing. Coolant flows all the time, so this JEGS "
+            "street radiator can run the engine cold. PSI industrial 3.0L is supposed to have a thermostat "
+            "between the water-outlet neck and the housing. Measure the flange seat before buying. "
+            "Sierra 18-3650 / 140° marine analog is not confirmed for this housing."
         ),
         "pills": ["Valve cover", "Radiator hose", "Engine"],
     },
@@ -370,8 +366,8 @@ TOPICS: list[dict] = [
             "The 2008 JEGS line 400-110 was deducted and is not in either box. "
             "Aircraft Spruce AN833-12D, AN821-12D elbow, AN924-12D nut in May 2009. Gates heater hose 28432 ×2 in June 2011 is the 3/4 in hose. "
             "The radiator-to-block hose burst. Official hose is Gates Green Stripe Vulco-Flex 26502, "
-            "1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat kit on the buy list is "
-            "Sierra 18-3650 / NAPA SME183650. Not bought yet."
+            "1-3/4 both ends × 16-1/2 in. Perfect match. Thermostat housing opened 9 Nov 2026: "
+            "no thermostat, open into the engine. 18-3650 is not the lock."
         ),
         "pills": ["Thermostat", "Engine", "AN fittings"],
     },
