@@ -317,7 +317,7 @@ const SKETCH = {
       ${callout(80, 320, 40, 360, "Fuel H-176 · choke 732-1153", "fuel-hardware", active)}
       ${callout(110, 270, 200, 360, sheetLabel("fuel-filter", "Wix 33003"), "fuel-filter", active)}
       ${callout(96, 248, 200, 220, sheetLabel("fuel-hose", "3/8 × ~4 in"), "fuel-hose", active)}
-      ${callout(122, 148, 40, 88, sheetLabel("carb", "floods · no idle"), "carb", active)}
+      ${callout(122, 148, 40, 88, sheetLabel("carb", "2× S&S · floods"), "carb", active)}
       <text class="title-note" x="24" y="400">Pilot 3914000 · T/O 614018 · belt 25-7417 · 15530202 printed IRRIGATION</text>
     `;
   },

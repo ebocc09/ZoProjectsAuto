@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T04:33:00.000000+00:00",
+  "updatedAt": "2026-11-10T04:38:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -38,7 +38,8 @@
         "Need a new valve cover, not the head. Cover analog is GM 181 / 3.0L 8M0122491. Check PCV / oil-fill before ordering. Not bought yet.",
         "Buy list. Not bought yet. Fuel filter Wix 33003. Valve cover gasket Sierra 18-0347 / NAPA SME180347. Thermostat kit Sierra 18-3650 / NAPA SME183650.",
         "Filter stubs: two ~4 in of 3/8, not a 2 ft pack. 1 ft of NAPA H350A off the reel, cut, plus Gates 28594. Not bought yet.",
-        "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read."
+        "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read.",
+        "Enzo: two S&S carbs, custom on the 181. Easy path: measure pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides."
       ]
     }
   },
@@ -78,21 +79,24 @@
     },
     "carb": {
       "notes": [
-        "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read. Do not order the S&S Super E needle from the folder print."
+        "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read. Do not order the S&S Super E needle from the folder print.",
+        "Enzo: two S&S carbs, custom on the 181. Folder Super E/G prints are these carbs. Easy path: pressure, then 11-2195 / 11-2465 both sides. Not bought."
       ],
-      "pn": "unread",
-      "name": "Carburetor",
+      "pn": "2× S&S Super E/G",
+      "name": "Carburetors",
       "status": "replace",
-      "sheet": "floods · no idle",
+      "sheet": "2× S&S · floods",
       "spec": {
-        "On sheet": "floods · no idle",
-        "This one": "Enzo 9 Nov 2026. Drives a few minutes, then fuel spills from the carburetor, the engine floods, idle will not hold, rpm drops unless you keep giving it throttle, then it dies. Tag not read.",
-        "Means": "The bowl is overfilling. Extra fuel dumps into the intake, so idle goes full rich and it stalls. Throttle adds air, so it will still pull until the overflow wins. Spilling out of the carb is the overflow, not a hose weeping on the way there.",
-        "Likely": "Float taking on fuel (holds a few minutes, then sinks). Needle and seat not sealing. Fuel pressure too high for the needle. A fuel pump is not on any ticket — Locost rear tank is often electric. Measure at the inlet before it floods. Carb needles usually want well under 7 psi. Not locked to a pump SKU.",
-        "Choke ticket": "NAPA 732-1153 choke kit, 30 Dec 2010, net $19.29. Application not printed. A stuck-closed choke makes it rich from the start. Spill after a few minutes of driving is still a bowl problem first.",
-        "Paper": "S&S Super E/G prints in the folder circled needle 11-2195 and seat 11-2465. Nothing on those pages says that carb is on this 181. Do not order them for this flood.",
-        "Do": "Stop running it flooded. Smell the dipstick — raw fuel in the oil from washing the walls. Count how many carbs. Read the tag. Key on, pump on, engine off: if it spills immediately the needle is already open or pressure is wild. If it only spills after it has been running, pull the lid and shake the float. Log it.",
-        "Not": "Not a locked Rochester / Mercarb / Weber number. Not the S&S Super E. Not Wix 33003 causing a spill out of the bowl."
+        "On sheet": "2× S&S · floods",
+        "This one": "Enzo 9 Nov 2026. Two S&S carbs, custom on the 181. Drives a few minutes, then fuel spills, idle dies unless you keep giving it throttle, then it shuts off. Look for E or G cast under S&S SUPER on each body. Super E is 1-7/8 in, Super G is 2-1/16 in.",
+        "Means": "Bowls overfilling. S&S Super E/G are Harley shorty carbs. They were built for a petcock, not a car pump. Extra fuel dumps into the intake so idle goes full rich. Throttle adds air until the overflow wins.",
+        "Easy": "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure at an inlet. Shop practice on Super E/G with a pump is about 1.5–2 psi. A Locost electric pump is usually more than that. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. If the pump is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804",
+        "Needle": "S&S 11-2195, already circled on the folder page. Fits Super E and G. Page $19.95. Need two. https://autoplicity.com/8595253-ss-cycle-float-needle",
+        "Seat": "S&S 11-2465 .160 in inlet seat, already circled. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/",
+        "Float": "S&S 11-2187. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
+        "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
+        "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
+        "Not": "Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
     },
     "valve-cover": {
@@ -692,6 +696,31 @@
           "Paper": "S&S Super E/G prints in the folder circled needle 11-2195 and seat 11-2465. Nothing on those pages says that carb is on this 181. Do not order them for this flood.",
           "Do": "Stop running it flooded. Smell the dipstick — raw fuel in the oil from washing the walls. Count how many carbs. Read the tag. Key on, pump on, engine off: if it spills immediately the needle is already open or pressure is wild. If it only spills after it has been running, pull the lid and shake the float. Log it.",
           "Not": "Not a locked Rochester / Mercarb / Weber number. Not the S&S Super E. Not Wix 33003 causing a spill out of the bowl."
+        }
+      }
+    },
+    {
+      "id": "n24",
+      "at": "2026-11-10T04:38:00.000000+00:00",
+      "system": "engine",
+      "part": "carb",
+      "text": "Enzo: two S&S carbs, custom on the 181. Harley Super E/G on a car pump. Easy path: keep them. Measure pressure, Holley 12-804 if high (two outlets, page $51.95, inlet limit 7 psi), then circled needle 11-2195 and seat 11-2465 both sides. Shake floats 11-2187. Do not rip the custom manifold for a Rochester. Look for E or G cast on each body.",
+      "patch": {
+        "pn": "2× S&S Super E/G",
+        "name": "Carburetors",
+        "status": "replace",
+        "sheet": "2× S&S · floods",
+        "spec": {
+          "On sheet": "2× S&S · floods",
+          "This one": "Enzo 9 Nov 2026. Two S&S carbs, custom on the 181. Drives a few minutes, then fuel spills, idle dies unless you keep giving it throttle, then it shuts off. Look for E or G cast under S&S SUPER on each body. Super E is 1-7/8 in, Super G is 2-1/16 in.",
+          "Means": "Bowls overfilling. S&S Super E/G are Harley shorty carbs. They were built for a petcock, not a car pump. Extra fuel dumps into the intake so idle goes full rich. Throttle adds air until the overflow wins.",
+          "Easy": "Keep them. Do not rip the custom manifold off for a Rochester. First: measure fuel pressure at an inlet. Shop practice on Super E/G with a pump is about 1.5–2 psi. A Locost electric pump is usually more than that. Holley 12-804 is 1–4 psi, two outlets (one per carb), page $51.95, preset 2.8 — turn it down. Inlet to that regulator is limited to 7 psi. If the pump is hotter, 12-804 is the wrong style. https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804",
+          "Needle": "S&S 11-2195, already circled on the folder page. Fits Super E and G. Page $19.95. Need two. https://autoplicity.com/8595253-ss-cycle-float-needle",
+          "Seat": "S&S 11-2465 .160 in inlet seat, already circled. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/",
+          "Float": "S&S 11-2187. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
+          "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
+          "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
+          "Not": "Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
         }
       }
     }

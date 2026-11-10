@@ -443,7 +443,7 @@ const CAT_PLACES = {
     { where: "Builder drawing", when: "IMG_5952", order: "No brand", item: "Voltage, water temp, oil pressure, gas, tach", price: "No price" },
   ],
   "ss-carb-notes": [
-    { where: "Printout, not a receipt", when: "11 Nov 2009", order: "S&S parts page", item: "Circled needle 11-2195 and seat 11-2465 only", price: "No price" },
+    { where: "Printout, now on the car", when: "11 Nov 2009 / 9 Nov 2026", order: "S&S parts page", item: "Circled needle 11-2195 and seat 11-2465. R SIDE. Enzo: two S&S carbs, custom on the 181.", price: "No price" },
   ],
   "horn-s10": [
     { where: "1988 S10 reference sheet", when: "Printed 13 Oct 2009", order: "IMG_5818", item: "Horn circuit diagram, not a horn purchase", price: "No price" },
@@ -517,9 +517,12 @@ const CAT_PLACES = {
     { where: "Speedway Motors", when: "4 May 2010", order: "E499097", item: "1/4 in aluminum fuel line 91011429-10 and cap 6175021", price: "$8.99 and $24.99" },
   ],
   carb: [
-    { where: "Read on the car", when: "9 Nov 2026", order: "floods · no idle", item: "After a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read. Enzo said carburetors — count them.", price: "No price" },
-    { where: "Burton Auto Supply, Trinity", when: "30 Dec 2010", order: "732-1153", item: "Choke kit on the fuel ticket. Application not printed. Not a carb purchase.", price: "net $19.29" },
-    { where: "Printout, not a receipt", when: "11 Nov 2009", order: "S&S 11-2195 / 11-2465", item: "Circled on the Super E/G page. Nothing there says that carb is on this 181. Do not order for this flood.", price: "No price" },
+    { where: "Read on the car", when: "9 Nov 2026", order: "2× S&S", item: "Two S&S carbs, custom on the 181. Floods after a few minutes, idle dies. Look for E or G cast on each body.", price: "No price" },
+    { where: "Holley", when: "9 Nov 2026", order: "12-804", item: "Easy first fix if pump pressure is high. 1–4 psi, two outlets, one per carb. Preset 2.8, turn down toward 1.5–2. Inlet limit 7 psi. Not bought.", price: "Page $51.95", url: "https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804", link: "Holley listing" },
+    { where: "S&S / Autoplicity", when: "9 Nov 2026", order: "11-2195", item: "Float needle, Super E and G. Circled on the folder page. Need two.", price: "Page $19.95", url: "https://autoplicity.com/8595253-ss-cycle-float-needle", link: "Autoplicity listing" },
+    { where: "S&S Cycle", when: "9 Nov 2026", order: "11-2465", item: ".160 in inlet seat, Super E and G. Circled on the folder page. Need two.", price: "Page $18.95", url: "https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/", link: "S&S listing" },
+    { where: "Aardvark Cycle", when: "9 Nov 2026", order: "11-2187", item: "S&S Super E/G float. Shake both. Replace if it sloshes.", price: "Page $26.95", url: "https://www.aardvarkcycle.com/store/sscycle-carb-parts.html", link: "Aardvark listing" },
+    { where: "Burton Auto Supply, Trinity", when: "30 Dec 2010", order: "732-1153", item: "Choke kit on the fuel ticket. Application not printed. Super E/G use an enrichment lever, not a choke.", price: "net $19.29" },
   ],
   "fuel-filter": [
     { where: "O'Reilly", when: "9 Nov 2026", order: "33003", item: "Buy list. Wix in-line fuel filter, 3/8 in both ends. Read on the car. Not bought.", price: "No receipt", url: "https://www.oreillyauto.com/detail/c/wix/wix-fuel-filter/wix0/33003", link: "O'Reilly listing" },

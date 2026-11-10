@@ -7,59 +7,55 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "After a few minutes of driving, fuel spills from the carburetor, the engine floods, idle will not hold unless you keep giving it throttle, then it dies.",
+      "Two S&S Super E/G carbs, custom on the 181. After a few minutes of driving they spill fuel, idle dies, then the engine shuts off.",
     why: [
       {
-        title: "The bowl is overfilling",
-        body: "Fuel coming out of the carb after it has been running is the overflow, not a hose weeping on the way there. Extra fuel dumps into the intake. Idle goes full rich and the engine stalls. Throttle adds air, so it will still pull until the overflow wins. That matches Enzo 9 Nov 2026: drives, then spills, then dies at idle."
+        title: "Harley carbs on a car pump",
+        body: "S&S Super E/G are shorty Harley carbs. They were built for a petcock. A Locost electric pump is usually more pressure than the needle can hold. Shop practice with a pump is about 1.5–2 psi. That delay — drives, then spills — is pressure overpowering the needle, or a float taking on fuel."
+      },
+      {
+        title: "Needle and seat — already circled",
+        body: "The folder Super E/G page circled needle 11-2195 and seat 11-2465. Those are the Super E and G pair. Need two of each. R SIDE on one print is the right carb."
       },
       {
         title: "Float taking on fuel",
-        body: "A brass float with a pinhole, or a foam float that has soaked, holds for a few minutes and then sinks. The needle stays open and the bowl dumps. That delay is the usual tell. Shake the float once the lid is off — if it sloshes, it is done."
+        body: "S&S float is 11-2187. Shake both. If it sloshes, it is done. S&S sheet: top of the float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed."
       },
       {
-        title: "Needle and seat not sealing",
-        body: "Dirt, a worn needle, or a bad seat lets fuel keep filling past the float. It can look fine until the fuel is warm. No needle/seat SKU is on a ticket. Do not order the S&S 11-2195 / 11-2465 circled on the Super E print — nothing on that page says that carb is on this 181."
-      },
-      {
-        title: "Fuel pressure too high",
-        body: "A fuel pump is not on any invoice. A Locost with a rear tank is often an electric pump. Carb needles usually want well under 7 psi. Too much pressure overpowers the float. Measure at the inlet while it is still running, before it floods. Do not lock a pump SKU until you read what is on the car."
-      },
-      {
-        title: "Choke stuck shut",
-        body: "Burton ticket 30 Dec 2010 bought choke kit 732-1153, net $19.29. Application not printed. A choke that stays closed makes it rich from the first second. Spill after a few minutes of driving is still a bowl problem first. Look at the flap once it is hot anyway."
+        title: "Do not rip the manifold off",
+        body: "A marine Rochester 2-barrel is the stock 181 carb. That needs the original intake. Custom dual S&S means that is not the easy fix. Keep these carbs and fix pressure plus needle/seat."
       }
     ],
     steps: [
       {
         id: "stop",
         title: "Stop running it flooded",
-        body: "Raw fuel washing the walls dilutes the oil. Smell the dipstick. If it smells like gasoline, change the oil before the next long run. Do not keep driving it in this state just to confirm the stall."
+        body: "Smell the dipstick. Raw fuel in the oil from washing the walls. Change it before the next long run."
       },
       {
-        id: "count",
-        title: "Count the carbs and read the tag",
-        body: "Enzo said carburetors, plural. Marine 181 is usually one 2-barrel. Dual would be a later fit. Write down how many, the brand, and any number stamped on the base or bowl. No carb SKU is on an invoice."
-      },
-      {
-        id: "pump",
-        title: "Key on, pump on, engine off",
-        body: "If fuel spills from the carb with the engine not running, the needle is already open or pressure is wild. If it only spills after a few minutes of running, that is the delayed float/seat path."
-      },
-      {
-        id: "float",
-        title: "Pull the lid and shake the float",
-        body: "If it sloshes or feels heavy, replace the float. If it is light and dry, look at the needle and seat. Do not order parts until the tag is read."
+        id: "eg",
+        title: "Read E or G on each body",
+        body: "Cast under S&S SUPER. Super E is 1-7/8 in, Super G is 2-1/16 in. Needle 11-2195 and seat 11-2465 fit both. Write which letter is on each."
       },
       {
         id: "pressure",
-        title: "Measure fuel pressure at the inlet",
-        body: "Tee a gauge at the carb inlet while it is still running, before the flood. Write the number. Carb needles usually want well under 7 psi. A pump is not on the tickets."
+        title: "Measure fuel pressure at an inlet",
+        body: "Tee a gauge while it is still running, before the flood. If it is more than about 2 psi, add a 1–4 psi regulator. Holley 12-804 has two outlets, one per carb, page $51.95. Preset 2.8 — turn it down. That regulator’s inlet is limited to 7 psi. If the pump is hotter, 12-804 is the wrong style."
+      },
+      {
+        id: "needle",
+        title: "Needle, seat, and floats — both carbs",
+        body: "11-2195 needle and 11-2465 seat, already circled. Two of each. Shake both 11-2187 floats. Do this even if the regulator fixes the spill — the needles have been overpowered."
+      },
+      {
+        id: "enrich",
+        title: "Enrichment lever down when hot",
+        body: "Super E/G have no choke. The fast-idle lever must be down after start. If it stays up, it stays rich. NAPA 732-1153 on the 2010 ticket is still unapplied."
       },
       {
         id: "log",
         title: "Write down what you found",
-        body: "How many carbs, the tag, whether it spilled with the engine off, whether the float sloshed, and the pressure reading. Put it in the note below so the next session starts from the car."
+        body: "E or G on each body, the pressure reading, whether the floats sloshed, and whether a regulator went on. Put it in the note below."
       }
     ],
     parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
