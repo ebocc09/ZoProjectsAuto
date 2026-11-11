@@ -1,2 +1,2 @@
 use <carb-clicker.scad>
-shaft();
+shaft_cut();
