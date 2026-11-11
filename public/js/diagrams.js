@@ -428,13 +428,15 @@ const SKETCH = {
       <text class="stamp" x="174" y="44">C</text>
       <text class="stamp" x="404" y="44">C</text>
 
-      <text class="title-note" x="24" y="230">A  Side of the body. Screw with a spring. This is IDLE MIXTURE. It screws into the carb.</text>
-      <text class="title-note" x="24" y="248">    It does not touch a throttle. Turn in until it softly stops. Then 1-1/4 turns out. Both carbs.</text>
-      <text class="title-note" x="24" y="268">B  Big red lever. This is the CHOKE (enrichment). Up to start. Down on both after it catches.</text>
-      <text class="title-note" x="24" y="288">C  Cable on top of each carb, tied by the red bar. That is the THROTTLE. Do not look inside.</text>
-      <text class="title-note" x="24" y="308">    Idle speed is a small screw next to that cable wheel. It stops the wheel, not a hanging arm.</text>
-      <text class="title-note" x="24" y="336">Do A and B on both carbs first. Same turns left and right. Regulator stays at 2 psi.</text>
-      <text class="title-note" x="24" y="356">Then start it, levers down, let it idle. 900–1100 is fine. If it spills, needles. If it dies clean, idle speed at C.</text>
+      <text class="title-note" x="24" y="226">A  SIDE spring screw = MIXTURE (fuel). 1-1/4 is THIS screw only. It will not make 3k or 6k rpm.</text>
+      <text class="title-note" x="24" y="244">    Engine off. In until it softly stops. Do not crank. Then 1-1/4 turns OUT. Both carbs.</text>
+      <text class="title-note" x="24" y="264">B  Big red lever = CHOKE. Cold: UP to start. Down on both after it runs. Do not cold-idle with B down.</text>
+      <text class="title-note" x="24" y="284">C  Small screw by the cable wheel = IDLE SPEED (rpm). Print is 1/2 turn from CATCH, not 1-1/4.</text>
+      <text class="title-note" x="24" y="302">    Engine off. Back C out until the red bar is slack. In until the wheel/bar just moves. That is catch.</text>
+      <text class="title-note" x="24" y="320">    Then only 1/2 turn more. Same both. 5-1/4 turns of C is why it held 3k.</text>
+      <text class="title-note" x="24" y="344">A pop then a stall in a few seconds is not warm-up. Idle only drops a little after it is actually hot.</text>
+      <text class="title-note" x="24" y="362">If it pops, A out 1/4 more both (richer). Do not open C to hide it. 900–1100 is warm idle. 2 psi.</text>
+      <text class="title-note" x="24" y="380">If it spills, needles. If it holds 2–3k with no pop, C is still too far open.</text>
     `;
   },
 
@@ -718,7 +720,7 @@ window.sketchSVG = function sketchSVG(systemId, activePart) {
   const useTune = systemId === "carb-tune" || (systemId === "engine" && activePart === "ss-carb-notes");
   const useFuel = !useTune && (systemId === "fuel" || (systemId === "engine" && fuelParts.includes(activePart)));
   const wide = systemId === "electrical";
-  BOX = { w: wide ? 720 : 640, h: wide ? 460 : 420 };
+  BOX = { w: wide ? 720 : 640, h: useTune ? 460 : wide ? 460 : 420 };
   const draw = useTune ? SKETCH.carbTune : useFuel ? SKETCH.fuel : SKETCH[systemId];
   const inner = draw
     ? draw(activePart)
