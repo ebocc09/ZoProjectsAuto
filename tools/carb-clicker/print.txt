@@ -1,0 +1,23 @@
+Carb click screwdriver — bench only. Do not leave it on the car.
+
+Print three STLs. PETG if you can (collar pawl). Else PLA.
+  shaft.stl   standing, bit-boss on the bed. 5 walls.
+  handle.stl  flat, wings on the bed. 5 walls.
+  collar.stl  standing, pointer up.
+
+Hardware
+  1/4 in hex bit — slotted 4–5 mm for these S&S screws, or PH1
+  M3×12 and an M3 nut (handle to shaft)
+  Optional M3×6 set screw to pinch the bit
+
+Use
+  Seat the screw softly. Hold the collar. Turn the numbered butterfly.
+  Each click is one step. 360 degrees, no stop.
+
+  12 clicks = 1 turn ≈ 0.8 mm
+   3 clicks = 1/4 turn
+   6 clicks = 1/2 turn
+  15 clicks = 1-1/4
+  21 clicks = 1-3/4   ← current mixture on both carbs
+
+  Same click count on left and right. That is the whole point.

@@ -65,7 +65,7 @@ const ZO_PROJECTS = [
       {
         id: "tune",
         title: "Tune both carbs the same",
-        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, and held at 1-3/4 with the choke down. Leave A at 1-3/4. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k. Warm idle is 900–1100. Regulator 2 psi. If it spills, needles."
+        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, and held at 1-3/4 with the choke down. Leave A at 1-3/4. Click screwdriver is in tools/carb-clicker — 21 clicks from the seat is 1-3/4 on both. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k. Warm idle is 900–1100. Regulator 2 psi. If it spills, needles."
       },
       {
         id: "gasket-first",
