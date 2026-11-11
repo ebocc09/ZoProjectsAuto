@@ -65,7 +65,7 @@ const ZO_PROJECTS = [
       {
         id: "tune",
         title: "Tune both carbs the same",
-        body: "Current screws are not the print baseline — they were tweaked earlier. Overheat back then was no cooling fan. That fan is on now. Do not mix it in. Reset BOTH carbs to IMG_5936 / 5937: lightly seat mixture, then 1-1/4 turns out. Idle speed in until it catches, then 1/2 turn more. Accel pump 2 turns out. Same turns on left and right. Enrichment up to start, down on both once it catches. Regulator stays at 2 psi. Let it idle — do not blip. 900–1100 rpm is idle. If it spills, stop — needles next. If it dies clean, bump idle speed the same on both."
+        body: "Look at the photos. There is no hanging throttle arm. Throttle is the cables and the red bar on top. A is the spring screw on the SIDE of each body — idle mixture. Screw it in until it softly stops. Do not crank it. Then 1-1/4 turns out. Both carbs. B is the big red lever — choke. Up to start, down on both after it catches. C is idle speed, a small screw next to the cable wheel on TOP. Do A and B first. Regulator 2 psi. Let it idle. 900–1100 is fine. If it spills, needles. If it dies clean, then C."
       },
       {
         id: "log",
@@ -74,6 +74,11 @@ const ZO_PROJECTS = [
       }
     ],
     schematic: ["carb-tune", "fuel"],
+    photos: [
+      { src: "img/carb-now/both.jpg", cap: "Both carbs. Red bar on top is the throttle for both." },
+      { src: "img/carb-now/right.jpg", cap: "One carb. Big red lever is the choke. Spring screw on the side is mixture." },
+      { src: "img/carb-now/left.jpg", cap: "Other carb. Same parts. Do the same turns on this one." }
+    ],
     parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
     evidence: ["IMG_5937", "IMG_5949", "IMG_5877"]
   },

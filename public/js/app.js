@@ -537,6 +537,14 @@ function renderProject(id) {
   return `
     <article class="project">
       <div class="badge watch">Open · ${esc(ZO.systems.find((s) => s.id === job.system)?.name || "Project")}</div>
+      ${Array.isArray(job.photos) && job.photos.length
+        ? `<div class="proj-photos">${job.photos
+            .map(
+              (ph) =>
+                `<figure><img src="${esc(ph.src)}" alt="${esc(ph.cap || "")}" /><figcaption>${esc(ph.cap || "")}</figcaption></figure>`
+            )
+            .join("")}</div>`
+        : ""}
       ${(Array.isArray(job.schematic) ? job.schematic : job.schematic ? [job.schematic] : [])
         .map((sid) => `<div class="proj-schematic">${window.sketchSVG(sid)}</div>`)
         .join("")}

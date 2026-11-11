@@ -400,38 +400,41 @@ const SKETCH = {
   },
 
   carbTune(active) {
-    const one = (x, title, tag) => `
+    const carb = (x, name) => `
       <g class="hot ${onCls("carb", active)}" data-part="carb">
-        <rect class="body" x="${x}" y="88" width="150" height="86" rx="6" />
-        <rect class="cover" x="${x + 46}" y="72" width="58" height="18" rx="3" />
-        <rect class="tank" x="${x + 18}" y="174" width="114" height="52" rx="6" />
-        <text class="call" x="${x + 75}" y="128" text-anchor="middle">${title}</text>
-        <text class="call" x="${x + 75}" y="148" text-anchor="middle">${tag}</text>
-        <text class="call" x="${x + 75}" y="204" text-anchor="middle">#7 inlet</text>
+        <rect class="body" x="${x}" y="92" width="130" height="78" rx="6" />
+        <rect class="cover" x="${x + 38}" y="78" width="54" height="16" rx="3" />
+        <rect class="tank" x="${x + 16}" y="168" width="98" height="36" rx="5" />
+        <path class="hose" d="M${x + 64} 78 L${x + 64} 48" />
+        <polygon class="lever" points="${x + 118},108 ${x + 148},96 ${x + 148},118 ${x + 118},128" />
+        <circle class="mix" cx="${x + 18}" cy="138" r="7" />
+        <text class="call" x="${x + 65}" y="132" text-anchor="middle">${name}</text>
+        <text class="call" x="${x + 65}" y="190" text-anchor="middle">bowl</text>
       </g>
-      <circle class="pin" cx="${x + 118}" cy="80" r="4" />
-      <text class="stamp" x="${x + 132}" y="76">1</text>
-      <circle class="pin" cx="${x + 12}" cy="140" r="4" />
-      <text class="stamp" x="${x - 6}" y="144">2</text>
-      <circle class="pin" cx="${x + 138}" cy="100" r="4" />
-      <text class="stamp" x="${x + 152}" y="104">3</text>
-      <circle class="pin" cx="${x + 28}" cy="96" r="4" />
-      <text class="stamp" x="${x + 14}" y="92">4</text>
     `;
     return `
-      <text class="title-note" x="24" y="28">Two S&amp;S Super E/G — same turns on both carbs</text>
-      <text class="title-note" x="24" y="46">Numbers are IMG_5936 / 5937. R SIDE on the print is the right carb.</text>
-      ${one(70, "CARB L", "left")}
-      ${one(360, "CARB R", "R SIDE")}
-      <path class="hose" d="M188 200 L320 200 L360 200" />
-      <circle class="tube" cx="320" cy="200" r="8" />
-      <text class="call" x="320" y="236" text-anchor="middle">TEE · 2 psi</text>
-      <text class="title-note" x="24" y="268">1 Idle speed — 1/2 turn past where it catches. Same on both so they open together.</text>
-      <text class="title-note" x="24" y="288">2 Idle mixture — lightly seat, then 1-1/4 turns out. Both carbs.</text>
-      <text class="title-note" x="24" y="308">3 Accelerator pump — 2 turns out. Both carbs.</text>
-      <text class="title-note" x="24" y="328">4 Enrichment lever — up to start, down on both once it catches.</text>
-      <text class="title-note" x="24" y="356">Screws were tweaked. Reset both to these numbers first. Old overheat was no fan — not this.</text>
-      <text class="title-note" x="24" y="376">Let it idle. Do not blip. 900–1100 rpm is idle. If it spills, needles. If it dies clean, bump speed both sides.</text>
+      <text class="title-note" x="24" y="24">From Enzo’s photos 10 Nov 2026 — there is no hanging throttle arm</text>
+      <text class="title-note" x="24" y="42">Do not look inside. Throttle is the cables and the red bar on top.</text>
+
+      <rect class="lever" x="96" y="54" width="360" height="10" rx="3" />
+      <text class="call" x="470" y="64">red bar = throttle</text>
+      ${carb(110, "CARB L")}
+      ${carb(340, "CARB R")}
+
+      <text class="stamp" x="78" y="142">A</text>
+      <text class="stamp" x="308" y="142">A</text>
+      <text class="stamp" x="262" y="118">B</text>
+      <text class="stamp" x="492" y="118">B</text>
+      <text class="stamp" x="174" y="44">C</text>
+      <text class="stamp" x="404" y="44">C</text>
+
+      <text class="title-note" x="24" y="230">A  Side of the body. Screw with a spring. This is IDLE MIXTURE. It screws into the carb.</text>
+      <text class="title-note" x="24" y="248">    It does not touch a throttle. Turn in until it softly stops. Then 1-1/4 turns out. Both carbs.</text>
+      <text class="title-note" x="24" y="268">B  Big red lever. This is the CHOKE (enrichment). Up to start. Down on both after it catches.</text>
+      <text class="title-note" x="24" y="288">C  Cable on top of each carb, tied by the red bar. That is the THROTTLE. Do not look inside.</text>
+      <text class="title-note" x="24" y="308">    Idle speed is a small screw next to that cable wheel. It stops the wheel, not a hanging arm.</text>
+      <text class="title-note" x="24" y="336">Do A and B on both carbs first. Same turns left and right. Regulator stays at 2 psi.</text>
+      <text class="title-note" x="24" y="356">Then start it, levers down, let it idle. 900–1100 is fine. If it spills, needles. If it dies clean, idle speed at C.</text>
     `;
   },
 

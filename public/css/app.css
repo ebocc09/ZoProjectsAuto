@@ -590,6 +590,20 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
 .sketch-map .block-ghost { fill: none; stroke: #6a7370; stroke-dasharray: 4 3; }
 .sketch-map .tank { fill: rgba(47,106,72,0.22); stroke: #8fd0a4; }
 .sketch-map .reg { fill: rgba(196,90,42,0.35); stroke: #e07a4a; }
+.sketch-map .lever { fill: #c45a2a; stroke: #e07a4a; }
+.sketch-map .mix { fill: rgba(217,207,184,0.35); stroke: #d9cfb8; }
+.proj-photos {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;
+  margin: 0 0 12px;
+}
+.proj-photos figure {
+  margin: 0; border: 1px solid var(--line); border-radius: 10px;
+  overflow: hidden; background: #141914;
+}
+.proj-photos img { display: block; width: 100%; height: 140px; object-fit: cover; }
+.proj-photos figcaption {
+  padding: 6px 8px; font-size: 11px; color: var(--mute); line-height: 1.35;
+}
 .sketch-map .arrow-head { fill: #d9cfb8; stroke: none; }
 .proj-schematic {
   margin: 4px 0 12px; border: 1px solid var(--line); border-radius: 12px;
@@ -730,6 +744,8 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
 }
 
 @media (max-width: 900px) {
+  .proj-photos { grid-template-columns: 1fr; }
+  .proj-photos img { height: 180px; }
   html, body, .app {
     height: 100%;
     height: 100dvh;
