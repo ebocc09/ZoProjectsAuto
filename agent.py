@@ -217,7 +217,9 @@ TOPICS: list[dict] = [
             "now (electric off). Needles want about 1.5–2 psi; a typical mechanical pump is 4–7. "
             "Easy path: keep them. Running pressure, then Holley 12-804 if high (inlet limit 7 psi), "
             "then circled 11-2195 needle, 11-2465 seat, and 50-8009 o-ring — two of each. "
-            "Shake floats 11-2187. Super E/G use an enrichment lever, not a choke."
+            "Shake floats 11-2187. Super E/G use an enrichment lever, not a choke. "
+            "Two carbs — same turns on both. Print baseline: mixture 1-1/4 out, idle speed 1/2 turn from catch, accel 2 turns out. "
+            "Enrichment down on both after start. 900–1100 rpm is idle. Do not blip."
         ),
         "pills": ["Fuel filter", "Engine", "Valve cover"],
     },

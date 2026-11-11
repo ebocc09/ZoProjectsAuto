@@ -399,6 +399,42 @@ const SKETCH = {
     `;
   },
 
+  carbTune(active) {
+    const one = (x, title, tag) => `
+      <g class="hot ${onCls("carb", active)}" data-part="carb">
+        <rect class="body" x="${x}" y="88" width="150" height="86" rx="6" />
+        <rect class="cover" x="${x + 46}" y="72" width="58" height="18" rx="3" />
+        <rect class="tank" x="${x + 18}" y="174" width="114" height="52" rx="6" />
+        <text class="call" x="${x + 75}" y="128" text-anchor="middle">${title}</text>
+        <text class="call" x="${x + 75}" y="148" text-anchor="middle">${tag}</text>
+        <text class="call" x="${x + 75}" y="204" text-anchor="middle">#7 inlet</text>
+      </g>
+      <circle class="pin" cx="${x + 118}" cy="80" r="4" />
+      <text class="stamp" x="${x + 132}" y="76">1</text>
+      <circle class="pin" cx="${x + 12}" cy="140" r="4" />
+      <text class="stamp" x="${x - 6}" y="144">2</text>
+      <circle class="pin" cx="${x + 138}" cy="100" r="4" />
+      <text class="stamp" x="${x + 152}" y="104">3</text>
+      <circle class="pin" cx="${x + 28}" cy="96" r="4" />
+      <text class="stamp" x="${x + 14}" y="92">4</text>
+    `;
+    return `
+      <text class="title-note" x="24" y="28">Two S&amp;S Super E/G — same turns on both carbs</text>
+      <text class="title-note" x="24" y="46">Numbers are IMG_5936 / 5937. R SIDE on the print is the right carb.</text>
+      ${one(70, "CARB L", "left")}
+      ${one(360, "CARB R", "R SIDE")}
+      <path class="hose" d="M188 200 L320 200 L360 200" />
+      <circle class="tube" cx="320" cy="200" r="8" />
+      <text class="call" x="320" y="236" text-anchor="middle">TEE · 2 psi</text>
+      <text class="title-note" x="24" y="268">1 Idle speed — 1/2 turn past where it catches. Same on both so they open together.</text>
+      <text class="title-note" x="24" y="288">2 Idle mixture — lightly seat, then 1-1/4 turns out. Both carbs.</text>
+      <text class="title-note" x="24" y="308">3 Accelerator pump — 2 turns out. Both carbs.</text>
+      <text class="title-note" x="24" y="328">4 Enrichment lever — up to start, down on both once it catches.</text>
+      <text class="title-note" x="24" y="356">Let it idle. Do not blip. 900–1100 rpm is idle on these. If it spills, stop — needles next.</text>
+      <text class="title-note" x="24" y="376">If it dies clean, bump idle speed the same on both screws. Regulator stays at 2 psi.</text>
+    `;
+  },
+
   cooling(active) {
     return `
       <g class="hot ${onCls("jegs-rad", active)}" data-part="jegs-rad">
@@ -676,10 +712,11 @@ const SKETCH = {
 
 window.sketchSVG = function sketchSVG(systemId, activePart) {
   const fuelParts = ["carb", "fuel-filter", "fuel-hose", "fuel-hardware"];
-  const useFuel = systemId === "fuel" || (systemId === "engine" && fuelParts.includes(activePart));
+  const useTune = systemId === "carb-tune" || (systemId === "engine" && activePart === "ss-carb-notes");
+  const useFuel = !useTune && (systemId === "fuel" || (systemId === "engine" && fuelParts.includes(activePart)));
   const wide = systemId === "electrical";
   BOX = { w: wide ? 720 : 640, h: wide ? 460 : 420 };
-  const draw = useFuel ? SKETCH.fuel : SKETCH[systemId];
+  const draw = useTune ? SKETCH.carbTune : useFuel ? SKETCH.fuel : SKETCH[systemId];
   const inner = draw
     ? draw(activePart)
     : `<text x="320" y="200" text-anchor="middle" class="call">No sketch for this system yet</text>`;

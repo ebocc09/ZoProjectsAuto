@@ -445,7 +445,8 @@ const CAT_PLACES = {
     { where: "Builder drawing", when: "IMG_5952", order: "No brand", item: "Voltage, water temp, oil pressure, gas, tach", price: "No price" },
   ],
   "ss-carb-notes": [
-    { where: "Printout IMG_5937", when: "11 Nov 2009 / re-read 10 Nov 2026", order: "R SIDE page", item: "Labels #7 Fuel Inlet (brass barb on the bowl), #6 Overflow, #8 Bowl Vent, #9 Bowl Plug.", price: "No price" },
+    { where: "Printout IMG_5936", when: "11 Nov 2009 / re-read 10 Nov 2026", order: "screw map", item: "1 Idle Speed Screw. 2 Idle Mixture Screw. 3 Accelerator Pump Adjustment Screw. 4 Enrichment Device. Two carbs — same turns on both.", price: "No price" },
+    { where: "Printout IMG_5937", when: "11 Nov 2009 / re-read 10 Nov 2026", order: "R SIDE page", item: "Labels #7 Fuel Inlet (brass barb on the bowl), #6 Overflow, #8 Bowl Vent, #9 Bowl Plug. Baseline: mixture 1-1/4 out, idle speed 1/2 turn from catch, accel 2 turns out.", price: "No price" },
     { where: "Printout IMG_5949", when: "11 Nov 2009 / 9 Nov 2026", order: "S&S parts page", item: "Circled needle 11-2195, seat 11-2465, o-ring 50-8009. Float 11-2187. Fuel line 19-0475.", price: "No price" },
   ],
   "horn-s10": [
@@ -523,6 +524,7 @@ const CAT_PLACES = {
     { where: "Read on the car", when: "9 Nov 2026", order: "2× S&S", item: "Two S&S carbs, custom on the 181. Floods after a few minutes, idle dies. Look for E or G cast on each body.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "mechanical pump", item: "Previous owner took the electric pump off. Engine-driven mechanical pump, not a hand lever. No SKU on a ticket.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "one line, then tee", item: "One fuel line splits into two right at the carbs. Regulator goes on that single line after the filter, before the tee.", price: "No price" },
+    { where: "Read on the car", when: "10 Nov 2026", order: "tune both", item: "Car starts. Regulator at 2 psi. Tune both carbs the same: mixture 1-1/4 out, idle speed 1/2 turn from catch, accel 2 turns out. Enrichment down after start. 900–1100 rpm is idle.", price: "No price" },
     { where: "Folder print IMG_5937", when: "10 Nov 2026", order: "#7 Fuel Inlet", item: "Brass barb on the float bowl. Hose clamps on. Do not open the carb to measure pressure.", price: "No price" },
     { where: "Holley", when: "9 Nov 2026", order: "12-804", item: "Easy first fix if running pressure is high. 1–4 psi, two outlets, one per carb. Preset 2.8, turn down toward 1.5–2. Inlet limit 7 psi. Mechanical carb pumps are usually in that band. Not bought.", price: "Page $51.95", url: "https://www.holley.com/products/fuel_systems/fuel_pumps_regulators_and_filters/regulators/carbureted_regulators/parts/12-804", link: "Holley listing" },
     { where: "S&S / Autoplicity", when: "9 Nov 2026", order: "11-2195", item: "Float needle, Super E and G. Circled on IMG_5949. Need two.", price: "Page $19.95", url: "https://autoplicity.com/8595253-ss-cycle-float-needle", link: "Autoplicity listing" },

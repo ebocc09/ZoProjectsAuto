@@ -595,7 +595,7 @@ svg.car { width: min(980px, 96%); height: auto; overflow: visible; }
   margin: 4px 0 12px; border: 1px solid var(--line); border-radius: 12px;
   overflow: hidden; background: #141914;
 }
-.proj-schematic svg { display: block; width: 100%; height: auto; max-height: 360px; }
+.proj-schematic svg { display: block; width: 100%; height: auto; max-height: 380px; }
 .sketch-map .wire { fill: none; stroke-width: 1.35; }
 .sketch-map .wire-ign { stroke: #8fd0a4; }
 .sketch-map .wire-bat { stroke: #e0a85a; }

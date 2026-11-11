@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T17:54:00.000000+00:00",
+  "updatedAt": "2026-11-11T02:38:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -41,7 +41,8 @@
         "Filter stubs: two ~4 in of 3/8, not a 2 ft pack. 1 ft of NAPA H350A off the reel, cut, plus Gates 28594. Not bought yet.",
         "Enzo 9 Nov 2026: after a few minutes of driving, fuel spills from the carburetor, idle dies unless you keep giving it throttle, then it shuts off. Tag not read.",
         "Enzo: two S&S carbs, custom on the 181. Easy path: measure pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides.",
-        "Enzo 10 Nov 2026: previous owner took the electric pump off. Mechanical (engine-driven) pump now, not a hand lever."
+        "Enzo 10 Nov 2026: previous owner took the electric pump off. Mechanical (engine-driven) pump now, not a hand lever.",
+        "Enzo 10 Nov 2026: car starts. Regulator at 2 psi, leak fixed. Tune both Super E/G the same. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from catch, accel 2 turns out. Enrichment down on both after start. 900–1100 rpm is idle. Do not blip."
       ]
     }
   },
@@ -102,7 +103,8 @@
         "Seat": "S&S 11-2465 .160 in inlet seat, already circled on IMG_5949. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/",
         "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
         "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
-        "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
+        "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. Two carbs — both levers down after start. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
+        "Tune": "Two carbs. Same turns on both. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from where it catches, accelerator pump 2 turns out. Enrichment up to start, down on both once it catches. Regulator 2 psi. Let it idle — do not blip. 900–1100 rpm is idle on these. If it spills, stop — needles 11-2195 / seats 11-2465 both sides. If it dies clean, bump idle speed the same on both screws.",
         "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
         "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
@@ -782,7 +784,8 @@
           "Seat": "S&S 11-2465 .160 in inlet seat, already circled on IMG_5949. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/",
           "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
           "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
-          "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
+          "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. Two carbs — both levers down after start. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
+          "Tune": "Two carbs. Same turns on both. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from where it catches, accelerator pump 2 turns out. Enrichment up to start, down on both once it catches. Regulator 2 psi. Let it idle — do not blip. 900–1100 rpm is idle on these. If it spills, stop — needles 11-2195 / seats 11-2465 both sides. If it dies clean, bump idle speed the same on both screws.",
           "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
           "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
         }
@@ -815,6 +818,19 @@
           "Stat": "Still none in the housing. The 18-3650 kit thermostat is not locked to this seat. Housing can go back on empty. Coolant stays unrestricted until a thermostat sits in that ledge.",
           "WINCO sheet": "PSI Z33001814 is on the WINCO GM 3.0L sheet. Opening temp is not printed. One reseller titles Z33001814 as a belt, so that number is not locked.",
           "Not": "Not 18-1910 unless the seal face is still pitted through. Not TDL 5216. Not Sierra 18-1993 (V8). Not Chevy II 3877660 (V8 water neck). Not the Flex-a-lite fan thermostat on 400-110."
+        }
+      }
+    },
+    {
+      "id": "n28",
+      "at": "2026-11-11T02:38:00.000000+00:00",
+      "system": "engine",
+      "part": "carb",
+      "text": "Enzo 10 Nov 2026: car starts. Regulator at 2 psi, leak fixed. Two carbs — tune both the same. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from catch, accelerator 2 turns out. Enrichment down on both after start. Let it idle. 900–1100 rpm is idle. Do not blip. If it spills, needles next.",
+      "patch": {
+        "spec": {
+          "Tune": "Two carbs. Same turns on both. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from where it catches, accelerator pump 2 turns out. Enrichment up to start, down on both once it catches. Regulator 2 psi. Let it idle — do not blip. 900–1100 rpm is idle on these. If it spills, stop — needles 11-2195 / seats 11-2465 both sides. If it dies clean, bump idle speed the same on both screws.",
+          "Enrichment": "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. Two carbs — both levers down after start. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs."
         }
       }
     }

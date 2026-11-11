@@ -537,7 +537,9 @@ function renderProject(id) {
   return `
     <article class="project">
       <div class="badge watch">Open · ${esc(ZO.systems.find((s) => s.id === job.system)?.name || "Project")}</div>
-      ${job.schematic ? `<div class="proj-schematic">${window.sketchSVG(job.schematic)}</div>` : ""}
+      ${(Array.isArray(job.schematic) ? job.schematic : job.schematic ? [job.schematic] : [])
+        .map((sid) => `<div class="proj-schematic">${window.sketchSVG(sid)}</div>`)
+        .join("")}
       <h2>Why a sit does this</h2>
       <ol class="why-list">
         ${job.why

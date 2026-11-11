@@ -60,7 +60,12 @@ const ZO_PROJECTS = [
       {
         id: "enrich",
         title: "Enrichment lever down when hot",
-        body: "Super E/G have no choke. The fast-idle lever must be down after start. If it stays up, it stays rich. NAPA 732-1153 on the 2010 ticket is still unapplied."
+        body: "Super E/G have no choke. The fast-idle lever must be down after start. If it stays up, it stays rich. NAPA 732-1153 on the 2010 ticket is still unapplied. Two carbs — both levers down."
+      },
+      {
+        id: "tune",
+        title: "Tune both carbs the same",
+        body: "Two carbs. Same turns on both. IMG_5936 / 5937 baseline: idle mixture 1-1/4 turns out, idle speed 1/2 turn from where it catches, accelerator pump 2 turns out. Enrichment up to start, down on both once it catches. Regulator stays at 2 psi. Let it idle — do not blip. 900–1100 rpm is idle on these. If fuel spills, stop and do the needles. If it dies clean, bump idle speed the same on both screws."
       },
       {
         id: "log",
@@ -68,7 +73,7 @@ const ZO_PROJECTS = [
         body: "E or G on each body, the running pressure reading, whether the floats sloshed, and whether a regulator went on. Put it in the note below."
       }
     ],
-    schematic: "fuel",
+    schematic: ["carb-tune", "fuel"],
     parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
     evidence: ["IMG_5937", "IMG_5949", "IMG_5877"]
   },
