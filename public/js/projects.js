@@ -65,7 +65,7 @@ const ZO_PROJECTS = [
       {
         id: "tune",
         title: "Tune both carbs the same",
-        body: "Two carbs. Same turns on both. IMG_5936 / 5937 baseline: idle mixture 1-1/4 turns out, idle speed 1/2 turn from where it catches, accelerator pump 2 turns out. Enrichment up to start, down on both once it catches. Regulator stays at 2 psi. Let it idle — do not blip. 900–1100 rpm is idle on these. If fuel spills, stop and do the needles. If it dies clean, bump idle speed the same on both screws."
+        body: "Current screws are not the print baseline — they were tweaked earlier. Overheat back then was no cooling fan. That fan is on now. Do not mix it in. Reset BOTH carbs to IMG_5936 / 5937: lightly seat mixture, then 1-1/4 turns out. Idle speed in until it catches, then 1/2 turn more. Accel pump 2 turns out. Same turns on left and right. Enrichment up to start, down on both once it catches. Regulator stays at 2 psi. Let it idle — do not blip. 900–1100 rpm is idle. If it spills, stop — needles next. If it dies clean, bump idle speed the same on both."
       },
       {
         id: "log",

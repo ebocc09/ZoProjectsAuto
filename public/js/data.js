@@ -692,7 +692,7 @@ window.ZO = {
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Super E/G have no conventional choke. Fast-idle / enrichment lever. If that lever is up while hot, it stays rich. Two carbs — both levers down after start. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs." },
-        { k: "Tune", v: "Two carbs. Same turns on both. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from where it catches, accelerator pump 2 turns out. Enrichment up to start, down on both once it catches. Regulator 2 psi. Let it idle — do not blip. 900–1100 rpm is idle on these. If it spills, stop — needles 11-2195 / seats 11-2465 both sides. If it dies clean, bump idle speed the same on both screws." },
+        { k: "Tune", v: "Enzo 10 Nov 2026: current screws are not the print baseline — tweaked earlier. Overheat then was no fan; fan is on now, not this idle. Reset BOTH carbs to IMG_5936 / 5937: mixture 1-1/4 turns out, idle speed 1/2 turn from catch, accel 2 turns out. Same on left and right. Enrichment down on both after start. Regulator 2 psi. Let it idle — do not blip. 900–1100 rpm is idle. If it spills, needles 11-2195 / seats 11-2465 both sides. If it dies clean, bump idle speed the same on both." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],
@@ -1077,7 +1077,7 @@ window.ZO = {
         { k: "IMG_5946", v: "Exploded body. Fuel inlet fitting is item 37 into the bowl. Fuel line with 90° bend is item 50." },
         { k: "Circled on IMG_5949", v: "Needle 11-2195. Seat 11-2465. Seat/bowl plug o-ring 50-8009. Float on the list is 11-2187. Fuel line 19-0475. Hose clamp 50-8002." },
         { k: "Mark", v: "“R SIDE” handwritten on IMG_5937 — right carb of the pair." },
-        { k: "Tune both", v: "Same baseline on left and right. Mixture 1-1/4 out, idle speed 1/2 turn from catch, accel 2 turns out. Enrichment down on both after start. Do not blip. 900–1100 rpm is idle." }
+        { k: "Tune both", v: "Screws were tweaked off this baseline. Reset both carbs first. Mixture 1-1/4 out, idle speed 1/2 turn from catch, accel 2 turns out. Enrichment down on both after start. Do not blip. 900–1100 rpm is idle. Old overheat was no fan — not this job." }
       ],
       notes: "Re-read 10 Nov 2026. Paper labels Fuel Inlet as #7. Do not open the carb to measure pressure. Tee into the hose on that barb.",
       evidence: ["IMG_5936", "IMG_5937", "IMG_5938", "IMG_5946", "IMG_5947", "IMG_5948", "IMG_5949"]

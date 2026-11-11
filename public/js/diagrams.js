@@ -430,8 +430,8 @@ const SKETCH = {
       <text class="title-note" x="24" y="288">2 Idle mixture — lightly seat, then 1-1/4 turns out. Both carbs.</text>
       <text class="title-note" x="24" y="308">3 Accelerator pump — 2 turns out. Both carbs.</text>
       <text class="title-note" x="24" y="328">4 Enrichment lever — up to start, down on both once it catches.</text>
-      <text class="title-note" x="24" y="356">Let it idle. Do not blip. 900–1100 rpm is idle on these. If it spills, stop — needles next.</text>
-      <text class="title-note" x="24" y="376">If it dies clean, bump idle speed the same on both screws. Regulator stays at 2 psi.</text>
+      <text class="title-note" x="24" y="356">Screws were tweaked. Reset both to these numbers first. Old overheat was no fan — not this.</text>
+      <text class="title-note" x="24" y="376">Let it idle. Do not blip. 900–1100 rpm is idle. If it spills, needles. If it dies clean, bump speed both sides.</text>
     `;
   },
 
