@@ -76,26 +76,24 @@ def compose(photo, lines):
 
 NOTES = [
     ("A", YELLOW, "MIXTURE  (fuel)", [
-        "Screw with a SPRING on the",
-        "SIDE of the carb body.",
+        "Spring screw on the SIDE.",
+        "In = leaner. Out = richer.",
+        "This car held at 1-3/4 out.",
+        "Leave it there for now.",
         "Not a hex. Not the zip-tie.",
-        "Not rpm. Will not make 3k.",
-        "In until it softly stops.",
-        "Then 1-1/4 turns OUT.",
     ]),
     ("B", ORANGE, "CHOKE", [
         "The big red LEVER on",
         "the carb. Not the long bar.",
-        "Cold: UP to start.",
-        "Down after it runs.",
-        "Do not cold-idle with B down.",
+        "Up to start.",
+        "Down once it is running.",
     ]),
     ("C", CYAN, "IDLE SPEED  (rpm)", [
-        "Small screw on TOP, by the",
-        "cable, where the carb meets",
-        "the red bar.",
-        "1/2 turn from catch.",
-        "5-1/4 turns here held 3k.",
+        "Small screw on TOP by the",
+        "cable. Catch = red bar twitches.",
+        "Then 1/2 turn more.",
+        "Last hold was about 1.5k.",
+        "Lower it after the gasket.",
     ]),
     ("=", RED, "RED BAR  = throttle", [
         "The long rod tying both",

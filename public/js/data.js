@@ -618,7 +618,8 @@ window.ZO = {
         { k: "OEM", v: "Mercury 27-52145, 27-806452, 27-851040, 27-34041. OMC 913277 / 912981 / 3852693. Volvo Penta 3852693. GLM 32210. Fel-Pro Marine 17900." },
         { k: "GM analog", v: "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
-        { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." }
+        { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." },
+        { k: "Now", v: "Leaking. New gasket due 11 Nov 2026. Do not run the engine until it is on." }
       ],
       notes: "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. No receipt.",
       evidence: ["IMG_5863", "IMG_5929"]
@@ -691,8 +692,8 @@ window.ZO = {
         { k: "Seat", v: "S&S 11-2465 .160 in inlet seat, already circled on IMG_5949. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/" },
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
-        { k: "Enrichment", v: "Super E/G have no conventional choke. The big red lever is enrichment. Cold: up to start. Down on both after it runs. Do not cold-idle with both down to prove it. If a lever stays up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs." },
-        { k: "Tune", v: "Enzo 10 Nov 2026 night: 1-1/4 is MIXTURE only (A, side spring screw). It does not set 3k/6k rpm. Idle SPEED is C, the screw by the cable wheel — 1/2 turn from catch, not 1-1/4. 5-1/4 turns of C started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then it died. Catch = engine off, back C out until the red bar is slack, in until the wheel/bar just moves, then 1/2 turn. Same both. A pop then stall in a few seconds is not warm-up. Cold idle can drop a little after it is actually hot. If it pops, A out 1/4 more both. Do not open C to hide it. 900–1100 is warm idle. Regulator 2 psi. If it spills, needles 11-2195 / seats 11-2465 both sides." },
+        { k: "Enrichment", v: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich." },
+        { k: "Tune", v: "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Warm idle is 900–1100 after the valve cover gasket is on. Regulator 2 psi. If it spills, needles." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],
@@ -1077,7 +1078,7 @@ window.ZO = {
         { k: "IMG_5946", v: "Exploded body. Fuel inlet fitting is item 37 into the bowl. Fuel line with 90° bend is item 50." },
         { k: "Circled on IMG_5949", v: "Needle 11-2195. Seat 11-2465. Seat/bowl plug o-ring 50-8009. Float on the list is 11-2187. Fuel line 19-0475. Hose clamp 50-8002." },
         { k: "Mark", v: "“R SIDE” handwritten on IMG_5937 — right carb of the pair." },
-        { k: "Tune both", v: "1-1/4 is mixture (A) only, not idle speed. Idle speed (C) is 1/2 turn from catch. Enzo 10 Nov 2026 night: 5-1/4 turns of C held 3k. Later ~2k cold, no choke, exhaust pop, then died. Cold: enrichment up to start. 900–1100 is warm idle. Old overheat was no fan — not this job." }
+        { k: "Tune both", v: "This car held at 1-3/4 mixture, choke down, about 1.5k. Leave A there. Catch on C is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall. Gasket first, then lower idle toward 900–1100." }
       ],
       notes: "Re-read 10 Nov 2026. Paper labels Fuel Inlet as #7. Do not open the carb to measure pressure. Tee into the hose on that barb.",
       evidence: ["IMG_5936", "IMG_5937", "IMG_5938", "IMG_5946", "IMG_5947", "IMG_5948", "IMG_5949"]

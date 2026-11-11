@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T04:21:00.000000+00:00",
+  "updatedAt": "2026-11-11T05:35:00.000000+00:00",
   "vehicle": {
     "vitals": {
       "Tires": "P185/60R14"
@@ -44,7 +44,8 @@
         "Enzo 10 Nov 2026: previous owner took the electric pump off. Mechanical (engine-driven) pump now, not a hand lever.",
         "Enzo 10 Nov 2026: car starts. Regulator at 2 psi, leak fixed. Tune both Super E/G the same. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from catch, accel 2 turns out. Enrichment down on both after start. 900–1100 rpm is idle. Do not blip.",
         "Enzo 10 Nov 2026: current carb screws are not the print baseline — tweaked earlier while chasing other problems. Overheat then was no cooling fan; fan is on now. Do not mix that in. Reset both carbs to the print numbers, then judge idle and spill.",
-        "Enzo 10 Nov 2026 night: 1-1/4 is mixture (side screw) only, not idle speed. 5-1/4 turns of idle speed started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then rpm dropped and it died. Letting it cool."
+        "Enzo 10 Nov 2026 night: 1-1/4 is mixture (side screw) only, not idle speed. 5-1/4 turns of idle speed started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then rpm dropped and it died. Letting it cool.",
+        "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped — valve cover gasket leaking oil, a little smoke. New gasket due 11 Nov 2026. Next: gasket on, then lower idle speed toward 900–1100. Leave mixture at 1-3/4."
       ]
     }
   },
@@ -105,8 +106,8 @@
         "Seat": "S&S 11-2465 .160 in inlet seat, already circled on IMG_5949. Fits Super E and G with 11-2195. Page $18.95. Need two. https://www.sscycle.com/shop-by-products/replacement-parts/carburetor-replacement-parts/",
         "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
         "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
-        "Enrichment": "Super E/G have no conventional choke. The big red lever is enrichment. Cold: up to start. Down on both after it runs. Do not cold-idle with both down to prove it. If a lever stays up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs.",
-        "Tune": "Enzo 10 Nov 2026 night: 1-1/4 is MIXTURE only (A, side spring screw). It does not set 3k/6k rpm. Idle SPEED is C, the screw by the cable wheel — 1/2 turn from catch, not 1-1/4. 5-1/4 turns of C started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then it died. Catch = engine off, back C out until the red bar is slack, in until the wheel/bar just moves, then 1/2 turn. Same both. A pop then stall in a few seconds is not warm-up. If it pops, A out 1/4 more both. Do not open C to hide it. 900–1100 is warm idle. Regulator 2 psi. If it spills, needles 11-2195 / seats 11-2465 both sides.",
+        "Enrichment": "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich.",
+        "Tune": "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Warm idle is 900–1100 after the valve cover gasket is on. Regulator 2 psi. If it spills, needles.",
         "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
         "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
@@ -129,7 +130,8 @@
     },
     "valve-cover-gasket": {
       "notes": [
-        "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. Sierra 18-0347 / NAPA SME180347. https://www.napaonline.com/en/p/SME180347 Not bought yet."
+        "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. Sierra 18-0347 / NAPA SME180347. https://www.napaonline.com/en/p/SME180347",
+        "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on."
       ],
       "pn": "18-0347",
       "status": "replace",
@@ -846,6 +848,27 @@
         "spec": {
           "Tune": "Enzo 10 Nov 2026 night: 1-1/4 is MIXTURE only (A, side spring screw). It does not set 3k/6k rpm. Idle SPEED is C, the screw by the cable wheel — 1/2 turn from catch, not 1-1/4. 5-1/4 turns of C started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then it died. Catch = engine off, back C out until the red bar is slack, in until the wheel/bar just moves, then 1/2 turn. Same both. A pop then stall in a few seconds is not warm-up. If it pops, A out 1/4 more both. Do not open C to hide it. 900–1100 is warm idle. Regulator 2 psi. If it spills, needles 11-2195 / seats 11-2465 both sides.",
           "Enrichment": "Super E/G have no conventional choke. The big red lever is enrichment. Cold: up to start. Down on both after it runs. Do not cold-idle with both down to prove it. If a lever stays up while hot, it stays rich. NAPA 732-1153 choke kit is still on the 2010 ticket with no application — do not assume it is these carbs."
+        }
+      }
+    },
+    {
+      "id": "n30",
+      "at": "2026-11-11T05:35:00.000000+00:00",
+      "system": "engine",
+      "part": "carb",
+      "text": "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped — valve cover gasket leaking oil, a little smoke. New gasket due 11 Nov 2026. Next: gasket on, then lower idle speed toward 900–1100. Leave mixture at 1-3/4.",
+      "patches": {
+        "carb": {
+          "spec": {
+            "Tune": "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Warm idle is 900–1100 after the valve cover gasket is on. Regulator 2 psi. If it spills, needles.",
+            "Enrichment": "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich."
+          }
+        },
+        "valve-cover-gasket": {
+          "notes": "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on.",
+          "spec": {
+            "Now": "Leaking. New gasket due 11 Nov 2026. Do not run the engine until it is on."
+          }
         }
       }
     }

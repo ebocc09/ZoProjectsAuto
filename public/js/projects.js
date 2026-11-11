@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Two S&S Super E/G carbs, custom on the 181. Mechanical (engine-driven) pump — electric is off. After a few minutes they spill fuel, idle dies, then the engine shuts off.",
+      "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped because the valve cover gasket is leaking oil — new one due 11 Nov 2026. Then lower idle speed toward 900–1100.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -60,12 +60,17 @@ const ZO_PROJECTS = [
       {
         id: "enrich",
         title: "Enrichment lever down when hot",
-        body: "The big red lever is the choke (enrichment). Cold: UP to start. Down on both after it runs. Do not try a cold idle with both levers down to prove it. If a lever stays up while hot, it stays rich. NAPA 732-1153 on the 2010 ticket is still unapplied."
+        body: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich."
       },
       {
         id: "tune",
         title: "Tune both carbs the same",
-        body: "Two different screws. 1-1/4 is A only — the spring screw on the SIDE. That is mixture (fuel), not rpm. It will not make 3k or 6k. C is idle speed — the small screw next to the cable wheel on TOP. Print is 1/2 turn from catch, not 1-1/4. Engine off: back C out until the red bar is slack, then in until the wheel/bar just moves (catch), then only 1/2 turn more. Same both. 5-1/4 turns of C is why it held 3k. Cold start: B (red lever) UP, then down after it runs. A pop then a stall in a few seconds is not the motor warming up. If it pops, A out 1/4 more on both. Do not open C to hide it. Warm idle is 900–1100. Regulator 2 psi. If it spills, needles."
+        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, and held at 1-3/4 with the choke down. Leave A at 1-3/4. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k. Warm idle is 900–1100. Regulator 2 psi. If it spills, needles."
+      },
+      {
+        id: "gasket-first",
+        title: "Valve cover gasket, then lower idle",
+        body: "Oil is leaking at the valve cover and smoking a little. New gasket is due 11 Nov 2026. Do not run it until that is on. Then start the same way: choke up, then down, mixture stays 1-3/4. If it holds, turn C down toward 900–1100, same on both, a little at a time."
       },
       {
         id: "log",
@@ -79,7 +84,7 @@ const ZO_PROJECTS = [
       { src: "img/carb-now/both-marked.jpg", cap: "Both carbs. The long red rod is the throttle for both — not a hanging arm." },
       { src: "img/carb-now/left-marked.jpg", cap: "Other carb. Same A, B, C. The yellow paint is just a bolt." }
     ],
-    parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes"],
+    parts: ["carb", "fuel-filter", "fuel-hose", "fuel-hardware", "ss-carb-notes", "valve-cover-gasket"],
     evidence: ["IMG_5937", "IMG_5949", "IMG_5877"]
   },
   {
