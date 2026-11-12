@@ -130,10 +130,6 @@ module dial() {
                     text(label, size = 3.6, font = "Liberation Sans:style=Bold",
                          halign = "center", valign = "center");
         }
-        translate([0, -dial_od/2 + 15.2, dial_h])
-            linear_extrude(0.9)
-                text("mm", size = 2.8, font = "Liberation Sans:style=Bold",
-                     halign = "center", valign = "center");
     }
 }
 
