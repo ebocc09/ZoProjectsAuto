@@ -1,17 +1,20 @@
 Carb measuring driver — bench only. Do not leave it on the car.
 
 Two prints
-  dial.stl     the numbered ring (1–12). Flat on the bed.
-  driver.stl   butterfly, pointer, shaft. Stand it up, hex on the bed.
-               5 walls, 40% infill. Total height 2 in.
+  dial.stl     numbered ring with two click pawls. Flat on the bed.
+  driver.stl   wishbone, 12-tooth gear, arrow. Stand it up, hex on the bed.
+               5 walls, 40% infill. PETG. Total height 2 in.
 
 Bit
   Milwaukee 1/4 in hex insert bit (Shockwave or any kit bit).
   Push it into the bottom. Optional M3 set screw to pinch it.
-  Use slotted or Phillips — whatever matches the carb screw.
 
 Use
-  Drop the dial onto the driver so the pointer sits in the hole.
-  Seat the screw. Hold the numbered ring still.
-  Turn the butterfly. The arrow points at 1–12.
-  Same number on both carbs. 12 clicks around = one full turn.
+  Slide the ring onto the driver from the hex end until it pops over the chamfer
+  and the gear sits in the hole. Two gray fingers (at 12 and 6) drop into
+  gaps between teeth — those are the clicks.
+  Seat the bit on the screw. Hold the numbered ring.
+  Turn the wishbone. You will see and feel each click.
+  One click = one number. 12 clicks = one full turn.
+  If the ring slips in your hand, it will not click — do not count that.
+  Same click count on both carbs.
