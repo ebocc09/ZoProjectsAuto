@@ -1,20 +1,25 @@
 Carb measuring driver — bench only. Do not leave it on the car.
 
-Two prints
-  dial.stl     numbered ring with two click pawls. Flat on the bed.
-  driver.stl   wishbone, 12-tooth gear, arrow. Stand it up, hex on the bed.
-               5 walls, 40% infill. PETG. Total height 2 in.
+Three prints
+  dial.stl     mm ring with two click pawls. Flat on the bed.
+  driver.stl   shaft + 10-tooth gear. Stand it up, hex on the bed.
+  handle.stl   flat twist bar. Flat on the bed — no round bubbles.
+               PETG, 5 walls, 40% infill.
 
-Bit
-  Milwaukee 1/4 in hex insert bit (Shockwave or any kit bit).
-  Push it into the bottom. Optional M3 set screw to pinch it.
+Hardware
+  Milwaukee 1/4 in hex insert bit in the bottom.
+  One M3×12 screw. Optional M3 nut in the handle pocket.
 
-Use
-  Slide the ring onto the driver from the hex end until it pops over the chamfer
-  and the gear sits in the hole. Two gray fingers (at 12 and 6) drop into
-  gaps between teeth — those are the clicks.
-  Seat the bit on the screw. Hold the numbered ring.
-  Turn the wishbone. You will see and feel each click.
-  One click = one number. 12 clicks = one full turn.
-  If the ring slips in your hand, it will not click — do not count that.
+Assemble
+  1. Drop the ring onto the shaft from the top. The gear sits in the hole,
+     the two fingers click into gaps between teeth.
+  2. Push the handle onto the D-shaped post. It only fits one way.
+     The arrow points at 0.
+  3. M3 through the handle into the post. That traps the ring.
+
+Scale
+  One full turn of the carb screw is 1 mm.
+  10 teeth around the gear. One click = 0.1 mm.
+  Ten clicks = 1.0 mm = back to 0.
   Same click count on both carbs.
+  If the ring slips, it does not click — do not count that.
