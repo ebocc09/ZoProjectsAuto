@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle held about 1.5k at 2 turns mixture, regulator 3 psi. Fel-Pro 17900 and RTV on the cover. Then lower idle toward 900–1100.",
+      "Idle held about 1.5k at 2 turns mixture, regulator 3 psi. Fel-Pro 17900 still weeps oil at the back of the cover only. Then lower idle toward 900–1100.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "Watch the cover, then lower idle",
-        body: "Fel-Pro 17900 and RTV on the cover flange are on. A is 2 turns. C at 1.5k. 3 psi. If it keeps holding, look at the rail for oil before you nibble C toward 900–1100. Do not open C. One random crack is not a reason to turn A again."
+        title: "Stop the rear cover weep, then lower idle",
+        body: "Idle held at 1.5k, A at 2 turns, 3 psi. Fel-Pro 17900 still weeps oil at the back of the cover only. Shut it down. Cool. Re-snug the rear bolts 1/8 turn, not 40 ft-lb. If it still weeps, cover off and pea RTV at both rear corners. Do not open C to chase idle while it is dripping on the exhaust."
       },
       {
         id: "log",
