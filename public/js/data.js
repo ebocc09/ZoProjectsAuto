@@ -694,7 +694,7 @@ window.ZO = {
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich." },
-        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. 12 Nov night: held ~1k at 3 psi. Drove low speed 12–13 Nov, idle held. One hot stop: pops, rpm dipped under 1k, recovered. Next fuel test: 3.5 psi. If it drips, back to 3 — needles, not more pressure. Leave A. C stays at the 1k hold. Do not open C to keep it alive." },
+        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. Idle holds ~1k at 3 psi sitting still. After a drive, a stop makes idle fall — mains used more than 3 psi put back, bowl level sagged. Do not open C. Do not rev to keep it alive. Fuel test: 3.5 psi. If it drips, back to 3 — needles, not more pressure. Leave A. C stays at the 1k hold." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],

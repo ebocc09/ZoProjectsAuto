@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle ~1k, A 2 turns, 3 psi. Fel-Pro 17900 reseated dry 13 Nov. Cold start: B up, do not touch screws. Bowls fill on the second/third fire, then it holds.",
+      "Idle ~1k sitting still. After a drive, stop idle falls — try 3.5 psi, do not rev, do not open C. A stays 2 turns. Fel-Pro 17900 reseated dry 13 Nov.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "Cold start without touching screws",
-        body: "Fel-Pro 17900 reseated dry 13 Nov. A stays 2 turns. C stays at the 1k hold. Regulator stays at 3. Fire-then-die overnight is empty bowls plus a slow mechanical pump — not a new tune. B up on both. One or two throttle pumps. Crank. If it fires and dies, B stays up, crank again. When it holds, B down. Do not turn A or C. After it is warm, cool, re-snug cover 40 in-lb. 3.5 psi only if it still dies with B up and a wet-enough bowl (you get a squirt)."
+        title: "3.5 psi so a stop does not kill idle",
+        body: "Sitting still, 1k holds at 3 psi. After a drive, idle falls at a stop — mains used more than 3 psi put back. Set 12-804 to 3.5. Leave A at 2 turns. Leave C. B down when hot. Drive, then a real stop, no revving. If it holds and does not drip, leave 3.5. If it drips, back to 3 and that is needles 11-2195 / seats 11-2465. Do not go back to free-flow 7 psi."
       },
       {
         id: "log",
