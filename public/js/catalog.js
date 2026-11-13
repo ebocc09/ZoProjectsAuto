@@ -385,6 +385,7 @@ const CAT_PLACES = {
     { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four. UK.", price: "Page £125.00", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
   ],
   "valve-cover-gasket": [
+    { where: "Read on the car", when: "13 Nov 2026", order: "reseated dry", item: "Fel-Pro 17900 reused, seated dry. Pea RTV at head corners. 40 in-lb. Leak check after it holds warm, then re-snug.", price: "No price" },
     { where: "Read on the car", when: "13 Nov 2026", order: "redo dry", item: "After the drive, leaking sides and rear. Reuse Fel-Pro 17900. Fel-Pro wants clean and dry. Pea RTV at four head corners only. 40 in-lb, re-snug after cool. No PermaDry for this 181.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "gasket sealed", item: "Rear weep stopped the same night. Fel-Pro 17900. Cover kept. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "rear weep", item: "Fel-Pro 17900 still weeps oil at the back of the cover only. Front rail dry. Cover kept. Idle held at 1.5k / 2 turns / 3 psi.", price: "No price" },

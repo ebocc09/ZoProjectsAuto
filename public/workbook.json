@@ -153,7 +153,7 @@
         "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
         "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part.",
-        "Now": "Leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, then re-snug after a heat cycle. Cover kept. No PermaDry upgrade for this 181."
+        "Now": "Reseated dry 13 Nov 2026. Reused Fel-Pro 17900. Pea RTV at head corners only. 40 in-lb. Re-snug after the first heat cycle. Cover kept."
       }
     },
     "thermostat": {
@@ -996,6 +996,20 @@
           "status": "watch",
           "spec": {
             "Now": "Leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, then re-snug after a heat cycle. Cover kept. No PermaDry upgrade for this 181."
+          }
+        }
+      }
+    },
+    {
+      "id": "n38",
+      "at": "2026-11-13T19:14:00.000000+00:00",
+      "system": "engine",
+      "part": "valve-cover-gasket",
+      "text": "Enzo 13 Nov 2026: Fel-Pro 17900 reseated dry. Cold start is empty bowls, not a new tune. B up, do not turn A or C.",
+      "patches": {
+        "valve-cover-gasket": {
+          "spec": {
+            "Now": "Reseated dry 13 Nov 2026. Reused Fel-Pro 17900. Pea RTV at head corners only. 40 in-lb. Re-snug after the first heat cycle. Cover kept."
           }
         }
       }

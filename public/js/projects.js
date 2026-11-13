@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Drove at low speed, idle held ~1k. One stop: pops, rpm dipped under 1k, recovered. Try 3.5 psi. Fel-Pro 17900 leaking sides and rear after the drive — redo dry, reuse this gasket.",
+      "Idle ~1k, A 2 turns, 3 psi. Fel-Pro 17900 reseated dry 13 Nov. Cold start: B up, do not touch screws. Bowls fill on the second/third fire, then it holds.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "Redo the cover gasket dry, then 3.5 psi",
-        body: "Drove 12–13 Nov, idle held ~1k. One hot stop: pops, rpm under 1k, saved itself. A stays 2 turns. 3.5 psi is a test — if it drips, back to 3, that is needles. Fel-Pro 17900 leaking sides and rear after the drive. Reuse it. Fel-Pro wants it clean and dry. Scrape all RTV off the gasket, cover, and head. Straight-edge the cover. Pea of RTV on the head at the four corners only. Cover straight down, 40 in-lb center-out. After one heat cycle, cool, re-snug 40 in-lb. No grease as a seal. No gasket upgrade for this 181 — Pontiac PermaDry VS50179 is the wrong engine."
+        title: "Cold start without touching screws",
+        body: "Fel-Pro 17900 reseated dry 13 Nov. A stays 2 turns. C stays at the 1k hold. Regulator stays at 3. Fire-then-die overnight is empty bowls plus a slow mechanical pump — not a new tune. B up on both. One or two throttle pumps. Crank. If it fires and dies, B stays up, crank again. When it holds, B down. Do not turn A or C. After it is warm, cool, re-snug cover 40 in-lb. 3.5 psi only if it still dies with B up and a wet-enough bowl (you get a squirt)."
       },
       {
         id: "log",

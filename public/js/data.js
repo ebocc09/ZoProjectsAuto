@@ -610,7 +610,7 @@ window.ZO = {
       system: "engine",
       role: "Seal under the valve cover. Not a head gasket.",
       status: "watch",
-      confidence: "Fel-Pro 17900 leaking sides and rear after the 12–13 Nov drive. Redo dry. Reuse this gasket.",
+      confidence: "Fel-Pro 17900 reseated dry 13 Nov 2026. Reused. Leak check after it holds warm.",
       qty: "1",
       sheet: "17900 · 18-0347",
       spec: [
@@ -620,7 +620,7 @@ window.ZO = {
         { k: "GM analog", v: "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
         { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." },
-        { k: "Now", v: "Leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, then re-snug after a heat cycle. Cover kept. No PermaDry upgrade for this 181." }
+        { k: "Now", v: "Reseated dry 13 Nov 2026. Reused Fel-Pro 17900. Pea RTV at head corners only. 40 in-lb. Re-snug after the first heat cycle. Cover kept." }
       ],
       notes: "O’Reilly 12 Nov 2026. No receipt.",
       evidence: ["IMG_5863", "IMG_5929"]
