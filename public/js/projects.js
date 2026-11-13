@@ -70,7 +70,7 @@ const ZO_PROJECTS = [
       {
         id: "gasket-first",
         title: "New Fel-Pro gasket, then lower idle",
-        body: "11 Nov gasket went on dry at about 40 in-lb (not 40 ft-lb). Cover stayed. It ran, then the rail wept, so 12 Nov a Fel-Pro 17900 cork-rubber from O’Reilly is going on for extra precaution — same 153/181 gasket as Sierra 18-0347 / GM 14096154, not a molded all-rubber lid. Thin RTV on the cover side only. No red thread locker on those bolts. Then start B up, B down, A stays 1-3/4, C at 1.5k. If it holds, nibble C toward 900–1100."
+        body: "11 Nov gasket went on dry at about 40 in-lb (not 40 ft-lb). Cover stayed. It ran, then the rail wept, so 12 Nov a Fel-Pro 17900 cork-rubber from O’Reilly is going on for extra precaution — same 153/181 gasket as Sierra 18-0347 / GM 14096154, not a molded all-rubber lid. RTV layer on the cover flange and edges because the lid is old. No red thread locker on those bolts. Wipe any RTV that squeezed in toward the rockers. Wait until the RTV skins, then start B up, B down, A stays 1-3/4, C at 1.5k. If it holds, nibble C toward 900–1100."
       },
       {
         id: "log",

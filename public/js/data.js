@@ -620,7 +620,7 @@ window.ZO = {
         { k: "GM analog", v: "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
         { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." },
-        { k: "Now", v: "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only." }
+        { k: "Now", v: "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges — old lid, to catch weeps the cork might miss." }
       ],
       notes: "O’Reilly 12 Nov 2026. No receipt.",
       evidence: ["IMG_5863", "IMG_5929"]

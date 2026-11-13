@@ -297,7 +297,7 @@ TOPICS: list[dict] = [
             "Valve cover gasket on 12 Nov 2026 is Fel-Pro Marine 17900 from O’Reilly — cork-rubber, "
             "same 153/181 fit as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Not a molded silicone lid. "
             "11 Nov cork was not torn; this one is extra precaution. Cover stays. 40 in-lb, not 40 ft-lb. "
-            "Thin RTV on the cover side only. No red / high-temp thread locker on those bolts. No receipt."
+            "RTV layer on the cover flange and edges because the lid is old. No red / high-temp thread locker on those bolts. No receipt."
         ),
         "pills": ["Valve cover", "Thermostat", "Engine"],
     },

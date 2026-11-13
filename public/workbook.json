@@ -46,7 +46,7 @@
         "Enzo 10 Nov 2026: current carb screws are not the print baseline — tweaked earlier while chasing other problems. Overheat then was no cooling fan; fan is on now. Do not mix that in. Reset both carbs to the print numbers, then judge idle and spill.",
         "Enzo 10 Nov 2026 night: 1-1/4 is mixture (side screw) only, not idle speed. 5-1/4 turns of idle speed started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then rpm dropped and it died. Letting it cool.",
         "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped — valve cover gasket leaking oil, a little smoke. New gasket due 11 Nov 2026. Next: gasket on, then lower idle speed toward 900–1100. Leave mixture at 1-3/4.",
-        "Enzo 12 Nov 2026: 2 psi starved the bowls (dry plugs, no squirt). 4 psi started it. Running 3 psi, held about 1.5k at 1-3/4. Exhaust crack was lean. First cork gasket wept after a short run. Cover kept. O’Reilly Fel-Pro 17900 cork-rubber going on — same 153/181 as Sierra 18-0347 / GM 14096154. Thin RTV on the cover side. No red thread locker. 40 in-lb, not 40 ft-lb."
+        "Enzo 12 Nov 2026: 2 psi starved the bowls (dry plugs, no squirt). 4 psi started it. Running 3 psi, held about 1.5k at 1-3/4. Exhaust crack was lean. First cork gasket wept after a short run. Cover kept. O’Reilly Fel-Pro 17900 cork-rubber going on — same 153/181 as Sierra 18-0347 / GM 14096154. RTV layer on the cover flange and edges because the lid is old. No red thread locker. 40 in-lb, not 40 ft-lb."
       ]
     }
   },
@@ -134,7 +134,7 @@
       "notes": [
         "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. Sierra 18-0347 / NAPA SME180347. https://www.napaonline.com/en/p/SME180347",
         "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on.",
-        "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only."
+        "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old."
       ],
       "pn": "17900",
       "status": "ok",
@@ -146,7 +146,7 @@
         "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
         "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part.",
-        "Now": "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only."
+        "Now": "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old."
       }
     },
     "thermostat": {
@@ -881,7 +881,7 @@
       "at": "2026-11-13T03:28:00.000000+00:00",
       "system": "engine",
       "part": "valve-cover-gasket",
-      "text": "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. Same 153/181 gasket as Sierra 18-0347 / GM 14096154. 11 Nov cork was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side. 2 psi starved, 4 psi started, running 3 psi. Held about 1.5k at 1-3/4.",
+      "text": "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. Same 153/181 gasket as Sierra 18-0347 / GM 14096154. 11 Nov cork was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old. 2 psi starved, 4 psi started, running 3 psi. Held about 1.5k at 1-3/4.",
       "patches": {
         "carb": {
           "spec": {
@@ -896,7 +896,7 @@
           "spec": {
             "On sheet": "17900 · 18-0347",
             "This one": "Fel-Pro Marine 17900 cork-rubber on the car 12 Nov 2026, from O’Reilly. Same 153/181 gasket as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Cork bits in a rubber binder — not a molded silicone lid. NAPA FPG17900: https://www.napaonline.com/en/p/FPG17900",
-            "Now": "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only."
+            "Now": "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old."
           }
         }
       }
