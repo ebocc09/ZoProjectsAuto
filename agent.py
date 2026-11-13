@@ -291,13 +291,13 @@ TOPICS: list[dict] = [
         "keys": [
             ("valve cover gasket", 14), ("cover gasket", 10), ("14096154", 12),
             ("18-0347", 12), ("sme180347", 12), ("180347", 8),
+            ("17900", 14), ("fel-pro", 10), ("felpro", 10), ("fpg17900", 12),
         ],
         "reply": (
-            "Need a new valve cover gasket, not a head gasket. Found at NAPA: Sierra 18-0347, "
-            "NAPA SME180347, GM 153 and 181 CID. Mercury 27-52145 / 27-806452. "
-            "Marine Engine Depot still lists authentic GM 14096154 for the same 181 cover. "
-            "The 2010 eBasicPower set DET59565AS is the old 2.5/3.0L set, not this dedicated gasket. "
-            "Goes on with the new cover 8M0122491. On the buy list with Wix 33003. Not bought yet."
+            "Valve cover gasket on 12 Nov 2026 is Fel-Pro Marine 17900 from O’Reilly — cork-rubber, "
+            "same 153/181 fit as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Not a molded silicone lid. "
+            "11 Nov cork was not torn; this one is extra precaution. Cover stays. 40 in-lb, not 40 ft-lb. "
+            "Thin RTV on the cover side only. No red / high-temp thread locker on those bolts. No receipt."
         ),
         "pills": ["Valve cover", "Thermostat", "Engine"],
     },

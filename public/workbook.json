@@ -45,7 +45,8 @@
         "Enzo 10 Nov 2026: car starts. Regulator at 2 psi, leak fixed. Tune both Super E/G the same. IMG_5936 / 5937: idle mixture 1-1/4 turns out, idle speed 1/2 turn from catch, accel 2 turns out. Enrichment down on both after start. 900–1100 rpm is idle. Do not blip.",
         "Enzo 10 Nov 2026: current carb screws are not the print baseline — tweaked earlier while chasing other problems. Overheat then was no cooling fan; fan is on now. Do not mix that in. Reset both carbs to the print numbers, then judge idle and spill.",
         "Enzo 10 Nov 2026 night: 1-1/4 is mixture (side screw) only, not idle speed. 5-1/4 turns of idle speed started at 3k and held. Later ~2k cold, no choke, no blip, exhaust pop, then rpm dropped and it died. Letting it cool.",
-        "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped — valve cover gasket leaking oil, a little smoke. New gasket due 11 Nov 2026. Next: gasket on, then lower idle speed toward 900–1100. Leave mixture at 1-3/4."
+        "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped — valve cover gasket leaking oil, a little smoke. New gasket due 11 Nov 2026. Next: gasket on, then lower idle speed toward 900–1100. Leave mixture at 1-3/4.",
+        "Enzo 12 Nov 2026: 2 psi starved the bowls (dry plugs, no squirt). 4 psi started it. Running 3 psi, held about 1.5k at 1-3/4. Exhaust crack was lean. First cork gasket wept after a short run. Cover kept. O’Reilly Fel-Pro 17900 cork-rubber going on — same 153/181 as Sierra 18-0347 / GM 14096154. Thin RTV on the cover side. No red thread locker. 40 in-lb, not 40 ft-lb."
       ]
     }
   },
@@ -107,17 +108,18 @@
         "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
         "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
         "Enrichment": "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich.",
-        "Tune": "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Warm idle is 900–1100 after the valve cover gasket is on. Regulator 2 psi. If it spills, needles.",
+        "Tune": "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls; 4 psi woke it. If it spills, needles.",
         "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
         "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
     },
     "valve-cover": {
       "notes": [
-        "Need a new valve cover, not the head. GM 181 / 3.0L four, Mercury 8M0122491. Also 3853784 / 65635A8 / 851036T. Wholesale Marine page $115.49. https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/ Check PCV / oil-fill on this cover before ordering. Not bought yet."
+        "Need a new valve cover, not the head. GM 181 / 3.0L four, Mercury 8M0122491. Also 3853784 / 65635A8 / 851036T. Wholesale Marine page $115.49. https://www.wholesalemarine.com/mercury-mercruiser-8m0122491-valve-cover/ Check PCV / oil-fill on this cover before ordering. Not bought yet.",
+        "Enzo 12 Nov 2026: keeping this cover. Not cracked. 8M0122491 steel will not replace this cast lid. Gasket is Fel-Pro 17900."
       ],
       "pn": "8M0122491",
-      "status": "replace",
+      "status": "ok",
       "sheet": "Valve cover 8M0122491",
       "spec": {
         "On sheet": "Valve cover 8M0122491",
@@ -131,18 +133,20 @@
     "valve-cover-gasket": {
       "notes": [
         "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. Sierra 18-0347 / NAPA SME180347. https://www.napaonline.com/en/p/SME180347",
-        "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on."
+        "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on.",
+        "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only."
       ],
-      "pn": "18-0347",
-      "status": "replace",
-      "sheet": "18-0347",
+      "pn": "17900",
+      "status": "ok",
+      "sheet": "17900 · 18-0347",
       "spec": {
-        "On sheet": "18-0347",
-        "This one": "Sierra 18-0347, NAPA SME180347. Valve cover gasket for GM 153 and 181 CID (2.5L and 3.0L), OMC / Mercruiser / Volvo Penta. NAPA: https://www.napaonline.com/en/p/SME180347",
+        "On sheet": "17900 · 18-0347",
+        "This one": "Fel-Pro Marine 17900 cork-rubber on the car 12 Nov 2026, from O’Reilly. Same 153/181 gasket as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Cork bits in a rubber binder — not a molded silicone lid. NAPA FPG17900: https://www.napaonline.com/en/p/FPG17900",
         "OEM": "Mercury 27-52145, 27-806452, 27-851040, 27-34041. OMC 913277 / 912981 / 3852693. Volvo Penta 3852693. GLM 32210. Fel-Pro Marine 17900.",
         "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
-        "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part."
+        "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part.",
+        "Now": "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only."
       }
     },
     "thermostat": {
@@ -868,6 +872,31 @@
           "notes": "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on.",
           "spec": {
             "Now": "Leaking. New gasket due 11 Nov 2026. Do not run the engine until it is on."
+          }
+        }
+      }
+    },
+    {
+      "id": "n31",
+      "at": "2026-11-13T03:28:00.000000+00:00",
+      "system": "engine",
+      "part": "valve-cover-gasket",
+      "text": "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. Same 153/181 gasket as Sierra 18-0347 / GM 14096154. 11 Nov cork was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side. 2 psi starved, 4 psi started, running 3 psi. Held about 1.5k at 1-3/4.",
+      "patches": {
+        "carb": {
+          "spec": {
+            "Tune": "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls; 4 psi woke it. If it spills, needles."
+          }
+        },
+        "valve-cover-gasket": {
+          "notes": "O’Reilly 12 Nov 2026. No receipt.",
+          "pn": "17900",
+          "status": "ok",
+          "sheet": "17900 · 18-0347",
+          "spec": {
+            "On sheet": "17900 · 18-0347",
+            "This one": "Fel-Pro Marine 17900 cork-rubber on the car 12 Nov 2026, from O’Reilly. Same 153/181 gasket as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Cork bits in a rubber binder — not a molded silicone lid. NAPA FPG17900: https://www.napaonline.com/en/p/FPG17900",
+            "Now": "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only."
           }
         }
       }

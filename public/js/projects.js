@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped because the valve cover gasket is leaking oil — new one due 11 Nov 2026. Then lower idle speed toward 900–1100.",
+      "Idle held about 1.5k at 1-3/4 mixture, regulator 3 psi. First cover gasket (11 Nov) wept, so a Fel-Pro 17900 cork-rubber is going on 12 Nov. Then lower idle toward 900–1100.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -45,7 +45,7 @@ const ZO_PROJECTS = [
       {
         id: "plumb",
         title: "Put the 12-804 on the single line",
-        body: "One regulator. Holley 12-804 is that part — not a second one. Cut the single line after the filter, before the tee. Put 12-804 there. Arrow toward the carbs. Set it toward 2 psi. Keep your tee and plug the unused outlet, or drop the tee and run one 12-804 outlet to each #7. Do not put it between the tank and the pump."
+        body: "One regulator. Holley 12-804 is that part — not a second one. Cut the single line after the filter, before the tee. Put 12-804 there. Arrow toward the carbs. 2 psi starved the bowls. 4 psi woke it. Running 3 psi. Keep your tee and plug the unused outlet, or drop the tee and run one 12-804 outlet to each #7. Do not put it between the tank and the pump."
       },
       {
         id: "pressure",
@@ -65,12 +65,12 @@ const ZO_PROJECTS = [
       {
         id: "tune",
         title: "Tune both carbs the same",
-        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, and held at 1-3/4 with the choke down. Leave A at 1-3/4. Click screwdriver is in tools/carb-clicker — 21 clicks from the seat is 1-3/4 on both. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k. Warm idle is 900–1100. Regulator 2 psi. If it spills, needles."
+        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, and held at 1-3/4 with the choke down. Leave A at 1-3/4. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls; 4 psi woke it; running at 3 psi. If it spills, needles."
       },
       {
         id: "gasket-first",
-        title: "Valve cover gasket, then lower idle",
-        body: "Oil is leaking at the valve cover and smoking a little. New gasket is due 11 Nov 2026. Do not run it until that is on. Then start the same way: choke up, then down, mixture stays 1-3/4. If it holds, turn C down toward 900–1100, same on both, a little at a time."
+        title: "New Fel-Pro gasket, then lower idle",
+        body: "11 Nov gasket went on dry at about 40 in-lb (not 40 ft-lb). Cover stayed. It ran, then the rail wept, so 12 Nov a Fel-Pro 17900 cork-rubber from O’Reilly is going on for extra precaution — same 153/181 gasket as Sierra 18-0347 / GM 14096154, not a molded all-rubber lid. Thin RTV on the cover side only. No red thread locker on those bolts. Then start B up, B down, A stays 1-3/4, C at 1.5k. If it holds, nibble C toward 900–1100."
       },
       {
         id: "log",

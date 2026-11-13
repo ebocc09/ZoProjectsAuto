@@ -563,7 +563,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Live: two S&S carbs flood after a few minutes. Electric pump is off; mechanical (engine-driven) now. Easy path: measure running pressure, Holley 12-804 if high, needle 11-2195 and seat 11-2465 both sides. Buy list still: Wix 33003, gasket 18-0347. Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Not bought." },
+        { k: "Need now", v: "Live: idle held about 1.5k at 1-3/4 mixture, regulator 3 psi. Fel-Pro 17900 gasket going on 12 Nov. Cover kept. Buy list still: Wix 33003. Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -575,7 +575,7 @@ window.ZO = {
         { k: "Written on that print", v: "83–84 4 speed. Melling valve spring VS-380. South Carolina. 1-800-374-7522." },
         { k: "Clutch parcel", v: "Office Depot to Buck's Engines, 27 Mar 2008, marked auto clutch, 32.75 lb" }
       ],
-      notes: "Flywheel face machined 0.125 in, 9 holes drilled/tapped 5/16-18 × 1 in for the pressure plate. The EPS sheet is a printout in the folder, not a measurement of this engine. An S&S Super E/G article is also in the folder and is not an invoice. Valve cover, gasket, and thermostat are the separate parts that need buying.",
+      notes: "Flywheel face machined 0.125 in, 9 holes drilled/tapped 5/16-18 × 1 in for the pressure plate. The EPS sheet is a printout in the folder, not a measurement of this engine. An S&S Super E/G article is also in the folder and is not an invoice. Cover kept 12 Nov 2026. Gasket is Fel-Pro 17900. Thermostat still open.",
       evidence: ["IMG_5809", "IMG_5807", "IMG_5793", "IMG_5871", "IMG_5863", "IMG_5929", "IMG_5957"]
     },
     {
@@ -585,8 +585,8 @@ window.ZO = {
       brand: "GM / Mercury",
       system: "engine",
       role: "Rocker cover. Not the head.",
-      status: "replace",
-      confidence: "Need new. 181 / 3.0L L4 cover. Not read off this engine. Not bought.",
+      status: "ok",
+      confidence: "Keeping this cover 12 Nov 2026. Not cracked. 8M0122491 not on Rayford shelves.",
       qty: "1",
       sheet: "Valve cover 8M0122491",
       spec: [
@@ -596,32 +596,33 @@ window.ZO = {
         { k: "Also", v: "Eagle Engine Sales, new 181 / 3.0L cover, $65. Replaces 8M0122491 / 3853784 / GM 02770089. Carol Stream IL. https://www.eagleenginesales.com/product-page/3-0l-181-cid-valve-rocker-cover-mercruiser-8m0122491-volvo-penta-3853784-3" },
         { k: "Look", v: "Stamped steel. No new chrome or aluminum dress-up cover is sold for this 181 four. Edelbrock chrome is V8. Cast aluminum 65635A16 is a used boat cover with shift bosses. Paint or powder the steel cover." },
         { k: "Confirm", v: "Marine covers can have a different PCV / oil-fill. Check this cover before ordering. EPS on the print: 1-800-374-7522." },
-        { k: "Not", v: "Not the head. Not DET59565AS. Not OSCM04-GH. Not a small-block Chevy cover." }
+        { k: "Not", v: "Not the head. Not DET59565AS. Not OSCM04-GH. Not a small-block Chevy cover." },
+        { k: "Now", v: "Keeping this cover 12 Nov 2026. 8M0122491 steel will not replace this cast lid. Gasket is Fel-Pro 17900." }
       ],
-      notes: "No receipt. Page prices only. Gasket is the separate part Sierra 18-0347 / NAPA SME180347.",
+      notes: "Cover kept. Gasket is Fel-Pro 17900, O’Reilly 12 Nov 2026. No receipt.",
       evidence: ["IMG_5929", "IMG_5809"]
     },
     {
       id: "valve-cover-gasket",
       name: "Valve cover gasket",
-      pn: "18-0347",
-      brand: "Sierra / NAPA",
+      pn: "17900",
+      brand: "Fel-Pro Marine",
       system: "engine",
       role: "Seal under the valve cover. Not a head gasket.",
-      status: "replace",
-      confidence: "Need new. NAPA SME180347 found 9 Nov 2026. GM 153 / 181 CID. Not bought.",
+      status: "ok",
+      confidence: "On the car 12 Nov 2026. O’Reilly Fel-Pro 17900 cork-rubber. No receipt.",
       qty: "1",
-      sheet: "18-0347",
+      sheet: "17900 · 18-0347",
       spec: [
-        { k: "On sheet", v: "18-0347" },
-        { k: "This one", v: "Sierra 18-0347, NAPA SME180347. Valve cover gasket for GM 153 and 181 CID (2.5L and 3.0L), OMC / Mercruiser / Volvo Penta. NAPA: https://www.napaonline.com/en/p/SME180347" },
+        { k: "On sheet", v: "17900 · 18-0347" },
+        { k: "This one", v: "Fel-Pro Marine 17900 cork-rubber on the car 12 Nov 2026, from O’Reilly. Same 153/181 gasket as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Cork bits in a rubber binder — not a molded silicone lid. NAPA FPG17900: https://www.napaonline.com/en/p/FPG17900" },
         { k: "OEM", v: "Mercury 27-52145, 27-806452, 27-851040, 27-34041. OMC 913277 / 912981 / 3852693. Volvo Penta 3852693. GLM 32210. Fel-Pro Marine 17900." },
         { k: "GM analog", v: "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
         { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." },
-        { k: "Now", v: "Leaking. New gasket due 11 Nov 2026. Do not run the engine until it is on." }
+        { k: "Now", v: "Fel-Pro 17900 going on 12 Nov 2026. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. Thin RTV on the cover side only." }
       ],
-      notes: "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. No receipt.",
+      notes: "O’Reilly 12 Nov 2026. No receipt.",
       evidence: ["IMG_5863", "IMG_5929"]
     },
     {
@@ -693,7 +694,7 @@ window.ZO = {
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich." },
-        { k: "Tune", v: "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Warm idle is 900–1100 after the valve cover gasket is on. Regulator 2 psi. If it spills, needles." },
+        { k: "Tune", v: "Mixture A is 1-3/4 out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, held at 1-3/4 with the choke down at about 1.5k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls; 4 psi woke it. If it spills, needles." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],
@@ -1078,7 +1079,7 @@ window.ZO = {
         { k: "IMG_5946", v: "Exploded body. Fuel inlet fitting is item 37 into the bowl. Fuel line with 90° bend is item 50." },
         { k: "Circled on IMG_5949", v: "Needle 11-2195. Seat 11-2465. Seat/bowl plug o-ring 50-8009. Float on the list is 11-2187. Fuel line 19-0475. Hose clamp 50-8002." },
         { k: "Mark", v: "“R SIDE” handwritten on IMG_5937 — right carb of the pair." },
-        { k: "Tune both", v: "This car held at 1-3/4 mixture, choke down, about 1.5k. Leave A there. Catch on C is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall. Gasket first, then lower idle toward 900–1100." }
+        { k: "Tune both", v: "This car held at 1-3/4 mixture, choke down, about 1.5k at 3 psi. Leave A there. Catch on C is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall. Fel-Pro 17900 on 12 Nov, then lower idle toward 900–1100." }
       ],
       notes: "Re-read 10 Nov 2026. Paper labels Fuel Inlet as #7. Do not open the carb to measure pressure. Tee into the hose on that barb.",
       evidence: ["IMG_5936", "IMG_5937", "IMG_5938", "IMG_5946", "IMG_5947", "IMG_5948", "IMG_5949"]
