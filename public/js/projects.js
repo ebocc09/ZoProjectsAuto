@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle about 1.3k at 2 turns mixture, regulator 3 psi. Targeting 1k. Cover gasket sealed. Exhaust manifold RTV joint is smoking — snug bolts, do not blob silicone on it.",
+      "Idle holding about 1k at 2 turns mixture, regulator 3 psi. Two random pops, stayed running. Cover gasket sealed.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "Lower idle toward 1k",
-        body: "Gasket sealed. A is 2 turns. 3 psi. Idle is about 1.3k, targeting 1k. Nibble C down the same on both. If it pops or dies, stop turning C. Do not open C to keep it alive. Exhaust manifold: that smoke is the old RTV cooking at the flange. Darker metal is soot from the leak. Do not smear more silicone on it. Cool, then snug the manifold nuts. Muffler cement on the outside is the no-pull band-aid. A new gasket later."
+        title: "Leave idle at 1k",
+        body: "12 Nov night clip IMG_6228: Super Tach II on 1, dipped to about 950, two pops, stayed running. A is 2 turns. 3 psi. Leave A and C. Do not nibble C lower tonight. Exhaust flange later — snug nuts cold, no more silicone."
       },
       {
         id: "log",

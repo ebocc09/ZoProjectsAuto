@@ -48,7 +48,8 @@
         "Idle held at about 1.5k on 1-3/4 mixture with the choke down. Stopped — valve cover gasket leaking oil, a little smoke. New gasket due 11 Nov 2026. Next: gasket on, then lower idle speed toward 900–1100. Leave mixture at 1-3/4.",
         "Enzo 12 Nov 2026: 2 psi starved the bowls (dry plugs, no squirt). 4 psi started it. Running 3 psi, held about 1.5k at 1-3/4. Exhaust crack was lean. First cork gasket wept after a short run. Cover kept. O’Reilly Fel-Pro 17900 cork-rubber going on — same 153/181 as Sierra 18-0347 / GM 14096154. RTV layer on the cover flange and edges because the lid is old. No red thread locker. 40 in-lb, not 40 ft-lb.",
         "Enzo 12 Nov 2026 night: cold, 3 psi, B up, died with pops at 1-3/4. Out 1/4 to 2 turns both. Fired, held 1.5k, one crack then ran. Leave A there. Do not open C.",
-        "Enzo 12 Nov 2026 night: idle about 1.3k, targeting 1k. Sounds good. Smoke from the exhaust-manifold flange — that spot is blacker, gasket thin, old RTV cooking. Do not blob more silicone. Snug the nuts cold. Muffler cement is the no-pull band-aid. No exhaust-gasket PN on paperwork."
+        "Enzo 12 Nov 2026 night: idle about 1.3k, targeting 1k. Sounds good. Smoke from the exhaust-manifold flange — that spot is blacker, gasket thin, old RTV cooking. Do not blob more silicone. Snug the nuts cold. Muffler cement is the no-pull band-aid. No exhaust-gasket PN on paperwork.",
+        "Enzo 12 Nov 2026 night IMG_6228: Super Tach II on 1. Dipped to about 950. Two pops, stayed running. A 2 turns, 3 psi. Leave A and C."
       ]
     }
   },
@@ -110,7 +111,7 @@
         "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
         "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
         "Enrichment": "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich.",
-        "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. Died at 1-1/4, longer at 1-1/2. 1-3/4 held only with a full bowl. 12 Nov night: out 1/4 to 2 turns, held 1.5k, then nibble C. Last hold about 1.3k at 3 psi, targeting 1k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. Do not open C to keep it alive. Warm idle is 900–1100. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles.",
+        "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. 12 Nov night: out 1/4 to 2 turns, then nibble C. Last hold about 1k at 3 psi — Super Tach II on 1, dipped to ~950, two pops, stayed running. Leave A and C there. Warm idle is 900–1100. Do not open C to keep it alive. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles.",
         "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
         "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
@@ -959,6 +960,20 @@
         "carb": {
           "spec": {
             "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. Died at 1-1/4, longer at 1-1/2. 1-3/4 held only with a full bowl. 12 Nov night: out 1/4 to 2 turns, held 1.5k, then nibble C. Last hold about 1.3k at 3 psi, targeting 1k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. Do not open C to keep it alive. Warm idle is 900–1100. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles."
+          }
+        }
+      }
+    },
+    {
+      "id": "n36",
+      "at": "2026-11-13T04:50:00.000000+00:00",
+      "system": "engine",
+      "part": "carb",
+      "text": "Enzo 12 Nov 2026 night IMG_6228: Super Tach II on 1. Dipped to about 950. Two pops, stayed running. A 2 turns, 3 psi. Leave A and C.",
+      "patches": {
+        "carb": {
+          "spec": {
+            "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. 12 Nov night: out 1/4 to 2 turns, then nibble C. Last hold about 1k at 3 psi — Super Tach II on 1, dipped to ~950, two pops, stayed running. Leave A and C there. Warm idle is 900–1100. Do not open C to keep it alive. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles."
           }
         }
       }
