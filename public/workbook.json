@@ -136,10 +136,11 @@
         "On the 9 Nov 2026 buy list with the fuel filter and thermostat kit. Sierra 18-0347 / NAPA SME180347. https://www.napaonline.com/en/p/SME180347",
         "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on.",
         "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old.",
-        "Enzo 12 Nov 2026 night: still weeps oil at the back of the cover only. Front rail dry. Idle held at 1.5k / 2 turns / 3 psi."
+        "Enzo 12 Nov 2026 night: still weeps oil at the back of the cover only. Front rail dry. Idle held at 1.5k / 2 turns / 3 psi.",
+        "Enzo 12 Nov 2026 night: gasket fixed. Rear weep stopped. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi."
       ],
       "pn": "17900",
-      "status": "watch",
+      "status": "ok",
       "sheet": "17900 · 18-0347",
       "spec": {
         "On sheet": "17900 · 18-0347",
@@ -148,7 +149,7 @@
         "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
         "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part.",
-        "Now": "Fel-Pro 17900 on with RTV on the cover flange. 12 Nov night: still weeps oil at the back of the cover only. Front rail dry. Cover kept."
+        "Now": "Fel-Pro 17900 on with RTV on the cover flange. 12 Nov night: rear weep stopped. Cover kept. Idle next: nibble C toward 900–1100, A stays 2 turns, 3 psi."
       }
     },
     "thermostat": {
@@ -928,6 +929,21 @@
           "status": "watch",
           "spec": {
             "Now": "Fel-Pro 17900 on with RTV on the cover flange. 12 Nov night: still weeps oil at the back of the cover only. Front rail dry. Cover kept."
+          }
+        }
+      }
+    },
+    {
+      "id": "n34",
+      "at": "2026-11-13T04:13:00.000000+00:00",
+      "system": "engine",
+      "part": "valve-cover-gasket",
+      "text": "Enzo 12 Nov 2026 night: gasket fixed. Rear weep stopped. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi.",
+      "patches": {
+        "valve-cover-gasket": {
+          "status": "ok",
+          "spec": {
+            "Now": "Fel-Pro 17900 on with RTV on the cover flange. 12 Nov night: rear weep stopped. Cover kept. Idle next: nibble C toward 900–1100, A stays 2 turns, 3 psi."
           }
         }
       }
