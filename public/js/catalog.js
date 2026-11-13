@@ -385,6 +385,7 @@ const CAT_PLACES = {
     { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four. UK.", price: "Page £125.00", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
   ],
   "valve-cover-gasket": [
+    { where: "Read on the car", when: "13 Nov 2026", order: "redo dry", item: "After the drive, leaking sides and rear. Reuse Fel-Pro 17900. Fel-Pro wants clean and dry. Pea RTV at four head corners only. 40 in-lb, re-snug after cool. No PermaDry for this 181.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "gasket sealed", item: "Rear weep stopped the same night. Fel-Pro 17900. Cover kept. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "rear weep", item: "Fel-Pro 17900 still weeps oil at the back of the cover only. Front rail dry. Cover kept. Idle held at 1.5k / 2 turns / 3 psi.", price: "No price" },
     { where: "O'Reilly 107 Rayford", when: "12 Nov 2026", order: "17900", item: "Fel-Pro Marine 17900 cork-rubber. Same 153/181 fit as Sierra 18-0347 / GM 14096154. On the car tonight. 11 Nov gasket was not bad — extra precaution. Cover kept. RTV layer on the cover flange and edges. No receipt.", price: "No receipt", url: "https://www.napaonline.com/en/p/FPG17900", link: "NAPA FPG17900 listing" },
@@ -531,6 +532,7 @@ const CAT_PLACES = {
     { where: "Read on the car", when: "9 Nov 2026", order: "2× S&S", item: "Two S&S carbs, custom on the 181. Floods after a few minutes, idle dies. Look for E or G cast on each body.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "mechanical pump", item: "Previous owner took the electric pump off. Engine-driven mechanical pump, not a hand lever. No SKU on a ticket.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "one line, then tee", item: "One fuel line splits into two right at the carbs. Regulator goes on that single line after the filter, before the tee.", price: "No price" },
+    { where: "Read on the car", when: "13 Nov 2026", order: "drove", item: "Low-speed controlled drive. Idle held ~1k. One stop: pops, rpm under 1k, recovered. Next fuel test 3.5 psi. If it drips, needles. A stays 2 turns.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "1k hold", item: "IMG_6228. Super Tach II on 1. Dipped to about 950. Two pops, stayed running. A 2 turns, 3 psi. Leave it.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "1.3k idle", item: "Lowering C. About 1.3k, targeting 1k. A stays 2 turns. 3 psi. Sounds good. Cover gasket sealed.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "A to 2 turns", item: "Cold, 3 psi, B up, died with pops at 1-3/4. Out 1/4 on both to 2 turns. Fired, held 1.5k, one crack then ran. 4 psi plus reseated plugs was last night’s no-start wake-up, not tonight. Do not open C.", price: "No price" },

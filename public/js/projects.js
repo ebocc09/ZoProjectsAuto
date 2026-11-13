@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle holding about 1k at 2 turns mixture, regulator 3 psi. Two random pops, stayed running. Cover gasket sealed.",
+      "Drove at low speed, idle held ~1k. One stop: pops, rpm dipped under 1k, recovered. Try 3.5 psi. Fel-Pro 17900 leaking sides and rear after the drive — redo dry, reuse this gasket.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "Leave idle at 1k",
-        body: "12 Nov night clip IMG_6228: Super Tach II on 1, dipped to about 950, two pops, stayed running. A is 2 turns. 3 psi. Leave A and C. Do not nibble C lower tonight. Exhaust flange later — snug nuts cold, no more silicone."
+        title: "Redo the cover gasket dry, then 3.5 psi",
+        body: "Drove 12–13 Nov, idle held ~1k. One hot stop: pops, rpm under 1k, saved itself. A stays 2 turns. 3.5 psi is a test — if it drips, back to 3, that is needles. Fel-Pro 17900 leaking sides and rear after the drive. Reuse it. Fel-Pro wants it clean and dry. Scrape all RTV off the gasket, cover, and head. Straight-edge the cover. Pea of RTV on the head at the four corners only. Cover straight down, 40 in-lb center-out. After one heat cycle, cool, re-snug 40 in-lb. No grease as a seal. No gasket upgrade for this 181 — Pontiac PermaDry VS50179 is the wrong engine."
       },
       {
         id: "log",

@@ -298,8 +298,9 @@ TOPICS: list[dict] = [
             "Valve cover gasket on 12 Nov 2026 is Fel-Pro Marine 17900 from O’Reilly — cork-rubber, "
             "same 153/181 fit as Sierra 18-0347 / NAPA SME180347 / GM 14096154. Not a molded silicone lid. "
             "11 Nov cork was not torn; this one is extra precaution. Cover stays. 40 in-lb, not 40 ft-lb. "
-            "RTV layer on the cover flange and edges because the lid is old. 12 Nov night: rear weep stopped. "
-            "Next: nibble C toward 900–1100. A stays 2 turns. 3 psi. No red / high-temp thread locker. No receipt."
+            "13 Nov: leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry — "
+            "the RTV layer around the cover is why it opened up. Pea of RTV at the four head corners only. "
+            "40 in-lb, then re-snug after a heat cycle. No PermaDry for this 181. No red locker. No receipt."
         ),
         "pills": ["Valve cover", "Thermostat", "Engine"],
     },

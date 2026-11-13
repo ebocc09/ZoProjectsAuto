@@ -609,8 +609,8 @@ window.ZO = {
       brand: "Fel-Pro Marine",
       system: "engine",
       role: "Seal under the valve cover. Not a head gasket.",
-      status: "ok",
-      confidence: "Fel-Pro 17900 on 12 Nov 2026. Rear weep stopped the same night.",
+      status: "watch",
+      confidence: "Fel-Pro 17900 leaking sides and rear after the 12–13 Nov drive. Redo dry. Reuse this gasket.",
       qty: "1",
       sheet: "17900 · 18-0347",
       spec: [
@@ -620,7 +620,7 @@ window.ZO = {
         { k: "GM analog", v: "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
         { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." },
-        { k: "Now", v: "Fel-Pro 17900 on with RTV on the cover flange. 12 Nov night: rear weep stopped. Cover kept. Idle next: nibble C toward 900–1100, A stays 2 turns, 3 psi." }
+        { k: "Now", v: "Leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, then re-snug after a heat cycle. Cover kept. No PermaDry upgrade for this 181." }
       ],
       notes: "O’Reilly 12 Nov 2026. No receipt.",
       evidence: ["IMG_5863", "IMG_5929"]
@@ -694,7 +694,7 @@ window.ZO = {
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich." },
-        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. 12 Nov night: out 1/4 to 2 turns, then nibble C. Last hold about 1k at 3 psi — Super Tach II on 1, dipped to ~950, two pops, stayed running. Leave A and C there. Warm idle is 900–1100. Do not open C to keep it alive. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles." },
+        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. 12 Nov night: held ~1k at 3 psi. Drove low speed 12–13 Nov, idle held. One hot stop: pops, rpm dipped under 1k, recovered. Next fuel test: 3.5 psi. If it drips, back to 3 — needles, not more pressure. Leave A. C stays at the 1k hold. Do not open C to keep it alive." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],

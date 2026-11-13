@@ -49,7 +49,8 @@
         "Enzo 12 Nov 2026: 2 psi starved the bowls (dry plugs, no squirt). 4 psi started it. Running 3 psi, held about 1.5k at 1-3/4. Exhaust crack was lean. First cork gasket wept after a short run. Cover kept. O’Reilly Fel-Pro 17900 cork-rubber going on — same 153/181 as Sierra 18-0347 / GM 14096154. RTV layer on the cover flange and edges because the lid is old. No red thread locker. 40 in-lb, not 40 ft-lb.",
         "Enzo 12 Nov 2026 night: cold, 3 psi, B up, died with pops at 1-3/4. Out 1/4 to 2 turns both. Fired, held 1.5k, one crack then ran. Leave A there. Do not open C.",
         "Enzo 12 Nov 2026 night: idle about 1.3k, targeting 1k. Sounds good. Smoke from the exhaust-manifold flange — that spot is blacker, gasket thin, old RTV cooking. Do not blob more silicone. Snug the nuts cold. Muffler cement is the no-pull band-aid. No exhaust-gasket PN on paperwork.",
-        "Enzo 12 Nov 2026 night IMG_6228: Super Tach II on 1. Dipped to about 950. Two pops, stayed running. A 2 turns, 3 psi. Leave A and C."
+        "Enzo 12 Nov 2026 night IMG_6228: Super Tach II on 1. Dipped to about 950. Two pops, stayed running. A 2 turns, 3 psi. Leave A and C.",
+        "Enzo 13 Nov 2026: drove low speed, idle held ~1k. One hot stop: pops, rpm under 1k, recovered. Next fuel test 3.5 psi. Gasket leaking sides and rear — redo dry, reuse 17900."
       ]
     }
   },
@@ -111,7 +112,7 @@
         "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
         "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
         "Enrichment": "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich.",
-        "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. 12 Nov night: out 1/4 to 2 turns, then nibble C. Last hold about 1k at 3 psi — Super Tach II on 1, dipped to ~950, two pops, stayed running. Leave A and C there. Warm idle is 900–1100. Do not open C to keep it alive. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles.",
+        "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. 12 Nov night: held ~1k at 3 psi. Drove low speed 12–13 Nov, idle held. One hot stop: pops, rpm dipped under 1k, recovered. Next fuel test: 3.5 psi. If it drips, back to 3 — needles, not more pressure. Leave A. C stays at the 1k hold. Do not open C to keep it alive.",
         "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
         "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
@@ -139,10 +140,11 @@
         "Old gasket is leaking oil and smoking a little. Stopped the run. New gasket due 11 Nov 2026. Do not run it until that is on.",
         "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old.",
         "Enzo 12 Nov 2026 night: still weeps oil at the back of the cover only. Front rail dry. Idle held at 1.5k / 2 turns / 3 psi.",
-        "Enzo 12 Nov 2026 night: gasket fixed. Rear weep stopped. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi."
+        "Enzo 12 Nov 2026 night: gasket fixed. Rear weep stopped. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi.",
+        "Enzo 13 Nov 2026: after the drive, leaking sides and rear. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, re-snug after a heat cycle. No PermaDry for this 181."
       ],
       "pn": "17900",
-      "status": "ok",
+      "status": "watch",
       "sheet": "17900 · 18-0347",
       "spec": {
         "On sheet": "17900 · 18-0347",
@@ -151,7 +153,7 @@
         "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
         "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part.",
-        "Now": "Fel-Pro 17900 on with RTV on the cover flange. 12 Nov night: rear weep stopped. Cover kept. Idle next: nibble C toward 900–1100, A stays 2 turns, 3 psi."
+        "Now": "Leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, then re-snug after a heat cycle. Cover kept. No PermaDry upgrade for this 181."
       }
     },
     "thermostat": {
@@ -974,6 +976,26 @@
         "carb": {
           "spec": {
             "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. 12 Nov night: out 1/4 to 2 turns, then nibble C. Last hold about 1k at 3 psi — Super Tach II on 1, dipped to ~950, two pops, stayed running. Leave A and C there. Warm idle is 900–1100. Do not open C to keep it alive. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles."
+          }
+        }
+      }
+    },
+    {
+      "id": "n37",
+      "at": "2026-11-13T06:58:00.000000+00:00",
+      "system": "engine",
+      "part": "valve-cover-gasket",
+      "text": "Enzo 13 Nov 2026: drove low speed, idle held ~1k. One hot stop: pops, rpm under 1k, recovered. Next fuel test 3.5 psi. Gasket leaking sides and rear — redo dry, reuse 17900.",
+      "patches": {
+        "carb": {
+          "spec": {
+            "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. 12 Nov night: held ~1k at 3 psi. Drove low speed 12–13 Nov, idle held. One hot stop: pops, rpm dipped under 1k, recovered. Next fuel test: 3.5 psi. If it drips, back to 3 — needles, not more pressure. Leave A. C stays at the 1k hold. Do not open C to keep it alive."
+          }
+        },
+        "valve-cover-gasket": {
+          "status": "watch",
+          "spec": {
+            "Now": "Leaking sides and rear after the drive. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, then re-snug after a heat cycle. Cover kept. No PermaDry upgrade for this 181."
           }
         }
       }
