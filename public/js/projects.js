@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle ~1k sitting still. After a drive, stop idle falls — try 3.5 psi, do not rev, do not open C. A stays 2 turns. Fel-Pro 17900 reseated dry 13 Nov.",
+      "Regulator 3.5 psi. Stop idle held after a drive. A 2 turns, C at ~1k. Fel-Pro 17900 reseated dry 13 Nov. Leave the screws.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "3.5 psi so a stop does not kill idle",
-        body: "Sitting still, 1k holds at 3 psi. After a drive, idle falls at a stop — mains used more than 3 psi put back. Set 12-804 to 3.5. Leave A at 2 turns. Leave C. B down when hot. Drive, then a real stop, no revving. If it holds and does not drip, leave 3.5. If it drips, back to 3 and that is needles 11-2195 / seats 11-2465. Do not go back to free-flow 7 psi."
+        title: "Leave 3.5 psi",
+        body: "13 Nov: 3.5 held idle at a stop after driving. Two cracks, kept running. Restart dip is bowls filling — do not go to 4. Leave A at 2 turns. Leave C at ~1k. If it drips, needles 11-2195 / seats 11-2465. After the cover has had a heat cycle, cool, re-snug 40 in-lb."
       },
       {
         id: "log",
