@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Idle held about 1.5k at 1-3/4 mixture, regulator 3 psi. First cover gasket (11 Nov) wept, so a Fel-Pro 17900 cork-rubber is going on 12 Nov. Then lower idle toward 900–1100.",
+      "Idle held about 1.5k at 2 turns mixture, regulator 3 psi. Fel-Pro 17900 and RTV on the cover. Then lower idle toward 900–1100.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -65,12 +65,12 @@ const ZO_PROJECTS = [
       {
         id: "tune",
         title: "Tune both carbs the same",
-        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. This car died at 1-1/4, lasted longer at 1-1/2, and held at 1-3/4 with the choke down. Leave A at 1-3/4. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls; 4 psi woke it; running at 3 psi. If it spills, needles."
+        body: "A is mixture, the spring screw on the SIDE. In is leaner. Out is richer. Seat it softly, then count out from that stop. Print starts at 1-1/4. Died at 1-1/4, longer at 1-1/2. 1-3/4 held only with a full bowl. 12 Nov night: cold, 3 psi, B up, died with pops at 1-3/4. Out 1/4 to 2 turns, fired, held 1.5k, one crack then ran. Leave A there. C is idle speed, the small screw on TOP by the cable. Catch is when the red bar just twitches. Print is 1/2 turn after that. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles."
       },
       {
         id: "gasket-first",
-        title: "New Fel-Pro gasket, then lower idle",
-        body: "11 Nov gasket went on dry at about 40 in-lb (not 40 ft-lb). Cover stayed. It ran, then the rail wept, so 12 Nov a Fel-Pro 17900 cork-rubber from O’Reilly is going on for extra precaution — same 153/181 gasket as Sierra 18-0347 / GM 14096154, not a molded all-rubber lid. RTV layer on the cover flange and edges because the lid is old. No red thread locker on those bolts. Wipe any RTV that squeezed in toward the rockers. Wait until the RTV skins, then start B up, B down, A stays 1-3/4, C at 1.5k. If it holds, nibble C toward 900–1100."
+        title: "Watch the cover, then lower idle",
+        body: "Fel-Pro 17900 and RTV on the cover flange are on. A is 2 turns. C at 1.5k. 3 psi. If it keeps holding, look at the rail for oil before you nibble C toward 900–1100. Do not open C. One random crack is not a reason to turn A again."
       },
       {
         id: "log",

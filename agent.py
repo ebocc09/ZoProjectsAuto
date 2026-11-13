@@ -218,9 +218,10 @@ TOPICS: list[dict] = [
             "Easy path: keep them. Running pressure, then Holley 12-804 if high (inlet limit 7 psi), "
             "then circled 11-2195 needle, 11-2465 seat, and 50-8009 o-ring — two of each. "
             "Shake floats 11-2187. Super E/G use an enrichment lever, not a choke. "
-            "Two carbs — same turns on both. Mixture A is 1-3/4 out. In is leaner, out is richer. "
+            "Two carbs — same turns on both. Mixture A is 2 turns out. In is leaner, out is richer. "
             "Idle speed C: catch is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall. "
-            "Choke up to start, down once it is running. Idle held at about 1.5k. Gasket first, then 900–1100."
+            "Choke up to start, down once it is running. 12 Nov night: 1-3/4 died cold with pops even with B up. "
+            "Out 1/4, held about 1.5k at 3 psi. Then 900–1100."
         ),
         "pills": ["Fuel filter", "Engine", "Valve cover"],
     },
