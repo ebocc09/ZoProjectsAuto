@@ -143,10 +143,11 @@
         "Enzo 12 Nov 2026: O’Reilly Fel-Pro 17900 cork-rubber going on. 11 Nov gasket was not torn — extra precaution. Cover kept. 40 in-lb, no red locker. RTV layer on the cover flange and edges because the lid is old.",
         "Enzo 12 Nov 2026 night: still weeps oil at the back of the cover only. Front rail dry. Idle held at 1.5k / 2 turns / 3 psi.",
         "Enzo 12 Nov 2026 night: gasket fixed. Rear weep stopped. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi.",
-        "Enzo 13 Nov 2026: after the drive, leaking sides and rear. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, re-snug after a heat cycle. No PermaDry for this 181."
+        "Enzo 13 Nov 2026: after the drive, leaking sides and rear. Reuse Fel-Pro 17900. Install clean and dry. Pea of RTV at the four head corners only. 40 in-lb, re-snug after a heat cycle. No PermaDry for this 181.",
+        "Enzo 13 Nov 2026 road test: no oil leak at the cover."
       ],
       "pn": "17900",
-      "status": "watch",
+      "status": "ok",
       "sheet": "17900 · 18-0347",
       "spec": {
         "On sheet": "17900 · 18-0347",
