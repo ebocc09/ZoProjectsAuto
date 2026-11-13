@@ -385,6 +385,7 @@ const CAT_PLACES = {
     { where: "Repower Marine", when: "8 Nov 2026", order: "8M0122491", item: "New GM steel rocker cover, same 3.0L four. UK.", price: "Page £125.00", url: "https://repowermarine.com/new-steel-rocker-valve-cover-for-3-0l-four-cylinder.html", link: "Repower Marine listing" },
   ],
   "valve-cover-gasket": [
+    { where: "Read on the car", when: "13 Nov 2026", order: "road dry", item: "Road test: no oil leak at the cover. Fel-Pro 17900 reseat held.", price: "No price" },
     { where: "Read on the car", when: "13 Nov 2026", order: "reseated dry", item: "Fel-Pro 17900 reused, seated dry. Pea RTV at head corners. 40 in-lb. Leak check after it holds warm, then re-snug.", price: "No price" },
     { where: "Read on the car", when: "13 Nov 2026", order: "redo dry", item: "After the drive, leaking sides and rear. Reuse Fel-Pro 17900. Fel-Pro wants clean and dry. Pea RTV at four head corners only. 40 in-lb, re-snug after cool. No PermaDry for this 181.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "gasket sealed", item: "Rear weep stopped the same night. Fel-Pro 17900. Cover kept. Next: nibble C toward 900–1100. A stays 2 turns. 3 psi.", price: "No price" },
@@ -533,6 +534,7 @@ const CAT_PLACES = {
     { where: "Read on the car", when: "9 Nov 2026", order: "2× S&S", item: "Two S&S carbs, custom on the 181. Floods after a few minutes, idle dies. Look for E or G cast on each body.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "mechanical pump", item: "Previous owner took the electric pump off. Engine-driven mechanical pump, not a hand lever. No SKU on a ticket.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "one line, then tee", item: "One fuel line splits into two right at the carbs. Regulator goes on that single line after the filter, before the tee.", price: "No price" },
+    { where: "Read on the car", when: "13 Nov 2026", order: "road flood", item: "Official road test. No oil leak, no overheat. Floods moments after driving at 3.5 psi. Clears only at ~5k. Coming down dies rich / choking. Needles next. Leave A and C.", price: "No price" },
     { where: "Read on the car", when: "13 Nov 2026", order: "3.5 hold", item: "3.5 psi: stop idle held after a drive. Two cracks, kept running. Restart dip is bowls filling. Leave 3.5. Do not go to 4. A 2 turns, C ~1k.", price: "No price" },
     { where: "Read on the car", when: "13 Nov 2026", order: "stop sag", item: "After driving, idle falls hard at a stop. Not empty bowls — mains outran 3 psi refill. 3.5 psi test. Do not rev. Do not open C. If it drips, needles.", price: "No price" },
     { where: "Read on the car", when: "13 Nov 2026", order: "drove", item: "Low-speed controlled drive. Idle held ~1k. One stop: pops, rpm under 1k, recovered. Next fuel test 3.5 psi. If it drips, needles. A stays 2 turns.", price: "No price" },

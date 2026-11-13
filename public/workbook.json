@@ -51,7 +51,8 @@
         "Enzo 12 Nov 2026 night: idle about 1.3k, targeting 1k. Sounds good. Smoke from the exhaust-manifold flange — that spot is blacker, gasket thin, old RTV cooking. Do not blob more silicone. Snug the nuts cold. Muffler cement is the no-pull band-aid. No exhaust-gasket PN on paperwork.",
         "Enzo 12 Nov 2026 night IMG_6228: Super Tach II on 1. Dipped to about 950. Two pops, stayed running. A 2 turns, 3 psi. Leave A and C.",
         "Enzo 13 Nov 2026: drove low speed, idle held ~1k. One hot stop: pops, rpm under 1k, recovered. Next fuel test 3.5 psi. Gasket leaking sides and rear — redo dry, reuse 17900.",
-        "Enzo 13 Nov 2026: 3.5 psi held stop idle after a drive. Two cracks, kept running. Restart dip is bowls filling. Leave 3.5. Do not go to 4."
+        "Enzo 13 Nov 2026: 3.5 psi held stop idle after a drive. Two cracks, kept running. Restart dip is bowls filling. Leave 3.5. Do not go to 4.",
+        "Enzo 13 Nov 2026 road test: no oil leak, no overheat. Floods moments after driving at 3.5 psi. Clears only at ~5k. Coming down dies rich / choking. Needles 11-2195 / seats 11-2465 / o-ring 50-8009 both. Leave A and C."
       ]
     }
   },
@@ -113,7 +114,7 @@
         "O-ring": "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out.",
         "Float": "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed.",
         "Enrichment": "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich.",
-        "Tune": "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. Regulator 3.5 psi as of 13 Nov 2026 — stop idle held after a drive. 3 psi sagged at a stop. Two cracks, kept running. Restart dip is bowls filling, not a reason to go to 4. Leave A. C stays at the 1k hold. If it drips, needles, not more pressure.",
+        "Tune": "Mixture A is 2 turns out on both. Leave A. C at ~1k. Regulator was 3.5 for stop idle. Road test 13 Nov: floods moments after driving at 3.5 — clears only at ~5k, then dies rich coming down. That is needles overpowered, not mixture. Do not open C. Do not go to 4. Next: 11-2195 / 11-2465 / 50-8009 both carbs.",
         "Not easy": "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on.",
         "Not": "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465."
       }
@@ -154,7 +155,7 @@
         "GM analog": "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm",
         "2010 set": "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket.",
         "Not": "Not a head gasket. Marine head-gasket analog 14096660 is not this part.",
-        "Now": "Reseated dry 13 Nov 2026. Reused Fel-Pro 17900. Pea RTV at head corners only. 40 in-lb. Re-snug after the first heat cycle. Cover kept."
+        "Now": "Reseated dry 13 Nov 2026. Road test: no leak. Cover kept."
       }
     },
     "thermostat": {
@@ -1011,6 +1012,26 @@
         "valve-cover-gasket": {
           "spec": {
             "Now": "Reseated dry 13 Nov 2026. Reused Fel-Pro 17900. Pea RTV at head corners only. 40 in-lb. Re-snug after the first heat cycle. Cover kept."
+          }
+        }
+      }
+    },
+    {
+      "id": "n39",
+      "at": "2026-11-13T22:44:00.000000+00:00",
+      "system": "engine",
+      "part": "carb",
+      "text": "Enzo 13 Nov 2026 road test: no oil leak, no overheat. Floods moments after driving at 3.5 psi. Clears only at ~5k. Coming down dies rich / choking. Needles 11-2195 / seats 11-2465 / o-ring 50-8009 both. Leave A and C.",
+      "patches": {
+        "carb": {
+          "spec": {
+            "Tune": "Mixture A is 2 turns out on both. Leave A. C at ~1k. Regulator was 3.5 for stop idle. Road test 13 Nov: floods moments after driving at 3.5 — clears only at ~5k, then dies rich coming down. That is needles overpowered, not mixture. Do not open C. Do not go to 4. Next: 11-2195 / 11-2465 / 50-8009 both carbs."
+          }
+        },
+        "valve-cover-gasket": {
+          "status": "ok",
+          "spec": {
+            "Now": "Reseated dry 13 Nov 2026. Road test: no leak. Cover kept."
           }
         }
       }

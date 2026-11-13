@@ -563,7 +563,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Live: idle about 1.3k at 2 turns mixture, regulator 3 psi, targeting 1k. Fel-Pro 17900 sealed. Exhaust manifold RTV joint smoking — snug nuts, no more silicone. Buy list still: Wix 33003. Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Not bought." },
+        { k: "Need now", v: "Live: road test floods at 3.5 psi moments into a drive. Cover dry, no overheat. Needles 11-2195 / seats 11-2465 / o-ring 50-8009 both sides. Buy list still: Wix 33003. Housing waiting on 18-0164-9. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -609,8 +609,8 @@ window.ZO = {
       brand: "Fel-Pro Marine",
       system: "engine",
       role: "Seal under the valve cover. Not a head gasket.",
-      status: "watch",
-      confidence: "Fel-Pro 17900 reseated dry 13 Nov 2026. Reused. Leak check after it holds warm.",
+      status: "ok",
+      confidence: "Fel-Pro 17900 reseated dry 13 Nov 2026. Road test: no leak.",
       qty: "1",
       sheet: "17900 · 18-0347",
       spec: [
@@ -620,7 +620,7 @@ window.ZO = {
         { k: "GM analog", v: "Marine Engine Depot lists authentic GM 14096154 for the 181 / 3.0L valve cover. https://marineenginedepot.com/gasket-181-30l-valve-cover-authentic-gm" },
         { k: "2010 set", v: "DET59565AS on eBasicPower 82085 is the old 2.5/3.0L set, $30.95. That invoice is not this dedicated gasket." },
         { k: "Not", v: "Not a head gasket. Marine head-gasket analog 14096660 is not this part." },
-        { k: "Now", v: "Reseated dry 13 Nov 2026. Reused Fel-Pro 17900. Pea RTV at head corners only. 40 in-lb. Re-snug after the first heat cycle. Cover kept." }
+        { k: "Now", v: "Reseated dry 13 Nov 2026. Road test: no leak. Cover kept." }
       ],
       notes: "O’Reilly 12 Nov 2026. No receipt.",
       evidence: ["IMG_5863", "IMG_5929"]
@@ -694,7 +694,7 @@ window.ZO = {
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich." },
-        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat. Regulator 3.5 psi as of 13 Nov 2026 — stop idle held after a drive. 3 psi sagged at a stop. Two cracks, kept running. Restart dip is bowls filling, not a reason to go to 4. Leave A. C stays at the 1k hold. If it drips, needles, not more pressure." },
+        { k: "Tune", v: "Mixture A is 2 turns out on both. Leave A. C at ~1k. Regulator was 3.5 for stop idle. Road test 13 Nov: floods moments after driving at 3.5 — clears only at ~5k, then dies rich coming down. That is needles overpowered, not mixture. Do not open C. Do not go to 4. Next: 11-2195 / 11-2465 / 50-8009 both carbs. Optional short loop at 3 to confirm flood slows." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],

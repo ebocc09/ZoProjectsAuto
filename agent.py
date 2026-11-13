@@ -220,8 +220,9 @@ TOPICS: list[dict] = [
             "Shake floats 11-2187. Super E/G use an enrichment lever, not a choke. "
             "Two carbs — same turns on both. Mixture A is 2 turns out. In is leaner, out is richer. "
             "Idle speed C: catch is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall. "
-            "Choke up to start, down once it is running. 12 Nov night: 1-3/4 died cold with pops even with B up. "
-            "Out 1/4, held about 1.5k at 3 psi. Then 900–1100."
+            "Choke up to start, down once it is running. Idle ~1k at 2 turns. Regulator 3.5 held stop idle "
+            "but road test floods moments into a drive — clears at ~5k, dies rich coming down. That is needles. "
+            "11-2195 / 11-2465 / 50-8009 both carbs. Do not open C. Do not go to 4."
         ),
         "pills": ["Fuel filter", "Engine", "Valve cover"],
     },

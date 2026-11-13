@@ -7,7 +7,7 @@ const ZO_PROJECTS = [
     status: "open",
     system: "engine",
     summary:
-      "Regulator 3.5 psi. Stop idle held after a drive. A 2 turns, C at ~1k. Fel-Pro 17900 reseated dry 13 Nov. Leave the screws.",
+      "Road test 13 Nov: no oil leak, no overheat. Floods moments after driving at 3.5 psi. Clears only at ~5k, then dies rich coming down. Needles next. Leave A and C.",
     why: [
       {
         title: "Harley carbs on a mechanical pump",
@@ -69,8 +69,8 @@ const ZO_PROJECTS = [
       },
       {
         id: "gasket-first",
-        title: "Leave 3.5 psi",
-        body: "13 Nov: 3.5 held idle at a stop after driving. Two cracks, kept running. Restart dip is bowls filling — do not go to 4. Leave A at 2 turns. Leave C at ~1k. If it drips, needles 11-2195 / seats 11-2465. After the cover has had a heat cycle, cool, re-snug 40 in-lb."
+        title: "Needles — pressure alone will not finish this",
+        body: "Road test 13 Nov: cover dry, no overheat. At 3.5 it floods moments into a drive — bowls overfill, engine chokes. 5k burns it off; throttle closed and it dies rich. That is needles losing, not mixture. Leave A at 2 turns. Leave C at ~1k. Do not open C. Do not go to 4. Optional: try 3 for one short loop — if flood slows but stop idle sags again, that proves it. Real fix: 11-2195 needle, 11-2465 seat, 50-8009 o-ring, two of each. Shake floats 11-2187."
       },
       {
         id: "log",
