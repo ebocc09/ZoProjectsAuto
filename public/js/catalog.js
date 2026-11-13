@@ -369,6 +369,7 @@ const CAT_PLACES = {
     { where: "JEGS", when: "3 Aug 2008", order: "098828080208, box 1", item: "Filler 055553040, fittings 055553082 ×2, drain 071063700", price: "box $119.20" },
   ],
   "gm-30": [
+    { where: "Read on the car", when: "12 Nov 2026", order: "manifold RTV", item: "Smoke from the exhaust-manifold flange. That spot on the manifold is blacker. Gasket there is thin. Old RTV is cooking. Do not blob more silicone. Snug the nuts cold. Muffler cement is the no-pull band-aid. No exhaust-gasket PN on paperwork.", price: "No price" },
     { where: "Buck's Engines, Lubbock", when: "23 Oct 2007 note", order: "IMG_5809", item: "VORTEC 3.0 LITER. Flywheel handwritten 270.00. No engine total.", price: "No engine total" },
     { where: "Buck's Engines", when: "21 Mar 2008", order: "P015582B", item: "Pilot 3914000 and T/O 614018", price: "$3.00 and $15.50" },
     { where: "AutoStar / Reliable, Huntsville", when: "26 Mar 2008", order: "REF 0000202137", item: "AWS 04-065 clutch kit", price: "cost $103.39" },
@@ -530,6 +531,7 @@ const CAT_PLACES = {
     { where: "Read on the car", when: "9 Nov 2026", order: "2× S&S", item: "Two S&S carbs, custom on the 181. Floods after a few minutes, idle dies. Look for E or G cast on each body.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "mechanical pump", item: "Previous owner took the electric pump off. Engine-driven mechanical pump, not a hand lever. No SKU on a ticket.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "one line, then tee", item: "One fuel line splits into two right at the carbs. Regulator goes on that single line after the filter, before the tee.", price: "No price" },
+    { where: "Read on the car", when: "12 Nov 2026", order: "1.3k idle", item: "Lowering C. About 1.3k, targeting 1k. A stays 2 turns. 3 psi. Sounds good. Cover gasket sealed.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "A to 2 turns", item: "Cold, 3 psi, B up, died with pops at 1-3/4. Out 1/4 on both to 2 turns. Fired, held 1.5k, one crack then ran. 4 psi plus reseated plugs was last night’s no-start wake-up, not tonight. Do not open C.", price: "No price" },
     { where: "Read on the car", when: "12 Nov 2026", order: "3 psi hold", item: "2 psi starved the bowls. 4 psi started it. Running 3 psi. Held about 1.5k at 1-3/4 mixture. Exhaust crack was lean. Do not open C to hide it. Then lower idle toward 900–1100.", price: "No price" },
     { where: "Read on the car", when: "10 Nov 2026", order: "tune both", item: "Idle held at about 1.5k on 1-3/4 mixture with the choke down. In is leaner, out is richer. 2k with the speed screw cracked hides a lean idle. Valve cover gasket leaking — due 11 Nov 2026. Then lower idle toward 900–1100.", price: "No price" },

@@ -563,7 +563,7 @@ window.ZO = {
       spec: [
         { k: "Also considered", v: "1991 Chevy S10 2.5L 5-speed" },
         { k: "Gaskets 2010", v: "OSCM04-GH manifold; DET59565AS 2.5/3.0L set. That set is not the new dedicated valve-cover gasket." },
-        { k: "Need now", v: "Live: idle held about 1.5k at 2 turns mixture, regulator 3 psi. Fel-Pro 17900 on 12 Nov with RTV on the cover flange. Cover kept. Buy list still: Wix 33003. Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Not bought." },
+        { k: "Need now", v: "Live: idle about 1.3k at 2 turns mixture, regulator 3 psi, targeting 1k. Fel-Pro 17900 sealed. Exhaust manifold RTV joint smoking — snug nuts, no more silicone. Buy list still: Wix 33003. Housing pulled and cleaned 10 Nov 2026. Waiting on 18-0164-9. Not bought." },
         { k: "Pilot bushing", v: "3914000" },
         { k: "T/O bearing", v: "614018" },
         { k: "Clutch kit (kept)", v: "AWS 04-065" },
@@ -694,7 +694,7 @@ window.ZO = {
         { k: "O-ring", v: "Seat/bowl plug o-ring 50-8009 is also circled on IMG_5949. Replace it when the seat comes out." },
         { k: "Float", v: "S&S 11-2187 on the same parts list. Shake both — if it sloshes, replace. Page $26.95 each. S&S sheet: top of float 1/8–3/16 in below the bowl gasket surface with the needle spring compressed." },
         { k: "Enrichment", v: "Big red lever on each carb — not the long red bar. Up to start. Down once it is running. If a lever stays up while hot, it stays rich." },
-        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. Died at 1-1/4, longer at 1-1/2. 1-3/4 held only with a full bowl. 12 Nov night: cold, 3 psi, B up, died with pops at 1-3/4. Out 1/4 to 2 turns, fired, held 1.5k, one crack then ran. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. 2k can run even when mixture is lean — that hides the stall. Do not open C to keep it alive. Last hold was about 1.5k at 3 psi. Warm idle is 900–1100. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles." },
+        { k: "Tune", v: "Mixture A is 2 turns out on both. In is leaner, out is richer. Count from a soft seat, not from where it was. Print starts at 1-1/4. Died at 1-1/4, longer at 1-1/2. 1-3/4 held only with a full bowl. 12 Nov night: out 1/4 to 2 turns, held 1.5k, then nibble C. Last hold about 1.3k at 3 psi, targeting 1k. Leave A there. Idle speed C: catch is when the red bar just twitches, then 1/2 turn. Do not open C to keep it alive. Warm idle is 900–1100. 2 psi starved the bowls. 4 psi plus reseated plugs woke a no-start. If it spills, needles." },
         { k: "Not easy", v: "One marine Rochester 2-barrel is the stock 181 carb. That needs the original intake back. Custom dual S&S manifold means that is not a bolt-off/bolt-on." },
         { k: "Not", v: "Not an electric pump. Not a locked mechanical pump SKU. Not a locked Rochester / Mercarb / Weber. Not Wix 33003 causing a spill out of the bowl. S&S racing seat 11-2466 is not the circled 11-2465." }
       ],
@@ -1079,7 +1079,7 @@ window.ZO = {
         { k: "IMG_5946", v: "Exploded body. Fuel inlet fitting is item 37 into the bowl. Fuel line with 90° bend is item 50." },
         { k: "Circled on IMG_5949", v: "Needle 11-2195. Seat 11-2465. Seat/bowl plug o-ring 50-8009. Float on the list is 11-2187. Fuel line 19-0475. Hose clamp 50-8002." },
         { k: "Mark", v: "“R SIDE” handwritten on IMG_5937 — right carb of the pair." },
-        { k: "Tune both", v: "This car held at 2 turns mixture, about 1.5k at 3 psi. 1-3/4 died cold with pops even with B up. Out 1/4, one crack then ran. Leave A there. Catch on C is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall. Then lower idle toward 900–1100." }
+        { k: "Tune both", v: "This car is at 2 turns mixture, about 1.3k at 3 psi, targeting 1k. 1-3/4 died cold with pops even with B up. Out 1/4, one crack then ran. Leave A there. Catch on C is when the red bar just twitches, then 1/2 turn. Do not open C to hide a stall." }
       ],
       notes: "Re-read 10 Nov 2026. Paper labels Fuel Inlet as #7. Do not open the carb to measure pressure. Tee into the hose on that barb.",
       evidence: ["IMG_5936", "IMG_5937", "IMG_5938", "IMG_5946", "IMG_5947", "IMG_5948", "IMG_5949"]
