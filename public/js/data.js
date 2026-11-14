@@ -722,21 +722,23 @@ window.ZO = {
     {
       id: "gearbox-1442",
       name: "Gearbox",
-      pn: "Not on a receipt",
-      brand: "Unconfirmed — S10 5-speed was a candidate",
+      pn: "S10 5-speed — case SKU not read",
+      brand: "Chevy S10 5-speed",
       system: "driveline",
       role: "Transmission behind the 3.0",
       status: "watch",
-      confidence: "Named only as TRANSMISSION REAR FLANGE on the shaft drawing",
+      confidence: "Enzo 13 Nov 2026: it is an S10 5-speed. No case tag / SKU read yet. No receipt.",
       qty: "1",
       spec: [
         { k: "On the CAD", v: "TRANSMISSION REAR FLANGE — origin of the driveshaft length" },
-        { k: "Wanted note", v: "1991 Chevy S10 with 5-speed and 2.5L four — on Buck's 10/23/2007 sheet" },
+        { k: "This one", v: "Enzo 13 Nov 2026: S10 5-speed. Case SKU not read. Do not lock NV1500 / Getrag / T5 until the tag is read." },
+        { k: "Wanted note", v: "1991 Chevy S10 with 5-speed and a 2.5L four — on Buck's 10/23/2007 sheet" },
         { k: "Engine actually bought", v: "GM Vortec 3.0L, not that 2.5L" },
-        { k: "SKU", v: "None on any packing slip in the folder" }
+        { k: "SKU", v: "None on any packing slip. Case tag not read." },
+        { k: "Shift now", v: "Upshifts fine. Down into 2nd/1st often hits a wall while moving. At a stop, 1st and 2nd go in. Check clutch release and linkage before calling the box dead." }
       ],
       notes:
-        "Do not assume a T5 or a Lotus gearbox. The paperwork never buys a transmission. Confirm what is in the tunnel, then log fluid under Fluids.",
+        "S10 5-speed confirmed by Enzo 13 Nov 2026. Paperwork never bought a transmission. Read the case tag next. Log fluid under Fluids.",
       evidence: ["IMG_5797", "IMG_5798", "IMG_5809"]
     },
     {

@@ -358,10 +358,11 @@ TOPICS: list[dict] = [
             ("5 speed", 8), ("t5", 6),
         ],
         "reply": (
-            "No transmission SKU is on any packing slip. The shaft drawing labels TRANSMISSION REAR FLANGE. "
-            "On Buck's 10/23/2007 sheet Jim wrote he wanted a 1991 Chevy S10 with a 5-speed and a 2.5L four. "
-            "The engine he actually bought is the GM 3.0 Vortec. Do not assume a T5 — confirm what is in "
-            "the tunnel, then log gearbox fluid under Fluids."
+            "Enzo 13 Nov 2026: it is an S10 5-speed. No case tag / SKU read yet. No receipt. "
+            "Shaft drawing labels TRANSMISSION REAR FLANGE. Buck's note wanted a 1991 S10 5-speed with a 2.5L; "
+            "engine bought is the 3.0 Vortec. Do not lock NV1500 / Getrag / T5 until the tag is read. "
+            "Shift: upshifts fine; down into 2/1 often walls while moving; 1st/2nd at a stop go in — "
+            "clutch and linkage first, then synchros. Log fluid under Fluids."
         ),
         "pills": ["Driveshaft", "Engine oil", "Clutch slave"],
     },

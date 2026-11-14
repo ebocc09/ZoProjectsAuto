@@ -416,6 +416,7 @@ const CAT_PLACES = {
     { where: "Burton Auto Supply, Trinity", when: "29 May 2008", order: "page 2 of the $213.99 ticket", item: "UP CLU SLAV", price: "net $32.57" },
   ],
   "gearbox-1442": [
+    { where: "Read on the car", when: "13 Nov 2026", order: "S10 5-speed", item: "Enzo: transmission is an S10 5-speed. Case SKU not read. Upshifts fine; down into 2/1 often walls while moving; 1st/2nd at a stop go in.", price: "No price" },
     { where: "No vendor in the folder", when: "CAD label only", order: "IMG_5797", item: "TRANSMISSION REAR FLANGE. S10 5-speed was a candidate, not a receipt.", price: "No price" },
   ],
   "driveshaft-1442": [
